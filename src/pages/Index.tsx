@@ -1,9 +1,8 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Users, Shield, Target, Building, User } from "lucide-react";
+import { Users, Shield, Target, Building, User, DollarSign } from "lucide-react";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("youth");
@@ -51,6 +50,47 @@ const Index = () => {
     }
   ];
 
+  const pricingData = {
+    youth: {
+      termProgram: [
+        { name: "Kids (6-10)", price: "$450" },
+        { name: "Juniors (10-13)", price: "$495" },
+        { name: "Teens (14-17)", price: "$510" }
+      ],
+      generalClasses: [
+        { name: "All Ages", price: "$25" }
+      ]
+    },
+    womens: {
+      termProgram: [
+        { name: "Term Program", price: "$250" }
+      ]
+    },
+    adults: {
+      sessions: [
+        { name: "1 Session", price: "$37.50" },
+        { name: "5 Sessions", price: "$160" },
+        { name: "10 Sessions", price: "$285" },
+        { name: "25 Sessions", price: "$660" },
+        { name: "50 Sessions", price: "$950" }
+      ],
+      unlimited: [
+        { name: "1 Month Unlimited", price: "$275" },
+        { name: "3 Months Unlimited", price: "$760" }
+      ]
+    },
+    corporate: {
+      custom: [
+        { name: "Corporate Programs", price: "Enquire for rates" }
+      ]
+    },
+    private: {
+      custom: [
+        { name: "Private Training", price: "Enquire for rates" }
+      ]
+    }
+  };
+
   const activeDivision = divisions.find(d => d.id === activeSection);
 
   return (
@@ -63,6 +103,7 @@ const Index = () => {
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="hover:text-red-400 transition-colors">Home</a>
               <a href="#divisions" className="hover:text-red-400 transition-colors">Divisions</a>
+              <a href="#pricing" className="hover:text-red-400 transition-colors">Pricing</a>
               <Link to="/contact" className="hover:text-red-400 transition-colors">Contact</Link>
             </div>
           </div>
@@ -151,6 +192,170 @@ const Index = () => {
               </div>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="flex justify-center mb-4">
+              <div className="p-3 bg-red-600 rounded-lg">
+                <DollarSign className="h-8 w-8" />
+              </div>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Training Investment</h2>
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              Choose the program that fits your goals and budget. Quality training that delivers real results.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            {/* Youth Division Pricing */}
+            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+              <CardHeader className="text-center">
+                <div className="flex justify-center mb-4">
+                  <Shield className="h-8 w-8 text-red-500" />
+                </div>
+                <CardTitle className="text-2xl">Youth Division</CardTitle>
+                <CardDescription className="text-gray-400">Ages 6-17</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div>
+                  <h4 className="font-semibold text-red-400 mb-3">Term Program</h4>
+                  <div className="space-y-2">
+                    {pricingData.youth.termProgram.map((item, index) => (
+                      <div key={index} className="flex justify-between">
+                        <span className="text-gray-300">{item.name}</span>
+                        <span className="font-semibold">{item.price}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-red-400 mb-3">General Classes</h4>
+                  <div className="space-y-2">
+                    {pricingData.youth.generalClasses.map((item, index) => (
+                      <div key={index} className="flex justify-between">
+                        <span className="text-gray-300">{item.name}</span>
+                        <span className="font-semibold">{item.price}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Women's Division Pricing */}
+            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+              <CardHeader className="text-center">
+                <div className="flex justify-center mb-4">
+                  <Target className="h-8 w-8 text-red-500" />
+                </div>
+                <CardTitle className="text-2xl">Women's Division</CardTitle>
+                <CardDescription className="text-gray-400">Empowerment Training</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div>
+                  <div className="space-y-2">
+                    {pricingData.womens.termProgram.map((item, index) => (
+                      <div key={index} className="flex justify-between">
+                        <span className="text-gray-300">{item.name}</span>
+                        <span className="font-semibold text-2xl">{item.price}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* General Adults Pricing */}
+            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+              <CardHeader className="text-center">
+                <div className="flex justify-center mb-4">
+                  <Users className="h-8 w-8 text-red-500" />
+                </div>
+                <CardTitle className="text-2xl">General Adults</CardTitle>
+                <CardDescription className="text-gray-400">All Skill Levels</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div>
+                  <h4 className="font-semibold text-red-400 mb-3">Session Packages</h4>
+                  <div className="space-y-2">
+                    {pricingData.adults.sessions.map((item, index) => (
+                      <div key={index} className="flex justify-between">
+                        <span className="text-gray-300">{item.name}</span>
+                        <span className="font-semibold">{item.price}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-red-400 mb-3">Unlimited Access</h4>
+                  <div className="space-y-2">
+                    {pricingData.adults.unlimited.map((item, index) => (
+                      <div key={index} className="flex justify-between">
+                        <span className="text-gray-300">{item.name}</span>
+                        <span className="font-semibold">{item.price}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Corporate Training Pricing */}
+            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+              <CardHeader className="text-center">
+                <div className="flex justify-center mb-4">
+                  <Building className="h-8 w-8 text-red-500" />
+                </div>
+                <CardTitle className="text-2xl">Corporate Training</CardTitle>
+                <CardDescription className="text-gray-400">Team Building & Safety</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div>
+                  <div className="space-y-2">
+                    {pricingData.corporate.custom.map((item, index) => (
+                      <div key={index} className="text-center">
+                        <span className="text-gray-300">{item.name}</span>
+                        <div className="font-semibold text-red-400 text-lg mt-2">{item.price}</div>
+                      </div>
+                    ))}
+                  </div>
+                  <Button className="w-full mt-4 bg-red-600 hover:bg-red-700">
+                    Contact for Quote
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Private Training Pricing */}
+            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+              <CardHeader className="text-center">
+                <div className="flex justify-center mb-4">
+                  <User className="h-8 w-8 text-red-500" />
+                </div>
+                <CardTitle className="text-2xl">Private Training</CardTitle>
+                <CardDescription className="text-gray-400">Personalized Instruction</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div>
+                  <div className="space-y-2">
+                    {pricingData.private.custom.map((item, index) => (
+                      <div key={index} className="text-center">
+                        <span className="text-gray-300">{item.name}</span>
+                        <div className="font-semibold text-red-400 text-lg mt-2">{item.price}</div>
+                      </div>
+                    ))}
+                  </div>
+                  <Button className="w-full mt-4 bg-red-600 hover:bg-red-700">
+                    Contact for Quote
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
