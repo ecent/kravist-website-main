@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -6,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Users, Shield, Target, Building, User, DollarSign, BookOpen, Info, Smartphone, Award, HelpCircle } from "lucide-react";
 import Instructors from "@/components/Instructors";
+import Schedule from "@/components/Schedule";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("youth");
@@ -106,6 +106,7 @@ const Index = () => {
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="hover:text-orange-400 transition-colors">Home</a>
               <a href="#divisions" className="hover:text-orange-400 transition-colors">Divisions</a>
+              <a href="#schedule" className="hover:text-orange-400 transition-colors">Schedule</a>
               <a href="#instructors" className="hover:text-orange-400 transition-colors">Instructors</a>
               <a href="#about" className="hover:text-orange-400 transition-colors">About</a>
               <a href="#pricing" className="hover:text-orange-400 transition-colors">Pricing</a>
@@ -199,6 +200,9 @@ const Index = () => {
           )}
         </div>
       </section>
+
+      {/* Schedule Section */}
+      <Schedule />
 
       {/* Instructors Section */}
       <Instructors />
