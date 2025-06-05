@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Users, Shield, Target, Building, User, DollarSign } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Users, Shield, Target, Building, User, DollarSign, BookOpen, Info, Smartphone, Award, HelpCircle } from "lucide-react";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("youth");
@@ -103,6 +104,7 @@ const Index = () => {
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="hover:text-red-400 transition-colors">Home</a>
               <a href="#divisions" className="hover:text-red-400 transition-colors">Divisions</a>
+              <a href="#about" className="hover:text-red-400 transition-colors">About</a>
               <a href="#pricing" className="hover:text-red-400 transition-colors">Pricing</a>
               <Link to="/contact" className="hover:text-red-400 transition-colors">Contact</Link>
             </div>
@@ -192,6 +194,279 @@ const Index = () => {
               </div>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="flex justify-center mb-4">
+              <div className="p-3 bg-red-600 rounded-lg">
+                <BookOpen className="h-8 w-8" />
+              </div>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">About Krav Maga</h2>
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              Everything you need to know about our training philosophy, processes, and community.
+            </p>
+          </div>
+
+          <Tabs defaultValue="what-is" className="w-full">
+            <TabsList className="grid w-full grid-cols-5 bg-gray-800 mb-8">
+              <TabsTrigger value="what-is" className="flex items-center gap-2 text-sm">
+                <Info className="h-4 w-4" />
+                What is Krav Maga?
+              </TabsTrigger>
+              <TabsTrigger value="first-timer" className="flex items-center gap-2 text-sm">
+                <Users className="h-4 w-4" />
+                First Timer Info
+              </TabsTrigger>
+              <TabsTrigger value="member-app" className="flex items-center gap-2 text-sm">
+                <Smartphone className="h-4 w-4" />
+                Member App
+              </TabsTrigger>
+              <TabsTrigger value="grading" className="flex items-center gap-2 text-sm">
+                <Award className="h-4 w-4" />
+                Grading
+              </TabsTrigger>
+              <TabsTrigger value="faq" className="flex items-center gap-2 text-sm">
+                <HelpCircle className="h-4 w-4" />
+                FAQ
+              </TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="what-is" className="space-y-6">
+              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                <CardHeader>
+                  <CardTitle className="text-2xl flex items-center gap-3">
+                    <Info className="h-6 w-6 text-red-500" />
+                    What is Krav Maga?
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-gray-300 leading-relaxed">
+                    Krav Maga is a military self-defense and fighting system developed for the Israel Defense Forces. 
+                    It combines techniques from boxing, wrestling, judo, aikido, and karate, emphasizing real-world situations and extremely efficient brutal counter-attacks.
+                  </p>
+                  <p className="text-gray-300 leading-relaxed">
+                    Unlike traditional martial arts, Krav Maga focuses on practical self-defense techniques that can be learned quickly and applied effectively under stress. 
+                    The system teaches students to be aware of their surroundings, avoid confrontation when possible, and neutralize threats efficiently when escape is not an option.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4 mt-6">
+                    <div className="space-y-2">
+                      <h4 className="font-semibold text-red-400">Core Principles:</h4>
+                      <ul className="space-y-1 text-gray-300">
+                        <li>• Neutralize the threat</li>
+                        <li>• Avoid injury</li>
+                        <li>• Go from defense to offense</li>
+                        <li>• Use aggression appropriately</li>
+                      </ul>
+                    </div>
+                    <div className="space-y-2">
+                      <h4 className="font-semibold text-red-400">Training Focus:</h4>
+                      <ul className="space-y-1 text-gray-300">
+                        <li>• Real-world scenarios</li>
+                        <li>• Stress conditioning</li>
+                        <li>• Multiple attacker situations</li>
+                        <li>• Weapon defense</li>
+                      </ul>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="first-timer" className="space-y-6">
+              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                <CardHeader>
+                  <CardTitle className="text-2xl flex items-center gap-3">
+                    <Users className="h-6 w-6 text-red-500" />
+                    First Timer Information
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-gray-300 leading-relaxed">
+                    Welcome to your Krav Maga journey! We understand starting something new can be intimidating, 
+                    so we've designed our first-timer experience to be welcoming and supportive.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <h4 className="font-semibold text-red-400">What to Expect:</h4>
+                      <ul className="space-y-2 text-gray-300">
+                        <li>• Beginner-friendly introduction</li>
+                        <li>• Basic self-defense techniques</li>
+                        <li>• Fitness conditioning</li>
+                        <li>• Supportive learning environment</li>
+                        <li>• No experience necessary</li>
+                      </ul>
+                    </div>
+                    <div className="space-y-3">
+                      <h4 className="font-semibold text-red-400">What to Bring:</h4>
+                      <ul className="space-y-2 text-gray-300">
+                        <li>• Comfortable workout clothes</li>
+                        <li>• Water bottle</li>
+                        <li>• Positive attitude</li>
+                        <li>• Training gear (available for purchase)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="bg-red-900/30 border border-red-600/50 rounded-lg p-4 mt-6">
+                    <h4 className="font-semibold text-red-400 mb-2">Free Trial Class</h4>
+                    <p className="text-gray-300">
+                      We offer a complimentary first class for new members. This gives you the opportunity to 
+                      experience our training style and meet our community before making a commitment.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="member-app" className="space-y-6">
+              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                <CardHeader>
+                  <CardTitle className="text-2xl flex items-center gap-3">
+                    <Smartphone className="h-6 w-6 text-red-500" />
+                    Member App
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-gray-300 leading-relaxed">
+                    Stay connected with our gym community through our dedicated member app. 
+                    Manage your training schedule, track progress, and stay up-to-date with gym news.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <h4 className="font-semibold text-red-400">App Features:</h4>
+                      <ul className="space-y-2 text-gray-300">
+                        <li>• Class scheduling and booking</li>
+                        <li>• Training progress tracking</li>
+                        <li>• Technique video library</li>
+                        <li>• Community messaging</li>
+                        <li>• Event notifications</li>
+                      </ul>
+                    </div>
+                    <div className="space-y-3">
+                      <h4 className="font-semibold text-red-400">Benefits:</h4>
+                      <ul className="space-y-2 text-gray-300">
+                        <li>• Never miss a class</li>
+                        <li>• Track your belt progression</li>
+                        <li>• Access training videos anytime</li>
+                        <li>• Connect with training partners</li>
+                        <li>• Receive gym updates instantly</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="flex flex-col sm:flex-row gap-4 mt-6">
+                    <Button className="bg-red-600 hover:bg-red-700">
+                      Download for iOS
+                    </Button>
+                    <Button variant="outline" className="border-gray-400 text-gray-300 hover:bg-gray-800">
+                      Download for Android
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="grading" className="space-y-6">
+              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                <CardHeader>
+                  <CardTitle className="text-2xl flex items-center gap-3">
+                    <Award className="h-6 w-6 text-red-500" />
+                    Grading System
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-gray-300 leading-relaxed">
+                    Our grading system follows the official Krav Maga belt progression, 
+                    ensuring you develop proper technique and understanding at each level.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <h4 className="font-semibold text-red-400">Belt Levels:</h4>
+                      <ul className="space-y-2 text-gray-300">
+                        <li>• White Belt (Beginner)</li>
+                        <li>• Yellow Belt</li>
+                        <li>• Orange Belt</li>
+                        <li>• Green Belt</li>
+                        <li>• Blue Belt</li>
+                        <li>• Brown Belt</li>
+                        <li>• Black Belt Levels 1-5</li>
+                      </ul>
+                    </div>
+                    <div className="space-y-3">
+                      <h4 className="font-semibold text-red-400">Grading Requirements:</h4>
+                      <ul className="space-y-2 text-gray-300">
+                        <li>• Minimum training hours</li>
+                        <li>• Technical proficiency</li>
+                        <li>• Physical fitness standards</li>
+                        <li>• Stress test scenarios</li>
+                        <li>• Knowledge assessment</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="bg-gray-800 rounded-lg p-4 mt-6">
+                    <h4 className="font-semibold text-red-400 mb-2">Grading Schedule</h4>
+                    <p className="text-gray-300">
+                      Grading sessions are held quarterly, allowing students adequate time to prepare and master 
+                      the required techniques for their next belt level.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="faq" className="space-y-6">
+              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                <CardHeader>
+                  <CardTitle className="text-2xl flex items-center gap-3">
+                    <HelpCircle className="h-6 w-6 text-red-500" />
+                    Frequently Asked Questions
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div className="space-y-4">
+                    <div className="border-b border-gray-700 pb-4">
+                      <h4 className="font-semibold text-red-400 mb-2">Is Krav Maga suitable for beginners?</h4>
+                      <p className="text-gray-300">
+                        Absolutely! Krav Maga is designed to be learned quickly by people of all fitness levels. 
+                        Our instructors will guide you through the basics and help you progress at your own pace.
+                      </p>
+                    </div>
+                    <div className="border-b border-gray-700 pb-4">
+                      <h4 className="font-semibold text-red-400 mb-2">How often should I train?</h4>
+                      <p className="text-gray-300">
+                        We recommend 2-3 sessions per week for optimal progress. However, even one session per week 
+                        will help you develop and maintain your self-defense skills.
+                      </p>
+                    </div>
+                    <div className="border-b border-gray-700 pb-4">
+                      <h4 className="font-semibold text-red-400 mb-2">What equipment do I need?</h4>
+                      <p className="text-gray-300">
+                        For your first few classes, just bring comfortable workout clothes and a water bottle. 
+                        As you progress, you'll need hand wraps, gloves, and protective gear, which are available for purchase at the gym.
+                      </p>
+                    </div>
+                    <div className="border-b border-gray-700 pb-4">
+                      <h4 className="font-semibold text-red-400 mb-2">Is there an age limit?</h4>
+                      <p className="text-gray-300">
+                        We welcome students from age 6 and up. Our youth programs are specifically designed for different age groups, 
+                        and our adult classes accommodate all fitness levels.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-red-400 mb-2">How long does it take to get a black belt?</h4>
+                      <p className="text-gray-300">
+                        Progression depends on training frequency, dedication, and natural ability. On average, 
+                        it takes 3-5 years of consistent training to reach black belt level.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </Tabs>
         </div>
       </section>
 
@@ -394,6 +669,9 @@ const Index = () => {
             </Link>
             <a href="#divisions" className="text-gray-400 hover:text-white transition-colors">
               Our Programs
+            </a>
+            <a href="#about" className="text-gray-400 hover:text-white transition-colors">
+              About
             </a>
           </div>
         </div>
