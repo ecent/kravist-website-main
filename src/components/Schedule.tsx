@@ -1,13 +1,9 @@
 
-import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar } from "@/components/ui/calendar";
 import { CalendarIcon, Clock, Users } from "lucide-react";
 
 const Schedule = () => {
-  const [selectedDate, setSelectedDate] = useState<Date | undefined>(new Date());
-
   // Sample schedule data - you can modify this based on your actual schedule
   const weeklySchedule = [
     {
@@ -87,64 +83,42 @@ const Schedule = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          {/* Calendar */}
-          <div className="lg:col-span-1">
-            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-              <CardHeader>
-                <CardTitle className="text-xl flex items-center gap-2">
-                  <CalendarIcon className="h-5 w-5 text-orange-500" />
-                  Select Date
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Calendar
-                  mode="single"
-                  selected={selectedDate}
-                  onSelect={setSelectedDate}
-                  className="rounded-md border border-gray-700"
-                />
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Weekly Schedule */}
-          <div className="lg:col-span-2">
-            <div className="grid gap-4">
-              {weeklySchedule.map((daySchedule) => (
-                <Card key={daySchedule.day} className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-                  <CardHeader className="pb-3">
-                    <CardTitle className="text-xl text-orange-400">{daySchedule.day}</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    {daySchedule.classes.length > 0 ? (
-                      daySchedule.classes.map((classItem, index) => (
-                        <div key={index} className="flex items-center justify-between p-3 bg-gray-700/50 rounded-lg">
-                          <div className="flex items-center space-x-4">
-                            <div className="flex items-center space-x-2 text-gray-300">
-                              <Clock className="h-4 w-4" />
-                              <span className="font-semibold">{classItem.time}</span>
-                            </div>
-                            <Badge className={`${getClassTypeColor(classItem.name)} text-white`}>
-                              {classItem.name}
-                            </Badge>
+        {/* Weekly Schedule */}
+        <div className="max-w-5xl mx-auto">
+          <div className="grid gap-4">
+            {weeklySchedule.map((daySchedule) => (
+              <Card key={daySchedule.day} className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-xl text-orange-400">{daySchedule.day}</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  {daySchedule.classes.length > 0 ? (
+                    daySchedule.classes.map((classItem, index) => (
+                      <div key={index} className="flex items-center justify-between p-3 bg-gray-700/50 rounded-lg">
+                        <div className="flex items-center space-x-4">
+                          <div className="flex items-center space-x-2 text-gray-300">
+                            <Clock className="h-4 w-4" />
+                            <span className="font-semibold">{classItem.time}</span>
                           </div>
-                          <div className="text-right text-sm text-gray-300">
-                            <div className="flex items-center space-x-1">
-                              <Users className="h-3 w-3" />
-                              <span>{classItem.instructor}</span>
-                            </div>
-                            <div className="text-gray-400">{classItem.duration}</div>
-                          </div>
+                          <Badge className={`${getClassTypeColor(classItem.name)} text-white`}>
+                            {classItem.name}
+                          </Badge>
                         </div>
-                      ))
-                    ) : (
-                      <p className="text-gray-400 italic">No classes scheduled</p>
-                    )}
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+                        <div className="text-right text-sm text-gray-300">
+                          <div className="flex items-center space-x-1">
+                            <Users className="h-3 w-3" />
+                            <span>{classItem.instructor}</span>
+                          </div>
+                          <div className="text-gray-400">{classItem.duration}</div>
+                        </div>
+                      </div>
+                    ))
+                  ) : (
+                    <p className="text-gray-400 italic">No classes scheduled</p>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
 
