@@ -1,9 +1,10 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Users, Shield, Target, Building, User, DollarSign, BookOpen, Info, Smartphone, Award, HelpCircle } from "lucide-react";
+import { Users, Shield, Target, Building, User, DollarSign, BookOpen, Info, Smartphone, Award, HelpCircle, Facebook, Instagram } from "lucide-react";
 import Instructors from "@/components/Instructors";
 import Schedule from "@/components/Schedule";
 
@@ -687,6 +688,29 @@ const Index = () => {
         <div className="max-w-7xl mx-auto text-center">
           <div className="text-2xl font-bold text-orange-500 mb-4">KRAV MAGA GYM</div>
           <p className="text-gray-400 mb-6">Building stronger, safer communities one student at a time.</p>
+          
+          {/* Social Media Icons */}
+          <div className="flex justify-center space-x-4 mb-6">
+            <a 
+              href="https://facebook.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 bg-gray-800 rounded-full hover:bg-orange-600 transition-colors"
+              aria-label="Follow us on Facebook"
+            >
+              <Facebook className="h-5 w-5 text-white" />
+            </a>
+            <a 
+              href="https://instagram.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 bg-gray-800 rounded-full hover:bg-orange-600 transition-colors"
+              aria-label="Follow us on Instagram"
+            >
+              <Instagram className="h-5 w-5 text-white" />
+            </a>
+          </div>
+
           <div className="flex justify-center space-x-6">
             <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
               Contact Us
