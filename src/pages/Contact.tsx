@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Users } from "lucide-react";
+import { MapPin, Phone, Users, Facebook, Instagram } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -42,20 +42,20 @@ const Contact = () => {
       <nav className="bg-black/50 backdrop-blur-md border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link to="/" className="text-2xl font-bold text-red-500">KRAV MAGA GYM</Link>
+            <Link to="/" className="text-2xl font-bold text-orange-500">KRAVIST</Link>
             <div className="hidden md:flex space-x-8">
-              <Link to="/" className="hover:text-red-400 transition-colors">Home</Link>
-              <a href="/#divisions" className="hover:text-red-400 transition-colors">Divisions</a>
-              <span className="text-red-400">Contact</span>
+              <Link to="/" className="hover:text-orange-400 transition-colors">Home</Link>
+              <a href="/#divisions" className="hover:text-orange-400 transition-colors">Divisions</a>
+              <span className="text-orange-400">Contact</span>
             </div>
           </div>
         </div>
       </nav>
 
       {/* Header */}
-      <section className="pt-20 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-red-900">
+      <section className="pt-20 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-orange-900">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-red-400 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent">
             Get In Touch
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -74,13 +74,13 @@ const Contact = () => {
                 <Card className="bg-gray-800 border-gray-700">
                   <CardHeader>
                     <CardTitle className="flex items-center space-x-3 text-white">
-                      <MapPin className="h-6 w-6 text-red-500" />
+                      <MapPin className="h-6 w-6 text-orange-500" />
                       <span>Location</span>
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="text-gray-300">
                     <p className="text-lg">123 Combat Street</p>
-                    <p className="text-lg">Defense District, DD 12345</p>
+                    <p className="text-lg">Defence District, DD 12345</p>
                     <p className="mt-3 text-sm text-gray-400">
                       Located in the heart of the city with ample parking and easy access to public transportation.
                     </p>
@@ -90,13 +90,13 @@ const Contact = () => {
                 <Card className="bg-gray-800 border-gray-700">
                   <CardHeader>
                     <CardTitle className="flex items-center space-x-3 text-white">
-                      <Phone className="h-6 w-6 text-red-500" />
+                      <Phone className="h-6 w-6 text-orange-500" />
                       <span>Contact Info</span>
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="text-gray-300 space-y-2">
                     <p><strong>Phone:</strong> (555) 123-KRAV</p>
-                    <p><strong>Email:</strong> info@kravmagagym.com</p>
+                    <p><strong>Email:</strong> info@kravist.com</p>
                     <p><strong>Hours:</strong></p>
                     <div className="ml-4 text-sm">
                       <p>Mon-Fri: 6:00 AM - 10:00 PM</p>
@@ -109,13 +109,13 @@ const Contact = () => {
                 <Card className="bg-gray-800 border-gray-700">
                   <CardHeader>
                     <CardTitle className="flex items-center space-x-3 text-white">
-                      <Users className="h-6 w-6 text-red-500" />
+                      <Users className="h-6 w-6 text-orange-500" />
                       <span>Trial Classes</span>
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="text-gray-300">
                     <p>First class is always free! Come experience our training environment and meet our instructors.</p>
-                    <Button className="mt-4 bg-red-600 hover:bg-red-700">
+                    <Button className="mt-4 bg-orange-600 hover:bg-orange-700">
                       Schedule Free Trial
                     </Button>
                   </CardContent>
@@ -144,7 +144,7 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleInputChange}
                         required
-                        className="bg-gray-700 border-gray-600 text-white focus:border-red-500"
+                        className="bg-gray-700 border-gray-600 text-white focus:border-orange-500"
                         placeholder="Your full name"
                       />
                     </div>
@@ -157,7 +157,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="bg-gray-700 border-gray-600 text-white focus:border-red-500"
+                        className="bg-gray-700 border-gray-600 text-white focus:border-orange-500"
                         placeholder="your.email@example.com"
                       />
                     </div>
@@ -172,7 +172,7 @@ const Contact = () => {
                         type="tel"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="bg-gray-700 border-gray-600 text-white focus:border-red-500"
+                        className="bg-gray-700 border-gray-600 text-white focus:border-orange-500"
                         placeholder="(555) 123-4567"
                       />
                     </div>
@@ -183,7 +183,7 @@ const Contact = () => {
                         name="program"
                         value={formData.program}
                         onChange={handleInputChange}
-                        className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:border-red-500 focus:outline-none"
+                        className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:border-orange-500 focus:outline-none"
                       >
                         <option value="">Select a program</option>
                         <option value="youth">Youth Division (6-17)</option>
@@ -204,12 +204,12 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       rows={5}
-                      className="bg-gray-700 border-gray-600 text-white focus:border-red-500"
+                      className="bg-gray-700 border-gray-600 text-white focus:border-orange-500"
                       placeholder="Tell us about your goals, experience level, or any questions you have..."
                     />
                   </div>
 
-                  <Button type="submit" className="w-full bg-red-600 hover:bg-red-700 text-lg py-3">
+                  <Button type="submit" className="w-full bg-orange-600 hover:bg-orange-700 text-lg py-3">
                     Send Message
                   </Button>
                 </form>
@@ -227,7 +227,7 @@ const Contact = () => {
             <div className="text-center text-gray-400">
               <MapPin className="h-16 w-16 mx-auto mb-4" />
               <p className="text-xl">Interactive Map Coming Soon</p>
-              <p>123 Combat Street, Defense District, DD 12345</p>
+              <p>123 Combat Street, Defence District, DD 12345</p>
             </div>
           </div>
         </div>
@@ -236,14 +236,34 @@ const Contact = () => {
       {/* Footer */}
       <footer className="bg-black py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="text-2xl font-bold text-red-500 mb-4">KRAV MAGA GYM</div>
+          <div className="text-2xl font-bold text-orange-500 mb-4">KRAVIST</div>
           <p className="text-gray-400 mb-6">Building stronger, safer communities one student at a time.</p>
+          
+          <div className="flex justify-center space-x-4 mb-6">
+            <a 
+              href="https://facebook.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 bg-gray-800 rounded-full hover:bg-orange-600 transition-colors"
+              aria-label="Follow us on Facebook"
+            >
+              <Facebook className="h-5 w-5 text-white" />
+            </a>
+            <a 
+              href="https://instagram.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 bg-gray-800 rounded-full hover:bg-orange-600 transition-colors"
+              aria-label="Follow us on Instagram"
+            </a>
+          </div>
+
           <div className="flex justify-center space-x-6">
             <Link to="/" className="text-gray-400 hover:text-white transition-colors">
               Home
             </Link>
             <a href="/#divisions" className="text-gray-400 hover:text-white transition-colors">
-              Our Programs
+              Our Programmes
             </a>
           </div>
         </div>

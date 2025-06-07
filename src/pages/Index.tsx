@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -16,7 +15,7 @@ const Index = () => {
       id: "youth",
       title: "Youth Division",
       subtitle: "Ages 6-17",
-      description: "Our Youth programs provide a safe and fun environment where children learn to deter, prevent, and address challenges—from schoolyard bullying to unfamiliar situations. Through age-appropriate games and exercises, we instil self-confidence and practical self defence skills.",
+      description: "Our Youth programs provide a safe and fun environment where children learn to deter, prevent, and address challenges—from schoolyard bullying to unfamiliar situations. Through age-appropriate games and exercises, we instill self-confidence and practical self defence skills.",
       icon: Shield,
       features: ["Age-appropriate techniques", "Character development", "Anti-bullying training", "Confidence building"]
     },
@@ -54,47 +53,6 @@ const Index = () => {
     }
   ];
 
-  const pricingData = {
-    youth: {
-      termProgram: [
-        { name: "Kids (6-10)", price: "$450" },
-        { name: "Juniors (10-13)", price: "$495" },
-        { name: "Teens (14-17)", price: "$510" }
-      ],
-      generalClasses: [
-        { name: "All Ages", price: "$25" }
-      ]
-    },
-    womens: {
-      termProgram: [
-        { name: "Term Program", price: "$250" }
-      ]
-    },
-    adults: {
-      sessions: [
-        { name: "1 Session", price: "$37.50" },
-        { name: "5 Sessions", price: "$160" },
-        { name: "10 Sessions", price: "$285" },
-        { name: "25 Sessions", price: "$660" },
-        { name: "50 Sessions", price: "$950" }
-      ],
-      unlimited: [
-        { name: "1 Month Unlimited", price: "$275" },
-        { name: "3 Months Unlimited", price: "$760" }
-      ]
-    },
-    corporate: {
-      custom: [
-        { name: "Corporate Programs", price: "Enquire for rates" }
-      ]
-    },
-    private: {
-      custom: [
-        { name: "Private Training", price: "Enquire for rates" }
-      ]
-    }
-  };
-
   const activeDivision = divisions.find(d => d.id === activeSection);
 
   return (
@@ -129,14 +87,6 @@ const Index = () => {
           <p className="text-lg md:text-xl mb-8 text-gray-300 max-w-2xl mx-auto">
             Join our community and discover your inner strength.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
-              Start Your Journey
-            </Button>
-            <Button size="lg" variant="outline" className="border-gray-400 text-gray-300 hover:bg-gray-800 text-lg px-8 py-3">
-              Watch Demo
-            </Button>
-          </div>
         </div>
       </section>
 
@@ -144,7 +94,7 @@ const Index = () => {
       <section id="divisions" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Training Divisions</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Divisions</h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
               Choose the programme that fits your goals and lifestyle. Every division receives world-class instruction and personalised attention.
             </p>
@@ -191,9 +141,11 @@ const Index = () => {
                     </div>
                   ))}
                 </div>
-                <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
-                  Learn More
-                </Button>
+                <Link to="/contact">
+                  <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
+                    Contact Us
+                  </Button>
+                </Link>
               </div>
               <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
                 <div className="h-64 bg-gray-700 rounded-lg flex items-center justify-center">
@@ -206,7 +158,18 @@ const Index = () => {
       </section>
 
       <Schedule />
-      <Instructors />
+      
+      <section id="instructors" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Meet Our Instructors</h2>
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              Learn from our certified team in a fun and challenging class setting.
+            </p>
+          </div>
+        </div>
+        <Instructors />
+      </section>
 
       <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -216,7 +179,7 @@ const Index = () => {
                 <BookOpen className="h-8 w-8" />
               </div>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">About Krav Maga</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">About Kravist</h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
               Everything you need to know about our training philosophy, processes, and community.
             </p>
