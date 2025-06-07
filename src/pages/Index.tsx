@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -16,9 +15,9 @@ const Index = () => {
       id: "youth",
       title: "Youth Division",
       subtitle: "Ages 6-17",
-      description: "Build confidence, discipline, and self-defense skills in a structured, fun environment. Our youth program develops physical fitness, mental toughness, and valuable life skills.",
+      description: "Our Youth programs provide a safe and fun environment where children learn to deter, prevent, and address challenges—from schoolyard bullying to unfamiliar situations. Through age-appropriate games and exercises, we instill self-confidence and practical self-defense skills.",
       icon: Shield,
-      features: ["Age-appropriate techniques", "Character development", "Anti-bullying training", "Competition opportunities"]
+      features: ["Age-appropriate techniques", "Character development", "Anti-bullying training", "Confidence building"]
     },
     {
       id: "womens",
@@ -26,7 +25,7 @@ const Index = () => {
       subtitle: "Empowerment Through Training",
       description: "Specialized classes focusing on practical self-defense, fitness, and confidence building in a supportive environment designed specifically for women.",
       icon: Target,
-      features: ["Women-only classes", "Real-world scenarios", "Stress testing", "Supportive community"]
+      features: ["Women-only classes", "Real-world scenarios", "Stress testing"]
     },
     {
       id: "adults",
@@ -103,7 +102,7 @@ const Index = () => {
       <nav className="bg-black/50 backdrop-blur-md fixed w-full z-50 border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="text-2xl font-bold text-orange-500">KRAV MAGA GYM</div>
+            <div className="text-2xl font-bold text-orange-500">KRAVIST</div>
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="hover:text-orange-400 transition-colors">Home</a>
               <a href="#divisions" className="hover:text-orange-400 transition-colors">Divisions</a>
@@ -121,10 +120,13 @@ const Index = () => {
       <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-orange-900">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent">
-            MASTER YOUR DEFENSE
+            EMPOWER YOURSELF WITH REAL-WORLD SELF-DEFENSE
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
-            Learn the world's most effective self-defense system. Build strength, confidence, and life-saving skills at our premier Krav Maga facility.
+            Kravist offers authentic self-defense training for all ages and skill levels. Our programs combine high-intensity workouts with practical techniques, fostering confidence and resilience.
+          </p>
+          <p className="text-lg md:text-xl mb-8 text-gray-300 max-w-2xl mx-auto">
+            Join our community and discover your inner strength.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
@@ -202,13 +204,9 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Schedule Section */}
       <Schedule />
-
-      {/* Instructors Section */}
       <Instructors />
 
-      {/* About Section */}
       <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -481,7 +479,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Pricing Section */}
       <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -490,7 +487,7 @@ const Index = () => {
                 <DollarSign className="h-8 w-8" />
               </div>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Training Investment</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Pricing</h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
               Choose the program that fits your goals and budget. Quality training that delivers real results.
             </p>
@@ -659,7 +656,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Statistics Section */}
       <section className="py-16 bg-black/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -683,13 +679,11 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-black py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="text-2xl font-bold text-orange-500 mb-4">KRAV MAGA GYM</div>
+          <div className="text-2xl font-bold text-orange-500 mb-4">KRAVIST</div>
           <p className="text-gray-400 mb-6">Building stronger, safer communities one student at a time.</p>
           
-          {/* Social Media Icons */}
           <div className="flex justify-center space-x-4 mb-6">
             <a 
               href="https://facebook.com" 
