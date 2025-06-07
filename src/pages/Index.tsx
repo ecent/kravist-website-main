@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -15,7 +16,7 @@ const Index = () => {
       id: "youth",
       title: "Youth Division",
       subtitle: "Ages 6-17",
-      description: "Our Youth programs provide a safe and fun environment where children learn to deter, prevent, and address challenges—from schoolyard bullying to unfamiliar situations. Through age-appropriate games and exercises, we instill self-confidence and practical self-defense skills.",
+      description: "Our Youth programs provide a safe and fun environment where children learn to deter, prevent, and address challenges—from schoolyard bullying to unfamiliar situations. Through age-appropriate games and exercises, we instil self-confidence and practical self defence skills.",
       icon: Shield,
       features: ["Age-appropriate techniques", "Character development", "Anti-bullying training", "Confidence building"]
     },
@@ -23,7 +24,7 @@ const Index = () => {
       id: "womens",
       title: "Women's Division",
       subtitle: "Empowerment Through Training",
-      description: "Specialized classes focusing on practical self-defense, fitness, and confidence building in a supportive environment designed specifically for women.",
+      description: "Specialised classes focusing on practical self defence, fitness, and confidence building in a supportive environment designed specifically for women.",
       icon: Target,
       features: ["Women-only classes", "Real-world scenarios", "Stress testing"]
     },
@@ -31,7 +32,7 @@ const Index = () => {
       id: "adults",
       title: "General Adults",
       subtitle: "All Skill Levels Welcome",
-      description: "Comprehensive Krav Maga training for adults of all fitness levels. Learn practical self-defense while getting an incredible workout.",
+      description: "Comprehensive Krav Maga training for adults of all fitness levels. Learn practical self defence while getting an incredible workout.",
       icon: Users,
       features: ["Beginner to advanced", "Full-body conditioning", "Stress drills", "Progressive curriculum"]
     },
@@ -39,17 +40,17 @@ const Index = () => {
       id: "corporate",
       title: "Corporate Training",
       subtitle: "Team Building & Safety",
-      description: "Custom programs for businesses focusing on employee safety, team building, and stress management through Krav Maga principles.",
+      description: "Custom programmes for businesses focusing on employee safety, team building, and stress management through Krav Maga principles.",
       icon: Building,
       features: ["On-site training", "Team building", "Workplace safety", "Stress management"]
     },
     {
       id: "private",
       title: "Private Training",
-      subtitle: "Personalized Instruction",
+      subtitle: "Personalised Instruction",
       description: "One-on-one or small group sessions tailored to your specific goals, schedule, and skill level for accelerated learning.",
       icon: User,
-      features: ["Customized curriculum", "Flexible scheduling", "Accelerated learning", "Personal attention"]
+      features: ["Customised curriculum", "Flexible scheduling", "Accelerated learning", "Personal attention"]
     }
   ];
 
@@ -120,10 +121,10 @@ const Index = () => {
       <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-orange-900">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent">
-            EMPOWER YOURSELF WITH REAL-WORLD SELF-DEFENSE
+            EMPOWER YOURSELF WITH REAL-WORLD SELF DEFENCE
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
-            Kravist offers authentic self-defense training for all ages and skill levels. Our programs combine high-intensity workouts with practical techniques, fostering confidence and resilience.
+            Kravist offers authentic self defence training for all ages and skill levels. Our programmes combine high-intensity workouts with practical techniques, fostering confidence and resilience.
           </p>
           <p className="text-lg md:text-xl mb-8 text-gray-300 max-w-2xl mx-auto">
             Join our community and discover your inner strength.
@@ -145,7 +146,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Training Divisions</h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Choose the program that fits your goals and lifestyle. Every division receives world-class instruction and personalized attention.
+              Choose the programme that fits your goals and lifestyle. Every division receives world-class instruction and personalised attention.
             </p>
           </div>
 
@@ -255,20 +256,20 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-300 leading-relaxed">
-                    Krav Maga is a military self-defense and fighting system developed for the Israel Defense Forces. 
-                    It combines techniques from boxing, wrestling, judo, aikido, and karate, emphasizing real-world situations and extremely efficient brutal counter-attacks.
+                    Krav Maga is a military self defence and fighting system developed for the Israel Defence Forces. 
+                    It combines techniques from boxing, wrestling, judo, aikido, and karate, emphasising real-world situations and extremely efficient brutal counter-attacks.
                   </p>
                   <p className="text-gray-300 leading-relaxed">
-                    Unlike traditional martial arts, Krav Maga focuses on practical self-defense techniques that can be learned quickly and applied effectively under stress. 
-                    The system teaches students to be aware of their surroundings, avoid confrontation when possible, and neutralize threats efficiently when escape is not an option.
+                    Unlike traditional martial arts, Krav Maga focuses on practical self defence techniques that can be learned quickly and applied effectively under stress. 
+                    The system teaches students to be aware of their surroundings, avoid confrontation when possible, and neutralise threats efficiently when escape is not an option.
                   </p>
                   <div className="grid md:grid-cols-2 gap-4 mt-6">
                     <div className="space-y-2">
                       <h4 className="font-semibold text-orange-400">Core Principles:</h4>
                       <ul className="space-y-1 text-gray-300">
-                        <li>• Neutralize the threat</li>
+                        <li>• Neutralise the threat</li>
                         <li>• Avoid injury</li>
-                        <li>• Go from defense to offense</li>
+                        <li>• Go from defence to offence</li>
                         <li>• Use aggression appropriately</li>
                       </ul>
                     </div>
@@ -278,7 +279,7 @@ const Index = () => {
                         <li>• Real-world scenarios</li>
                         <li>• Stress conditioning</li>
                         <li>• Multiple attacker situations</li>
-                        <li>• Weapon defense</li>
+                        <li>• Weapon defence</li>
                       </ul>
                     </div>
                   </div>
@@ -304,7 +305,7 @@ const Index = () => {
                       <h4 className="font-semibold text-orange-400">What to Expect:</h4>
                       <ul className="space-y-2 text-gray-300">
                         <li>• Beginner-friendly introduction</li>
-                        <li>• Basic self-defense techniques</li>
+                        <li>• Basic self defence techniques</li>
                         <li>• Fitness conditioning</li>
                         <li>• Supportive learning environment</li>
                         <li>• No experience necessary</li>
@@ -447,7 +448,7 @@ const Index = () => {
                       <h4 className="font-semibold text-orange-400 mb-2">How often should I train?</h4>
                       <p className="text-gray-300">
                         We recommend 2-3 sessions per week for optimal progress. However, even one session per week 
-                        will help you develop and maintain your self-defense skills.
+                        will help you develop and maintain your self defence skills.
                       </p>
                     </div>
                     <div className="border-b border-gray-700 pb-4">
@@ -460,7 +461,7 @@ const Index = () => {
                     <div className="border-b border-gray-700 pb-4">
                       <h4 className="font-semibold text-orange-400 mb-2">Is there an age limit?</h4>
                       <p className="text-gray-300">
-                        We welcome students from age 6 and up. Our youth programs are specifically designed for different age groups, 
+                        We welcome students from age 6 and up. Our youth programmes are specifically designed for different age groups, 
                         and our adult classes accommodate all fitness levels.
                       </p>
                     </div>
@@ -489,7 +490,7 @@ const Index = () => {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Pricing</h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Choose the program that fits your goals and budget. Quality training that delivers real results.
+              Choose the programme that fits your goals. Quality training that delivers real results.
             </p>
           </div>
 
@@ -505,7 +506,7 @@ const Index = () => {
               </CardHeader>
               <CardContent className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-orange-400 mb-3">Term Program</h4>
+                  <h4 className="font-semibold text-orange-400 mb-3">Term Programme</h4>
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <span className="text-gray-300">Kids (6-10)</span>
@@ -522,10 +523,14 @@ const Index = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-orange-400 mb-3">General Classes</h4>
+                  <h4 className="font-semibold text-orange-400 mb-3">Trial & General Classes</h4>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span className="text-gray-300">All Ages</span>
+                      <span className="text-gray-300">Youth Trials</span>
+                      <span className="font-semibold text-green-400">FREE</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-300">General Classes</span>
                       <span className="font-semibold">$25</span>
                     </div>
                   </div>
@@ -546,7 +551,7 @@ const Index = () => {
                 <div>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span className="text-gray-300">Term Program</span>
+                      <span className="text-gray-300">Term Programme</span>
                       <span className="font-semibold text-2xl">$250</span>
                     </div>
                   </div>
@@ -568,8 +573,8 @@ const Index = () => {
                   <h4 className="font-semibold text-orange-400 mb-3">Session Packages</h4>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span className="text-gray-300">1 Session</span>
-                      <span className="font-semibold">$37.50</span>
+                      <span className="text-gray-300">Trial</span>
+                      <span className="font-semibold">$20</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-300">5 Sessions</span>
@@ -618,7 +623,7 @@ const Index = () => {
                 <div>
                   <div className="space-y-2">
                     <div className="text-center">
-                      <span className="text-gray-300">Corporate Programs</span>
+                      <span className="text-gray-300">Corporate Programmes</span>
                       <div className="font-semibold text-orange-400 text-lg mt-2">Enquire for rates</div>
                     </div>
                   </div>
@@ -636,7 +641,7 @@ const Index = () => {
                   <User className="h-8 w-8 text-orange-500" />
                 </div>
                 <CardTitle className="text-2xl">Private Training</CardTitle>
-                <CardDescription className="text-gray-400">Personalized Instruction</CardDescription>
+                <CardDescription className="text-gray-400">Personalised Instruction</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div>
@@ -660,11 +665,11 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-orange-500 mb-2">500+</div>
+              <div className="text-4xl font-bold text-orange-500 mb-2">200+</div>
               <div className="text-gray-400">Active Members</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-orange-500 mb-2">10+</div>
+              <div className="text-4xl font-bold text-orange-500 mb-2">20+</div>
               <div className="text-gray-400">Years Experience</div>
             </div>
             <div>
@@ -710,7 +715,7 @@ const Index = () => {
               Contact Us
             </Link>
             <a href="#divisions" className="text-gray-400 hover:text-white transition-colors">
-              Our Programs
+              Our Programmes
             </a>
             <a href="#about" className="text-gray-400 hover:text-white transition-colors">
               About
