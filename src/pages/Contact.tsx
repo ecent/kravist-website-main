@@ -59,7 +59,7 @@ const Contact = () => {
             Get In Touch
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Ready to start your Krav Maga journey? Contact us to learn more about our programs or schedule a visit.
+            Ready to start your self defence journey? Contact us to learn more about our programs or schedule a visit.
           </p>
         </div>
       </section>
@@ -255,6 +255,8 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="p-3 bg-gray-800 rounded-full hover:bg-orange-600 transition-colors"
               aria-label="Follow us on Instagram"
+            >
+              <Instagram className="h-5 w-5 text-white" />
             </a>
           </div>
 
