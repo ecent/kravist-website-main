@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Users, Facebook, Instagram } from "lucide-react";
+import { MapPin, Phone, Facebook, Instagram } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -46,6 +46,10 @@ const Contact = () => {
             <div className="hidden md:flex space-x-8">
               <Link to="/" className="hover:text-orange-400 transition-colors">Home</Link>
               <a href="/#divisions" className="hover:text-orange-400 transition-colors">Divisions</a>
+              <a href="/#schedule" className="hover:text-orange-400 transition-colors">Schedule</a>
+              <a href="/#instructors" className="hover:text-orange-400 transition-colors">Instructors</a>
+              <a href="/#about" className="hover:text-orange-400 transition-colors">About</a>
+              <a href="/#pricing" className="hover:text-orange-400 transition-colors">Pricing</a>
               <span className="text-orange-400">Contact</span>
             </div>
           </div>
@@ -79,10 +83,11 @@ const Contact = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="text-gray-300">
-                    <p className="text-lg">123 Combat Street</p>
-                    <p className="text-lg">Defence District, DD 12345</p>
+                    <p className="text-lg">11 Irving Place</p>
+                    <p className="text-lg">#02-04, Tai Seng Point</p>
+                    <p className="text-lg">Singapore 369551</p>
                     <p className="mt-3 text-sm text-gray-400">
-                      Located in the heart of the city with ample parking and easy access to public transportation.
+                      Closest MRT: Tai Seng
                     </p>
                   </CardContent>
                 </Card>
@@ -95,29 +100,13 @@ const Contact = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="text-gray-300 space-y-2">
-                    <p><strong>Phone:</strong> (555) 123-KRAV</p>
-                    <p><strong>Email:</strong> info@kravist.com</p>
+                    <p><strong>Email:</strong> info@kravist.sg</p>
                     <p><strong>Hours:</strong></p>
                     <div className="ml-4 text-sm">
                       <p>Mon-Fri: 6:00 AM - 10:00 PM</p>
                       <p>Saturday: 8:00 AM - 8:00 PM</p>
                       <p>Sunday: 10:00 AM - 6:00 PM</p>
                     </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-gray-800 border-gray-700">
-                  <CardHeader>
-                    <CardTitle className="flex items-center space-x-3 text-white">
-                      <Users className="h-6 w-6 text-orange-500" />
-                      <span>Trial Classes</span>
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="text-gray-300">
-                    <p>First class is always free! Come experience our training environment and meet our instructors.</p>
-                    <Button className="mt-4 bg-orange-600 hover:bg-orange-700">
-                      Schedule Free Trial
-                    </Button>
                   </CardContent>
                 </Card>
               </div>
@@ -173,7 +162,7 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={handleInputChange}
                         className="bg-gray-700 border-gray-600 text-white focus:border-orange-500"
-                        placeholder="(555) 123-4567"
+                        placeholder="(65) 1234 5678"
                       />
                     </div>
                     <div>
@@ -227,7 +216,7 @@ const Contact = () => {
             <div className="text-center text-gray-400">
               <MapPin className="h-16 w-16 mx-auto mb-4" />
               <p className="text-xl">Interactive Map Coming Soon</p>
-              <p>123 Combat Street, Defence District, DD 12345</p>
+              <p>11 Irving Place, #02-04, Tai Seng Point, Singapore 369551</p>
             </div>
           </div>
         </div>
@@ -241,7 +230,7 @@ const Contact = () => {
           
           <div className="flex justify-center space-x-4 mb-6">
             <a 
-              href="https://facebook.com" 
+              href="https://facebook.com/kravist" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 bg-gray-800 rounded-full hover:bg-orange-600 transition-colors"
@@ -250,7 +239,7 @@ const Contact = () => {
               <Facebook className="h-5 w-5 text-white" />
             </a>
             <a 
-              href="https://instagram.com" 
+              href="https://instagram.com/kravist" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 bg-gray-800 rounded-full hover:bg-orange-600 transition-colors"
