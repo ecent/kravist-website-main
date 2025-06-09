@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CalendarIcon, Clock } from "lucide-react";
@@ -73,8 +72,7 @@ const Schedule = () => {
   const getClassTypeColor = (className: string) => {
     if (className.includes("Kids") || className.includes("Juniors") || className.includes("Teens")) return "bg-blue-600";
     if (className.includes("Women")) return "bg-pink-600";
-    if (className.includes("Beginner")) return "bg-green-600";
-    return "bg-orange-600";
+    return "bg-slate-600";
   };
 
   return (
@@ -140,12 +138,8 @@ const Schedule = () => {
               <span className="text-gray-300">Women's Division</span>
             </div>
             <div className="flex items-center space-x-2">
-              <div className="w-4 h-4 bg-green-600 rounded"></div>
-              <span className="text-gray-300">Beginner Classes</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-4 h-4 bg-orange-600 rounded"></div>
-              <span className="text-gray-300">Advanced Classes</span>
+              <div className="w-4 h-4 bg-slate-600 rounded"></div>
+              <span className="text-gray-300">Adult Classes</span>
             </div>
           </div>
         </div>
