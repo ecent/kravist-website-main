@@ -5,23 +5,30 @@ const Instructors = () => {
   const instructors = [
     {
       id: 1,
-      name: "Sarah Chen",
+      name: "Edwin Peng",
       title: "Head Instructor & Founder",
-      bio: "With over 15 years of Krav Maga experience and military training background, Sarah founded our gym to bring authentic self-defense training to the community. She specializes in women's empowerment and youth development programs.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face"
+      bio: "Krav Maga Level Expert 3 with 20+ years of training and teaching experience. Certified to teach Military, VIP & 3rd Party Protection, Women and Youth programmes. Brings extensive experience from Singapore military, special forces and commandos.",
+      image: "/lovable-uploads/71ffb50c-9f16-4066-8039-e8be3ca98a30.png"
     },
     {
       id: 2,
-      name: "Marcus Rodriguez",
-      title: "Senior Instructor",
-      bio: "A former law enforcement officer with 12 years of Krav Maga training, Marcus brings real-world experience to every class. He leads our adult programs and specializes in stress-testing and tactical scenarios.",
-      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=400&h=400&fit=crop&crop=face"
+      name: "Minnie Teo",
+      title: "Head of Women's Division",
+      bio: "Krav Maga Level G2, Animal Flow Level 1 Instructor, SFG 1 Kettlebell Instructor, and Autism Fitness Certified Pro Level 1. Served 10+ years in Singapore Police Force as Defence Tactics Instructor with Special Operations Command.",
+      image: "/lovable-uploads/c2a8d8db-85b1-409c-a2f9-205208b6bfdd.png"
     },
     {
       id: 3,
-      name: "Alex Thompson",
-      title: "Youth Program Director",
-      bio: "With a background in education and martial arts, Alex has dedicated 8 years to developing confident, disciplined young people through Krav Maga. Known for making training fun while maintaining high standards.",
+      name: "Wan Man",
+      title: "Instructor",
+      bio: "Krav Maga Level Expert 1 instructor bringing expertise and dedication to training students in practical self-defence techniques and tactical awareness.",
+      image: "/lovable-uploads/bcb025bf-401d-466a-a68f-0721aac94ba1.png"
+    },
+    {
+      id: 4,
+      name: "Kevin Teng",
+      title: "Instructor",
+      bio: "Krav Maga Level XX instructor committed to providing high-quality training and developing students' confidence and skills in real-world self-defence scenarios.",
       image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=400&h=400&fit=crop&crop=face"
     }
   ];
@@ -36,7 +43,7 @@ const Instructors = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {instructors.map((instructor) => (
             <Card key={instructor.id} className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white overflow-hidden">
               <div className="aspect-square overflow-hidden">
