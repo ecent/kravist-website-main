@@ -4,68 +4,77 @@ import { Badge } from "@/components/ui/badge";
 import { CalendarIcon, Clock } from "lucide-react";
 
 const Schedule = () => {
-  // Sample schedule data - you can modify this based on your actual schedule
   const weeklySchedule = [
     {
       day: "Monday",
       classes: [
-        { time: "6:00 AM", name: "General Adults", duration: "60 min" },
-        { time: "6:00 PM", name: "Youth (10-13)", duration: "45 min" },
-        { time: "7:15 PM", name: "General Adults", duration: "60 min" }
+        { time: "5:30 PM", name: "Beginner's Class", duration: "60 min" },
+        { time: "6:30 PM", name: "Fighting Skills", duration: "60 min" },
+        { time: "7:30 PM", name: "Grab Defence", duration: "60 min" },
+        { time: "8:30 PM", name: "Random Subject", duration: "60 min" }
       ]
     },
     {
       day: "Tuesday",
       classes: [
-        { time: "6:00 PM", name: "Women's Division", duration: "60 min" },
-        { time: "7:15 PM", name: "Youth (14-17)", duration: "45 min" }
+        { time: "5:30 PM", name: "Beginner's Class", duration: "60 min" },
+        { time: "6:30 PM", name: "Weapons Defence", duration: "60 min" },
+        { time: "7:30 PM", name: "Fighting Skills", duration: "60 min" },
+        { time: "8:30 PM", name: "Krav 60", duration: "60 min" }
       ]
     },
     {
       day: "Wednesday",
       classes: [
-        { time: "6:00 AM", name: "General Adults", duration: "60 min" },
-        { time: "6:00 PM", name: "Youth (6-10)", duration: "45 min" },
-        { time: "7:15 PM", name: "General Adults", duration: "60 min" }
+        { time: "6:30 PM", name: "Grab Defence", duration: "60 min" },
+        { time: "7:30 PM", name: "Weapons Defence", duration: "60 min" },
+        { time: "8:30 PM", name: "Random Subject", duration: "60 min" }
       ]
     },
     {
       day: "Thursday",
       classes: [
-        { time: "6:00 PM", name: "Women's Division", duration: "60 min" },
-        { time: "7:15 PM", name: "General Adults", duration: "60 min" }
+        { time: "6:30 PM", name: "Fighting Skills", duration: "60 min" },
+        { time: "7:30 PM", name: "Weapons Defence", duration: "60 min" },
+        { time: "8:30 PM", name: "Krav 60", duration: "60 min" }
       ]
     },
     {
       day: "Friday",
       classes: [
-        { time: "6:00 AM", name: "General Adults", duration: "60 min" },
-        { time: "6:00 PM", name: "Youth (10-13)", duration: "45 min" },
-        { time: "7:15 PM", name: "General Adults", duration: "60 min" }
+        { time: "5:30 PM", name: "Juniors Class (Open / Trials)", duration: "60 min" },
+        { time: "6:30 PM", name: "Kids Class (Open / Trials)", duration: "60 min" }
       ]
     },
     {
       day: "Saturday",
       classes: [
-        { time: "9:00 AM", name: "Youth (6-10)", duration: "45 min" },
-        { time: "10:00 AM", name: "Youth (14-17)", duration: "45 min" },
-        { time: "11:00 AM", name: "General Adults", duration: "60 min" }
+        { time: "10:00 AM", name: "Juniors Term", duration: "60 min" },
+        { time: "11:30 AM", name: "Kids Term", duration: "60 min" },
+        { time: "1:00 PM", name: "Kids Term", duration: "60 min" },
+        { time: "2:30 PM", name: "Juniors Term", duration: "60 min" },
+        { time: "3:30 PM", name: "Teens Term", duration: "60 min" },
+        { time: "4:30 PM", name: "Teens Class (Open / Trials)", duration: "60 min" },
+        { time: "4:45 PM", name: "Women's Term", duration: "90 min" }
       ]
     },
     {
       day: "Sunday",
       classes: [
-        { time: "10:00 AM", name: "Women's Division", duration: "60 min" },
-        { time: "11:15 AM", name: "General Adults", duration: "60 min" }
+        { time: "10:00 AM", name: "Juniors Term", duration: "60 min" },
+        { time: "11:30 AM", name: "Kids Term", duration: "60 min" },
+        { time: "1:00 PM", name: "Kids Term", duration: "60 min" },
+        { time: "2:30 PM", name: "Juniors Term", duration: "60 min" },
+        { time: "3:30 PM", name: "Teens Term", duration: "60 min" }
       ]
     }
   ];
 
   const getClassTypeColor = (className: string) => {
-    if (className.includes("Youth")) return "bg-blue-600";
+    if (className.includes("Kids") || className.includes("Juniors") || className.includes("Teens")) return "bg-blue-600";
     if (className.includes("Women")) return "bg-pink-600";
-    if (className.includes("General")) return "bg-orange-600";
-    return "bg-gray-600";
+    if (className.includes("Beginner")) return "bg-green-600";
+    return "bg-orange-600";
   };
 
   return (
@@ -131,8 +140,12 @@ const Schedule = () => {
               <span className="text-gray-300">Women's Division</span>
             </div>
             <div className="flex items-center space-x-2">
+              <div className="w-4 h-4 bg-green-600 rounded"></div>
+              <span className="text-gray-300">Beginner Classes</span>
+            </div>
+            <div className="flex items-center space-x-2">
               <div className="w-4 h-4 bg-orange-600 rounded"></div>
-              <span className="text-gray-300">General Adults</span>
+              <span className="text-gray-300">Advanced Classes</span>
             </div>
           </div>
         </div>
