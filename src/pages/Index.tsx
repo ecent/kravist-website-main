@@ -494,7 +494,7 @@ const Index = () => {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-300">General Classes</span>
-                      <span className="font-semibold">$25</span>
+                      <span className="font-semibold">$35</span>
                     </div>
                   </div>
                 </div>
