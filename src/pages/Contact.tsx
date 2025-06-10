@@ -101,12 +101,6 @@ const Contact = () => {
                   </CardHeader>
                   <CardContent className="text-gray-300 space-y-2">
                     <p><strong>Email:</strong> info@kravist.sg</p>
-                    <p><strong>Hours:</strong></p>
-                    <div className="ml-4 text-sm">
-                      <p>Mon-Fri: 6:00 AM - 10:00 PM</p>
-                      <p>Saturday: 8:00 AM - 8:00 PM</p>
-                      <p>Sunday: 10:00 AM - 6:00 PM</p>
-                    </div>
                   </CardContent>
                 </Card>
               </div>
@@ -207,20 +201,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
-      {/* Map Placeholder */}
-      <section className="py-16 bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h3 className="text-3xl font-bold text-center mb-8">Find Us</h3>
-          <div className="bg-gray-700 rounded-lg h-96 flex items-center justify-center">
-            <div className="text-center text-gray-400">
-              <MapPin className="h-16 w-16 mx-auto mb-4" />
-              <p className="text-xl">Interactive Map Coming Soon</p>
-              <p>11 Irving Place, #02-04, Tai Seng Point, Singapore 369551</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-black py-12 px-4 sm:px-6 lg:px-8">
