@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -13,7 +12,6 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
     program: "",
     message: ""
   });
@@ -26,7 +24,7 @@ const Contact = () => {
       title: "Message Sent!",
       description: "We'll get back to you within 24 hours.",
     });
-    setFormData({ name: "", email: "", phone: "", program: "", message: "" });
+    setFormData({ name: "", email: "", program: "", message: "" });
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -146,36 +144,22 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="phone" className="text-gray-300">Phone Number</Label>
-                      <Input
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        className="bg-gray-700 border-gray-600 text-white focus:border-orange-500"
-                        placeholder="(65) 1234 5678"
-                      />
-                    </div>
-                    <div>
-                      <Label htmlFor="program" className="text-gray-300">Interested Program</Label>
-                      <select
-                        id="program"
-                        name="program"
-                        value={formData.program}
-                        onChange={handleInputChange}
-                        className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:border-orange-500 focus:outline-none"
-                      >
-                        <option value="">Select a program</option>
-                        <option value="youth">Youth Division (6-17)</option>
-                        <option value="womens">Women's Division</option>
-                        <option value="adults">General Adults</option>
-                        <option value="corporate">Corporate Training</option>
-                        <option value="private">Private Training</option>
-                      </select>
-                    </div>
+                  <div>
+                    <Label htmlFor="program" className="text-gray-300">Interested Program</Label>
+                    <select
+                      id="program"
+                      name="program"
+                      value={formData.program}
+                      onChange={handleInputChange}
+                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:border-orange-500 focus:outline-none"
+                    >
+                      <option value="">Select a program</option>
+                      <option value="youth">Youth Division (6-17)</option>
+                      <option value="womens">Women's Division</option>
+                      <option value="adults">General Adults</option>
+                      <option value="corporate">Corporate Training</option>
+                      <option value="private">Private Training</option>
+                    </select>
                   </div>
 
                   <div>
