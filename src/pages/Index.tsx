@@ -516,7 +516,7 @@ const Index = () => {
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <span className="text-gray-300">Term Programme</span>
-                      <span className="font-semibold text-2xl">$250</span>
+                      <span className="font-semibold">$250</span>
                     </div>
                   </div>
                 </div>

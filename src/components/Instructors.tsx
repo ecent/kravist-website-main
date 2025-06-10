@@ -66,7 +66,8 @@ const Instructors = () => {
                 <img 
                   src={instructor.image} 
                   alt={instructor.name}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                  style={{ objectPosition: 'center 20%' }}
                 />
               </div>
               <CardHeader className="text-center">
