@@ -512,6 +512,7 @@ const Index = () => {
               </CardHeader>
               <CardContent className="space-y-6">
                 <div>
+                  <h4 className="font-semibold text-orange-400 mb-3">Term Programme</h4>
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <span className="text-gray-300">Term Programme</span>
