@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Users, Shield, Target, Building, User, DollarSign, BookOpen, Info, Smartphone, Award, HelpCircle, Facebook, Instagram } from "lucide-react";
 import Instructors from "@/components/Instructors";
 import Schedule from "@/components/Schedule";
@@ -17,7 +18,12 @@ const Index = () => {
       subtitle: "Ages 6-17",
       description: "Our Youth programs provide a safe and fun environment where children learn to deter, prevent, and address challenges—from schoolyard bullying to unfamiliar situations. Through age-appropriate games and exercises, we instill self-confidence and practical self defence skills.",
       icon: Shield,
-      features: ["Age-appropriate techniques", "Character development", "Anti-bullying training", "Confidence building"]
+      features: ["Age-appropriate techniques", "Character development", "Anti-bullying training", "Confidence building"],
+      images: [
+        "/lovable-uploads/df91761c-1c15-4e44-a903-4458693e62aa.png",
+        "/lovable-uploads/e23d215b-10ed-4b27-b287-96e86d88ffc2.png",
+        "/lovable-uploads/1bf5a9dd-cafd-4926-9ced-4184b0c574ac.png"
+      ]
     },
     {
       id: "womens",
@@ -79,7 +85,7 @@ const Index = () => {
       <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-orange-900">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent">
-            EMPOWER YOURSELF WITH REAL-WORLD SELF DEFENCE
+            REAL-WORLD SELF DEFENCE
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
             Kravist offers authentic self defence training for all ages and skill levels. Our programmes combine high-intensity workouts with practical techniques, fostering confidence and resilience.
@@ -148,9 +154,29 @@ const Index = () => {
                 </Link>
               </div>
               <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
-                <div className="h-64 bg-gray-700 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-400 text-lg">Training Image Placeholder</span>
-                </div>
+                {activeDivision.images ? (
+                  <Carousel className="w-full max-w-xs mx-auto">
+                    <CarouselContent>
+                      {activeDivision.images.map((image, index) => (
+                        <CarouselItem key={index}>
+                          <div className="h-64 rounded-lg overflow-hidden">
+                            <img 
+                              src={image} 
+                              alt={`${activeDivision.title} training ${index + 1}`}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
+                  </Carousel>
+                ) : (
+                  <div className="h-64 bg-gray-700 rounded-lg flex items-center justify-center">
+                    <span className="text-gray-400 text-lg">Training Image Placeholder</span>
+                  </div>
+                )}
               </div>
             </div>
           )}
