@@ -193,17 +193,7 @@ const Index = () => {
 
       <Schedule />
       
-      <section id="instructors" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Meet Our Instructors</h2>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Learn from our certified team in a fun and challenging class setting.
-            </p>
-          </div>
-        </div>
-        <Instructors />
-      </section>
+      <Instructors />
 
       <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
