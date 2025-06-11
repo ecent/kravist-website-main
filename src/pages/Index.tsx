@@ -33,7 +33,11 @@ const Index = () => {
       icon: Target,
       features: ["Women-only classes", "Real-world scenarios", "Stress testing"],
       images: [
-        "/lovable-uploads/60750581-3991-42cf-8588-bf262fe64ea9.png"
+        "/lovable-uploads/60750581-3991-42cf-8588-bf262fe64ea9.png",
+        "/lovable-uploads/985f264b-e56a-4cd2-bfd0-a78167ab7004.png",
+        "/lovable-uploads/03c754f0-8024-443d-87f3-6d24eb80123c.png",
+        "/lovable-uploads/2a23a671-1b9c-4b18-a790-10f5beecbef5.png",
+        "/lovable-uploads/35742340-0db0-41f2-bb78-03f915d1fd22.png"
       ]
     },
     {
