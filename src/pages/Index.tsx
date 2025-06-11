@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -46,7 +47,11 @@ const Index = () => {
       subtitle: "All Skill Levels Welcome",
       description: "Comprehensive Krav Maga training for adults of all fitness levels. Learn practical self defence while getting an incredible workout.",
       icon: Users,
-      features: ["Beginner to advanced", "Full-body conditioning", "Stress drills", "Progressive curriculum"]
+      features: ["Beginner to advanced", "Full-body conditioning", "Stress drills", "Progressive curriculum"],
+      images: [
+        "/lovable-uploads/31c7cb7f-41a1-4955-b5ad-4242a419b348.png",
+        "/lovable-uploads/5c0fca09-c6a3-4bf6-aae3-81ec7d7c9417.png"
+      ]
     },
     {
       id: "corporate",
