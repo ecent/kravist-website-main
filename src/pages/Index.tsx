@@ -31,7 +31,10 @@ const Index = () => {
       subtitle: "Empowerment Through Training",
       description: "Specialised classes focusing on practical self defence, fitness, and confidence building in a supportive environment designed specifically for women.",
       icon: Target,
-      features: ["Women-only classes", "Real-world scenarios", "Stress testing"]
+      features: ["Women-only classes", "Real-world scenarios", "Stress testing"],
+      images: [
+        "/lovable-uploads/60750581-3991-42cf-8588-bf262fe64ea9.png"
+      ]
     },
     {
       id: "adults",
@@ -93,6 +96,11 @@ const Index = () => {
           <p className="text-lg md:text-xl mb-8 text-gray-300 max-w-2xl mx-auto">
             Join our community and discover your inner strength.
           </p>
+          <a href="#pricing">
+            <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
+              Get Started
+            </Button>
+          </a>
         </div>
       </section>
 
@@ -718,3 +726,5 @@ const Index = () => {
 };
 
 export default Index;
+
+</edits_to_apply>
