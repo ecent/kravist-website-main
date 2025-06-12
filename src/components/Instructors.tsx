@@ -11,7 +11,8 @@ const Instructors = () => {
         "Krav Maga Level Expert 3",
         "20+ years of training and teaching Krav Maga",
         "Certified to teach Military, VIP & 3rd Party Protection, Women and Youth",
-        "Experience from Singapore military, special forces and commandos"
+        "Experience from Singapore military, special forces and commandos",
+        "CPR Certified"
       ],
       image: "/lovable-uploads/71ffb50c-9f16-4066-8039-e8be3ca98a30.png"
     },
@@ -25,7 +26,8 @@ const Instructors = () => {
         "SFG 1 Kettlebell Instructor",
         "Autism Fitness Certified Pro Level 1",
         "Served 10+ years in Singapore Police Force",
-        "Defence Tactics Instructor with Special Operations Command"
+        "Defence Tactics Instructor with Special Operations Command",
+        "CPR Certified"
       ],
       image: "/lovable-uploads/c2a8d8db-85b1-409c-a2f9-205208b6bfdd.png"
     },
@@ -34,7 +36,8 @@ const Instructors = () => {
       name: "Wan Man",
       title: "Instructor",
       bio: [
-        "Krav Maga Level Expert 1"
+        "Krav Maga Level Expert 1",
+        "CPR Certified"
       ],
       image: "/lovable-uploads/bcb025bf-401d-466a-a68f-0721aac94ba1.png"
     },
@@ -43,7 +46,8 @@ const Instructors = () => {
       name: "Kevin Teng",
       title: "Instructor",
       bio: [
-        "Krav Maga Level XX"
+        "Krav Maga Level XX",
+        "CPR Certified"
       ],
       image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=400&h=400&fit=crop&crop=face"
     }

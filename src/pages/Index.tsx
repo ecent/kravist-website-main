@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Users, Shield, Target, Building, User, DollarSign, BookOpen, Info, Smartphone, Award, HelpCircle, Facebook, Instagram, Heart } from "lucide-react";
+import { Users, Shield, Target, Building, User, DollarSign, BookOpen, Info, Smartphone, Award, HelpCircle, Facebook, Instagram } from "lucide-react";
 import Instructors from "@/components/Instructors";
 import Schedule from "@/components/Schedule";
 
@@ -15,8 +15,8 @@ const Index = () => {
     {
       id: "youth",
       title: "Youth Division",
-      subtitle: "Ages 6-17 • Our Flagship Program",
-      description: "Singapore's most trusted youth martial arts program. Our Youth Division provides a safe, structured environment where children develop confidence, character, and practical self-defence skills. Designed with parents' peace of mind in mind, our age-appropriate curriculum builds resilience and life skills that extend far beyond the training mat.",
+      subtitle: "Ages 6-17",
+      description: "Singapore's premier youth self defense program. Our Youth Division provides a safe, structured environment where children develop confidence, character, and practical self-defence skills. Designed with parents' peace of mind in mind, our age-appropriate curriculum builds resilience and life skills that extend far beyond the training mat.",
       icon: Shield,
       features: ["Parent-approved curriculum", "Character development focus", "Anti-bullying training", "Confidence & discipline building", "CPR-certified instructors", "Safe learning environment"],
       images: [
@@ -96,25 +96,21 @@ const Index = () => {
       <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-orange-900">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent">
-            SINGAPORE'S MOST TRUSTED YOUTH MARTIAL ARTS
+            SINGAPORE'S LEADING YOUTH SELF DEFENSE
           </h1>
           <p className="text-xl md:text-2xl mb-6 text-gray-300 max-w-3xl mx-auto">
-            Building confident, disciplined, and resilient children through authentic Krav Maga training. 
-            Our flagship Youth Division is designed with parents' peace of mind and children's development in mind.
+            Our CPR certified instructors are building confident, disciplined and resilient students through authentic self defense training. 
+            Our flagship Youth division is designed with parents' peace of mind and children's development at its core.
           </p>
           <p className="text-lg md:text-xl mb-8 text-gray-300 max-w-2xl mx-auto">
-            Plus complementary adult programs for the whole family.
+            Adult and Women's Division classes available for the whole family.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="#divisions">
               <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
-                Explore Youth Program
+                Explore Programs
               </Button>
             </a>
-            <div className="flex items-center gap-2 text-gray-300">
-              <Heart className="h-5 w-5 text-red-500" />
-              <span className="text-sm">CPR Certified Instructors</span>
-            </div>
           </div>
         </div>
       </section>
@@ -125,7 +121,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Programs</h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Led by our flagship Youth Division, we offer world-class martial arts training for the whole family. 
+              Led by our Youth Division, we offer world-class self defense training for the whole family. 
               Every program receives expert instruction and personalised attention.
             </p>
           </div>
@@ -142,7 +138,7 @@ const Index = () => {
                     : "bg-gray-800 text-gray-300 hover:bg-gray-700"
                 }`}
               >
-                {division.id === "youth" ? "Youth (Flagship)" : division.title}
+                {division.title}
               </button>
             ))}
           </div>
