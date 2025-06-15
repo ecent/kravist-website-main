@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -498,15 +497,15 @@ const Index = () => {
                   <h4 className="font-semibold text-orange-200 mb-3">Term Program</h4>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span className="text-orange-100">Kids (6-10)</span>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Kids (6-10)</a>
                       <span className="font-semibold">$450</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-orange-100">Juniors (10-13)</span>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Juniors (10-13)</a>
                       <span className="font-semibold">$495</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-orange-100">Teens (14-17)</span>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Teens (14-17)</a>
                       <span className="font-semibold">$510</span>
                     </div>
                   </div>
