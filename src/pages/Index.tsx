@@ -174,7 +174,7 @@ const Index = () => {
                     </Button>
                   </Link>
                   <a href="#pricing">
-                    <Button className="bg-gray-700 hover:bg-gray-600 text-lg px-8 py-3">
+                    <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
                       Start Training
                     </Button>
                   </a>
