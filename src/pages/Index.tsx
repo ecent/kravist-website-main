@@ -16,7 +16,7 @@ const Index = () => {
       id: "youth",
       title: "Youth Division",
       subtitle: "Ages 6-17",
-      description: "Singapore's premier youth self defence program. Our Youth Division provides a safe, structured environment where children develop confidence, character, and practical self-defence skills. Designed with parents' peace of mind in mind, our age-appropriate curriculum builds resilience and life skills that extend far beyond the training mat.",
+      description: "Singapore's premier youth self defence program. Our Youth Division provides a safe, structured environment where children develop confidence, character, and practical self defence skills. Designed with parents' peace of mind in mind, our age-appropriate curriculum builds resilience and life skills that extend far beyond the training mat.",
       icon: Shield,
       features: ["Parent-approved curriculum", "Character development focus", "Anti-bullying training", "Confidence & discipline building", "CPR-certified instructors", "Safe learning environment"],
       images: [
@@ -31,7 +31,7 @@ const Index = () => {
       subtitle: "Empowerment Through Training",
       description: "Specialised classes focusing on practical self defence, fitness, and confidence building in a supportive environment designed specifically for women.",
       icon: Target,
-      features: ["Women-only classes", "Real-world scenarios", "Stress testing"],
+      features: ["Women-only classes", "Real-world scenarios", "Stress testing", "Structured curriculum"],
       images: [
         "/lovable-uploads/60750581-3991-42cf-8588-bf262fe64ea9.png",
         "/lovable-uploads/985f264b-e56a-4cd2-bfd0-a78167ab7004.png",
@@ -46,7 +46,7 @@ const Index = () => {
       subtitle: "All Skill Levels Welcome",
       description: "Comprehensive Krav Maga training for adults of all fitness levels. Learn practical self defence while getting an incredible workout.",
       icon: Users,
-      features: ["Beginner to advanced", "Full-body conditioning", "Stress drills", "Progressive curriculum"],
+      features: ["Beginner to advanced", "Full-body conditioning", "Stress drills", "Challenging and safe training"],
       images: [
         "/lovable-uploads/31c7cb7f-41a1-4955-b5ad-4242a419b348.png",
         "/lovable-uploads/5c0fca09-c6a3-4bf6-aae3-81ec7d7c9417.png"
@@ -98,7 +98,7 @@ const Index = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent">
             SINGAPORE'S PREMIER YOUTH AND ADULTS SELF DEFENCE STUDIO
           </h1>
-          <p className="text-xl md:text-2xl mb-6 text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl mb-6 text-gray-300 max-w-3xl mx-auto">
             Our CPR certified instructors are building confident, disciplined and resilient students through authentic self defence training. 
             Our flagship Youth division is designed with parents' peace of mind and children's development at its core.
           </p>
@@ -159,7 +159,7 @@ const Index = () => {
                 <p className="text-gray-300 text-lg leading-relaxed">
                   {activeDivision.description}
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                   {activeDivision.features.map((feature, index) => (
                     <div key={index} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
@@ -217,7 +217,7 @@ const Index = () => {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">About Kravist</h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Singapore's premier youth-focused self defence academy, building character and confidence in children while serving the whole family.
+              Singapore's premier youth-focused self defence studio, building character and confidence in children while serving the whole family.
             </p>
           </div>
 
@@ -256,11 +256,11 @@ const Index = () => {
                 <CardContent className="space-y-4">
                   <p className="text-gray-300 leading-relaxed">
                     Krav Maga is a self defence and fighting system developed for practical, real-world applications. 
-                    At Kravist, we've adapted this proven system specifically for youth development, emphasizing character building, 
+                    At Kravist alongside our adult and corporate programs, we've adapted this proven system for youth development, emphasizing character building, 
                     confidence, and practical safety skills in age-appropriate ways.
                   </p>
                   <p className="text-gray-300 leading-relaxed">
-                    Unlike traditional martial arts, our youth-focused Krav Maga program teaches children to be aware of their surroundings, 
+                    Our youth-focused Krav Maga program teaches children to be aware of their surroundings, 
                     avoid confrontation when possible, and build the confidence to handle challenging situations. 
                     Our approach prioritizes mental resilience and character development alongside physical techniques.
                   </p>
@@ -323,13 +323,6 @@ const Index = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="bg-orange-900/30 border border-orange-600/50 rounded-lg p-4 mt-6">
-                    <h4 className="font-semibold text-orange-400 mb-2">Free Trial Class</h4>
-                    <p className="text-gray-300">
-                      We offer a complimentary first class for new families. This gives both you and your child the opportunity to 
-                      experience our teaching style and meet our community before making a commitment.
-                    </p>
-                  </div>
                 </CardContent>
               </Card>
             </TabsContent>
@@ -344,36 +337,20 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-300 leading-relaxed">
-                    Stay connected with our gym community through our dedicated member app. 
-                    Manage your training schedule, track progress, and stay up-to-date with gym news.
+                    Stay connected to the gym and manage your training schedule through our dedicated members app.
                   </p>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="space-y-3">
-                      <h4 className="font-semibold text-orange-400">App Features:</h4>
-                      <ul className="space-y-2 text-gray-300">
-                        <li>• Class scheduling and booking</li>
-                        <li>• Training progress tracking</li>
-                        <li>• Technique video library</li>
-                        <li>• Community messaging</li>
-                        <li>• Event notifications</li>
-                      </ul>
-                    </div>
-                    <div className="space-y-3">
-                      <h4 className="font-semibold text-orange-400">Benefits:</h4>
-                      <ul className="space-y-2 text-gray-300">
-                        <li>• Never miss a class</li>
-                        <li>• Track your belt progression</li>
-                        <li>• Access training videos anytime</li>
-                        <li>• Connect with training partners</li>
-                        <li>• Receive gym updates instantly</li>
-                      </ul>
-                    </div>
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-orange-400">App Features:</h4>
+                    <ul className="space-y-2 text-gray-300">
+                      <li>• Class scheduling and booking</li>
+                      <li>• Manage your packages and plans</li>
+                    </ul>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4 mt-6">
                     <Button className="bg-orange-600 hover:bg-orange-700">
                       Download for iOS
                     </Button>
-                    <Button variant="outline" className="border-gray-400 text-gray-300 hover:bg-gray-800">
+                    <Button className="bg-orange-600 hover:bg-orange-700">
                       Download for Android
                     </Button>
                   </div>
@@ -492,7 +469,7 @@ const Index = () => {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Pricing</h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Invest in your child's future with our flagship Youth Program, or explore our complementary family offerings.
+              Different pricing for different programs and training frequencies. Find the plan that works best for you.
             </p>
           </div>
 
