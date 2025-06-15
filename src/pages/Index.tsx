@@ -61,7 +61,10 @@ const Index = () => {
       subtitle: "Team Building & Safety",
       description: "Custom programs for businesses focusing on employee safety, team building, and stress management through Krav Maga principles.",
       icon: Building,
-      features: ["On-site training", "Team building", "Workplace safety", "Stress management"]
+      features: ["On-site training", "Team building", "Workplace safety", "Stress management"],
+      images: [
+        "/lovable-uploads/65b46f6e-9532-42fe-a30a-8642e6892304.png"
+      ]
     },
     {
       id: "private",
