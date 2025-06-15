@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -167,11 +168,18 @@ const Index = () => {
                     </div>
                   ))}
                 </div>
-                <Link to="/contact">
-                  <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
-                    Contact Us
-                  </Button>
-                </Link>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link to="/contact">
+                    <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
+                      Contact Us
+                    </Button>
+                  </Link>
+                  <a href="#pricing">
+                    <Button className="bg-gray-700 hover:bg-gray-600 text-lg px-8 py-3">
+                      Start Training
+                    </Button>
+                  </a>
+                </div>
               </div>
               <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
                 {activeDivision.images ? (
@@ -498,15 +506,15 @@ const Index = () => {
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Kids (6-10)</a>
-                      <span className="font-semibold">$450</span>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$450</a>
                     </div>
                     <div className="flex justify-between">
                       <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Juniors (10-13)</a>
-                      <span className="font-semibold">$495</span>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$495</a>
                     </div>
                     <div className="flex justify-between">
                       <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Teens (14-17)</a>
-                      <span className="font-semibold">$510</span>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$510</a>
                     </div>
                   </div>
                 </div>
@@ -553,8 +561,8 @@ const Index = () => {
                   <h4 className="font-semibold text-orange-400 mb-3">Term Program</h4>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span className="text-gray-300">Term Program</span>
-                      <span className="font-semibold">$250</span>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">Term Program</a>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$250</a>
                     </div>
                   </div>
                 </div>
@@ -576,23 +584,23 @@ const Index = () => {
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <a href="https://kravist.pushpress.com/landing/plans/plan_f8520cf13fd6f3/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">Trial</a>
-                      <span className="font-semibold">$20</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_f8520cf13fd6f3/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$20</a>
                     </div>
                     <div className="flex justify-between">
                       <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">5 Sessions</a>
-                      <span className="font-semibold">$160</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$160</a>
                     </div>
                     <div className="flex justify-between">
                       <a href="https://kravist.pushpress.com/landing/plans/plan_a6e2c16911adf0/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">10 Sessions</a>
-                      <span className="font-semibold">$285</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_a6e2c16911adf0/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$285</a>
                     </div>
                     <div className="flex justify-between">
                       <a href="https://kravist.pushpress.com/landing/plans/plan_9506d14411bb3b/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">25 Sessions</a>
-                      <span className="font-semibold">$660</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_9506d14411bb3b/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$660</a>
                     </div>
                     <div className="flex justify-between">
                       <a href="https://kravist.pushpress.com/landing/plans/plan_7104c09d5ea5f2/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">50 Sessions</a>
-                      <span className="font-semibold">$950</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_7104c09d5ea5f2/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$950</a>
                     </div>
                   </div>
                 </div>
@@ -601,11 +609,11 @@ const Index = () => {
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <a href="https://kravist.pushpress.com/landing/plans/plan_01f914d06a3d3f/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">1 Month Unlimited</a>
-                      <span className="font-semibold">$275</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_01f914d06a3d3f/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$275</a>
                     </div>
                     <div className="flex justify-between">
                       <a href="https://kravist.pushpress.com/landing/plans/plan_a685b2cefce871/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">3 Months Unlimited</a>
-                      <span className="font-semibold">$760</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_a685b2cefce871/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$760</a>
                     </div>
                   </div>
                 </div>
