@@ -511,14 +511,27 @@ const Index = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-orange-200 mb-3">Trial & General Classes</h4>
+                  <h4 className="font-semibold text-orange-200 mb-3">Trials</h4>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span className="text-orange-100">Youth Trials</span>
+                      <span className="text-orange-100">Kids (6-10)</span>
                       <span className="font-semibold text-green-400">FREE</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-orange-100">General Classes</span>
+                      <span className="text-orange-100">Juniors (10-13)</span>
+                      <span className="font-semibold text-green-400">FREE</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-orange-100">Teens (14-17)</span>
+                      <span className="font-semibold text-green-400">FREE</span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-orange-200 mb-3">General Classes</h4>
+                  <div className="space-y-2">
+                    <div className="flex justify-between">
+                      <span className="text-orange-100">All Ages</span>
                       <span className="font-semibold">$35</span>
                     </div>
                   </div>
@@ -703,9 +716,6 @@ const Index = () => {
             <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
               Contact Us
             </Link>
-            <a href="#divisions" className="text-gray-400 hover:text-white transition-colors">
-              Youth Program
-            </a>
             <a href="#about" className="text-gray-400 hover:text-white transition-colors">
               About
             </a>
