@@ -90,11 +90,11 @@ const Index = () => {
             <div className="text-2xl font-bold text-orange-500">KRAVIST</div>
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="hover:text-orange-400 transition-colors">Home</a>
-              <a href="#divisions" className="hover:text-orange-400 transition-colors">Youth Program</a>
+              <a href="#divisions" className="hover:text-orange-400 transition-colors">Programs</a>
+              <a href="#pricing" className="hover:text-orange-400 transition-colors">Pricing</a>
               <a href="#schedule" className="hover:text-orange-400 transition-colors">Schedule</a>
               <a href="#instructors" className="hover:text-orange-400 transition-colors">Instructors</a>
               <a href="#about" className="hover:text-orange-400 transition-colors">About</a>
-              <a href="#pricing" className="hover:text-orange-400 transition-colors">Pricing</a>
               <Link to="/contact" className="hover:text-orange-400 transition-colors">Contact</Link>
             </div>
           </div>
