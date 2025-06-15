@@ -20,6 +20,9 @@ const Index = () => {
       icon: Shield,
       features: ["Parent-approved curriculum", "Character development focus", "Anti-bullying training", "Confidence & discipline building", "CPR-certified instructors", "Safe learning environment"],
       images: [
+        "/lovable-uploads/31bfa747-f390-49e6-9f28-92ccc22bfe5e.png",
+        "/lovable-uploads/27ddcbcf-fd29-47c9-a64b-50be168c4e54.png",
+        "/lovable-uploads/9336e19d-8609-4a2a-8b7c-ce67f6c719b6.png",
         "/lovable-uploads/df91761c-1c15-4e44-a903-4458693e62aa.png",
         "/lovable-uploads/e23d215b-10ed-4b27-b287-96e86d88ffc2.png",
         "/lovable-uploads/1bf5a9dd-cafd-4926-9ced-4184b0c574ac.png"
