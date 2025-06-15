@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -522,16 +521,16 @@ const Index = () => {
                   <h4 className="font-semibold text-orange-200 mb-3">Trials</h4>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span className="text-orange-100">Kids (6-10)</span>
-                      <span className="font-semibold text-green-400">FREE</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_cd5f10a5137544/login" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Kids (6-10)</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_cd5f10a5137544/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 hover:text-orange-300 transition-colors">FREE</a>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-orange-100">Juniors (10-13)</span>
-                      <span className="font-semibold text-green-400">FREE</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_c949e71f9af2d5/login" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Juniors (10-13)</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_c949e71f9af2d5/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 hover:text-orange-300 transition-colors">FREE</a>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-orange-100">Teens (14-17)</span>
-                      <span className="font-semibold text-green-400">FREE</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_f2f2e14d3e5ec5/login" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Teens (14-17)</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_f2f2e14d3e5ec5/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 hover:text-orange-300 transition-colors">FREE</a>
                     </div>
                   </div>
                 </div>
