@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -56,7 +57,7 @@ const Index = () => {
       id: "corporate",
       title: "Corporate Training",
       subtitle: "Team Building & Safety",
-      description: "Custom programmes for businesses focusing on employee safety, team building, and stress management through Krav Maga principles.",
+      description: "Custom programs for businesses focusing on employee safety, team building, and stress management through Krav Maga principles.",
       icon: Building,
       features: ["On-site training", "Team building", "Workplace safety", "Stress management"]
     },
@@ -159,7 +160,7 @@ const Index = () => {
                 <p className="text-gray-300 text-lg leading-relaxed">
                   {activeDivision.description}
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
                   {activeDivision.features.map((feature, index) => (
                     <div key={index} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
@@ -347,12 +348,16 @@ const Index = () => {
                     </ul>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4 mt-6">
-                    <Button className="bg-orange-600 hover:bg-orange-700">
-                      Download for iOS
-                    </Button>
-                    <Button className="bg-orange-600 hover:bg-orange-700">
-                      Download for Android
-                    </Button>
+                    <a href="https://apps.apple.com/us/app/pushpress-members/id1309909578" target="_blank" rel="noopener noreferrer">
+                      <Button className="bg-orange-600 hover:bg-orange-700">
+                        Download for iOS
+                      </Button>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.pushpress.memberportal&hl=en_US&pli=1" target="_blank" rel="noopener noreferrer">
+                      <Button className="bg-orange-600 hover:bg-orange-700">
+                        Download for Android
+                      </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
@@ -490,7 +495,7 @@ const Index = () => {
               </CardHeader>
               <CardContent className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-orange-200 mb-3">Term Programme</h4>
+                  <h4 className="font-semibold text-orange-200 mb-3">Term Program</h4>
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <span className="text-orange-100">Kids (6-10)</span>
@@ -533,10 +538,10 @@ const Index = () => {
               </CardHeader>
               <CardContent className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-orange-400 mb-3">Term Programme</h4>
+                  <h4 className="font-semibold text-orange-400 mb-3">Term Program</h4>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span className="text-gray-300">Term Programme</span>
+                      <span className="text-gray-300">Term Program</span>
                       <span className="font-semibold">$250</span>
                     </div>
                   </div>
@@ -558,23 +563,23 @@ const Index = () => {
                   <h4 className="font-semibold text-orange-400 mb-3">Session Packages</h4>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span className="text-gray-300">Trial</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_f8520cf13fd6f3/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">Trial</a>
                       <span className="font-semibold">$20</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-300">5 Sessions</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">5 Sessions</a>
                       <span className="font-semibold">$160</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-300">10 Sessions</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_a6e2c16911adf0/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">10 Sessions</a>
                       <span className="font-semibold">$285</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-300">25 Sessions</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_9506d14411bb3b/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">25 Sessions</a>
                       <span className="font-semibold">$660</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-300">50 Sessions</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_7104c09d5ea5f2/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">50 Sessions</a>
                       <span className="font-semibold">$950</span>
                     </div>
                   </div>
@@ -583,11 +588,11 @@ const Index = () => {
                   <h4 className="font-semibold text-orange-400 mb-3">Unlimited Access</h4>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span className="text-gray-300">1 Month Unlimited</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_01f914d06a3d3f/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">1 Month Unlimited</a>
                       <span className="font-semibold">$275</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-300">3 Months Unlimited</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_a685b2cefce871/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">3 Months Unlimited</a>
                       <span className="font-semibold">$760</span>
                     </div>
                   </div>
@@ -608,7 +613,7 @@ const Index = () => {
                 <div>
                   <div className="space-y-2">
                     <div className="text-center">
-                      <span className="text-gray-300">Corporate Programmes</span>
+                      <span className="text-gray-300">Corporate Programs</span>
                       <div className="font-semibold text-orange-400 text-lg mt-2">Enquire for rates</div>
                     </div>
                   </div>
@@ -676,7 +681,7 @@ const Index = () => {
           
           <div className="flex justify-center space-x-4 mb-6">
             <a 
-              href="https://facebook.com" 
+              href="https://www.facebook.com/kravistsg/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 bg-gray-800 rounded-full hover:bg-orange-600 transition-colors"
@@ -685,7 +690,7 @@ const Index = () => {
               <Facebook className="h-5 w-5 text-white" />
             </a>
             <a 
-              href="https://instagram.com" 
+              href="https://www.instagram.com/kravist.sg/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 bg-gray-800 rounded-full hover:bg-orange-600 transition-colors"
