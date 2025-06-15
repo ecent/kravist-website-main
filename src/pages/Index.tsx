@@ -16,7 +16,7 @@ const Index = () => {
       id: "youth",
       title: "Youth Division",
       subtitle: "Ages 6-17",
-      description: "Singapore's premier youth self defense program. Our Youth Division provides a safe, structured environment where children develop confidence, character, and practical self-defence skills. Designed with parents' peace of mind in mind, our age-appropriate curriculum builds resilience and life skills that extend far beyond the training mat.",
+      description: "Singapore's premier youth self defence program. Our Youth Division provides a safe, structured environment where children develop confidence, character, and practical self-defence skills. Designed with parents' peace of mind in mind, our age-appropriate curriculum builds resilience and life skills that extend far beyond the training mat.",
       icon: Shield,
       features: ["Parent-approved curriculum", "Character development focus", "Anti-bullying training", "Confidence & discipline building", "CPR-certified instructors", "Safe learning environment"],
       images: [
@@ -96,10 +96,10 @@ const Index = () => {
       <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-orange-900">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent">
-            SINGAPORE'S LEADING YOUTH SELF DEFENSE
+            SINGAPORE'S PREMIER YOUTH AND ADULTS SELF DEFENCE STUDIO
           </h1>
           <p className="text-xl md:text-2xl mb-6 text-gray-300 max-w-3xl mx-auto">
-            Our CPR certified instructors are building confident, disciplined and resilient students through authentic self defense training. 
+            Our CPR certified instructors are building confident, disciplined and resilient students through authentic self defence training. 
             Our flagship Youth division is designed with parents' peace of mind and children's development at its core.
           </p>
           <p className="text-lg md:text-xl mb-8 text-gray-300 max-w-2xl mx-auto">
@@ -121,7 +121,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Programs</h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Led by our Youth Division, we offer world-class self defense training for the whole family. 
+              Led by our Youth Division, we offer world-class self defence training for the whole family. 
               Every program receives expert instruction and personalised attention.
             </p>
           </div>
@@ -217,7 +217,7 @@ const Index = () => {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">About Kravist</h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Singapore's premier youth-focused martial arts academy, building character and confidence in children while serving the whole family.
+              Singapore's premier youth-focused self defence academy, building character and confidence in children while serving the whole family.
             </p>
           </div>
 
@@ -255,7 +255,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-300 leading-relaxed">
-                    Krav Maga is a military self defence and fighting system developed for the Israel Defence Forces. 
+                    Krav Maga is a self defence and fighting system developed for practical, real-world applications. 
                     At Kravist, we've adapted this proven system specifically for youth development, emphasizing character building, 
                     confidence, and practical safety skills in age-appropriate ways.
                   </p>
@@ -298,7 +298,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-300 leading-relaxed">
-                    Welcome to Singapore's most trusted youth martial arts program! We understand that starting something new can be 
+                    Welcome to Singapore's most trusted youth self defence program! We understand that starting something new can be 
                     exciting for children and concerning for parents. Our first-timer experience is designed to be welcoming, safe, and supportive for the whole family.
                   </p>
                   <div className="grid md:grid-cols-2 gap-6">
@@ -695,7 +695,7 @@ const Index = () => {
       <footer className="bg-black py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <div className="text-2xl font-bold text-orange-500 mb-4">KRAVIST</div>
-          <p className="text-gray-400 mb-6">Singapore's most trusted youth martial arts program, building character and confidence in the next generation.</p>
+          <p className="text-gray-400 mb-6">Singapore's most trusted youth self defence program, building character and confidence in the next generation.</p>
           
           <div className="flex justify-center space-x-4 mb-6">
             <a 
