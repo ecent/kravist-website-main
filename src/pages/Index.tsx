@@ -66,7 +66,10 @@ const Index = () => {
       subtitle: "Personalised Instruction",
       description: "One-on-one or small group sessions tailored to your specific goals, schedule, and skill level for accelerated learning.",
       icon: User,
-      features: ["Customised curriculum", "Flexible scheduling", "Accelerated learning", "Personal attention"]
+      features: ["Customised curriculum", "Flexible scheduling", "Accelerated learning", "Personal attention"],
+      images: [
+        "/lovable-uploads/215d4bad-4cfa-4938-bfe1-5023913ef9a0.png"
+      ]
     }
   ];
 
