@@ -128,7 +128,7 @@ const Index = () => {
       <section id="divisions" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Programs</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Programs</h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
               Led by our Youth Division, we offer world-class self defence training for the whole family. 
               Every program receives expert instruction and personalised attention.
