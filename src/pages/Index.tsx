@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -94,7 +95,7 @@ const Index = () => {
               <a href="#pricing" className="hover:text-orange-400 transition-colors">Pricing</a>
               <a href="#schedule" className="hover:text-orange-400 transition-colors">Schedule</a>
               <a href="#instructors" className="hover:text-orange-400 transition-colors">Instructors</a>
-              <a href="#about" className="hover:text-orange-400 transition-colors">About</a>
+              <a href="#faq" className="hover:text-orange-400 transition-colors">FAQ</a>
               <Link to="/contact" className="hover:text-orange-400 transition-colors">Contact</Link>
             </div>
           </div>
@@ -223,7 +224,7 @@ const Index = () => {
       
       <Instructors />
 
-      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
+      <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="flex justify-center mb-4">
@@ -231,9 +232,9 @@ const Index = () => {
                 <BookOpen className="h-8 w-8" />
               </div>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">About Kravist</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">FAQ</h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Singapore's premier youth-focused self defence studio, building character and confidence in children while serving the whole family.
+              Everything you need to know about Krav Maga training and our programs.
             </p>
           </div>
 
@@ -257,7 +258,7 @@ const Index = () => {
               </TabsTrigger>
               <TabsTrigger value="faq" className="flex items-center gap-2 text-sm">
                 <HelpCircle className="h-4 w-4" />
-                FAQ
+                General FAQ
               </TabsTrigger>
             </TabsList>
 
@@ -388,38 +389,49 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-300 leading-relaxed">
-                    Our grading system follows the official Krav Maga belt progression, 
-                    ensuring you develop proper technique and understanding at each level.
+                    Our grading system follows the international Krav Maga Global (KMG) standards, 
+                    ensuring consistent quality and progression worldwide.
                   </p>
+                  
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-3">
-                      <h4 className="font-semibold text-orange-400">Belt Levels:</h4>
+                      <h4 className="font-semibold text-orange-400">Civilian Levels:</h4>
                       <ul className="space-y-2 text-gray-300">
-                        <li>• White Belt (Beginner)</li>
-                        <li>• Yellow Belt</li>
-                        <li>• Orange Belt</li>
-                        <li>• Green Belt</li>
-                        <li>• Blue Belt</li>
-                        <li>• Brown Belt</li>
-                        <li>• Black Belt Levels 1-5</li>
+                        <li>• Practitioner Levels P1-P5</li>
+                        <li>• Graduate Levels G1-G5</li>
+                        <li>• Expert Levels E1-E5</li>
+                        <li>• Master Level M</li>
                       </ul>
                     </div>
                     <div className="space-y-3">
-                      <h4 className="font-semibold text-orange-400">Grading Requirements:</h4>
+                      <h4 className="font-semibold text-orange-400">Youth Levels:</h4>
                       <ul className="space-y-2 text-gray-300">
-                        <li>• Minimum training hours</li>
-                        <li>• Technical proficiency</li>
-                        <li>• Physical fitness standards</li>
-                        <li>• Stress test scenarios</li>
-                        <li>• Knowledge assessment</li>
+                        <li>• Kids: Red, Orange, Yellow, Green</li>
+                        <li>• Cadets: Yellow, Orange, Green</li>
+                        <li>• Juniors: Yellow, Orange, Green, Blue, Brown</li>
                       </ul>
                     </div>
                   </div>
+                  
                   <div className="bg-gray-800 rounded-lg p-4 mt-6">
+                    <h4 className="font-semibold text-orange-400 mb-2">Grading Requirements</h4>
+                    <p className="text-gray-300 mb-3">
+                      Each level requires demonstration of technical proficiency, physical fitness, and mental resilience through stress scenarios.
+                    </p>
+                    <ul className="space-y-1 text-gray-300">
+                      <li>• Minimum training hours and attendance</li>
+                      <li>• Technical skill demonstration</li>
+                      <li>• Physical fitness standards</li>
+                      <li>• Stress test performance</li>
+                      <li>• Knowledge of principles and theory</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-gray-800 rounded-lg p-4">
                     <h4 className="font-semibold text-orange-400 mb-2">Grading Schedule</h4>
                     <p className="text-gray-300">
-                      Grading sessions are held quarterly, allowing students adequate time to prepare and master 
-                      the required techniques for their next belt level.
+                      Grading sessions are held regularly throughout the year. Students are invited to grade when they meet 
+                      the technical and attendance requirements for their next level.
                     </p>
                   </div>
                 </CardContent>
@@ -437,38 +449,52 @@ const Index = () => {
                 <CardContent className="space-y-6">
                   <div className="space-y-4">
                     <div className="border-b border-gray-700 pb-4">
-                      <h4 className="font-semibold text-orange-400 mb-2">Is the youth program safe for my child?</h4>
+                      <h4 className="font-semibold text-orange-400 mb-2">What should I wear for my first class?</h4>
                       <p className="text-gray-300">
-                        Absolutely! Our youth program is specifically designed with safety as the top priority. All our instructors are CPR certified, 
-                        and we use age-appropriate techniques that focus on confidence building rather than aggression.
+                        Comfortable workout clothes that allow free movement. Athletic shoes with good grip are recommended. 
+                        We'll provide any necessary protective equipment for beginners.
                       </p>
                     </div>
                     <div className="border-b border-gray-700 pb-4">
-                      <h4 className="font-semibold text-orange-400 mb-2">What age groups do you cater to?</h4>
+                      <h4 className="font-semibold text-orange-400 mb-2">Do I need any prior martial arts experience?</h4>
                       <p className="text-gray-300">
-                        Our flagship Youth Division serves ages 6-17 with age-specific classes: Kids (6-10), Juniors (10-13), and Teens (14-17). 
-                        Each age group has curriculum designed for their developmental stage.
+                        No previous experience is required. Krav Maga is designed to be learned quickly by people of all backgrounds. 
+                        Our instructors will guide you through the basics and adapt training to your fitness level.
                       </p>
                     </div>
                     <div className="border-b border-gray-700 pb-4">
-                      <h4 className="font-semibold text-orange-400 mb-2">How will this help my child with bullying?</h4>
+                      <h4 className="font-semibold text-orange-400 mb-2">Is Krav Maga suitable for women?</h4>
                       <p className="text-gray-300">
-                        Our program builds confidence, situational awareness, and de-escalation skills. Children learn to project confidence, 
-                        recognize potentially dangerous situations, and have the self-assurance to seek help when needed.
+                        Absolutely! Krav Maga was designed to be effective regardless of size or strength. We have dedicated women's classes 
+                        that focus on real-world scenarios and building confidence in a supportive environment.
                       </p>
                     </div>
                     <div className="border-b border-gray-700 pb-4">
-                      <h4 className="font-semibold text-orange-400 mb-2">Do you offer family packages?</h4>
+                      <h4 className="font-semibold text-orange-400 mb-2">How often should I train?</h4>
                       <p className="text-gray-300">
-                        Yes! While our Youth Division is our flagship program, we offer complementary adult classes so the whole family can train together. 
-                        Contact us for family package options.
+                        For beginners, we recommend 2-3 times per week to build muscle memory and conditioning. 
+                        As you progress, you can increase frequency based on your goals and schedule.
+                      </p>
+                    </div>
+                    <div className="border-b border-gray-700 pb-4">
+                      <h4 className="font-semibold text-orange-400 mb-2">Will I get hurt during training?</h4>
+                      <p className="text-gray-300">
+                        Safety is our top priority. We use controlled training methods and protective equipment. 
+                        While Krav Maga involves contact, beginners start with light contact and progress gradually as skills develop.
+                      </p>
+                    </div>
+                    <div className="border-b border-gray-700 pb-4">
+                      <h4 className="font-semibold text-orange-400 mb-2">What's the difference between your youth and adult programs?</h4>
+                      <p className="text-gray-300">
+                        Our youth programs focus heavily on character development, anti-bullying, and age-appropriate self-defense techniques. 
+                        Adult programs include more intense physical conditioning and advanced combat scenarios.
                       </p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-orange-400 mb-2">How quickly will my child progress?</h4>
+                      <h4 className="font-semibold text-orange-400 mb-2">Can I try a class before committing?</h4>
                       <p className="text-gray-300">
-                        Every child progresses at their own pace. Our focus is on character development and confidence building first, 
-                        with belt progression following naturally as skills develop.
+                        Yes! We offer trial classes for most programs. Check our pricing section for trial options, 
+                        including free trials for youth programs and affordable trial sessions for adults.
                       </p>
                     </div>
                   </div>
@@ -732,8 +758,8 @@ const Index = () => {
             <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
               Contact Us
             </Link>
-            <a href="#about" className="text-gray-400 hover:text-white transition-colors">
-              About
+            <a href="#faq" className="text-gray-400 hover:text-white transition-colors">
+              FAQ
             </a>
           </div>
         </div>

@@ -40,16 +40,6 @@ const Instructors = () => {
         "CPR Certified"
       ],
       image: "/lovable-uploads/bcb025bf-401d-466a-a68f-0721aac94ba1.png"
-    },
-    {
-      id: 4,
-      name: "Kevin Teng",
-      title: "Instructor",
-      bio: [
-        "Krav Maga Level XX",
-        "CPR Certified"
-      ],
-      image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=400&h=400&fit=crop&crop=face"
     }
   ];
 
@@ -63,7 +53,7 @@ const Instructors = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {instructors.map((instructor) => (
             <Card key={instructor.id} className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white overflow-hidden">
               <div className="aspect-square overflow-hidden">
