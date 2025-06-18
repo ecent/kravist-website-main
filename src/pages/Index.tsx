@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -389,49 +388,19 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-300 leading-relaxed">
-                    Our grading system follows the international Krav Maga Global (KMG) standards, 
-                    ensuring consistent quality and progression worldwide.
+                    We have a comprehensive grading system for both adults and youth that follows international Krav Maga Global (KMG) standards. 
+                    Our structured progression system helps students track their development and provides clear goals to work towards.
                   </p>
                   
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="space-y-3">
-                      <h4 className="font-semibold text-orange-400">Civilian Levels:</h4>
-                      <ul className="space-y-2 text-gray-300">
-                        <li>• Practitioner Levels P1-P5</li>
-                        <li>• Graduate Levels G1-G5</li>
-                        <li>• Expert Levels E1-E5</li>
-                        <li>• Master Level M</li>
-                      </ul>
-                    </div>
-                    <div className="space-y-3">
-                      <h4 className="font-semibold text-orange-400">Youth Levels:</h4>
-                      <ul className="space-y-2 text-gray-300">
-                        <li>• Kids: Red, Orange, Yellow, Green</li>
-                        <li>• Cadets: Yellow, Orange, Green</li>
-                        <li>• Juniors: Yellow, Orange, Green, Blue, Brown</li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-gray-800 rounded-lg p-4 mt-6">
-                    <h4 className="font-semibold text-orange-400 mb-2">Grading Requirements</h4>
-                    <p className="text-gray-300 mb-3">
-                      Each level requires demonstration of technical proficiency, physical fitness, and mental resilience through stress scenarios.
-                    </p>
-                    <ul className="space-y-1 text-gray-300">
-                      <li>• Minimum training hours and attendance</li>
-                      <li>• Technical skill demonstration</li>
-                      <li>• Physical fitness standards</li>
-                      <li>• Stress test performance</li>
-                      <li>• Knowledge of principles and theory</li>
-                    </ul>
-                  </div>
-                  
                   <div className="bg-gray-800 rounded-lg p-4">
-                    <h4 className="font-semibold text-orange-400 mb-2">Grading Schedule</h4>
+                    <h4 className="font-semibold text-orange-400 mb-2">Adult & Youth Programs</h4>
+                    <p className="text-gray-300 mb-3">
+                      Both our adult and youth programs feature age-appropriate grading systems that recognize technical proficiency, 
+                      physical development, and character growth.
+                    </p>
                     <p className="text-gray-300">
-                      Grading sessions are held regularly throughout the year. Students are invited to grade when they meet 
-                      the technical and attendance requirements for their next level.
+                      For detailed information about grading requirements, levels, and schedules, please contact us directly or 
+                      speak with one of our instructors during class.
                     </p>
                   </div>
                 </CardContent>

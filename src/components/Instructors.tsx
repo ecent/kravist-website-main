@@ -30,16 +30,6 @@ const Instructors = () => {
         "CPR Certified"
       ],
       image: "/lovable-uploads/c2a8d8db-85b1-409c-a2f9-205208b6bfdd.png"
-    },
-    {
-      id: 3,
-      name: "Wan Man",
-      title: "Instructor",
-      bio: [
-        "Krav Maga Level Expert 1",
-        "CPR Certified"
-      ],
-      image: "/lovable-uploads/bcb025bf-401d-466a-a68f-0721aac94ba1.png"
     }
   ];
 
@@ -53,7 +43,7 @@ const Instructors = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 justify-center">
           {instructors.map((instructor) => (
             <Card key={instructor.id} className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white overflow-hidden">
               <div className="aspect-square overflow-hidden">
