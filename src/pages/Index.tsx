@@ -219,6 +219,207 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Pricing Section - moved up */}
+      <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="flex justify-center mb-4">
+              <div className="p-3 bg-orange-600 rounded-lg">
+                <DollarSign className="h-8 w-8" />
+              </div>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Pricing</h2>
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              Different pricing for different programs and training frequencies. Find the plan that works best for you.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            {/* Youth Division Pricing - Highlighted */}
+            <Card className="bg-gradient-to-br from-orange-800 to-orange-900 border-orange-600 text-white relative">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                <span className="bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                  FLAGSHIP PROGRAM
+                </span>
+              </div>
+              <CardHeader className="text-center pt-8">
+                <div className="flex justify-center mb-4">
+                  <Shield className="h-8 w-8 text-orange-300" />
+                </div>
+                <CardTitle className="text-2xl">Youth Division</CardTitle>
+                <CardDescription className="text-orange-200">Ages 6-17 • Most Trusted Program</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div>
+                  <h4 className="font-semibold text-orange-200 mb-3">Term Program</h4>
+                  <div className="space-y-2">
+                    <div className="flex justify-between">
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Kids (6-10)</a>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$450</a>
+                    </div>
+                    <div className="flex justify-between">
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Juniors (10-13)</a>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$495</a>
+                    </div>
+                    <div className="flex justify-between">
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Teens (14-17)</a>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$510</a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-orange-200 mb-3">Trials</h4>
+                  <div className="space-y-2">
+                    <div className="flex justify-between">
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_cd5f10a5137544/login" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Kids (6-10)</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_cd5f10a5137544/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 hover:text-orange-300 transition-colors">FREE</a>
+                    </div>
+                    <div className="flex justify-between">
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_c949e71f9af2d5/login" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Juniors (10-13)</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_c949e71f9af2d5/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 hover:text-orange-300 transition-colors">FREE</a>
+                    </div>
+                    <div className="flex justify-between">
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_f2f2e14d3e5ec5/login" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Teens (14-17)</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_f2f2e14d3e5ec5/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 hover:text-orange-300 transition-colors">FREE</a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-orange-200 mb-3">General Classes</h4>
+                  <div className="space-y-2">
+                    <div className="flex justify-between">
+                      <span className="text-orange-100">All Ages</span>
+                      <span className="font-semibold">$35</span>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Women's Division Pricing */}
+            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+              <CardHeader className="text-center">
+                <div className="flex justify-center mb-4">
+                  <Target className="h-8 w-8 text-orange-500" />
+                </div>
+                <CardTitle className="text-2xl">Women's Division</CardTitle>
+                <CardDescription className="text-gray-400">Empowerment Training</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div>
+                  <h4 className="font-semibold text-orange-400 mb-3">Term Program</h4>
+                  <div className="space-y-2">
+                    <div className="flex justify-between">
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">Term Program</a>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$250</a>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* General Adults Pricing */}
+            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+              <CardHeader className="text-center">
+                <div className="flex justify-center mb-4">
+                  <Users className="h-8 w-8 text-orange-500" />
+                </div>
+                <CardTitle className="text-2xl">General Adults</CardTitle>
+                <CardDescription className="text-gray-400">All Skill Levels</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div>
+                  <h4 className="font-semibold text-orange-400 mb-3">Session Packages</h4>
+                  <div className="space-y-2">
+                    <div className="flex justify-between">
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_f8520cf13fd6f3/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">Trial</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_f8520cf13fd6f3/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$20</a>
+                    </div>
+                    <div className="flex justify-between">
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">5 Sessions</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$160</a>
+                    </div>
+                    <div className="flex justify-between">
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_a6e2c16911adf0/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">10 Sessions</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_a6e2c16911adf0/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$285</a>
+                    </div>
+                    <div className="flex justify-between">
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_9506d14411bb3b/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">25 Sessions</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_9506d14411bb3b/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$660</a>
+                    </div>
+                    <div className="flex justify-between">
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_7104c09d5ea5f2/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">50 Sessions</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_7104c09d5ea5f2/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$950</a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-orange-400 mb-3">Unlimited Access</h4>
+                  <div className="space-y-2">
+                    <div className="flex justify-between">
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_01f914d06a3d3f/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">1 Month Unlimited</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_01f914d06a3d3f/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$275</a>
+                    </div>
+                    <div className="flex justify-between">
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_a685b2cefce871/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">3 Months Unlimited</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_a685b2cefce871/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$760</a>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Corporate Training Pricing */}
+            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+              <CardHeader className="text-center">
+                <div className="flex justify-center mb-4">
+                  <Building className="h-8 w-8 text-orange-500" />
+                </div>
+                <CardTitle className="text-2xl">Corporate Training</CardTitle>
+                <CardDescription className="text-gray-400">Team Building & Safety</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div>
+                  <div className="space-y-2">
+                    <div className="text-center">
+                      <span className="text-gray-300">Corporate Programs</span>
+                      <div className="font-semibold text-orange-400 text-lg mt-2">Enquire for rates</div>
+                    </div>
+                  </div>
+                  <Button className="w-full mt-4 bg-orange-600 hover:bg-orange-700">
+                    Contact for Quote
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Private Training Pricing */}
+            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+              <CardHeader className="text-center">
+                <div className="flex justify-center mb-4">
+                  <User className="h-8 w-8 text-orange-500" />
+                </div>
+                <CardTitle className="text-2xl">Private Training</CardTitle>
+                <CardDescription className="text-gray-400">Personalised Instruction</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div>
+                  <div className="space-y-2">
+                    <div className="text-center">
+                      <span className="text-gray-300">Private Training</span>
+                      <div className="font-semibold text-orange-400 text-lg mt-2">Enquire for rates</div>
+                    </div>
+                  </div>
+                  <Button className="w-full mt-4 bg-orange-600 hover:bg-orange-700">
+                    Contact for Quote
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <Schedule />
       
       <Instructors />
@@ -471,206 +672,6 @@ const Index = () => {
               </Card>
             </TabsContent>
           </Tabs>
-        </div>
-      </section>
-
-      <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="flex justify-center mb-4">
-              <div className="p-3 bg-orange-600 rounded-lg">
-                <DollarSign className="h-8 w-8" />
-              </div>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Pricing</h2>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Different pricing for different programs and training frequencies. Find the plan that works best for you.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
-            {/* Youth Division Pricing - Highlighted */}
-            <Card className="bg-gradient-to-br from-orange-800 to-orange-900 border-orange-600 text-white relative">
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                <span className="bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                  FLAGSHIP PROGRAM
-                </span>
-              </div>
-              <CardHeader className="text-center pt-8">
-                <div className="flex justify-center mb-4">
-                  <Shield className="h-8 w-8 text-orange-300" />
-                </div>
-                <CardTitle className="text-2xl">Youth Division</CardTitle>
-                <CardDescription className="text-orange-200">Ages 6-17 • Most Trusted Program</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div>
-                  <h4 className="font-semibold text-orange-200 mb-3">Term Program</h4>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Kids (6-10)</a>
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$450</a>
-                    </div>
-                    <div className="flex justify-between">
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Juniors (10-13)</a>
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$495</a>
-                    </div>
-                    <div className="flex justify-between">
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Teens (14-17)</a>
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$510</a>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-orange-200 mb-3">Trials</h4>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_cd5f10a5137544/login" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Kids (6-10)</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_cd5f10a5137544/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 hover:text-orange-300 transition-colors">FREE</a>
-                    </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_c949e71f9af2d5/login" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Juniors (10-13)</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_c949e71f9af2d5/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 hover:text-orange-300 transition-colors">FREE</a>
-                    </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_f2f2e14d3e5ec5/login" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Teens (14-17)</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_f2f2e14d3e5ec5/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 hover:text-orange-300 transition-colors">FREE</a>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-orange-200 mb-3">General Classes</h4>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <span className="text-orange-100">All Ages</span>
-                      <span className="font-semibold">$35</span>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Women's Division Pricing */}
-            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-              <CardHeader className="text-center">
-                <div className="flex justify-center mb-4">
-                  <Target className="h-8 w-8 text-orange-500" />
-                </div>
-                <CardTitle className="text-2xl">Women's Division</CardTitle>
-                <CardDescription className="text-gray-400">Empowerment Training</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div>
-                  <h4 className="font-semibold text-orange-400 mb-3">Term Program</h4>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">Term Program</a>
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$250</a>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* General Adults Pricing */}
-            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-              <CardHeader className="text-center">
-                <div className="flex justify-center mb-4">
-                  <Users className="h-8 w-8 text-orange-500" />
-                </div>
-                <CardTitle className="text-2xl">General Adults</CardTitle>
-                <CardDescription className="text-gray-400">All Skill Levels</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div>
-                  <h4 className="font-semibold text-orange-400 mb-3">Session Packages</h4>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_f8520cf13fd6f3/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">Trial</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_f8520cf13fd6f3/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$20</a>
-                    </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">5 Sessions</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$160</a>
-                    </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_a6e2c16911adf0/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">10 Sessions</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_a6e2c16911adf0/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$285</a>
-                    </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_9506d14411bb3b/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">25 Sessions</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_9506d14411bb3b/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$660</a>
-                    </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_7104c09d5ea5f2/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">50 Sessions</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_7104c09d5ea5f2/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$950</a>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-orange-400 mb-3">Unlimited Access</h4>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_01f914d06a3d3f/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">1 Month Unlimited</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_01f914d06a3d3f/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$275</a>
-                    </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_a685b2cefce871/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">3 Months Unlimited</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_a685b2cefce871/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$760</a>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Corporate Training Pricing */}
-            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-              <CardHeader className="text-center">
-                <div className="flex justify-center mb-4">
-                  <Building className="h-8 w-8 text-orange-500" />
-                </div>
-                <CardTitle className="text-2xl">Corporate Training</CardTitle>
-                <CardDescription className="text-gray-400">Team Building & Safety</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div>
-                  <div className="space-y-2">
-                    <div className="text-center">
-                      <span className="text-gray-300">Corporate Programs</span>
-                      <div className="font-semibold text-orange-400 text-lg mt-2">Enquire for rates</div>
-                    </div>
-                  </div>
-                  <Button className="w-full mt-4 bg-orange-600 hover:bg-orange-700">
-                    Contact for Quote
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Private Training Pricing */}
-            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-              <CardHeader className="text-center">
-                <div className="flex justify-center mb-4">
-                  <User className="h-8 w-8 text-orange-500" />
-                </div>
-                <CardTitle className="text-2xl">Private Training</CardTitle>
-                <CardDescription className="text-gray-400">Personalised Instruction</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div>
-                  <div className="space-y-2">
-                    <div className="text-center">
-                      <span className="text-gray-300">Private Training</span>
-                      <div className="font-semibold text-orange-400 text-lg mt-2">Enquire for rates</div>
-                    </div>
-                  </div>
-                  <Button className="w-full mt-4 bg-orange-600 hover:bg-orange-700">
-                    Contact for Quote
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </section>
 
