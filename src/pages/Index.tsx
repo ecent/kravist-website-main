@@ -372,6 +372,10 @@ const Index = () => {
                       <a href="https://kravist.pushpress.com/landing/plans/plan_f8520cf13fd6f3/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$20</a>
                     </div>
                     <div className="flex justify-between">
+                      <span className="text-gray-300">Drop In</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_0e7cd795981d1e" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$40</a>
+                    </div>
+                    <div className="flex justify-between">
                       <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">5 Sessions</a>
                       <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$160</a>
                     </div>
