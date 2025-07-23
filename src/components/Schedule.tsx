@@ -65,7 +65,8 @@ const Schedule = () => {
         { time: "11:30 AM", name: "Kids Term", duration: "60 min" },
         { time: "1:00 PM", name: "Kids Term", duration: "60 min" },
         { time: "2:30 PM", name: "Juniors Term", duration: "60 min" },
-        { time: "3:30 PM", name: "Teens Class (Open / Trials)", duration: "60 min" }
+        { time: "3:30 PM", name: "Teens Class", duration: "60 min" },
+        { time: "4:30 PM", name: "Teens Class (Open / Trials)", duration: "60 min" }
       ]
     }
   ];
