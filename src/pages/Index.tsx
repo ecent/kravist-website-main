@@ -348,8 +348,8 @@ const Index = () => {
                   <h4 className="font-semibold text-orange-200 mb-3">General Classes</h4>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span className="text-orange-100">All Ages</span>
-                      <span className="font-semibold">$35</span>
+                      <span className="text-orange-100">All Ages 5 Sessions</span>
+                      <span className="font-semibold">$160</span>
                     </div>
                   </div>
                 </div>
