@@ -4,12 +4,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Users, Shield, Target, Building, User, DollarSign, BookOpen, Info, Smartphone, Award, HelpCircle, Facebook, Instagram } from "lucide-react";
 import Instructors from "@/components/Instructors";
 import Schedule from "@/components/Schedule";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("youth");
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const divisions = [
     {
@@ -195,13 +197,24 @@ const Index = () => {
                     <CarouselContent>
                       {activeDivision.images.map((image, index) => (
                         <CarouselItem key={index}>
-                          <div className="h-64 rounded-lg overflow-hidden">
-                            <img 
-                              src={image} 
-                              alt={`${activeDivision.title} training ${index + 1}`}
-                              className="w-full h-full object-cover"
-                            />
-                          </div>
+                          <Dialog>
+                            <DialogTrigger asChild>
+                              <div className="h-64 rounded-lg overflow-hidden cursor-pointer hover:opacity-80 transition-opacity">
+                                <img 
+                                  src={image} 
+                                  alt={`${activeDivision.title} training ${index + 1}`}
+                                  className="w-full h-full object-cover"
+                                />
+                              </div>
+                            </DialogTrigger>
+                            <DialogContent className="max-w-4xl max-h-[90vh] p-0">
+                              <img 
+                                src={image} 
+                                alt={`${activeDivision.title} training ${index + 1}`}
+                                className="w-full h-full object-contain"
+                              />
+                            </DialogContent>
+                          </Dialog>
                         </CarouselItem>
                       ))}
                     </CarouselContent>
@@ -422,7 +435,9 @@ const Index = () => {
 
       <Schedule />
       
-      <Instructors />
+      <div id="instructors">
+        <Instructors />
+      </div>
 
       <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
