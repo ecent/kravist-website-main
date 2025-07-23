@@ -778,15 +778,15 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold text-orange-500 mb-2">200+</div>
-              <div className="text-gray-400">Youth Students</div>
+              <div className="text-gray-400">Families and Students</div>
             </div>
             <div>
               <div className="text-4xl font-bold text-orange-500 mb-2">20+</div>
               <div className="text-gray-400">Years Experience</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-orange-500 mb-2">100%</div>
-              <div className="text-gray-400">CPR Certified</div>
+              <div className="text-4xl font-bold text-orange-500 mb-2">5+</div>
+              <div className="text-gray-400">Years of Kravist</div>
             </div>
             <div>
               <div className="text-4xl font-bold text-orange-500 mb-2">98%</div>
