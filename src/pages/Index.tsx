@@ -444,9 +444,11 @@ const Index = () => {
                       <div className="font-semibold text-orange-400 text-lg mt-2">Enquire for rates</div>
                     </div>
                   </div>
-                  <Button className="w-full mt-4 bg-orange-600 hover:bg-orange-700">
-                    Contact for Quote
-                  </Button>
+                  <Link to="/contact">
+                    <Button className="w-full mt-4 bg-orange-600 hover:bg-orange-700">
+                      Contact for Quote
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -468,9 +470,11 @@ const Index = () => {
                       <div className="font-semibold text-orange-400 text-lg mt-2">Enquire for rates</div>
                     </div>
                   </div>
-                  <Button className="w-full mt-4 bg-orange-600 hover:bg-orange-700">
-                    Contact for Quote
-                  </Button>
+                  <Link to="/contact">
+                    <Button className="w-full mt-4 bg-orange-600 hover:bg-orange-700">
+                      Contact for Quote
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
