@@ -1,38 +1,8 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Phone, Facebook, Instagram } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    program: "",
-    message: ""
-  });
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    toast({
-      title: "Message Sent!",
-      description: "We'll get back to you within 24 hours.",
-    });
-    setFormData({ name: "", email: "", program: "", message: "" });
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
@@ -67,12 +37,12 @@ const Contact = () => {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="max-w-4xl mx-auto">
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Visit Our Gym</h2>
-              <div className="space-y-6">
+              <h2 className="text-3xl font-bold mb-6 text-center">Visit Our Gym</h2>
+              <div className="grid md:grid-cols-2 gap-6">
                 <Card className="bg-gray-800 border-gray-700">
                   <CardHeader>
                     <CardTitle className="flex items-center space-x-3 text-white">
@@ -103,85 +73,6 @@ const Contact = () => {
                 </Card>
               </div>
             </div>
-          </div>
-
-          {/* Contact Form */}
-          <div>
-            <Card className="bg-gray-800 border-gray-700">
-              <CardHeader>
-                <CardTitle className="text-2xl text-white">Send Us a Message</CardTitle>
-                <CardDescription className="text-gray-400">
-                  Fill out the form below and we'll get back to you as soon as possible.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="name" className="text-gray-300">Full Name *</Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        required
-                        className="bg-gray-700 border-gray-600 text-white focus:border-orange-500"
-                        placeholder="Your full name"
-                      />
-                    </div>
-                    <div>
-                      <Label htmlFor="email" className="text-gray-300">Email *</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                        className="bg-gray-700 border-gray-600 text-white focus:border-orange-500"
-                        placeholder="your.email@example.com"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <Label htmlFor="program" className="text-gray-300">Interested Program</Label>
-                    <select
-                      id="program"
-                      name="program"
-                      value={formData.program}
-                      onChange={handleInputChange}
-                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:border-orange-500 focus:outline-none"
-                    >
-                      <option value="">Select a program</option>
-                      <option value="youth">Youth Division (6-17)</option>
-                      <option value="womens">Women's Division</option>
-                      <option value="adults">General Adults</option>
-                      <option value="corporate">Corporate Training</option>
-                      <option value="private">Private Training</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <Label htmlFor="message" className="text-gray-300">Message *</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      required
-                      rows={5}
-                      className="bg-gray-700 border-gray-600 text-white focus:border-orange-500"
-                      placeholder="Tell us about your goals, experience level, or any questions you have..."
-                    />
-                  </div>
-
-                  <Button type="submit" className="w-full bg-orange-600 hover:bg-orange-700 text-lg py-3">
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
