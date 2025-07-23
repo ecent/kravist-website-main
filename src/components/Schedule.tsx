@@ -11,7 +11,7 @@ const Schedule = () => {
         { time: "5:30 PM", name: "Beginner's Class", duration: "60 min" },
         { time: "6:30 PM", name: "Fighting Skills", duration: "60 min" },
         { time: "7:30 PM", name: "Grab Defence", duration: "60 min" },
-        { time: "8:30 PM", name: "Random Subject", duration: "60 min" }
+        { time: "8:30 PM", name: "Levels", duration: "60 min" }
       ]
     },
     {
@@ -28,7 +28,7 @@ const Schedule = () => {
       classes: [
         { time: "6:30 PM", name: "Grab Defence", duration: "60 min" },
         { time: "7:30 PM", name: "Weapons Defence", duration: "60 min" },
-        { time: "8:30 PM", name: "Random Subject", duration: "60 min" }
+        { time: "8:30 PM", name: "Levels", duration: "60 min" }
       ]
     },
     {
@@ -54,7 +54,7 @@ const Schedule = () => {
         { time: "1:00 PM", name: "Kids Term", duration: "60 min" },
         { time: "2:30 PM", name: "Juniors Term", duration: "60 min" },
         { time: "3:30 PM", name: "Teens Term", duration: "60 min" },
-        { time: "4:30 PM", name: "Teens Class (Open / Trials)", duration: "60 min" },
+        
         { time: "4:45 PM", name: "Women's Term", duration: "90 min" }
       ]
     },
@@ -65,7 +65,7 @@ const Schedule = () => {
         { time: "11:30 AM", name: "Kids Term", duration: "60 min" },
         { time: "1:00 PM", name: "Kids Term", duration: "60 min" },
         { time: "2:30 PM", name: "Juniors Term", duration: "60 min" },
-        { time: "3:30 PM", name: "Teens Term", duration: "60 min" }
+        { time: "3:30 PM", name: "Teens Class (Open / Trials)", duration: "60 min" }
       ]
     }
   ];
