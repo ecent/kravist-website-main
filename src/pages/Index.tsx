@@ -360,28 +360,6 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* Women's Division Pricing */}
-            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-              <CardHeader className="text-center">
-                <div className="flex justify-center mb-4">
-                  <Target className="h-8 w-8 text-orange-500" />
-                </div>
-                <CardTitle className="text-2xl">Women's Division</CardTitle>
-                <CardDescription className="text-gray-400">Empowerment Training</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div>
-                  <h4 className="font-semibold text-orange-400 mb-3">Term Program</h4>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">Term Program</a>
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$250</a>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
             {/* General Adults Pricing */}
             <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
               <CardHeader className="text-center">
@@ -427,6 +405,28 @@ const Index = () => {
                     <div className="flex justify-between">
                       <a href="https://kravist.pushpress.com/landing/plans/plan_a685b2cefce871/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">3 Months Unlimited</a>
                       <a href="https://kravist.pushpress.com/landing/plans/plan_a685b2cefce871/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$760</a>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Women's Division Pricing */}
+            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+              <CardHeader className="text-center">
+                <div className="flex justify-center mb-4">
+                  <Target className="h-8 w-8 text-orange-500" />
+                </div>
+                <CardTitle className="text-2xl">Women's Division</CardTitle>
+                <CardDescription className="text-gray-400">Empowerment Training</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div>
+                  <h4 className="font-semibold text-orange-400 mb-3">Term Program</h4>
+                  <div className="space-y-2">
+                    <div className="flex justify-between">
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">Term Program</a>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$250</a>
                     </div>
                   </div>
                 </div>
