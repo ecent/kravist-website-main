@@ -86,9 +86,6 @@ const Schedule = () => {
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Schedule</h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Find the perfect class time that fits your schedule. All classes are led by our certified instructors.
-          </p>
         </div>
 
         {/* Class Legend */}
