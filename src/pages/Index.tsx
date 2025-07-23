@@ -348,8 +348,8 @@ const Index = () => {
                   <h4 className="font-semibold text-orange-200 mb-3">General Classes</h4>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <span className="text-orange-100">All Ages 5 Sessions</span>
-                      <span className="font-semibold">$160</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">All Ages 5 Sessions</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$160</a>
                     </div>
                   </div>
                 </div>
@@ -501,7 +501,7 @@ const Index = () => {
           </div>
 
           <Tabs defaultValue="what-is" className="w-full">
-            <TabsList className="grid w-full grid-cols-6 bg-gray-800 mb-8">
+            <TabsList className="grid w-full grid-cols-7 bg-gray-800 mb-8">
               <TabsTrigger value="what-is" className="flex items-center gap-2 text-sm">
                 <Info className="h-4 w-4" />
                 What is Krav Maga?
@@ -509,6 +509,10 @@ const Index = () => {
               <TabsTrigger value="youth-krav-maga" className="flex items-center gap-2 text-sm">
                 <Shield className="h-4 w-4" />
                 Youth Krav Maga
+              </TabsTrigger>
+              <TabsTrigger value="youth-term-program" className="flex items-center gap-2 text-sm">
+                <Shield className="h-4 w-4" />
+                Youth Term Program
               </TabsTrigger>
               <TabsTrigger value="first-timer" className="flex items-center gap-2 text-sm">
                 <Users className="h-4 w-4" />
@@ -594,6 +598,39 @@ const Index = () => {
                   </p>
                   <p className="text-gray-300 leading-relaxed">
                     Our coaches are certified professionals who prioritise safety, personal growth, and fun.
+                  </p>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="youth-term-program" className="space-y-6">
+              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                <CardHeader>
+                  <CardTitle className="text-2xl flex items-center gap-3">
+                    <Shield className="h-6 w-6 text-orange-500" />
+                    Youth Term Program
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-gray-300 leading-relaxed">
+                    Our Youth Term Program runs three terms per year, each lasting around four months. We have a waitlist for new students, as spots are limited to ensure quality instruction and personal attention. The program is divided into three age groups:
+                  </p>
+                  <div className="space-y-2">
+                    <p className="text-gray-300"><strong>Kids (6–10 years old)</strong></p>
+                    <p className="text-gray-300"><strong>Juniors (10–14 years old)</strong></p>
+                    <p className="text-gray-300"><strong>Teens (14–17 years old)</strong></p>
+                  </div>
+                  <p className="text-gray-300 leading-relaxed">
+                    This structure ensures that each class is age-appropriate, engaging, and tailored to the developmental needs of your child.
+                  </p>
+                  <p className="text-gray-300 leading-relaxed">
+                    Our curriculum is progressive and structured, building core skills over time. Students learn fundamental self-defence techniques, but also focus on confidence, discipline, leadership, and accountability. Each term builds on the previous one, ensuring steady growth in both physical ability and character.
+                  </p>
+                  <p className="text-gray-300 leading-relaxed">
+                    We offer a formal grading system and certification, allowing students to track their progress and celebrate milestones. This structured pathway keeps children motivated and gives parents a clear sense of their development.
+                  </p>
+                  <p className="text-gray-300 leading-relaxed">
+                    <Link to="/contact" className="text-orange-400 hover:text-orange-300 transition-colors">Contact us</Link> or register to our <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 transition-colors">waitlist</a> to find out more!
                   </p>
                 </CardContent>
               </Card>
