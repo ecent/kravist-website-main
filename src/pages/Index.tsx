@@ -630,7 +630,7 @@ const Index = () => {
                     We offer a formal grading system and certification, allowing students to track their progress and celebrate milestones. This structured pathway keeps children motivated and gives parents a clear sense of their development.
                   </p>
                   <p className="text-gray-300 leading-relaxed">
-                    <Link to="/contact" className="text-orange-400 hover:text-orange-300 transition-colors">Contact us</Link> or register to our <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 transition-colors">waitlist</a> to find out more!
+                    <Link to="/contact" className="text-orange-400 hover:text-orange-300 transition-colors">Contact us</Link> or register to our <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 transition-colors">waitlist</a> to find out more!
                   </p>
                 </CardContent>
               </Card>
