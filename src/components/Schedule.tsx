@@ -91,6 +91,25 @@ const Schedule = () => {
           </p>
         </div>
 
+        {/* Class Legend */}
+        <div className="mb-12 text-center">
+          <h3 className="text-xl font-semibold mb-6 text-gray-300">Class Types</h3>
+          <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex items-center space-x-2">
+              <div className="w-4 h-4 bg-blue-600 rounded"></div>
+              <span className="text-gray-300">Youth Programmes</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <div className="w-4 h-4 bg-pink-600 rounded"></div>
+              <span className="text-gray-300">Women's Division</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <div className="w-4 h-4 bg-orange-600 rounded"></div>
+              <span className="text-gray-300">Adult Classes</span>
+            </div>
+          </div>
+        </div>
+
         {/* Weekly Schedule */}
         <div className="max-w-5xl mx-auto">
           <div className="grid gap-4">
@@ -126,24 +145,6 @@ const Schedule = () => {
           </div>
         </div>
 
-        {/* Class Legend */}
-        <div className="mt-12 text-center">
-          <h3 className="text-xl font-semibold mb-6 text-gray-300">Class Types</h3>
-          <div className="flex flex-wrap justify-center gap-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-4 h-4 bg-blue-600 rounded"></div>
-              <span className="text-gray-300">Youth Programmes</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-4 h-4 bg-pink-600 rounded"></div>
-              <span className="text-gray-300">Women's Division</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-4 h-4 bg-orange-600 rounded"></div>
-              <span className="text-gray-300">Adult Classes</span>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
