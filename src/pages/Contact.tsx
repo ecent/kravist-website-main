@@ -68,7 +68,7 @@ const Contact = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="text-gray-300 space-y-2">
-                    <p><strong>Email:</strong> info@kravist.sg</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@kravist.sg" className="text-orange-400 hover:text-orange-300 transition-colors">info@kravist.sg</a></p>
                   </CardContent>
                 </Card>
               </div>
