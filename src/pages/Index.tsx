@@ -19,7 +19,7 @@ const Index = () => {
       id: "youth",
       title: "Youth Division",
       subtitle: "Ages 6-17",
-      description: "Singapore's premier youth self defence program. Our Youth Division provides a safe, structured environment where children develop confidence, character, and practical self defence skills. Designed with parents' peace of mind in mind, our age-appropriate curriculum builds resilience and life skills that extend far beyond the training mat.",
+      description: "Empowering Youth with Self‑Defence Skills: Our Kravist Youth Division offers practical Krav Maga classes that teach children and teens (6–17 years old) how to protect themselves in real-life situations. It's not just about punches and kicks – kids learn to deter, prevent, and solve problems both in school and outside, from handling bullies at school to dealing with stranger dangers, all in a safe and fun environment",
       icon: Shield,
       features: ["Parent-approved curriculum", "Character development focus", "Anti-bullying training", "Confidence & discipline building", "CPR-certified instructors", "Safe learning environment"],
       images: [
