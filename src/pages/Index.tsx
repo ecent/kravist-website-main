@@ -131,12 +131,8 @@ const Index = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent">
             SINGAPORE'S PREMIER YOUTH AND ADULTS SELF DEFENCE STUDIO
           </h1>
-          <p className="text-lg md:text-xl mb-6 text-gray-300 max-w-3xl mx-auto">
-            Our CPR certified instructors are building confident, disciplined and resilient students through authentic self defence training. 
-            Our flagship Youth division is designed with parents' peace of mind and children's development at its core.
-          </p>
-          <p className="text-lg md:text-xl mb-8 text-gray-300 max-w-2xl mx-auto">
-            Adult and Women's Division classes available for the whole family.
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            From Youth to Adult classes, we help families grow stronger together. Our CPR-certified instructors teach authentic self-defence while building confidence, discipline, and resilience in every student.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="#divisions">
