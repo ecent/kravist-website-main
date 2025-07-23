@@ -318,7 +318,7 @@ const Index = () => {
                       <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$450</a>
                     </div>
                     <div className="flex justify-between">
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Juniors (10-13)</a>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Juniors (10-14)</a>
                       <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$495</a>
                     </div>
                     <div className="flex justify-between">
@@ -335,7 +335,7 @@ const Index = () => {
                       <a href="https://kravist.pushpress.com/landing/plans/plan_cd5f10a5137544/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 hover:text-orange-300 transition-colors">FREE</a>
                     </div>
                     <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_c949e71f9af2d5/login" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Juniors (10-13)</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_c949e71f9af2d5/login" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Juniors (10-14)</a>
                       <a href="https://kravist.pushpress.com/landing/plans/plan_c949e71f9af2d5/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 hover:text-orange-300 transition-colors">FREE</a>
                     </div>
                     <div className="flex justify-between">
@@ -501,34 +501,41 @@ const Index = () => {
           </div>
 
           <Tabs defaultValue="what-is" className="w-full">
-            <TabsList className="grid w-full grid-cols-7 bg-gray-800 mb-8">
-              <TabsTrigger value="what-is" className="flex items-center gap-2 text-sm">
-                <Info className="h-4 w-4" />
-                What is Krav Maga?
+            <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-2 bg-gray-800 mb-8 h-auto">
+              <TabsTrigger value="what-is" className="flex items-center gap-2 text-xs sm:text-sm p-2 sm:p-3">
+                <Info className="h-3 w-3 sm:h-4 sm:w-4" />
+                <span className="hidden sm:inline">What is Krav Maga?</span>
+                <span className="sm:hidden">What is KM?</span>
               </TabsTrigger>
-              <TabsTrigger value="youth-krav-maga" className="flex items-center gap-2 text-sm">
-                <Shield className="h-4 w-4" />
-                Youth Krav Maga
+              <TabsTrigger value="youth-krav-maga" className="flex items-center gap-2 text-xs sm:text-sm p-2 sm:p-3">
+                <Shield className="h-3 w-3 sm:h-4 sm:w-4" />
+                <span className="hidden sm:inline">Youth Krav Maga</span>
+                <span className="sm:hidden">Youth KM</span>
               </TabsTrigger>
-              <TabsTrigger value="youth-term-program" className="flex items-center gap-2 text-sm">
-                <Shield className="h-4 w-4" />
-                Youth Term Program
+              <TabsTrigger value="youth-term-program" className="flex items-center gap-2 text-xs sm:text-sm p-2 sm:p-3">
+                <Shield className="h-3 w-3 sm:h-4 sm:w-4" />
+                <span className="hidden sm:inline">Youth Term Program</span>
+                <span className="sm:hidden">Term Program</span>
               </TabsTrigger>
-              <TabsTrigger value="first-timer" className="flex items-center gap-2 text-sm">
-                <Users className="h-4 w-4" />
-                First Timer Info
+              <TabsTrigger value="first-timer" className="flex items-center gap-2 text-xs sm:text-sm p-2 sm:p-3">
+                <Users className="h-3 w-3 sm:h-4 sm:w-4" />
+                <span className="hidden sm:inline">First Timer Info</span>
+                <span className="sm:hidden">First Timer</span>
               </TabsTrigger>
-              <TabsTrigger value="member-app" className="flex items-center gap-2 text-sm">
-                <Smartphone className="h-4 w-4" />
-                Member App
+              <TabsTrigger value="member-app" className="flex items-center gap-2 text-xs sm:text-sm p-2 sm:p-3">
+                <Smartphone className="h-3 w-3 sm:h-4 sm:w-4" />
+                <span className="hidden sm:inline">Member App</span>
+                <span className="sm:hidden">App</span>
               </TabsTrigger>
-              <TabsTrigger value="grading" className="flex items-center gap-2 text-sm">
-                <Award className="h-4 w-4" />
-                Grading
+              <TabsTrigger value="grading" className="flex items-center gap-2 text-xs sm:text-sm p-2 sm:p-3">
+                <Award className="h-3 w-3 sm:h-4 sm:w-4" />
+                <span className="hidden sm:inline">Grading</span>
+                <span className="sm:hidden">Grading</span>
               </TabsTrigger>
-              <TabsTrigger value="faq" className="flex items-center gap-2 text-sm">
-                <HelpCircle className="h-4 w-4" />
-                General FAQ
+              <TabsTrigger value="faq" className="flex items-center gap-2 text-xs sm:text-sm p-2 sm:p-3">
+                <HelpCircle className="h-3 w-3 sm:h-4 sm:w-4" />
+                <span className="hidden sm:inline">General FAQ</span>
+                <span className="sm:hidden">FAQ</span>
               </TabsTrigger>
             </TabsList>
 
