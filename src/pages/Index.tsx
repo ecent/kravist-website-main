@@ -19,7 +19,7 @@ const Index = () => {
       id: "youth",
       title: "Youth Division",
       subtitle: "Ages 6-17",
-      description: "Empowering Youth with Self‑Defence Skills: Our Kravist Youth Division offers practical Krav Maga classes that teach children and teens (6–17 years old) how to protect themselves in real-life situations. It's not just about punches and kicks – kids learn to deter, prevent, and solve problems both in school and outside, from handling bullies at school to dealing with stranger dangers, all in a safe and fun environment.",
+      description: "Empowering Youth with Self‑Defence Skills: Our Kravist Youth Division offers practical Krav Maga classes that teach children and teens (6–17 years old) how to protect themselves in real-life situations. It's not just about punches and kicks – kids learn to deter, prevent, and solve problems both in school and outside, from handling bullies at school to dealing with stranger dangers, all in a safe and fun environment. By training with us, students become more aware of their surroundings and confident in their ability to defend themselves and their loved ones.",
       icon: Shield,
       features: ["Parent-approved curriculum", "Character development focus", "Anti-bullying training", "Confidence & discipline building", "CPR-certified instructors", "Safe learning environment"],
       images: [
@@ -505,10 +505,14 @@ const Index = () => {
           </div>
 
           <Tabs defaultValue="what-is" className="w-full">
-            <TabsList className="grid w-full grid-cols-5 bg-gray-800 mb-8">
+            <TabsList className="grid w-full grid-cols-6 bg-gray-800 mb-8">
               <TabsTrigger value="what-is" className="flex items-center gap-2 text-sm">
                 <Info className="h-4 w-4" />
                 What is Krav Maga?
+              </TabsTrigger>
+              <TabsTrigger value="youth-krav-maga" className="flex items-center gap-2 text-sm">
+                <Shield className="h-4 w-4" />
+                Youth Krav Maga
               </TabsTrigger>
               <TabsTrigger value="first-timer" className="flex items-center gap-2 text-sm">
                 <Users className="h-4 w-4" />
@@ -567,6 +571,25 @@ const Index = () => {
                       </ul>
                     </div>
                   </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="youth-krav-maga" className="space-y-6">
+              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                <CardHeader>
+                  <CardTitle className="text-2xl flex items-center gap-3">
+                    <Shield className="h-6 w-6 text-orange-500" />
+                    Youth Krav Maga
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-gray-300 leading-relaxed">
+                    Krav Maga is a modern self-defence system known for its effective, realistic techniques, so your child gains real-world skills.
+                  </p>
+                  <p className="text-gray-300 leading-relaxed">
+                    Family-Friendly Community in Tai Seng: Located at 11 Irving Place (Tai Seng Point) near Tai Seng MRT, our studio is convenient for families in Tai Seng, MacPherson, Paya Lebar, Serangoon, and surrounding areas. We foster a welcoming, community-oriented atmosphere where students and parents alike feel at home. All levels are welcome – whether your child is a complete beginner or has tried other martial arts, they'll find encouraging peers and mentors here. Our coaches are certified professionals who prioritize safety, personal growth, and fun. When you join Kravist's youth classes, you're not just signing up for "kids' martial arts in Tai Seng" – you're joining a community that helps children grow stronger, more confident, and kinder.
+                  </p>
                 </CardContent>
               </Card>
             </TabsContent>
