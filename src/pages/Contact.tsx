@@ -1,8 +1,60 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Phone, Facebook, Instagram } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { MapPin, Phone, Facebook, Instagram, Send } from "lucide-react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
+
+const formSchema = z.object({
+  name: z.string().min(2, "Name must be at least 2 characters"),
+  email: z.string().email("Please enter a valid email address"),
+  division: z.string().min(1, "Please select a division"),
+  message: z.string().min(10, "Message must be at least 10 characters"),
+});
+
+type FormData = z.infer<typeof formSchema>;
 
 const Contact = () => {
+  const { toast } = useToast();
+  const form = useForm<FormData>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      division: "",
+      message: "",
+    },
+  });
+
+  const onSubmit = async (data: FormData) => {
+    try {
+      const { error } = await (supabase as any)
+        .from('Website Contact Form')
+        .insert([data]);
+
+      if (error) throw error;
+
+      toast({
+        title: "Message sent!",
+        description: "Thank you for contacting us. We'll get back to you soon.",
+      });
+
+      form.reset();
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive",
+      });
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
@@ -72,6 +124,115 @@ const Contact = () => {
                   </CardContent>
                 </Card>
               </div>
+            </div>
+
+            {/* Contact Form */}
+            <div className="mt-16">
+              <h2 className="text-3xl font-bold mb-6 text-center">Send Us A Message</h2>
+              <Card className="bg-gray-800 border-gray-700">
+                <CardContent className="p-6">
+                  <Form {...form}>
+                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <FormField
+                          control={form.control}
+                          name="name"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel className="text-white">Name</FormLabel>
+                              <FormControl>
+                                <Input
+                                  placeholder="Your full name"
+                                  className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
+                                  {...field}
+                                />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+
+                        <FormField
+                          control={form.control}
+                          name="email"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel className="text-white">Email Address</FormLabel>
+                              <FormControl>
+                                <Input
+                                  type="email"
+                                  placeholder="your.email@example.com"
+                                  className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
+                                  {...field}
+                                />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                      </div>
+
+                      <FormField
+                        control={form.control}
+                        name="division"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="text-white">Division</FormLabel>
+                            <Select onValueChange={field.onChange} defaultValue={field.value}>
+                              <FormControl>
+                                <SelectTrigger className="bg-gray-700 border-gray-600 text-white">
+                                  <SelectValue placeholder="Select a division" />
+                                </SelectTrigger>
+                              </FormControl>
+                              <SelectContent className="bg-gray-700 border-gray-600">
+                                <SelectItem value="Youth" className="text-white hover:bg-gray-600">Youth</SelectItem>
+                                <SelectItem value="Adults" className="text-white hover:bg-gray-600">Adults</SelectItem>
+                                <SelectItem value="Women's" className="text-white hover:bg-gray-600">Women's</SelectItem>
+                                <SelectItem value="Corporate" className="text-white hover:bg-gray-600">Corporate</SelectItem>
+                                <SelectItem value="Private" className="text-white hover:bg-gray-600">Private</SelectItem>
+                              </SelectContent>
+                            </Select>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+
+                      <FormField
+                        control={form.control}
+                        name="message"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="text-white">Message</FormLabel>
+                            <FormControl>
+                              <Textarea
+                                placeholder="Tell us about your interest in Krav Maga or any questions you have..."
+                                className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400 min-h-[120px]"
+                                {...field}
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+
+                      <Button
+                        type="submit"
+                        className="w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3"
+                        disabled={form.formState.isSubmitting}
+                      >
+                        {form.formState.isSubmitting ? (
+                          "Sending..."
+                        ) : (
+                          <>
+                            <Send className="w-4 h-4 mr-2" />
+                            Send Message
+                          </>
+                        )}
+                      </Button>
+                    </form>
+                  </Form>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
