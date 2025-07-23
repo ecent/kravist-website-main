@@ -585,10 +585,19 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-300 leading-relaxed">
-                    Krav Maga is a modern self-defence system known for its effective, realistic techniques, so your child gains real-world skills.
+                    The best martial arts class for your child is one that is effective, safe, and engaging. The Kravist Youth Division specialises in Krav Maga for kids, which many parents consider ideal because it focuses on both self-defence and character development.
                   </p>
                   <p className="text-gray-300 leading-relaxed">
-                    Family-Friendly Community in Tai Seng: Located at 11 Irving Place (Tai Seng Point) near Tai Seng MRT, our studio is convenient for families in Tai Seng, MacPherson, Paya Lebar, Serangoon, and surrounding areas. We foster a welcoming, community-oriented atmosphere where students and parents alike feel at home. All levels are welcome – whether your child is a complete beginner or has tried other martial arts, they'll find encouraging peers and mentors here. Our coaches are certified professionals who prioritize safety, personal growth, and fun. When you join Kravist's youth classes, you're not just signing up for "kids' martial arts in Tai Seng" – you're joining a community that helps children grow stronger, more confident, and kinder.
+                    Our classes near Tai Seng teach practical self-defence skills in a fun, supportive setting. Children learn to handle bullying situations and stranger-danger scenarios confidently, all while getting fit and having fun.
+                  </p>
+                  <p className="text-gray-300 leading-relaxed">
+                    With our experienced instructors and age-specific groups, we offer one of the top kids' self defence programs in Singapore – a program that not only keeps kids active but also builds their confidence and life skills.
+                  </p>
+                  <p className="text-gray-300 leading-relaxed">
+                    Located at 11 Irving Place (Tai Seng Point) near Tai Seng MRT, our studio is convenient for families in Tai Seng, MacPherson, Paya Lebar, Serangoon, and surrounding areas. We foster a welcoming, community-oriented atmosphere where students and parents alike feel at home. All levels are welcome – whether your child is a complete beginner or has tried other martial arts, they'll find encouraging peers and mentors here.
+                  </p>
+                  <p className="text-gray-300 leading-relaxed">
+                    Our coaches are certified professionals who prioritise safety, personal growth, and fun.
                   </p>
                 </CardContent>
               </Card>
