@@ -35,11 +35,22 @@ const Contact = () => {
 
   const onSubmit = async (data: FormData) => {
     try {
-      const { error } = await (supabase as any)
+      // Save to database
+      const { error: dbError } = await (supabase as any)
         .from('Website Contact Form')
         .insert([data]);
 
-      if (error) throw error;
+      if (dbError) throw dbError;
+
+      // Send email notifications
+      const { error: emailError } = await supabase.functions.invoke('send-contact-email', {
+        body: data
+      });
+
+      if (emailError) {
+        console.error('Email sending failed:', emailError);
+        // Don't throw error here - form submission was successful even if email failed
+      }
 
       toast({
         title: "Message sent!",
@@ -48,6 +59,7 @@ const Contact = () => {
 
       form.reset();
     } catch (error) {
+      console.error('Contact form error:', error);
       toast({
         title: "Error",
         description: "Failed to send message. Please try again.",
