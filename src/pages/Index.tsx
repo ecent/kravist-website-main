@@ -5,13 +5,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { Users, Shield, Target, Building, User, DollarSign, BookOpen, Info, Smartphone, Award, HelpCircle, Facebook, Instagram } from "lucide-react";
+import { Users, Shield, Target, Building, User, DollarSign, BookOpen, Info, Smartphone, Award, HelpCircle, Facebook, Instagram, ChevronLeft, ChevronRight } from "lucide-react";
 import Instructors from "@/components/Instructors";
 import Schedule from "@/components/Schedule";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("youth");
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number>(0);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const divisions = [
     {
@@ -83,6 +84,27 @@ const Index = () => {
 
   const activeDivision = divisions.find(d => d.id === activeSection);
 
+  const handleImageClick = (index: number) => {
+    setSelectedImageIndex(index);
+    setIsDialogOpen(true);
+  };
+
+  const handlePrevImage = () => {
+    if (activeDivision?.images) {
+      setSelectedImageIndex((prev) => 
+        prev === 0 ? activeDivision.images.length - 1 : prev - 1
+      );
+    }
+  };
+
+  const handleNextImage = () => {
+    if (activeDivision?.images) {
+      setSelectedImageIndex((prev) => 
+        prev === activeDivision.images.length - 1 ? 0 : prev + 1
+      );
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Navigation */}
@@ -127,7 +149,7 @@ const Index = () => {
       </section>
 
       {/* Divisions Section */}
-      <section id="divisions" className="py-20 px-4 sm:px-6 lg:px-8">
+      <section id="divisions" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/80">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Programs</h2>
@@ -193,34 +215,63 @@ const Index = () => {
               </div>
               <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
                 {activeDivision.images ? (
-                  <Carousel className="w-full max-w-xs mx-auto">
-                    <CarouselContent>
-                      {activeDivision.images.map((image, index) => (
-                        <CarouselItem key={index}>
-                          <Dialog>
-                            <DialogTrigger asChild>
-                              <div className="h-64 rounded-lg overflow-hidden cursor-pointer hover:opacity-80 transition-opacity">
-                                <img 
-                                  src={image} 
-                                  alt={`${activeDivision.title} training ${index + 1}`}
-                                  className="w-full h-full object-cover"
-                                />
-                              </div>
-                            </DialogTrigger>
-                            <DialogContent className="max-w-4xl max-h-[90vh] p-0">
+                  <>
+                    <Carousel className="w-full max-w-xs mx-auto">
+                      <CarouselContent>
+                        {activeDivision.images.map((image, index) => (
+                          <CarouselItem key={index}>
+                            <div 
+                              className="h-64 rounded-lg overflow-hidden cursor-pointer hover:opacity-80 transition-opacity"
+                              onClick={() => handleImageClick(index)}
+                            >
                               <img 
                                 src={image} 
                                 alt={`${activeDivision.title} training ${index + 1}`}
-                                className="w-full h-full object-contain"
+                                className="w-full h-full object-cover"
                               />
-                            </DialogContent>
-                          </Dialog>
-                        </CarouselItem>
-                      ))}
-                    </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
-                  </Carousel>
+                            </div>
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                      <CarouselPrevious />
+                      <CarouselNext />
+                    </Carousel>
+                    
+                    <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+                      <DialogContent className="max-w-5xl max-h-[90vh] p-6 bg-black">
+                        <div className="relative">
+                          <img 
+                            src={activeDivision.images[selectedImageIndex]} 
+                            alt={`${activeDivision.title} training ${selectedImageIndex + 1}`}
+                            className="w-full h-auto max-h-[80vh] object-contain mx-auto"
+                          />
+                          {activeDivision.images.length > 1 && (
+                            <>
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white"
+                                onClick={handlePrevImage}
+                              >
+                                <ChevronLeft className="h-6 w-6" />
+                              </Button>
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white"
+                                onClick={handleNextImage}
+                              >
+                                <ChevronRight className="h-6 w-6" />
+                              </Button>
+                              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 px-3 py-1 rounded-full text-white text-sm">
+                                {selectedImageIndex + 1} / {activeDivision.images.length}
+                              </div>
+                            </>
+                          )}
+                        </div>
+                      </DialogContent>
+                    </Dialog>
+                  </>
                 ) : (
                   <div className="h-64 bg-gray-700 rounded-lg flex items-center justify-center">
                     <span className="text-gray-400 text-lg">Training Image Placeholder</span>
@@ -232,8 +283,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Pricing Section - moved up */}
-      <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+      {/* Pricing Section */}
+      <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="flex justify-center mb-4">
@@ -439,7 +490,7 @@ const Index = () => {
         <Instructors />
       </div>
 
-      <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8">
+      <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="flex justify-center mb-4">

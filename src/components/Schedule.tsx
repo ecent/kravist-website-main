@@ -77,7 +77,7 @@ const Schedule = () => {
   };
 
   return (
-    <section id="schedule" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="schedule" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/60">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="flex justify-center mb-4">

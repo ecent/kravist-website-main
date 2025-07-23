@@ -21,7 +21,7 @@ const Instructors = () => {
       name: "Minnie Teo",
       title: "Head of Women's Division",
       bio: [
-        "Krav Maga Level G2",
+        "Krav Maga Level G3",
         "Animal Flow Level 1 Instructor",
         "SFG 1 Kettlebell Instructor",
         "Autism Fitness Certified Pro Level 1",
@@ -34,7 +34,7 @@ const Instructors = () => {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/40">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Meet Our Instructors</h2>
