@@ -39,7 +39,8 @@ const Instructors = () => {
         "Krav Maga Level G4",
         "Certified General and Youth Instructor",
         "10+ years training Krav Maga",
-        "7+ years teaching Krav Maga"
+        "7+ years teaching Krav Maga",
+        "CPR Certified"
       ],
       image: "/lovable-uploads/95b3db7b-d1a6-4391-8a7a-f8ca108172bc.png"
     }
