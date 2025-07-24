@@ -128,11 +128,28 @@ const Contact = () => {
                   <CardHeader>
                     <CardTitle className="flex items-center space-x-3 text-white">
                       <Phone className="h-6 w-6 text-orange-500" />
-                      <span>Contact Info</span>
+                      <span>Follow Us</span>
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="text-gray-300 space-y-2">
-                    <p><strong>Email:</strong> <a href="mailto:info@kravist.sg" className="text-orange-400 hover:text-orange-300 transition-colors">info@kravist.sg</a></p>
+                  <CardContent className="text-gray-300 space-y-3">
+                    <a 
+                      href="https://facebook.com/kravist" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 text-orange-400 hover:text-orange-300 transition-colors"
+                    >
+                      <Facebook className="h-5 w-5" />
+                      <span>Facebook</span>
+                    </a>
+                    <a 
+                      href="https://instagram.com/kravist" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 text-orange-400 hover:text-orange-300 transition-colors"
+                    >
+                      <Instagram className="h-5 w-5" />
+                      <span>Instagram</span>
+                    </a>
                   </CardContent>
                 </Card>
               </div>
