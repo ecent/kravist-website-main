@@ -29,22 +29,17 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send notification email to the gym
     const notificationResponse = await resend.emails.send({
-      from: "Kravist Contact Form <contact@kravist.sg>",
+      from: "noreply@kravist.sg",
       to: ["info@kravist.sg"],
-      subject: `New Contact Form Submission - ${division}`,
+      replyTo: email,
+      subject: "New Contact Form Submission",
       html: `
-        <h2>New Contact Form Submission</h2>
+        <p>New contact form submission:</p>
+        <br>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Division:</strong> ${division}</p>
-        <p><strong>Message:</strong></p>
-        <div style="background: #f5f5f5; padding: 15px; border-radius: 5px; margin-top: 10px;">
-          ${message.replace(/\n/g, '<br>')}
-        </div>
-        <hr style="margin: 20px 0;">
-        <p style="color: #666; font-size: 12px;">
-          This email was sent from the Kravist website contact form.
-        </p>
+        <p><strong>Message:</strong> ${message.replace(/\n/g, '<br>')}</p>
       `,
     });
 
