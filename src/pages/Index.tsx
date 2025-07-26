@@ -46,11 +46,11 @@ const Index = () => {
     },
     {
       id: "adults",
-      title: "General Adults",
-      subtitle: "All Skill Levels Welcome",
-      description: "Comprehensive Krav Maga training for adults of all fitness levels. Learn practical self defence while getting an incredible workout.",
+      title: "Adult Division",
+      subtitle: "Practical Self Defence for Every Adult",
+      description: "Dynamic Krav Maga training for adults of all skill levels, blending real-world self defence with high-intensity workouts to improve strength, conditioning, and confidence.",
       icon: Users,
-      features: ["Beginner to advanced", "Full-body conditioning", "Stress drills", "Challenging and safe training"],
+      features: ["Beginner-friendly to advanced techniques", "Full-body conditioning drills", "Realistic stress scenario training", "Safe and challenging environment"],
       images: [
         "/lovable-uploads/31c7cb7f-41a1-4955-b5ad-4242a419b348.png",
         "/lovable-uploads/5c0fca09-c6a3-4bf6-aae3-81ec7d7c9417.png"
@@ -59,10 +59,10 @@ const Index = () => {
     {
       id: "corporate",
       title: "Corporate Training",
-      subtitle: "Team Building & Safety",
-      description: "Custom programs for businesses focusing on employee safety, team building, and stress management through Krav Maga principles.",
+      subtitle: "Workplace Safety & Team Cohesion",
+      description: "Tailored corporate self defence and team-building programs that enhance employee confidence, stress management, and workplace safety through Krav Maga principles.",
       icon: Building,
-      features: ["On-site training", "Team building", "Workplace safety", "Stress management"],
+      features: ["On-site or off-site corporate training", "Team-building exercises", "Workplace safety techniques", "Stress-resilience and confidence building"],
       images: [
         "/lovable-uploads/65b46f6e-9532-42fe-a30a-8642e6892304.png"
       ]
@@ -70,10 +70,10 @@ const Index = () => {
     {
       id: "private",
       title: "Private Training",
-      subtitle: "Personalised Instruction",
-      description: "One-on-one or small group sessions tailored to your specific goals, schedule, and skill level for accelerated learning.",
+      subtitle: "One-on-One Krav Maga Coaching",
+      description: "Accelerate your progress with private Krav Maga sessions tailored to your specific goals, schedule, and fitness level for a personalized and focused learning experience.",
       icon: User,
-      features: ["Customised curriculum", "Flexible scheduling", "Accelerated learning", "Personal attention"],
+      features: ["Fully customized self defence curriculum", "Flexible scheduling options", "Rapid skill development", "Personal instructor guidance"],
       images: [
         "/lovable-uploads/215d4bad-4cfa-4938-bfe1-5023913ef9a0.png"
       ]
