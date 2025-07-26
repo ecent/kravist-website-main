@@ -34,10 +34,10 @@ const Index = () => {
     {
       id: "womens",
       title: "Women's Division",
-      subtitle: "Empowerment Through Training",
-      description: "Specialised classes focusing on practical self defence, fitness, and confidence building in a supportive environment designed specifically for women.",
+      subtitle: "Empowerment Through Real-World Self Defence",
+      description: "Join Singapore's leading women's self defence classes, combining Krav Maga techniques, fitness, and confidence-building in a safe, supportive environment designed exclusively for women.",
       icon: Target,
-      features: ["Women-only classes", "Real-world scenarios", "Stress testing", "Structured curriculum"],
+      features: ["Women-only self defence classes", "Real-life threat scenarios", "Stress-tested training", "Progressive, structured curriculum"],
       images: [
         "/lovable-uploads/60750581-3991-42cf-8588-bf262fe64ea9.png",
         "/lovable-uploads/985f264b-e56a-4cd2-bfd0-a78167ab7004.png",
