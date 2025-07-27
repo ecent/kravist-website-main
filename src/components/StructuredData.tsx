@@ -55,7 +55,6 @@ const StructuredData = ({ localBusiness, faqPage, organization }: StructuredData
       "name": localBusiness.name,
       "description": localBusiness.description,
       "url": localBusiness.url,
-      "telephone": localBusiness.phone,
       "email": localBusiness.email,
       "address": {
         "@type": "PostalAddress",

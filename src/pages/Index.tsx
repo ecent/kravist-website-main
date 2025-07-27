@@ -164,7 +164,7 @@ const Index = () => {
             addressCountry: "Singapore",
             postalCode: "369551"
           },
-          phone: "+65 9177 2133",
+          phone: "",
           email: "hello@kravist.sg",
           url: "https://kravist.sg",
           openingHours: [
