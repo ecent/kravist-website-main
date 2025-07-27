@@ -613,15 +613,17 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-300 leading-relaxed">
-                    Krav Maga is a self defence and fighting system developed for practical, real-world applications. 
-                    At Kravist alongside our adult and corporate programs, we've adapted this proven system for youth development, emphasizing character building, 
-                    confidence, and practical safety skills in age-appropriate ways.
+                    Krav Maga is a practical self-defence and combat system developed for real-world situations. 
+                    It's effective for adults, youth, and corporate teams because it focuses on awareness, avoidance, 
+                    and fast, instinctive responses rather than competition.
                   </p>
                   <p className="text-gray-300 leading-relaxed">
-                    Our youth-focused Krav Maga program teaches children to be aware of their surroundings, 
-                    avoid confrontation when possible, and build the confidence to handle challenging situations. 
-                    Our approach prioritizes mental resilience and character development alongside physical techniques.
+                    At Kravist Singapore, we adapt Krav Maga for:
                   </p>
+                  <ul className="text-gray-300 space-y-1 mb-4">
+                    <li>• <strong>Kids and Teens:</strong> Confidence, character development, bullying prevention, and safety awareness.</li>
+                    <li>• <strong>Adults:</strong> Realistic self-defence skills, full-body conditioning, and stress-tested scenarios to build both mental and physical resilience.</li>
+                  </ul>
                   <div className="grid md:grid-cols-2 gap-4 mt-6">
                     <div className="space-y-2">
                       <h4 className="font-semibold text-orange-400">Youth Focus:</h4>
@@ -637,7 +639,7 @@ const Index = () => {
                       <ul className="space-y-1 text-gray-300">
                         <li>• CPR-certified instructors</li>
                         <li>• Age-appropriate curriculum</li>
-                        <li>• Safe learning environment</li>
+                        <li>• Safe, supervised training environment</li>
                         <li>• Regular progress updates</li>
                       </ul>
                     </div>
@@ -656,20 +658,27 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-300 leading-relaxed">
-                    The best martial arts class for your child is one that is effective, safe, and engaging. The Kravist Youth Division specialises in Krav Maga for kids, which many parents consider ideal because it focuses on both self-defence and character development.
+                    <strong>Why choose Kravist Youth Krav Maga for kids and teens?</strong>
                   </p>
                   <p className="text-gray-300 leading-relaxed">
-                    Our classes near Tai Seng teach practical self-defence skills in a fun, supportive setting. Children learn to handle bullying situations and stranger-danger scenarios confidently, all while getting fit and having fun.
+                    Our Youth Division specializes in Krav Maga for kids (6–17 years), blending practical self-defence skills with character-building. 
+                    Students learn to handle bullying, stranger-danger, and real-life scenarios in a safe, engaging environment.
                   </p>
-                  <p className="text-gray-300 leading-relaxed">
-                    With our experienced instructors and age-specific groups, we offer one of the top kids' self defence programs in Singapore – a program that not only keeps kids active but also builds their confidence and life skills.
-                  </p>
-                  <p className="text-gray-300 leading-relaxed">
-                    Located at 11 Irving Place (Tai Seng Point) near Tai Seng MRT, our studio is convenient for families in Tai Seng, MacPherson, Paya Lebar, Serangoon, and surrounding areas. We foster a welcoming, community-oriented atmosphere where students and parents alike feel at home. All levels are welcome – whether your child is a complete beginner or has tried other martial arts, they'll find encouraging peers and mentors here.
-                  </p>
-                  <p className="text-gray-300 leading-relaxed">
-                    Our coaches are certified professionals who prioritise safety, personal growth, and fun.
-                  </p>
+                  <div className="space-y-2 mb-4">
+                    <h4 className="font-semibold text-orange-400">Why Parents Choose Us:</h4>
+                    <ul className="space-y-1 text-gray-300">
+                      <li>• Experienced, certified instructors</li>
+                      <li>• Fun, confidence-boosting classes</li>
+                      <li>• Age-specific groups (Kids, Juniors, Teens)</li>
+                      <li>• Proven track record as one of Singapore's leading youth self-defence programs</li>
+                    </ul>
+                  </div>
+                  <div className="space-y-2">
+                    <h4 className="font-semibold text-orange-400">Location:</h4>
+                    <p className="text-gray-300">
+                      We are located at 11 Irving Place (Tai Seng Point), near Tai Seng MRT, serving families in MacPherson, Paya Lebar, Serangoon, and surrounding areas.
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>
@@ -684,25 +693,44 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-300 leading-relaxed">
-                    Our Youth Term Program runs three terms per year, each lasting around four months. We have a waitlist for new students, as spots are limited to ensure quality instruction and personal attention. The program is divided into three age groups:
+                    We run three terms per year, each lasting around 4 months. Our program is divided into:
                   </p>
-                  <div className="space-y-2">
-                    <p className="text-gray-300"><strong>Kids (6–10 years old)</strong></p>
-                    <p className="text-gray-300"><strong>Juniors (10–14 years old)</strong></p>
-                    <p className="text-gray-300"><strong>Teens (14–17 years old)</strong></p>
+                  <ul className="text-gray-300 space-y-1 mb-4">
+                    <li>• <strong>Kids:</strong> 6–10 years old</li>
+                    <li>• <strong>Juniors:</strong> 10–14 years old</li>
+                    <li>• <strong>Teens:</strong> 14–17 years old</li>
+                  </ul>
+                  <p className="text-gray-300 leading-relaxed">
+                    Each class is designed to be age-appropriate, progressive, and structured, building skills in self-defence, discipline, leadership, and accountability.
+                    We offer grading and certification, allowing students to track progress and celebrate milestones.
+                  </p>
+                  <p className="text-gray-300 leading-relaxed">
+                    <strong>Spots are limited — join our waitlist to secure your child's place.</strong>
+                  </p>
+                  <div className="bg-gray-800/50 p-4 rounded-lg mt-6">
+                    <p className="text-orange-400 font-semibold mb-2">Ready to enroll your child?</p>
+                    <p className="text-gray-300 text-sm mb-4">
+                      Spots are limited – join our waitlist to secure your child's place in the next term.
+                    </p>
+                    <div className="space-y-2">
+                      <a 
+                        href="https://forms.gle/LBNkox3CULPk6fFGA" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="block w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center"
+                      >
+                        Join Youth Division Waitlist
+                      </a>
+                      <a 
+                        href="https://forms.gle/EQRgSjLWZq7VFi4q7" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="block w-full bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded transition-colors text-center"
+                      >
+                        Join Women's Division Waitlist
+                      </a>
+                    </div>
                   </div>
-                  <p className="text-gray-300 leading-relaxed">
-                    This structure ensures that each class is age-appropriate, engaging, and tailored to the developmental needs of your child.
-                  </p>
-                  <p className="text-gray-300 leading-relaxed">
-                    Our curriculum is progressive and structured, building core skills over time. Students learn fundamental self-defence techniques, but also focus on confidence, discipline, leadership, and accountability. Each term builds on the previous one, ensuring steady growth in both physical ability and character.
-                  </p>
-                  <p className="text-gray-300 leading-relaxed">
-                    We offer a formal grading system and certification, allowing students to track their progress and celebrate milestones. This structured pathway keeps children motivated and gives parents a clear sense of their development.
-                  </p>
-                  <p className="text-gray-300 leading-relaxed">
-                    <Link to="/contact" className="text-orange-400 hover:text-orange-300 transition-colors">Contact us</Link> or register to our <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 transition-colors">waitlist</a> to find out more!
-                  </p>
                 </CardContent>
               </Card>
             </TabsContent>
@@ -717,30 +745,35 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-300 leading-relaxed">
-                    Welcome to Singapore's most trusted youth self defence program! We understand that starting something new can be 
-                    exciting for children and concerning for parents. Our first-timer experience is designed to be welcoming, safe, and supportive for the whole family.
+                    Starting Krav Maga is designed to be welcoming, safe, and encouraging for all students — whether you're a child, teen, or adult beginner.
                   </p>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="space-y-3">
-                      <h4 className="font-semibold text-orange-400">What Your Child Can Expect:</h4>
-                      <ul className="space-y-2 text-gray-300">
+                  <div className="grid md:grid-cols-2 gap-4 mt-6">
+                    <div className="space-y-2">
+                      <h4 className="font-semibold text-orange-400">For Kids and Teens:</h4>
+                      <ul className="space-y-1 text-gray-300">
                         <li>• Gentle, age-appropriate introduction</li>
-                        <li>• Fun, engaging activities</li>
-                        <li>• Character-building focus</li>
-                        <li>• Supportive peer environment</li>
-                        <li>• No pressure or intimidation</li>
+                        <li>• Fun, engaging drills</li>
+                        <li>• Peer encouragement and character focus</li>
                       </ul>
                     </div>
-                    <div className="space-y-3">
-                      <h4 className="font-semibold text-orange-400">What Parents Love:</h4>
-                      <ul className="space-y-2 text-gray-300">
-                        <li>• CPR-certified instructors</li>
-                        <li>• Regular progress updates</li>
-                        <li>• Character development focus</li>
-                        <li>• Safe, supervised environment</li>
-                        <li>• Family-friendly community</li>
+                    <div className="space-y-2">
+                      <h4 className="font-semibold text-orange-400">For Adults:</h4>
+                      <ul className="space-y-1 text-gray-300">
+                        <li>• Beginner-friendly classes with step-by-step guidance</li>
+                        <li>• No prior martial arts experience needed</li>
+                        <li>• A focus on fitness, practical self-defence, and stress-tested drills</li>
+                        <li>• Supportive community with like-minded students</li>
                       </ul>
                     </div>
+                  </div>
+                  <div className="space-y-2 mt-6">
+                    <h4 className="font-semibold text-orange-400">What Parents Love:</h4>
+                    <ul className="space-y-1 text-gray-300">
+                      <li>• CPR-certified instructors</li>
+                      <li>• Regular progress updates</li>
+                      <li>• Character development focus</li>
+                      <li>• Family-friendly environment</li>
+                    </ul>
                   </div>
                 </CardContent>
               </Card>
@@ -756,25 +789,43 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-300 leading-relaxed">
-                    Stay connected to the gym and manage your training schedule through our dedicated members app.
+                    Use the Kravist Members App to schedule classes, manage your packages, and track training progress.
                   </p>
-                  <div className="space-y-3">
+                  <div className="space-y-2 mb-6">
                     <h4 className="font-semibold text-orange-400">App Features:</h4>
-                    <ul className="space-y-2 text-gray-300">
+                    <ul className="space-y-1 text-gray-300">
                       <li>• Class scheduling and booking</li>
-                      <li>• Manage your packages and plans</li>
+                      <li>• Membership and package management</li>
                     </ul>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4 mt-6">
-                    <a href="https://apps.apple.com/us/app/pushpress-members/id1309909578" target="_blank" rel="noopener noreferrer">
-                      <Button className="bg-orange-600 hover:bg-orange-700">
-                        Download for iOS
-                      </Button>
+                    <a 
+                      href="https://apps.apple.com/sg/app/kravist/id6670659199" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
+                    >
+                      <div className="flex items-center space-x-3">
+                        <Smartphone className="h-6 w-6" />
+                        <div className="text-left">
+                          <div className="text-xs">Download on the</div>
+                          <div className="text-lg font-semibold">App Store</div>
+                        </div>
+                      </div>
                     </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.pushpress.memberportal&hl=en_US&pli=1" target="_blank" rel="noopener noreferrer">
-                      <Button className="bg-orange-600 hover:bg-orange-700">
-                        Download for Android
-                      </Button>
+                    <a 
+                      href="https://play.google.com/store/apps/details?id=com.kravist.kravist_members_app" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
+                    >
+                      <div className="flex items-center space-x-3">
+                        <Smartphone className="h-6 w-6" />
+                        <div className="text-left">
+                          <div className="text-xs">Get it on</div>
+                          <div className="text-lg font-semibold">Google Play</div>
+                        </div>
+                      </div>
                     </a>
                   </div>
                 </CardContent>
@@ -790,22 +841,14 @@ const Index = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-gray-300 leading-relaxed">
-                    We have a comprehensive grading system for both adults and youth that follows international Krav Maga Global (KMG) standards. 
-                    Our structured progression system helps students track their development and provides clear goals to work towards.
+                  <p className="text-gray-300 mb-3">
+                    Both our adult and youth programs feature age-appropriate grading systems that recognize technical proficiency, 
+                    physical development, and character growth.
                   </p>
-                  
-                  <div className="bg-gray-800 rounded-lg p-4">
-                    <h4 className="font-semibold text-orange-400 mb-2">Adult & Youth Programs</h4>
-                    <p className="text-gray-300 mb-3">
-                      Both our adult and youth programs feature age-appropriate grading systems that recognize technical proficiency, 
-                      physical development, and character growth.
-                    </p>
-                    <p className="text-gray-300">
-                      For detailed information about grading requirements, levels, and schedules, please contact us directly or 
-                      speak with one of our instructors during class.
-                    </p>
-                  </div>
+                  <p className="text-gray-300">
+                    For detailed information about grading requirements, levels, and schedules, please contact us directly or 
+                    speak with one of our instructors during class.
+                  </p>
                 </CardContent>
               </Card>
             </TabsContent>
