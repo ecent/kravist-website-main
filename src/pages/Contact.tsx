@@ -11,6 +11,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import SEO from "@/components/SEO";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -70,6 +71,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
+      <SEO 
+        title="Contact Kravist Singapore | Get In Touch for Krav Maga Training"
+        description="Contact Kravist for expert Krav Maga training in Singapore. Get in touch about youth programs, women's self defence, adult classes, corporate workshops, or private coaching."
+        keywords="contact Kravist, Krav Maga Singapore contact, self defence classes inquiry, martial arts training Singapore"
+      />
       {/* Navigation */}
       <nav className="bg-black/50 backdrop-blur-md border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

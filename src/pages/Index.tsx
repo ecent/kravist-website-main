@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,6 +8,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Users, Shield, Target, Building, User, DollarSign, BookOpen, Info, Smartphone, Award, HelpCircle, Facebook, Instagram, ChevronLeft, ChevronRight } from "lucide-react";
 import Instructors from "@/components/Instructors";
 import Schedule from "@/components/Schedule";
+import SEO from "@/components/SEO";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("youth");
@@ -85,6 +86,43 @@ const Index = () => {
     }
   ];
 
+  // SEO configurations for different sections
+  const seoConfigs = {
+    youth: {
+      title: "Kravist Youth Krav Maga | Kids & Teens Self Defence Classes (6–17)",
+      description: "Empowering kids and teens (6–17) with structured Krav Maga programs. Build confidence, discipline, and resilience through Singapore's leading youth self defence training.",
+      keywords: "youth krav maga, kids self defence, teens martial arts, children self defence Singapore, youth fitness, confidence building"
+    },
+    womens: {
+      title: "Women's Self Defence Classes Singapore | Kravist Krav Maga for Women",
+      description: "Specialized Krav Maga training for women in Singapore. Learn real-world self defence, improve fitness, and build confidence in a safe, supportive environment.",
+      keywords: "women's self defence, ladies krav maga Singapore, women's martial arts, female self defence classes"
+    },
+    adults: {
+      title: "Adult Krav Maga Classes Singapore | Practical Self Defence & Fitness",
+      description: "Kravist offers adult Krav Maga training for all skill levels. Learn practical self defence while boosting fitness, confidence, and full-body conditioning.",
+      keywords: "adult krav maga, self defence classes Singapore, martial arts fitness, adult self defence"
+    },
+    corporate: {
+      title: "Corporate Self Defence Workshops Singapore | Team Safety & Krav Maga",
+      description: "Tailored corporate Krav Maga programs for workplace safety, stress management, and team building. On-site or off-site training for businesses in Singapore.",
+      keywords: "corporate training, workplace safety, team building Singapore, corporate self defence workshops"
+    },
+    private: {
+      title: "Private Krav Maga Classes Singapore | 1-on-1 Self Defence Coaching",
+      description: "Accelerate your self defence skills with private Krav Maga sessions. Personalized coaching tailored to your goals, schedule, and fitness level.",
+      keywords: "private krav maga, personal training, 1-on-1 self defence, private martial arts Singapore"
+    },
+    home: {
+      title: "Kravist Singapore | Krav Maga & Self Defence Training for All Ages",
+      description: "Discover Kravist's expert-led Krav Maga training in Singapore. Youth programs, women's self defence, adult classes, and corporate workshops designed to build confidence, discipline, and real-world skills.",
+      keywords: "Krav Maga Singapore, self defence classes, youth martial arts, women's self defence, adult fitness, corporate training, private coaching, Singapore martial arts"
+    }
+  };
+
+  // Current SEO config based on active section or default to home
+  const currentSEO = seoConfigs[activeSection as keyof typeof seoConfigs] || seoConfigs.home;
+
   const activeDivision = divisions.find(d => d.id === activeSection);
 
   const handleImageClick = (index: number) => {
@@ -110,6 +148,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
+      <SEO 
+        title={currentSEO.title}
+        description={currentSEO.description}
+        keywords={currentSEO.keywords}
+      />
       {/* Navigation */}
       <nav className="bg-black/50 backdrop-blur-md fixed w-full z-50 border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
