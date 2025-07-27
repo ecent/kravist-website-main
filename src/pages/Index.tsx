@@ -178,7 +178,7 @@ const Index = () => {
           ],
           socialMedia: [
             "https://www.facebook.com/kravistsg/",
-            "https://www.instagram.com/kravistsg/"
+            "https://www.instagram.com/kravist.sg/"
           ],
           logo: "https://kravist.sg/lovable-uploads/e270fcf4-838b-472d-b1b1-faf196d6d975.png",
           image: [
@@ -238,7 +238,7 @@ const Index = () => {
           logo: "https://kravist.sg/lovable-uploads/e270fcf4-838b-472d-b1b1-faf196d6d975.png",
           socialMedia: [
             "https://www.facebook.com/kravistsg/",
-            "https://www.instagram.com/kravistsg/"
+            "https://www.instagram.com/kravist.sg/"
           ],
           contactPoint: {
             telephone: "+65 9177 2133",

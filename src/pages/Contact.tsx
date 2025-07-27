@@ -148,7 +148,7 @@ const Contact = () => {
                       <span>Facebook</span>
                     </a>
                     <a 
-                      href="https://instagram.com/kravist" 
+                      href="https://www.instagram.com/kravist.sg/" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center space-x-2 text-orange-400 hover:text-orange-300 transition-colors"
@@ -290,7 +290,7 @@ const Contact = () => {
               <Facebook className="h-5 w-5 text-white" />
             </a>
             <a 
-              href="https://instagram.com/kravist" 
+              href="https://www.instagram.com/kravist.sg/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 bg-gray-800 rounded-full hover:bg-orange-600 transition-colors"
