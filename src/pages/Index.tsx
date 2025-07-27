@@ -52,11 +52,11 @@ const Index = () => {
       icon: Users,
       features: ["Beginner-friendly to advanced techniques", "Full-body conditioning drills", "Realistic stress scenario training", "Safe and challenging environment"],
       images: [
-        "/lovable-uploads/54d43c3a-5d14-4396-abbc-6596fd2c6a5b.png",
         "/lovable-uploads/06652838-a8c4-4ee8-bf31-806bb8675f84.png",
         "/lovable-uploads/80ca1777-7ed2-445a-94a2-646837f256b4.png",
         "/lovable-uploads/6eb8f2f8-3d84-4028-9ef3-f8c2b7ae068a.png",
         "/lovable-uploads/b3bb76b8-a3a5-4c1c-b8a0-ea3c1324cddb.png",
+        "/lovable-uploads/54d43c3a-5d14-4396-abbc-6596fd2c6a5b.png",
         "/lovable-uploads/2460f76f-4ebf-4f48-8155-b5562908961e.png",
         "/lovable-uploads/81ce8b4c-e435-459f-835c-558f35177b43.png"
       ]
