@@ -139,7 +139,7 @@ const Contact = () => {
                   </CardHeader>
                   <CardContent className="text-gray-300 space-y-3">
                     <a 
-                      href="https://facebook.com/kravist" 
+                      href="https://www.facebook.com/kravistsg/" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center space-x-2 text-orange-400 hover:text-orange-300 transition-colors"
@@ -281,7 +281,7 @@ const Contact = () => {
           
           <div className="flex justify-center space-x-4 mb-6">
             <a 
-              href="https://facebook.com/kravist" 
+              href="https://www.facebook.com/kravistsg/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 bg-gray-800 rounded-full hover:bg-orange-600 transition-colors"
