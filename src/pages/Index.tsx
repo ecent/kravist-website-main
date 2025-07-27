@@ -864,52 +864,73 @@ const Index = () => {
                 <CardContent className="space-y-6">
                   <div className="space-y-4">
                     <div className="border-b border-gray-700 pb-4">
-                      <h4 className="font-semibold text-orange-400 mb-2">What should I wear for my first class?</h4>
+                      <h4 className="font-semibold text-orange-400 mb-2">Q1: What makes Krav Maga unique as compared to Muay Thai, BJJ, Boxing, MMA and other martial arts?</h4>
                       <p className="text-gray-300">
-                        Comfortable workout clothes that allow free movement. Athletic shoes with good grip are recommended. 
-                        We'll provide any necessary protective equipment for beginners.
+                        Krav Maga is designed for real-world self-defence, where there are no rules and survival is the priority. Unlike traditional martial arts that often involve competition or sport, Krav Maga focuses on practical techniques and instinctive responses to real-life threats—such as grabs, strikes, or weapon scenarios.
+                      </p>
+                      <p className="text-gray-300 mt-2">
+                        Our training emphasizes situational awareness, confidence, and quick decision-making, making it highly effective for adults, women, and kids who want to stay safe and prepared in everyday life.
                       </p>
                     </div>
                     <div className="border-b border-gray-700 pb-4">
-                      <h4 className="font-semibold text-orange-400 mb-2">Do I need any prior martial arts experience?</h4>
+                      <h4 className="font-semibold text-orange-400 mb-2">Q2: Do I need to be fit or have prior martial arts experience?</h4>
                       <p className="text-gray-300">
-                        No previous experience is required. Krav Maga is designed to be learned quickly by people of all backgrounds. 
-                        Our instructors will guide you through the basics and adapt training to your fitness level.
+                        No. Krav Maga is beginner-friendly and suitable for all fitness levels. Many of our adult students start with no martial arts background. We focus on building fundamental movements, fitness, and confidence step-by-step.
                       </p>
                     </div>
                     <div className="border-b border-gray-700 pb-4">
-                      <h4 className="font-semibold text-orange-400 mb-2">Is Krav Maga suitable for women?</h4>
+                      <h4 className="font-semibold text-orange-400 mb-2">Q3: Is Krav Maga effective for women?</h4>
                       <p className="text-gray-300">
-                        Absolutely! Krav Maga was designed to be effective regardless of size or strength. We have dedicated women's classes 
-                        that focus on real-world scenarios and building confidence in a supportive environment.
+                        Absolutely. Krav Maga is designed to work regardless of size or strength, making it effective for women. Our women-only classes address common real-world scenarios (e.g., grabs, harassment, close-contact situations) while building confidence and physical conditioning.
                       </p>
                     </div>
                     <div className="border-b border-gray-700 pb-4">
-                      <h4 className="font-semibold text-orange-400 mb-2">How often should I train?</h4>
+                      <h4 className="font-semibold text-orange-400 mb-2">Q4: What should I wear and bring to my first class?</h4>
                       <p className="text-gray-300">
-                        For beginners, we recommend 2-3 times per week to build muscle memory and conditioning. 
-                        As you progress, you can increase frequency based on your goals and schedule.
+                        Wear comfortable sportswear and athletic shoes. We provide protective gear for beginners. Bring a water bottle and a positive attitude—everything else will be guided by our instructors.
                       </p>
                     </div>
                     <div className="border-b border-gray-700 pb-4">
-                      <h4 className="font-semibold text-orange-400 mb-2">Will I get hurt during training?</h4>
+                      <h4 className="font-semibold text-orange-400 mb-2">Q5: How often should I train?</h4>
                       <p className="text-gray-300">
-                        Safety is our top priority. We use controlled training methods and protective equipment. 
-                        While Krav Maga involves contact, beginners start with light contact and progress gradually as skills develop.
+                        For beginners, 2–3 classes per week helps build muscle memory and confidence quickly. As you progress, you can add more sessions or supplement with private training for faster improvement.
                       </p>
                     </div>
                     <div className="border-b border-gray-700 pb-4">
-                      <h4 className="font-semibold text-orange-400 mb-2">What's the difference between your youth and adult programs?</h4>
+                      <h4 className="font-semibold text-orange-400 mb-2">Q6: Will I get injured during training?</h4>
                       <p className="text-gray-300">
-                        Our youth programs focus heavily on character development, anti-bullying, and age-appropriate self-defense techniques. 
-                        Adult programs include more intense physical conditioning and advanced combat scenarios.
+                        Safety is our top priority. Classes are taught in a controlled, progressive way, with protective equipment and beginner-friendly drills. While Krav Maga involves contact, we keep risk low, especially for new students.
+                      </p>
+                    </div>
+                    <div className="border-b border-gray-700 pb-4">
+                      <h4 className="font-semibold text-orange-400 mb-2">Q7: Do you offer trial classes?</h4>
+                      <p className="text-gray-300">
+                        Yes. We offer trial classes for youth, adults, and women's programs. Check our pricing page for free trials (youth) and affordable trial sessions for adults.
+                      </p>
+                    </div>
+                    <div className="border-b border-gray-700 pb-4">
+                      <h4 className="font-semibold text-orange-400 mb-2">Q8: What age groups can train at Kravist?</h4>
+                      <p className="text-gray-300">We offer classes for:</p>
+                      <ul className="text-gray-300 space-y-1 mt-2 ml-4">
+                        <li>• Kids (6–10 years)</li>
+                        <li>• Juniors (10–14 years)</li>
+                        <li>• Teens (14–17 years)</li>
+                        <li>• Adults (18+)</li>
+                      </ul>
+                      <p className="text-gray-300 mt-2">
+                        Each group has a customized curriculum to ensure age-appropriate learning.
+                      </p>
+                    </div>
+                    <div className="border-b border-gray-700 pb-4">
+                      <h4 className="font-semibold text-orange-400 mb-2">Q9: Do you provide corporate or private training?</h4>
+                      <p className="text-gray-300">
+                        Yes. We run corporate workshops for workplace safety, team-building, and stress management, as well as 1-on-1 or small group private training tailored to personal goals.
                       </p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-orange-400 mb-2">Can I try a class before committing?</h4>
+                      <h4 className="font-semibold text-orange-400 mb-2">Q10: Where is Kravist located?</h4>
                       <p className="text-gray-300">
-                        Yes! We offer trial classes for most programs. Check our pricing section for trial options, 
-                        including free trials for youth programs and affordable trial sessions for adults.
+                        Our studio is at 11 Irving Place, Tai Seng Point, Singapore (near Tai Seng MRT). We're easily accessible from MacPherson, Paya Lebar, Serangoon, and surrounding areas.
                       </p>
                     </div>
                   </div>
