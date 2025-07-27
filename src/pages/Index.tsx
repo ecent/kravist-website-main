@@ -237,8 +237,8 @@ const Index = () => {
                           </CarouselItem>
                         ))}
                       </CarouselContent>
-                      <CarouselPrevious />
-                      <CarouselNext />
+                      <CarouselPrevious className="bg-gray-800/80 border-gray-600 hover:bg-gray-700 text-white" />
+                      <CarouselNext className="bg-gray-800/80 border-gray-600 hover:bg-gray-700 text-white" />
                     </Carousel>
                     
                     <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
