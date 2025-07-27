@@ -168,9 +168,13 @@ const Index = () => {
           email: "hello@kravist.sg",
           url: "https://kravist.sg",
           openingHours: [
-            "Mo-Fr 09:00-21:00",
-            "Sa 09:00-18:00",
-            "Su 09:00-17:00"
+            "Su 10:00-18:00",
+            "Mo 17:30-22:00", 
+            "Tu 17:30-22:00",
+            "We 18:30-22:00",
+            "Th 18:30-20:00",
+            "Fr 17:30-20:00",
+            "Sa 10:00-18:00"
           ],
           socialMedia: [
             "https://www.facebook.com/kravistsg/",
