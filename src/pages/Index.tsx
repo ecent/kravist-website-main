@@ -403,11 +403,19 @@ const Index = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-orange-200 mb-3">General Classes</h4>
+                  <h4 className="font-semibold text-orange-200 mb-3">Free & Easy</h4>
                   <div className="space-y-2">
                     <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">All Ages 5 Sessions</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$160</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_eaf63c02f150d7" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Kids 5 Sessions</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_eaf63c02f150d7" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$160</a>
+                    </div>
+                    <div className="flex justify-between">
+                      <a href="https://kravist.pushpress.com/plans/view/plan_67758275e70356" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Juniors 5 Sessions</a>
+                      <a href="https://kravist.pushpress.com/plans/view/plan_67758275e70356" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$160</a>
+                    </div>
+                    <div className="flex justify-between">
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_04596fd52ef586" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Teens 5 Sessions</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_04596fd52ef586" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$160</a>
                     </div>
                   </div>
                 </div>
