@@ -965,7 +965,7 @@ const Index = () => {
       <footer className="bg-black py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <div className="text-2xl font-bold text-orange-500 mb-4">KRAVIST</div>
-          <p className="text-gray-400 mb-6">Singapore's most trusted youth self defence program, building character and confidence in the next generation.</p>
+          <p className="text-gray-400 mb-6">Building stronger, safer communities one student at a time.</p>
           
           <div className="flex justify-center space-x-4 mb-6">
             <a 
@@ -992,8 +992,8 @@ const Index = () => {
             <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
               Contact Us
             </Link>
-            <a href="#faq" className="text-gray-400 hover:text-white transition-colors">
-              FAQ
+            <a href="#divisions" className="text-gray-400 hover:text-white transition-colors">
+              Programs
             </a>
           </div>
         </div>
