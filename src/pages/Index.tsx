@@ -731,14 +731,6 @@ const Index = () => {
                       >
                         Join Youth Division Waitlist
                       </a>
-                      <a 
-                        href="https://forms.gle/EQRgSjLWZq7VFi4q7" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="block w-full bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded transition-colors text-center"
-                      >
-                        Join Women's Division Waitlist
-                      </a>
                     </div>
                   </div>
                 </CardContent>
