@@ -57,19 +57,24 @@ const handler = async (req: Request): Promise<Response> => {
           <p>Hi ${name},</p>
           <p>Thanks for reaching out! We've received your message about our <strong>${division}</strong> program, and one of our instructors will get back to you soon.</p>
           
-          <div style="background: #f9f9f9; padding: 20px; border-radius: 5px; margin: 20px 0;">
+          <div style="background: #f9f9f9; padding: 25px; border-radius: 5px; margin: 25px 0;">
             <h3>Your Message:</h3>
             <p>${message.replace(/\n/g, '<br>')}</p>
           </div>
           
-          <p>In the meantime, you might find these links useful:</p>
-          <ul style="margin: 20px 0;">
-            <li>Class Schedule → <a href="https://www.kravist.sg/schedule" style="color: #ff6600;">www.kravist.sg/schedule</a></li>
-            <li>Trial Class Options → <a href="https://www.kravist.sg/pricing" style="color: #ff6600;">www.kravist.sg/pricing</a></li>
-            <li>Frequently Asked Questions → <a href="https://www.kravist.sg/faq" style="color: #ff6600;">www.kravist.sg/faq</a></li>
+          <h2 style="color: #ff6600; margin-top: 30px; margin-bottom: 20px;">Next Steps</h2>
+          
+          <div style="text-align: center; margin: 25px 0;">
+            <a href="https://www.kravist.sg/pricing" style="display: inline-block; background: #ff6600; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px;">View Trial Class Options</a>
+          </div>
+          
+          <p>Other helpful links:</p>
+          <ul style="margin: 20px 0; padding-left: 20px;">
+            <li style="margin-bottom: 8px;">Class Schedule → <a href="https://www.kravist.sg/schedule" style="color: #ff6600;">www.kravist.sg/schedule</a></li>
+            <li style="margin-bottom: 8px;">Frequently Asked Questions → <a href="https://www.kravist.sg/faq" style="color: #ff6600;">www.kravist.sg/faq</a></li>
           </ul>
           
-          <div style="background: #ff6600; color: white; padding: 15px; border-radius: 5px; margin: 20px 0;">
+          <div style="background: #ff6600; color: white; padding: 20px; border-radius: 5px; margin: 30px 0;">
             <strong>Kravist</strong><br>
             11 Irving Place #02-04<br>
             Tai Seng Point<br>
@@ -79,10 +84,16 @@ const handler = async (req: Request): Promise<Response> => {
           </div>
           
           <p>Follow us on social media for updates and training tips:</p>
-          <p>
-            <a href="https://facebook.com/kravist" style="color: #ff6600;">Facebook</a> | 
-            <a href="https://instagram.com/kravist" style="color: #ff6600;">Instagram</a>
+          <p style="text-align: center; margin: 20px 0;">
+            <a href="https://www.facebook.com/kravistsg/" style="display: inline-block; margin: 0 15px; text-decoration: none;">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width: 32px; height: 32px; vertical-align: middle;">
+            </a>
+            <a href="https://www.instagram.com/kravist.sg/" style="display: inline-block; margin: 0 15px; text-decoration: none;">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" style="width: 32px; height: 32px; vertical-align: middle;">
+            </a>
           </p>
+          
+          <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
           
           <p style="margin-top: 30px;">
             Looking forward to welcoming you to Kravist soon!<br>
