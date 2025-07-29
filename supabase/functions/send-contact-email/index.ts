@@ -50,19 +50,25 @@ const handler = async (req: Request): Promise<Response> => {
       from: "Kravist <info@kravist.sg>",
       to: [email],
       replyTo: email,
-      subject: "Thank you for contacting Kravist!",
+      subject: "We've got your message!",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h1 style="color: #ff6600;">Thank you for contacting Kravist!</h1>
+          <h1 style="color: #ff6600;">We've got your message!</h1>
           <p>Hi ${name},</p>
-          <p>We have received your message regarding our <strong>${division}</strong> division and will get back to you as soon as possible.</p>
+          <p>Thanks for reaching out! We've received your message about our <strong>${division}</strong> program, and one of our instructors will get back to you soon.</p>
           
           <div style="background: #f9f9f9; padding: 20px; border-radius: 5px; margin: 20px 0;">
             <h3>Your Message:</h3>
             <p>${message.replace(/\n/g, '<br>')}</p>
           </div>
           
-          <p>In the meantime, feel free to visit us at:</p>
+          <p>In the meantime, you might find these links useful:</p>
+          <ul style="margin: 20px 0;">
+            <li>Class Schedule → <a href="https://www.kravist.sg/schedule" style="color: #ff6600;">www.kravist.sg/schedule</a></li>
+            <li>Trial Class Options → <a href="https://www.kravist.sg/pricing" style="color: #ff6600;">www.kravist.sg/pricing</a></li>
+            <li>Frequently Asked Questions → <a href="https://www.kravist.sg/faq" style="color: #ff6600;">www.kravist.sg/faq</a></li>
+          </ul>
+          
           <div style="background: #ff6600; color: white; padding: 15px; border-radius: 5px; margin: 20px 0;">
             <strong>Kravist</strong><br>
             11 Irving Place #02-04<br>
@@ -79,6 +85,7 @@ const handler = async (req: Request): Promise<Response> => {
           </p>
           
           <p style="margin-top: 30px;">
+            Looking forward to welcoming you to Kravist soon!<br>
             Best regards,<br>
             <strong>The Kravist Team</strong><br>
             <em>Building stronger, safer communities one student at a time.</em>
