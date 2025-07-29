@@ -50,57 +50,60 @@ const handler = async (req: Request): Promise<Response> => {
       from: "Kravist <info@kravist.sg>",
       to: [email],
       replyTo: email,
-      subject: "We've got your message!",
+      subject: "We've received your message!",
       html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h1 style="color: #ff6600;">We've got your message!</h1>
-          <p>Hi ${name},</p>
-          <p>Thanks for reaching out! We've received your message about our <strong>${division}</strong> program, and one of our instructors will get back to you soon.</p>
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: white; line-height: 1.5;">
+          <h1 style="color: #ff6600; font-size: 20px; font-weight: bold; margin: 0 0 20px 0;">We've got your message!</h1>
           
-          <div style="background: #f9f9f9; padding: 25px; border-radius: 5px; margin: 25px 0;">
-            <h3>Your Message:</h3>
-            <p>${message.replace(/\n/g, '<br>')}</p>
+          <p style="font-size: 16px; margin: 0 0 15px 0;">Hi ${name},</p>
+          <p style="font-size: 16px; margin: 0 0 20px 0;">Thanks for reaching out! We've received your message about our <strong>${division}</strong> program, and one of our instructors will get back to you soon.</p>
+          
+          <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3 style="font-weight: bold; margin: 0 0 10px 0; font-size: 16px;"><strong>Your Message:</strong></h3>
+            <p style="font-size: 16px; margin: 0;">${message.replace(/\n/g, '<br>')}</p>
           </div>
-          
-          <h2 style="color: #ff6600; margin-top: 30px; margin-bottom: 20px;">Next Steps</h2>
           
           <div style="text-align: center; margin: 25px 0;">
-            <a href="https://www.kravist.sg/pricing" style="display: inline-block; background: #ff6600; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px;">View Trial Class Options</a>
+            <a href="https://www.kravist.sg/pricing" style="display: inline-block; background: #ff6600; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">View Trial Class Options</a>
           </div>
           
-          <p>Other helpful links:</p>
-          <ul style="margin: 20px 0; padding-left: 20px;">
-            <li style="margin-bottom: 8px;">Class Schedule → <a href="https://www.kravist.sg/schedule" style="color: #ff6600;">www.kravist.sg/schedule</a></li>
-            <li style="margin-bottom: 8px;">Frequently Asked Questions → <a href="https://www.kravist.sg/faq" style="color: #ff6600;">www.kravist.sg/faq</a></li>
-          </ul>
-          
-          <div style="background: #ff6600; color: white; padding: 20px; border-radius: 5px; margin: 30px 0;">
-            <strong>Kravist</strong><br>
-            11 Irving Place #02-04<br>
-            Tai Seng Point<br>
-            Singapore 369551<br>
-            <br>
-            Closest MRT: Tai Seng
+          <div style="margin: 20px 0;">
+            <p style="font-size: 16px; margin: 0 0 10px 0;">
+              <a href="https://www.kravist.sg/schedule" style="color: #ff6600; text-decoration: none;">Class Schedule →</a>
+            </p>
+            <p style="font-size: 16px; margin: 0;">
+              <a href="https://www.kravist.sg/faq" style="color: #ff6600; text-decoration: none;">Frequently Asked Questions →</a>
+            </p>
           </div>
           
-          <p>Follow us on social media for updates and training tips:</p>
-          <p style="text-align: center; margin: 20px 0;">
-            <a href="https://www.facebook.com/kravistsg/" style="display: inline-block; margin: 0 15px; text-decoration: none;">
+          <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 25px 0;">
+            <div style="font-size: 16px;">
+              <strong>Kravist</strong><br>
+              11 Irving Place #02-04<br>
+              Tai Seng Point<br>
+              Singapore 369551<br>
+              <br>
+              Closest MRT: Tai Seng
+            </div>
+          </div>
+          
+          <p style="font-size: 16px; margin: 20px 0 10px 0;">Follow us on social media for updates and training tips:</p>
+          <div style="text-align: center; margin: 15px 0;">
+            <a href="https://www.facebook.com/kravistsg/" style="display: inline-block; margin: 0 10px; text-decoration: none;">
               <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width: 32px; height: 32px; vertical-align: middle;">
             </a>
-            <a href="https://www.instagram.com/kravist.sg/" style="display: inline-block; margin: 0 15px; text-decoration: none;">
+            <a href="https://www.instagram.com/kravist.sg/" style="display: inline-block; margin: 0 10px; text-decoration: none;">
               <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" style="width: 32px; height: 32px; vertical-align: middle;">
             </a>
-          </p>
+          </div>
           
-          <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+          <hr style="border: none; border-top: 1px solid #f5f5f5; margin: 25px 0;">
           
-          <p style="margin-top: 30px;">
-            Looking forward to welcoming you to Kravist soon!<br>
-            Best regards,<br>
-            <strong>The Kravist Team</strong><br>
-            <em>Building stronger, safer communities one student at a time.</em>
-          </p>
+          <div style="font-size: 16px; margin-top: 20px;">
+            <p style="margin: 0 0 5px 0;">Looking forward to training with you soon!</p>
+            <p style="margin: 0 0 5px 0;">Best regards,</p>
+            <p style="margin: 0;"><strong>The Kravist Team</strong></p>
+          </div>
         </div>
       `,
     });
