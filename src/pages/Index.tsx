@@ -689,6 +689,22 @@ const Index = () => {
                       We are located at 11 Irving Place (Tai Seng Point), near Tai Seng MRT, serving families in MacPherson, Paya Lebar, Serangoon, and surrounding areas.
                     </p>
                   </div>
+                  <div className="bg-gray-800/50 p-4 rounded-lg mt-6">
+                    <p className="text-orange-400 font-semibold mb-2">Ready to enroll your child?</p>
+                    <p className="text-gray-300 text-sm mb-4">
+                      Spots are limited – join our waitlist to secure your child's place in the next term.
+                    </p>
+                    <div className="space-y-2">
+                      <a 
+                        href="https://forms.gle/LBNkox3CULPk6fFGA" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="block w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded transition-colors text-center"
+                      >
+                        Join Youth Division Waitlist
+                      </a>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>
