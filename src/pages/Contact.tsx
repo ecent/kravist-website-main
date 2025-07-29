@@ -305,7 +305,7 @@ const Contact = () => {
               Home
             </Link>
             <a href="/#divisions" className="text-gray-400 hover:text-white transition-colors">
-              Our Programmes
+              Programs
             </a>
           </div>
         </div>
