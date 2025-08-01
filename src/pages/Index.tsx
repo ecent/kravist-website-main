@@ -818,7 +818,7 @@ const Index = () => {
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4 mt-6">
                     <a 
-                      href="https://apps.apple.com/sg/app/kravist/id6670659199" 
+                      href="https://apps.apple.com/sg/app/pushpress-members/id1309909578" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center justify-center bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
