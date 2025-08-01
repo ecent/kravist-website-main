@@ -8,6 +8,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Users, Shield, Target, Building, User, DollarSign, BookOpen, Info, Smartphone, Award, HelpCircle, Facebook, Instagram, ChevronLeft, ChevronRight } from "lucide-react";
 import Instructors from "@/components/Instructors";
 import Schedule from "@/components/Schedule";
+import ScrollToSection from "@/components/ScrollToSection";
 import SEO from "@/components/SEO";
 import StructuredData from "@/components/StructuredData";
 
@@ -809,6 +810,22 @@ const Index = () => {
                   <p className="text-gray-300 leading-relaxed">
                     Use the Kravist Members App to schedule classes, manage your packages, and track training progress.
                   </p>
+                  <div className="bg-orange-900/30 border border-orange-500/30 p-4 rounded-lg">
+                    <p className="text-orange-200 text-sm">
+                      <strong>Important:</strong> You must first{' '}
+                      <a 
+                        href="#pricing" 
+                        className="text-orange-400 hover:text-orange-300 underline cursor-pointer"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                      >
+                        sign up for a package
+                      </a>
+                      {' '}before being able to access the members app.
+                    </p>
+                  </div>
                   <div className="space-y-2 mb-6">
                     <h4 className="font-semibold text-orange-400">App Features:</h4>
                     <ul className="space-y-1 text-gray-300">
