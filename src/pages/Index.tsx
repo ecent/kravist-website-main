@@ -825,6 +825,10 @@ const Index = () => {
                         <li>• Gentle, age-appropriate introduction</li>
                         <li>• Fun, engaging drills</li>
                         <li>• Peer encouragement and character focus</li>
+                        <li>• CPR-certified instructors</li>
+                        <li>• Regular progress updates</li>
+                        <li>• Character development focus</li>
+                        <li>• Family-friendly environment</li>
                       </ul>
                     </div>
                     <div className="space-y-2">
@@ -836,15 +840,6 @@ const Index = () => {
                         <li>• Supportive community with like-minded students</li>
                       </ul>
                     </div>
-                  </div>
-                  <div className="space-y-2 mt-6">
-                    <h4 className="font-semibold text-orange-400">What Parents Love:</h4>
-                    <ul className="space-y-1 text-gray-300">
-                      <li>• CPR-certified instructors</li>
-                      <li>• Regular progress updates</li>
-                      <li>• Character development focus</li>
-                      <li>• Family-friendly environment</li>
-                    </ul>
                   </div>
                 </CardContent>
               </Card>
