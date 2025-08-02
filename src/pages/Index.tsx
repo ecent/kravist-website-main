@@ -812,6 +812,12 @@ const Index = () => {
                   <p className="text-gray-300 leading-relaxed">
                     Starting Krav Maga is designed to be welcoming, safe, and encouraging for all students — whether you're a child, teen, or adult beginner.
                   </p>
+                  <div className="bg-orange-900/30 border border-orange-500/30 p-4 rounded-lg">
+                    <h4 className="font-semibold text-orange-400 mb-2">What to Bring:</h4>
+                    <p className="text-orange-200">
+                      Come a few minutes before class, closed toe shoes, comfortable workout attire and a water bottle.
+                    </p>
+                  </div>
                   <div className="grid md:grid-cols-2 gap-4 mt-6">
                     <div className="space-y-2">
                       <h4 className="font-semibold text-orange-400">For Kids and Teens:</h4>
