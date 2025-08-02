@@ -72,9 +72,10 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       <SEO 
-        title="Contact Kravist Singapore | Get In Touch for Krav Maga Training"
-        description="Contact Kravist for expert Krav Maga training in Singapore. Get in touch about youth programs, women's self defence, adult classes, corporate workshops, or private coaching."
+        title="Contact Kravist Singapore | Krav Maga Training Inquiry"
+        description="Contact Kravist for Krav Maga training in Singapore. Inquire about youth programs, women's self defence, adult classes, corporate workshops & private coaching."
         keywords="contact Kravist, Krav Maga Singapore contact, self defence classes inquiry, martial arts training Singapore"
+        url="https://kravist.sg/contact"
       />
       {/* Navigation */}
       <nav className="bg-black/50 backdrop-blur-md border-b border-gray-800">

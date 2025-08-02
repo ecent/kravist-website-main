@@ -11,6 +11,7 @@ import Schedule from "@/components/Schedule";
 import ScrollToSection from "@/components/ScrollToSection";
 import SEO from "@/components/SEO";
 import StructuredData from "@/components/StructuredData";
+import FAQStructuredData from "@/components/FAQStructuredData";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("youth");
@@ -116,11 +117,55 @@ const Index = () => {
       keywords: "private krav maga, personal training, 1-on-1 self defence, private martial arts Singapore"
     },
     home: {
-      title: "Kravist Singapore | Krav Maga & Self Defence Training for All Ages",
-      description: "Discover Kravist's expert-led Krav Maga training in Singapore. Youth programs, women's self defence, adult classes, and corporate workshops designed to build confidence, discipline, and real-world skills.",
+      title: "Kravist Singapore | Premier Krav Maga Self Defence Training",
+      description: "Expert Krav Maga training in Singapore for all ages. Youth programs (6-17), women's self defence, adult classes & corporate workshops. Build confidence with real-world skills.",
       keywords: "Krav Maga Singapore, self defence classes, youth martial arts, women's self defence, adult fitness, corporate training, private coaching, Singapore martial arts"
     }
   };
+
+  // FAQ structured data
+  const faqItems = [
+    {
+      question: "What makes Krav Maga unique as compared to Muay Thai, BJJ, Boxing, MMA and other martial arts?",
+      answer: "Krav Maga is designed for real-world self-defence, where there are no rules and survival is the priority. Unlike traditional martial arts that often involve competition or sport, Krav Maga focuses on practical techniques and instinctive responses to real-life threats—such as grabs, strikes, or weapon scenarios. Our training emphasizes situational awareness, confidence, and quick decision-making, making it highly effective for adults, women, and kids who want to stay safe and prepared in everyday life."
+    },
+    {
+      question: "Do I need to be fit or have prior martial arts experience?",
+      answer: "No. Krav Maga is beginner-friendly and suitable for all fitness levels. Many of our adult students start with no martial arts background. We focus on building fundamental movements, fitness, and confidence step-by-step."
+    },
+    {
+      question: "Is Krav Maga effective for women?",
+      answer: "Absolutely. Krav Maga is designed to work regardless of size or strength, making it effective for women. Our women-only classes address common real-world scenarios (e.g., grabs, harassment, close-contact situations) while building confidence and physical conditioning."
+    },
+    {
+      question: "What should I wear and bring to my first class?",
+      answer: "Wear comfortable sportswear and athletic shoes. We provide protective gear for beginners. Bring a water bottle and a positive attitude—everything else will be guided by our instructors."
+    },
+    {
+      question: "How often should I train?",
+      answer: "For beginners, 2–3 classes per week helps build muscle memory and confidence quickly. As you progress, you can add more sessions or supplement with private training for faster improvement."
+    },
+    {
+      question: "Will I get injured during training?",
+      answer: "Safety is our top priority. Classes are taught in a controlled, progressive way, with protective equipment and beginner-friendly drills. While Krav Maga involves contact, we keep risk low, especially for new students."
+    },
+    {
+      question: "Do you offer trial classes?",
+      answer: "Yes. We offer trial classes for youth, adults, and women's programs. Check our pricing page for free trials (youth) and affordable trial sessions for adults."
+    },
+    {
+      question: "What age groups can train at Kravist?",
+      answer: "We offer classes for Kids (6–10 years), Juniors (10–14 years), Teens (14–17 years), and Adults (18+). Each group has a customized curriculum to ensure age-appropriate learning."
+    },
+    {
+      question: "Do you provide corporate or private training?",
+      answer: "Yes. We run corporate workshops for workplace safety, team-building, and stress management, as well as 1-on-1 or small group private training tailored to personal goals."
+    },
+    {
+      question: "Where is Kravist located?",
+      answer: "Our studio is at 11 Irving Place, Tai Seng Point, Singapore (near Tai Seng MRT). We're easily accessible from MacPherson, Paya Lebar, Serangoon, and surrounding areas."
+    }
+  ];
 
   // Current SEO config based on active section or default to home
   const currentSEO = seoConfigs[activeSection as keyof typeof seoConfigs] || seoConfigs.home;
@@ -156,6 +201,7 @@ const Index = () => {
         keywords={currentSEO.keywords}
       />
       <StructuredData />
+      <FAQStructuredData faqs={faqItems} />
       {/* Navigation */}
       <nav className="bg-black/50 backdrop-blur-md fixed w-full z-50 border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
