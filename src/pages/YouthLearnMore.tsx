@@ -116,7 +116,7 @@ const YouthLearnMore = () => {
               </div>
               <div className="relative">
                 <img 
-                  src="/lovable-uploads/6ab596ea-6de2-4054-8650-2a47eb50138c.png" 
+                  src="/lovable-uploads/a5809801-6a02-4444-973c-fa039ce1995e.png" 
                   alt="Youth Krav Maga students training together"
                   className="w-full h-auto rounded-lg shadow-2xl"
                 />
@@ -134,7 +134,7 @@ const YouthLearnMore = () => {
             <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-center">
               <div className="relative order-2 lg:order-1">
                 <img 
-                  src="/lovable-uploads/58d138e6-4d9a-46b1-ad96-bbd524408fe9.png" 
+                  src="/lovable-uploads/ed953cd3-69a5-4d2d-9972-9031a3a3c1e7.png" 
                   alt="Youth students listening to instructor during reflection circle"
                   className="w-full h-auto rounded-lg shadow-2xl"
                 />
@@ -225,7 +225,7 @@ const YouthLearnMore = () => {
                         <span className="text-orange-400 font-bold">$510</span>
                       </div>
                     </div>
-                    <div className="space-y-2 mt-6">
+                    <div className="grid grid-cols-2 gap-3 mt-6">
                       <div className="flex items-center gap-3">
                         <CheckCircle className="h-5 w-5 text-orange-400" />
                         <span>Guaranteed weekly slot</span>
