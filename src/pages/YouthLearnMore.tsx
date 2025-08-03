@@ -137,12 +137,7 @@ const YouthLearnMore = () => {
               What a 60-Minute Class Looks Like
             </h2>
             <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-center">
-              <div className="space-y-6 order-2 lg:order-1">
-                <img 
-                  src="/lovable-uploads/58d138e6-4d9a-46b1-ad96-bbd524408fe9.png" 
-                  alt="Youth students listening to instructor during reflection circle"
-                  className="w-full h-auto rounded-lg shadow-2xl"
-                />
+              <div className="relative order-2 lg:order-1">
                 <img 
                   src="/lovable-uploads/ed953cd3-69a5-4d2d-9972-9031a3a3c1e7.png" 
                   alt="Youth students engaged in training session"
