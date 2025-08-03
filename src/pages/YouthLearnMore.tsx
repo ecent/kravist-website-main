@@ -217,18 +217,18 @@ const YouthLearnMore = () => {
                       Multi-month structured program with weekly classes (3 terms yearly) including progressive curriculum and final grading ceremony.
                     </p>
                     <div className="space-y-3">
-                      <a href="/#pricing" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                      <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
                         <span className="font-semibold">Kids</span>
                         <span className="text-orange-400 font-bold">$450</span>
-                      </a>
-                      <a href="/#pricing" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
                         <span className="font-semibold">Juniors</span>
                         <span className="text-orange-400 font-bold">$495</span>
-                      </a>
-                      <a href="/#pricing" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
                         <span className="font-semibold">Teens</span>
                         <span className="text-orange-400 font-bold">$510</span>
-                      </a>
+                      </div>
                     </div>
                     <div className="grid grid-cols-2 gap-3 mt-6">
                       <div className="flex items-center gap-3">
