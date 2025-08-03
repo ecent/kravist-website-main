@@ -74,7 +74,7 @@ const YouthLearnMore = () => {
             <div className="absolute inset-0 bg-black/70"></div>
           </div>
           <div className="container mx-auto px-4 text-center relative z-10">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent drop-shadow-lg">
               Build rock-solid confidence, one class at a time.
             </h1>
             <Button size="lg" className="mt-8 bg-orange-600 hover:bg-orange-700 text-lg px-8 py-4" asChild>
@@ -150,14 +150,14 @@ const YouthLearnMore = () => {
                 />
               </div>
               <div className="order-1 lg:order-2">
-                <div className="grid gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {classStructure.map((item, index) => (
-                    <div key={index} className="flex items-center gap-4 p-4 rounded-lg bg-gray-900 border border-gray-800">
-                      <div className="flex-shrink-0 w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                    <div key={index} className="flex items-center gap-3 p-3 rounded-lg bg-gray-900 border border-gray-800">
+                      <div className="flex-shrink-0 w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
                         {item.step}
                       </div>
                       <div className="flex-grow">
-                        <h3 className="font-semibold text-lg text-white">{item.activity}</h3>
+                        <h3 className="font-medium text-sm text-white">{item.activity}</h3>
                       </div>
                     </div>
                   ))}
@@ -481,7 +481,7 @@ const YouthLearnMore = () => {
         {/* Final CTA */}
         <section className="py-20 lg:py-32 bg-gradient-to-br from-orange-900 via-orange-800 to-gray-900">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-12 text-white leading-tight">
+            <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent drop-shadow-lg">
               Equip them for life—book a trial class.
             </h2>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
