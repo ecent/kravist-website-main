@@ -69,7 +69,15 @@ const YouthLearnMore = () => {
       <div className="min-h-screen bg-black text-white">
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-20 lg:py-32">
-          <div className="container mx-auto px-4 text-center">
+          {/* Background Image */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url('/lovable-uploads/e1f2812e-eebc-4041-803f-87ca9deb6746.png')` }}
+          >
+            {/* Overlay for text readability */}
+            <div className="absolute inset-0 bg-black/70"></div>
+          </div>
+          <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Give your child the confidence to stand strong.
             </h1>
@@ -85,29 +93,38 @@ const YouthLearnMore = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
               Why Parents Choose Us
             </h2>
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              {whyChooseUs.map((item, index) => {
-                const IconComponent = item.icon;
-                return (
-                  <Card key={index} className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-                    <CardContent className="p-8">
-                      <div className="flex items-start gap-6">
-                        <div className="p-3 bg-orange-600 rounded-lg flex-shrink-0">
-                          <IconComponent className="h-6 w-6 text-white" />
+            <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-center">
+              <div className="space-y-8">
+                {whyChooseUs.map((item, index) => {
+                  const IconComponent = item.icon;
+                  return (
+                    <Card key={index} className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                      <CardContent className="p-8">
+                        <div className="flex items-start gap-6">
+                          <div className="p-3 bg-orange-600 rounded-lg flex-shrink-0">
+                            <IconComponent className="h-6 w-6 text-white" />
+                          </div>
+                          <div>
+                            <h3 className="font-bold text-xl mb-3 text-white">
+                              {item.title}
+                            </h3>
+                            <p className="text-gray-300 text-lg leading-relaxed">
+                              {item.description}
+                            </p>
+                          </div>
                         </div>
-                        <div>
-                          <h3 className="font-bold text-xl mb-3 text-white">
-                            {item.title}
-                          </h3>
-                          <p className="text-gray-300 text-lg leading-relaxed">
-                            {item.description}
-                          </p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              })}
+                      </CardContent>
+                    </Card>
+                  );
+                })}
+              </div>
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/6ab596ea-6de2-4054-8650-2a47eb50138c.png" 
+                  alt="Youth Krav Maga students training together"
+                  className="w-full h-auto rounded-lg shadow-2xl"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -116,22 +133,31 @@ const YouthLearnMore = () => {
         <section className="py-16 lg:py-24 bg-black">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
-              What a 45-Minute Class Looks Like
+              What a 60-Minute Class Looks Like
             </h2>
-            <div className="max-w-4xl mx-auto">
-              {classStructure.map((item, index) => (
-                <div key={index} className="flex items-center gap-8 p-6 rounded-lg hover:bg-gray-900 transition-colors border border-gray-800 mb-4">
-                  <div className="flex-shrink-0 w-16 h-16 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl">
-                    {item.step}
+            <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-center">
+              <div className="relative order-2 lg:order-1">
+                <img 
+                  src="/lovable-uploads/58d138e6-4d9a-46b1-ad96-bbd524408fe9.png" 
+                  alt="Youth students listening to instructor during reflection circle"
+                  className="w-full h-auto rounded-lg shadow-2xl"
+                />
+              </div>
+              <div className="order-1 lg:order-2">
+                {classStructure.map((item, index) => (
+                  <div key={index} className="flex items-center gap-8 p-6 rounded-lg hover:bg-gray-900 transition-colors border border-gray-800 mb-4">
+                    <div className="flex-shrink-0 w-16 h-16 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl">
+                      {item.step}
+                    </div>
+                    <div className="flex-grow">
+                      <h3 className="font-bold text-xl text-white">{item.activity}</h3>
+                    </div>
+                    <div className="flex-shrink-0 text-orange-400 font-bold text-lg">
+                      {item.duration}
+                    </div>
                   </div>
-                  <div className="flex-grow">
-                    <h3 className="font-bold text-xl text-white">{item.activity}</h3>
-                  </div>
-                  <div className="flex-shrink-0 text-orange-400 font-bold text-lg">
-                    {item.duration}
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -142,28 +168,37 @@ const YouthLearnMore = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
               Safety & Instructor Credentials
             </h2>
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
-              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-                <CardContent className="p-8">
-                  <h3 className="font-bold text-2xl mb-4 text-orange-400">Edwin (Head Coach)</h3>
-                  <p className="text-gray-300 text-lg leading-relaxed">
-                    Krav Maga Expert 3, ex-Singapore Commandos, CPR Certified
+            <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-center">
+              <div className="space-y-8">
+                <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                  <CardContent className="p-8">
+                    <h3 className="font-bold text-2xl mb-4 text-orange-400">Edwin (Head Coach)</h3>
+                    <p className="text-gray-300 text-lg leading-relaxed">
+                      Krav Maga Expert 3, ex-Singapore Commandos, CPR Certified
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                  <CardContent className="p-8">
+                    <h3 className="font-bold text-2xl mb-4 text-orange-400">Minnie</h3>
+                    <p className="text-gray-300 text-lg leading-relaxed">
+                      Krav Maga G3, Autism Fitness Pro, SOC Defence Tactics Instructor, CPR Certified
+                    </p>
+                  </CardContent>
+                </Card>
+                <div className="text-center">
+                  <p className="text-xl text-gray-300">
+                    <strong className="text-orange-400">Ratio max 1:10</strong> • <strong className="text-orange-400">Mats sanitised daily</strong>
                   </p>
-                </CardContent>
-              </Card>
-              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-                <CardContent className="p-8">
-                  <h3 className="font-bold text-2xl mb-4 text-orange-400">Minnie</h3>
-                  <p className="text-gray-300 text-lg leading-relaxed">
-                    Krav Maga G3, Autism Fitness Pro, SOC Defence Tactics Instructor, CPR Certified
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="text-center">
-              <p className="text-xl text-gray-300">
-                <strong className="text-orange-400">Ratio max 1:10</strong> • <strong className="text-orange-400">Mats sanitised daily</strong>
-              </p>
+                </div>
+              </div>
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/27f01df4-8e82-4d73-95ab-17f439c994ff.png" 
+                  alt="Instructor engaging with youth students in a circle"
+                  className="w-full h-auto rounded-lg shadow-2xl"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -197,23 +232,32 @@ const YouthLearnMore = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
               What Parents & Students Say
             </h2>
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-                <CardContent className="p-8">
-                  <blockquote className="text-xl italic text-gray-300 mb-6 leading-relaxed">
-                    "Aiden's confidence has soared—he spoke at school assembly!"
-                  </blockquote>
-                  <cite className="text-orange-400 font-bold text-lg">– Michelle T.</cite>
-                </CardContent>
-              </Card>
-              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-                <CardContent className="p-8">
-                  <blockquote className="text-xl italic text-gray-300 mb-6 leading-relaxed">
-                    "Fun games, real skills. Best part of my week."
-                  </blockquote>
-                  <cite className="text-orange-400 font-bold text-lg">– Liam (13)</cite>
-                </CardContent>
-              </Card>
+            <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-center">
+              <div className="relative order-2 lg:order-1">
+                <img 
+                  src="/lovable-uploads/ab7732f8-d959-4846-a955-5051702f33e2.png" 
+                  alt="Youth students actively participating in Krav Maga training"
+                  className="w-full h-auto rounded-lg shadow-2xl"
+                />
+              </div>
+              <div className="space-y-8 order-1 lg:order-2">
+                <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                  <CardContent className="p-8">
+                    <blockquote className="text-xl italic text-gray-300 mb-6 leading-relaxed">
+                      "Aiden's confidence has soared—he spoke at school assembly!"
+                    </blockquote>
+                    <cite className="text-orange-400 font-bold text-lg">– Michelle T.</cite>
+                  </CardContent>
+                </Card>
+                <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                  <CardContent className="p-8">
+                    <blockquote className="text-xl italic text-gray-300 mb-6 leading-relaxed">
+                      "Fun games, real skills. Best part of my week."
+                    </blockquote>
+                    <cite className="text-orange-400 font-bold text-lg">– Liam (13)</cite>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </section>
