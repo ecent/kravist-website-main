@@ -49,11 +49,11 @@ const YouthLearnMore = () => {
   ];
 
   const classStructure = [
-    { step: "1", activity: "Warm-up & Mobility", duration: "5 min" },
-    { step: "2", activity: "Game Activation", duration: "10 min" },
-    { step: "3", activity: "Technique Focus", duration: "15 min" },
-    { step: "4", activity: "Scenario & Partner Work", duration: "10 min" },
-    { step: "5", activity: "Reflection Circle", duration: "5 min" }
+    { step: "1", activity: "Warm up and games" },
+    { step: "2", activity: "Stretching and mobility" },
+    { step: "3", activity: "Technique introduction" },
+    { step: "4", activity: "Technique games and summary" },
+    { step: "5", activity: "Wind down" }
   ];
 
   return (
@@ -152,9 +152,6 @@ const YouthLearnMore = () => {
                     <div className="flex-grow">
                       <h3 className="font-bold text-xl text-white">{item.activity}</h3>
                     </div>
-                    <div className="flex-shrink-0 text-orange-400 font-bold text-lg">
-                      {item.duration}
-                    </div>
                   </div>
                 ))}
               </div>
@@ -247,6 +244,11 @@ const YouthLearnMore = () => {
                         <CheckCircle className="h-5 w-5 text-orange-400" />
                         <span>Final grading & certificate ceremony</span>
                       </div>
+                    </div>
+                    <div className="mt-6">
+                      <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold" asChild>
+                        <a href="/#pricing">Join Waitlist</a>
+                      </Button>
                     </div>
                   </div>
                 </CardContent>
@@ -475,76 +477,21 @@ const YouthLearnMore = () => {
                   </AccordionItem>
                 ))}
               </Accordion>
-            </div>
-          </div>
-        </section>
-
-        {/* Parent Quotes */}
-        <section className="py-16 lg:py-24 bg-gray-900">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
-              What Parents & Students Say
-            </h2>
-            <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-center">
-              <div className="relative order-2 lg:order-1">
-                <img 
-                  src="/lovable-uploads/ab7732f8-d959-4846-a955-5051702f33e2.png" 
-                  alt="Youth students actively participating in Krav Maga training"
-                  className="w-full h-auto rounded-lg shadow-2xl"
-                />
-              </div>
-              <div className="space-y-8 order-1 lg:order-2">
-                <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-                  <CardContent className="p-8">
-                    <blockquote className="text-xl italic text-gray-300 mb-6 leading-relaxed">
-                      "Aiden's confidence has soared—he spoke at school assembly!"
-                    </blockquote>
-                    <cite className="text-orange-400 font-bold text-lg">– Michelle T.</cite>
-                  </CardContent>
-                </Card>
-                <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-                  <CardContent className="p-8">
-                    <blockquote className="text-xl italic text-gray-300 mb-6 leading-relaxed">
-                      "Fun games, real skills. Best part of my week."
-                    </blockquote>
-                    <cite className="text-orange-400 font-bold text-lg">– Liam (13)</cite>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Schedule & Pricing Teaser */}
-        <section className="py-16 lg:py-24 bg-black">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-white">
-              Schedule & Pricing
-            </h2>
-            <div className="max-w-3xl mx-auto mb-12">
-              <p className="text-xl text-gray-300 mb-6">
-                <strong className="text-orange-400">General Classes:</strong> Flexible drop-in training • <strong className="text-orange-400">Term Classes:</strong> Structured 15-16 week programs
-              </p>
-              <p className="text-xl text-gray-300 mb-8">
-                <strong className="text-orange-400">Term Pricing:</strong> Kids $450 • Juniors $495 • Teens $510
-              </p>
-              <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Button variant="outline" className="border-orange-600 text-orange-400 hover:bg-orange-600 hover:text-white text-lg px-6 py-3" asChild>
-                  <a href="/schedule">Full Schedule</a>
-                </Button>
-                <Button variant="outline" className="border-orange-600 text-orange-400 hover:bg-orange-600 hover:text-white text-lg px-6 py-3" asChild>
-                  <a href="/pricing">Pricing</a>
+              <div className="text-center mt-8">
+                <Button variant="outline" className="border-orange-600 text-orange-400 hover:bg-orange-600 hover:text-white" asChild>
+                  <a href="/#faq">View All Frequently Asked Questions</a>
                 </Button>
               </div>
             </div>
           </div>
         </section>
+
 
         {/* Final CTA */}
         <section className="py-20 lg:py-32 bg-gradient-to-br from-orange-900 via-orange-800 to-gray-900">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-12 text-white leading-tight">
-              Ready to see them thrive?
+              Ready to watch them grow into confident leaders?
             </h2>
             <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-xl px-12 py-6" asChild>
               <a href="/#pricing">Book a Youth Trial Class</a>
