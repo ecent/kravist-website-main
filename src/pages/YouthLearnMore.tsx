@@ -28,7 +28,7 @@ const YouthLearnMore = () => {
   const whyChooseUs = [
     {
       title: "Confidence & Self-Esteem",
-      description: "Speaking up in every class builds inner strength.",
+      description: "Every voice heard grows stronger and more confident.",
       icon: CheckCircle
     },
     {
