@@ -162,6 +162,170 @@ const YouthLearnMore = () => {
           </div>
         </section>
 
+        {/* Training Options */}
+        <section className="py-16 lg:py-24 bg-gray-900">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
+              Two Ways to Train
+            </h2>
+            <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+              {/* General Open Classes */}
+              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="p-3 bg-orange-600 rounded-lg">
+                      <Clock className="h-6 w-6 text-white" />
+                    </div>
+                    <h3 className="font-bold text-2xl text-orange-400">General Open Classes</h3>
+                  </div>
+                  <div className="space-y-4 text-gray-300">
+                    <p className="text-lg leading-relaxed">
+                      Flexible training where curriculum may vary from week to week. Join at any time throughout the year!
+                    </p>
+                    <div className="space-y-3">
+                      <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
+                        <span className="font-semibold">Juniors</span>
+                        <span className="text-orange-400">Fridays 5:15pm</span>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
+                        <span className="font-semibold">Kids</span>
+                        <span className="text-orange-400">Fridays 6:15pm</span>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
+                        <span className="font-semibold">Teens</span>
+                        <span className="text-orange-400">Sundays 4:30pm</span>
+                      </div>
+                    </div>
+                    <div className="mt-6 p-4 bg-orange-600/20 border border-orange-600/30 rounded-lg">
+                      <p className="text-orange-200 font-semibold">Free trial classes conducted during these sessions!</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Weekend Term Classes */}
+              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="p-3 bg-orange-600 rounded-lg">
+                      <Award className="h-6 w-6 text-white" />
+                    </div>
+                    <h3 className="font-bold text-2xl text-orange-400">Weekend Term Classes</h3>
+                  </div>
+                  <div className="space-y-4 text-gray-300">
+                    <p className="text-lg leading-relaxed">
+                      Structured 15-16 week program with progressive curriculum and final grading ceremony.
+                    </p>
+                    <div className="space-y-3">
+                      <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
+                        <span className="font-semibold">Kids</span>
+                        <span className="text-orange-400 font-bold">$450</span>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
+                        <span className="font-semibold">Juniors</span>
+                        <span className="text-orange-400 font-bold">$495</span>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
+                        <span className="font-semibold">Teens</span>
+                        <span className="text-orange-400 font-bold">$510</span>
+                      </div>
+                    </div>
+                    <div className="space-y-2 mt-6">
+                      <div className="flex items-center gap-3">
+                        <CheckCircle className="h-5 w-5 text-orange-400" />
+                        <span>Guaranteed weekly slot</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <CheckCircle className="h-5 w-5 text-orange-400" />
+                        <span>Makeup sessions available</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <CheckCircle className="h-5 w-5 text-orange-400" />
+                        <span>Progressive methodology</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <CheckCircle className="h-5 w-5 text-orange-400" />
+                        <span>Final grading & certificate ceremony</span>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Mission Book for Kids */}
+        <section className="py-16 lg:py-24 bg-black">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
+              Special: Kids Mission Book
+            </h2>
+            <div className="max-w-4xl mx-auto">
+              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                <CardContent className="p-8 lg:p-12">
+                  <div className="grid lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                      <div className="flex items-center gap-4 mb-6">
+                        <div className="p-3 bg-orange-600 rounded-lg">
+                          <Award className="h-8 w-8 text-white" />
+                        </div>
+                        <h3 className="font-bold text-2xl text-orange-400">Mission Book Program</h3>
+                      </div>
+                      <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                        Our Kids division participants receive a special Mission Book with homework assignments that extend learning beyond the dojo.
+                      </p>
+                      <div className="space-y-4">
+                        <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-lg">
+                          <div className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">
+                            1
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-white mb-2">Class Ends with Mission</h4>
+                            <p className="text-gray-300">Each class concludes with students receiving a mission to complete at home - from talking to family members to helping with chores.</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-lg">
+                          <div className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">
+                            2
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-white mb-2">Class Begins with Sharing</h4>
+                            <p className="text-gray-300">The next class starts with the group sharing their experiences and lessons learned from their missions.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <div className="bg-gradient-to-br from-orange-600/20 to-orange-800/20 p-8 rounded-lg border border-orange-600/30">
+                        <h4 className="font-bold text-xl text-orange-400 mb-4">Example Missions:</h4>
+                        <ul className="space-y-3 text-gray-300">
+                          <li className="flex items-center gap-3">
+                            <CheckCircle className="h-5 w-5 text-orange-400 flex-shrink-0" />
+                            <span>Share something you learned with a family member</span>
+                          </li>
+                          <li className="flex items-center gap-3">
+                            <CheckCircle className="h-5 w-5 text-orange-400 flex-shrink-0" />
+                            <span>Help with a household chore without being asked</span>
+                          </li>
+                          <li className="flex items-center gap-3">
+                            <CheckCircle className="h-5 w-5 text-orange-400 flex-shrink-0" />
+                            <span>Practice a confidence-building exercise</span>
+                          </li>
+                          <li className="flex items-center gap-3">
+                            <CheckCircle className="h-5 w-5 text-orange-400 flex-shrink-0" />
+                            <span>Show kindness to someone new</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
         {/* Safety & Instructor Credentials */}
         <section className="py-16 lg:py-24 bg-gray-900">
           <div className="container mx-auto px-4">
@@ -270,10 +434,10 @@ const YouthLearnMore = () => {
             </h2>
             <div className="max-w-3xl mx-auto mb-12">
               <p className="text-xl text-gray-300 mb-6">
-                <strong className="text-orange-400">Classes:</strong> Sat & Sun 10/11 AM • Wed 5 PM • Fri 5 PM
+                <strong className="text-orange-400">General Classes:</strong> Flexible drop-in training • <strong className="text-orange-400">Term Classes:</strong> Structured 15-16 week programs
               </p>
               <p className="text-xl text-gray-300 mb-8">
-                <strong className="text-orange-400">Term length:</strong> 17 weeks • Fees from S$___ / term
+                <strong className="text-orange-400">Term Pricing:</strong> Kids $450 • Juniors $495 • Teens $510
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button variant="outline" className="border-orange-600 text-orange-400 hover:bg-orange-600 hover:text-white text-lg px-6 py-3" asChild>
