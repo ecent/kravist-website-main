@@ -32,8 +32,8 @@ const YouthLearnMore = () => {
       icon: CheckCircle
     },
     {
-      title: "Purpose-Driven Fun",
-      description: "Games like \"Guardian Tag\" turn techniques into play.",
+      title: "Real-World Safety Skills",
+      description: "Anti-bullying strategies, stranger danger awareness, and practical self-defence techniques.",
       icon: Users
     },
     {
@@ -91,7 +91,7 @@ const YouthLearnMore = () => {
         <section className="py-16 lg:py-24 bg-gray-900">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
-              Why Parents Choose Us
+              Why Parents Choose Kravist
             </h2>
             <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-center">
               <div className="space-y-8">
