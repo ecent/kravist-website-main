@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import SEO from "@/components/SEO";
 import FAQStructuredData from "@/components/FAQStructuredData";
 import { Button } from "@/components/ui/button";
@@ -52,6 +53,11 @@ const YouthLearnMore = () => {
     { step: "5", activity: "Wind down" }
   ];
 
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <SEO
@@ -75,7 +81,7 @@ const YouthLearnMore = () => {
           </div>
           <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent drop-shadow-lg">
-              Kids Krav Maga that builds courage for life.
+              Self-defence that builds courage for life.
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-4xl mx-auto">
               Game-based classes that teach real-world self-defence while boosting confidence, discipline and focus.
