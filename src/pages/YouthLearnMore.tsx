@@ -82,7 +82,7 @@ const YouthLearnMore = () => {
               Give your child the confidence to stand strong.
             </h1>
             <Button size="lg" className="mt-8 bg-orange-600 hover:bg-orange-700 text-lg px-8 py-4" asChild>
-              <a href="/schedule#youth-trial">Book a Trial Class</a>
+              <a href="/#pricing">Book a Trial Class</a>
             </Button>
           </div>
         </section>
@@ -214,7 +214,7 @@ const YouthLearnMore = () => {
                   </div>
                   <div className="space-y-4 text-gray-300">
                     <p className="text-lg leading-relaxed">
-                      Structured 15-16 week program with progressive curriculum and final grading ceremony.
+                      Multi-month term program held 3x yearly with progressive curriculum and final grading ceremony.
                     </p>
                     <div className="space-y-3">
                       <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
@@ -255,11 +255,11 @@ const YouthLearnMore = () => {
           </div>
         </section>
 
-        {/* Mission Book for Kids */}
+        {/* Leadership Development Program */}
         <section className="py-16 lg:py-24 bg-black">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
-              Special: Kids Mission Book
+              Building Future Leaders
             </h2>
             <div className="max-w-4xl mx-auto">
               <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
@@ -270,10 +270,10 @@ const YouthLearnMore = () => {
                         <div className="p-3 bg-orange-600 rounded-lg">
                           <Award className="h-8 w-8 text-white" />
                         </div>
-                        <h3 className="font-bold text-2xl text-orange-400">Mission Book Program</h3>
+                        <h3 className="font-bold text-2xl text-orange-400">Leadership Through Action</h3>
                       </div>
                       <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                        Our Kids division participants receive a special Mission Book with homework assignments that extend learning beyond the dojo.
+                        Our Youth program goes beyond physical training to develop confident leaders through structured activities and real-world challenges.
                       </p>
                       <div className="space-y-4">
                         <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-lg">
@@ -281,8 +281,8 @@ const YouthLearnMore = () => {
                             1
                           </div>
                           <div>
-                            <h4 className="font-semibold text-white mb-2">Class Ends with Mission</h4>
-                            <p className="text-gray-300">Each class concludes with students receiving a mission to complete at home - from talking to family members to helping with chores.</p>
+                            <h4 className="font-semibold text-white mb-2">Speaking & Communication</h4>
+                            <p className="text-gray-300">Students practice public speaking and sharing experiences in a supportive group environment, building confidence for school and life.</p>
                           </div>
                         </div>
                         <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-lg">
@@ -290,31 +290,44 @@ const YouthLearnMore = () => {
                             2
                           </div>
                           <div>
-                            <h4 className="font-semibold text-white mb-2">Class Begins with Sharing</h4>
-                            <p className="text-gray-300">The next class starts with the group sharing their experiences and lessons learned from their missions.</p>
+                            <h4 className="font-semibold text-white mb-2">Personal Challenges</h4>
+                            <p className="text-gray-300">Students are given real-world challenges that encourage responsibility, kindness, and personal growth outside the training environment.</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-lg">
+                          <div className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">
+                            3
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-white mb-2">Reflection & Growth</h4>
+                            <p className="text-gray-300">Each session begins with students sharing their experiences and lessons learned, developing self-awareness and communication skills.</p>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className="relative">
                       <div className="bg-gradient-to-br from-orange-600/20 to-orange-800/20 p-8 rounded-lg border border-orange-600/30">
-                        <h4 className="font-bold text-xl text-orange-400 mb-4">Example Missions:</h4>
+                        <h4 className="font-bold text-xl text-orange-400 mb-4">Leadership Skills Developed:</h4>
                         <ul className="space-y-3 text-gray-300">
                           <li className="flex items-center gap-3">
                             <CheckCircle className="h-5 w-5 text-orange-400 flex-shrink-0" />
-                            <span>Share something you learned with a family member</span>
+                            <span>Public speaking confidence</span>
                           </li>
                           <li className="flex items-center gap-3">
                             <CheckCircle className="h-5 w-5 text-orange-400 flex-shrink-0" />
-                            <span>Help with a household chore without being asked</span>
+                            <span>Personal responsibility</span>
                           </li>
                           <li className="flex items-center gap-3">
                             <CheckCircle className="h-5 w-5 text-orange-400 flex-shrink-0" />
-                            <span>Practice a confidence-building exercise</span>
+                            <span>Empathy and kindness</span>
                           </li>
                           <li className="flex items-center gap-3">
                             <CheckCircle className="h-5 w-5 text-orange-400 flex-shrink-0" />
-                            <span>Show kindness to someone new</span>
+                            <span>Self-reflection abilities</span>
+                          </li>
+                          <li className="flex items-center gap-3">
+                            <CheckCircle className="h-5 w-5 text-orange-400 flex-shrink-0" />
+                            <span>Goal-setting and achievement</span>
                           </li>
                         </ul>
                       </div>
@@ -330,39 +343,115 @@ const YouthLearnMore = () => {
         <section className="py-16 lg:py-24 bg-gray-900">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
-              Safety & Instructor Credentials
+              Meet Our Youth Instructors
             </h2>
-            <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-center">
-              <div className="space-y-8">
-                <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-                  <CardContent className="p-8">
-                    <h3 className="font-bold text-2xl mb-4 text-orange-400">Edwin (Head Coach)</h3>
-                    <p className="text-gray-300 text-lg leading-relaxed">
-                      Krav Maga Expert 3, ex-Singapore Commandos, CPR Certified
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-                  <CardContent className="p-8">
-                    <h3 className="font-bold text-2xl mb-4 text-orange-400">Minnie</h3>
-                    <p className="text-gray-300 text-lg leading-relaxed">
-                      Krav Maga G3, Autism Fitness Pro, SOC Defence Tactics Instructor, CPR Certified
-                    </p>
-                  </CardContent>
-                </Card>
-                <div className="text-center">
-                  <p className="text-xl text-gray-300">
-                    <strong className="text-orange-400">Ratio max 1:10</strong> • <strong className="text-orange-400">Mats sanitised daily</strong>
-                  </p>
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+              {/* Edwin */}
+              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                <div className="aspect-square overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/71ffb50c-9f16-4066-8039-e8be3ca98a30.png" 
+                    alt="Edwin Peng"
+                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                    style={{ objectPosition: 'center 20%' }}
+                  />
                 </div>
-              </div>
-              <div className="relative">
-                <img 
-                  src="/lovable-uploads/27f01df4-8e82-4d73-95ab-17f439c994ff.png" 
-                  alt="Instructor engaging with youth students in a circle"
-                  className="w-full h-auto rounded-lg shadow-2xl"
-                />
-              </div>
+                <CardContent className="p-6">
+                  <h3 className="font-bold text-xl mb-2 text-orange-400">Edwin Peng</h3>
+                  <p className="text-gray-400 text-sm mb-3">Head Instructor & Founder</p>
+                  <ul className="text-gray-300 text-sm space-y-1">
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Krav Maga Level Expert 3</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>20+ years training and teaching</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Ex-Singapore Commandos</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>CPR Certified</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Minnie */}
+              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                <div className="aspect-square overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/c2a8d8db-85b1-409c-a2f9-205208b6bfdd.png" 
+                    alt="Minnie Teo"
+                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                    style={{ objectPosition: 'center 20%' }}
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="font-bold text-xl mb-2 text-orange-400">Minnie Teo</h3>
+                  <p className="text-gray-400 text-sm mb-3">Head of Women's Division</p>
+                  <ul className="text-gray-300 text-sm space-y-1">
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Krav Maga Level G3</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Autism Fitness Certified Pro</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Ex-Singapore Police (10+ years)</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>CPR Certified</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Ethel */}
+              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                <div className="aspect-square overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/95b3db7b-d1a6-4391-8a7a-f8ca108172bc.png" 
+                    alt="Ethel Wee"
+                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                    style={{ objectPosition: 'center 20%' }}
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="font-bold text-xl mb-2 text-orange-400">Ethel Wee</h3>
+                  <p className="text-gray-400 text-sm mb-3">Youth Instructor</p>
+                  <ul className="text-gray-300 text-sm space-y-1">
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Krav Maga Level G4</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Certified Youth Instructor</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>7+ years teaching experience</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>CPR Certified</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+            <div className="text-center">
+              <p className="text-xl text-gray-300">
+                <strong className="text-orange-400">Ratio max 1:8</strong> • <strong className="text-orange-400">Mats sanitised daily</strong>
+              </p>
             </div>
           </div>
         </section>
@@ -458,7 +547,7 @@ const YouthLearnMore = () => {
               Ready to see them thrive?
             </h2>
             <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-xl px-12 py-6" asChild>
-              <a href="/schedule#youth-trial">Book a Youth Trial Class</a>
+              <a href="/#pricing">Book a Youth Trial Class</a>
             </Button>
           </div>
         </section>
