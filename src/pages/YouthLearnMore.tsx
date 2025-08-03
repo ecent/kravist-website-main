@@ -9,19 +9,15 @@ const YouthLearnMore = () => {
   const faqs = [
     {
       question: "What age groups do you accept?",
-      answer: "Kids 6-9, Juniors 9-12, Teens 12-16."
+      answer: "We welcome children and teens aged 6 to 17 years. Classes are grouped by age so everyone trains with peers at the right development level."
     },
     {
-      question: "Do I need equipment?",
-      answer: "Sportswear for the trial; uniform provided on enrolment."
+      question: "Do I need to bring equipment?",
+      answer: "Just have your child arrive in closed-toe shoes, comfortable workout clothes, and a water bottle. All pads and associated gear are provided by Kravist."
     },
     {
-      question: "How much does it cost?",
-      answer: "From S$___ per 17-week term."
-    },
-    {
-      question: "Missed class policy?",
-      answer: "Attend any other Youth slot that week."
+      question: "What happens if we miss a class?",
+      answer: "Simply coordinate a free make-up session with the instructor. We're flexible—your child can slot into another Youth class that same week at no extra cost."
     }
   ];
 
@@ -474,7 +470,7 @@ const YouthLearnMore = () => {
         <section className="py-20 lg:py-32 bg-gradient-to-br from-orange-900 via-orange-800 to-gray-900">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-12 text-white leading-tight">
-              Give your child the tools to succeed in life.
+              Give your child the tools to succeed.
             </h2>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-xl px-12 py-6" asChild>
