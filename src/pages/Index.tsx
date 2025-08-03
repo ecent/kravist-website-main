@@ -302,11 +302,19 @@ const Index = () => {
                   ))}
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link to="/contact">
-                    <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
-                      Contact Us
-                    </Button>
-                  </Link>
+                  {activeDivision.id === "youth" ? (
+                    <Link to="/programs/youth/learn-more">
+                      <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
+                        Learn More
+                      </Button>
+                    </Link>
+                  ) : (
+                    <Link to="/contact">
+                      <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
+                        Contact Us
+                      </Button>
+                    </Link>
+                  )}
                   <a href="#pricing">
                     <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
                       Start Training
