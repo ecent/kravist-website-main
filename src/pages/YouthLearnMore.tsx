@@ -145,14 +145,14 @@ const YouthLearnMore = () => {
                 />
               </div>
               <div className="order-1 lg:order-2">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="grid gap-4">
                   {classStructure.map((item, index) => (
-                    <div key={index} className="flex items-center gap-3 p-3 rounded-lg bg-gray-900 border border-gray-800">
-                      <div className="flex-shrink-0 w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                    <div key={index} className="flex items-center gap-6 p-5 rounded-lg bg-gray-900 border border-gray-800 hover:bg-gray-800 transition-colors">
+                      <div className="flex-shrink-0 w-14 h-14 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
                         {item.step}
                       </div>
                       <div className="flex-grow">
-                        <h3 className="font-medium text-sm text-white">{item.activity}</h3>
+                        <h3 className="font-semibold text-lg text-white">{item.activity}</h3>
                       </div>
                     </div>
                   ))}
