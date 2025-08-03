@@ -28,7 +28,7 @@ const YouthLearnMore = () => {
   const whyChooseUs = [
     {
       title: "Confidence & Self-Esteem",
-      description: "Every voice heard grows stronger and more confident.",
+      description: "Speaking up in every class builds confidence alongside the strength that comes from physical training.",
       icon: CheckCircle
     },
     {
@@ -474,11 +474,16 @@ const YouthLearnMore = () => {
         <section className="py-20 lg:py-32 bg-gradient-to-br from-orange-900 via-orange-800 to-gray-900">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-12 text-white leading-tight">
-              Ready to watch them grow into confident leaders?
+              Give your child the tools to succeed in life.
             </h2>
-            <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-xl px-12 py-6" asChild>
-              <a href="/#pricing">Book a Youth Trial Class</a>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-xl px-12 py-6" asChild>
+                <a href="/#pricing">Book a Youth Trial Class</a>
+              </Button>
+              <Button size="lg" variant="outline" className="border-orange-600 text-orange-400 hover:bg-orange-600 hover:text-white text-xl px-12 py-6" asChild>
+                <a href="/contact">Contact Us</a>
+              </Button>
+            </div>
           </div>
         </section>
       </div>
