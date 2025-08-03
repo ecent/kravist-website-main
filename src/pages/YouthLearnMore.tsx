@@ -75,7 +75,7 @@ const YouthLearnMore = () => {
           </div>
           <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              Give your child the confidence to stand strong.
+              Build rock-solid confidence, one class at a time.
             </h1>
             <Button size="lg" className="mt-8 bg-orange-600 hover:bg-orange-700 text-lg px-8 py-4" asChild>
               <a href="/#pricing">Book a Trial Class</a>
@@ -482,7 +482,7 @@ const YouthLearnMore = () => {
         <section className="py-20 lg:py-32 bg-gradient-to-br from-orange-900 via-orange-800 to-gray-900">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-12 text-white leading-tight">
-              Give your child the tools to succeed.
+              Equip them for life—book a trial class.
             </h2>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-xl px-12 py-6" asChild>
