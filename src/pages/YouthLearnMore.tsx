@@ -183,18 +183,18 @@ const YouthLearnMore = () => {
                       Flexible training where curriculum may vary from week to week. Join at any time throughout the year!
                     </p>
                     <div className="space-y-3">
-                      <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
-                        <span className="font-semibold">Juniors</span>
-                        <span className="text-orange-400">Fridays 5:15pm</span>
-                      </div>
-                      <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
+                      <a href="/#pricing" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
                         <span className="font-semibold">Kids</span>
                         <span className="text-orange-400">Fridays 6:15pm</span>
-                      </div>
-                      <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
+                      </a>
+                      <a href="/#pricing" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                        <span className="font-semibold">Juniors</span>
+                        <span className="text-orange-400">Fridays 5:15pm</span>
+                      </a>
+                      <a href="/#pricing" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
                         <span className="font-semibold">Teens</span>
                         <span className="text-orange-400">Sundays 4:30pm</span>
-                      </div>
+                      </a>
                     </div>
                     <div className="mt-6 p-4 bg-orange-600/20 border border-orange-600/30 rounded-lg">
                       <p className="text-orange-200 font-semibold">Free trial classes conducted during these sessions!</p>
@@ -217,18 +217,18 @@ const YouthLearnMore = () => {
                       Multi-month structured program with weekly classes (3 terms yearly) including progressive curriculum and final grading ceremony.
                     </p>
                     <div className="space-y-3">
-                      <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
+                      <a href="/#pricing" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
                         <span className="font-semibold">Kids</span>
                         <span className="text-orange-400 font-bold">$450</span>
-                      </div>
-                      <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
+                      </a>
+                      <a href="/#pricing" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
                         <span className="font-semibold">Juniors</span>
                         <span className="text-orange-400 font-bold">$495</span>
-                      </div>
-                      <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
+                      </a>
+                      <a href="/#pricing" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
                         <span className="font-semibold">Teens</span>
                         <span className="text-orange-400 font-bold">$510</span>
-                      </div>
+                      </a>
                     </div>
                     <div className="grid grid-cols-2 gap-3 mt-6">
                       <div className="flex items-center gap-3">
