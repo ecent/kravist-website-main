@@ -211,7 +211,7 @@ const YouthLearnMore = () => {
                   </div>
                   <div className="space-y-4 text-gray-300">
                     <p className="text-lg leading-relaxed">
-                      Multi-month term program held 3x yearly with progressive curriculum and final grading ceremony.
+                      Multi-month structured program with weekly classes (3 terms yearly) including progressive curriculum and final grading ceremony.
                     </p>
                     <div className="space-y-3">
                       <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
@@ -263,75 +263,58 @@ const YouthLearnMore = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
               Building Future Leaders
             </h2>
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-6xl mx-auto">
               <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-                <CardContent className="p-8 lg:p-12">
-                  <div className="grid lg:grid-cols-2 gap-8 items-center">
-                    <div>
+                <CardContent className="p-8">
+                  <div className="grid lg:grid-cols-3 gap-8 items-start">
+                    <div className="lg:col-span-2">
                       <div className="flex items-center gap-4 mb-6">
                         <div className="p-3 bg-orange-600 rounded-lg">
-                          <Award className="h-8 w-8 text-white" />
+                          <Award className="h-6 w-6 text-white" />
                         </div>
                         <h3 className="font-bold text-2xl text-orange-400">Leadership Through Action</h3>
                       </div>
                       <p className="text-lg text-gray-300 leading-relaxed mb-6">
                         Our Youth program goes beyond physical training to develop confident leaders through structured activities and real-world challenges.
                       </p>
-                      <div className="space-y-4">
-                        <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-lg">
-                          <div className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">
-                            1
-                          </div>
-                          <div>
-                            <h4 className="font-semibold text-white mb-2">Speaking & Communication</h4>
-                            <p className="text-gray-300">Students practice public speaking and sharing experiences in a supportive group environment, building confidence for school and life.</p>
-                          </div>
+                      <div className="grid md:grid-cols-3 gap-4">
+                        <div className="p-4 bg-gray-800 rounded-lg">
+                          <h4 className="font-semibold text-white mb-2">Speaking & Communication</h4>
+                          <p className="text-gray-300 text-sm">Students practice public speaking in a supportive group environment.</p>
                         </div>
-                        <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-lg">
-                          <div className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">
-                            2
-                          </div>
-                          <div>
-                            <h4 className="font-semibold text-white mb-2">Personal Challenges</h4>
-                            <p className="text-gray-300">Students are given real-world challenges that encourage responsibility, kindness, and personal growth outside the training environment.</p>
-                          </div>
+                        <div className="p-4 bg-gray-800 rounded-lg">
+                          <h4 className="font-semibold text-white mb-2">Personal Challenges</h4>
+                          <p className="text-gray-300 text-sm">Real-world challenges that encourage responsibility and personal growth.</p>
                         </div>
-                        <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-lg">
-                          <div className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">
-                            3
-                          </div>
-                          <div>
-                            <h4 className="font-semibold text-white mb-2">Reflection & Growth</h4>
-                            <p className="text-gray-300">Each session begins with students sharing their experiences and lessons learned, developing self-awareness and communication skills.</p>
-                          </div>
+                        <div className="p-4 bg-gray-800 rounded-lg">
+                          <h4 className="font-semibold text-white mb-2">Reflection & Growth</h4>
+                          <p className="text-gray-300 text-sm">Each session begins with students sharing experiences and lessons learned.</p>
                         </div>
                       </div>
                     </div>
-                    <div className="relative">
-                      <div className="bg-gradient-to-br from-orange-600/20 to-orange-800/20 p-8 rounded-lg border border-orange-600/30">
-                        <h4 className="font-bold text-xl text-orange-400 mb-4">Leadership Skills Developed:</h4>
-                        <ul className="space-y-3 text-gray-300">
-                          <li className="flex items-center gap-3">
-                            <CheckCircle className="h-5 w-5 text-orange-400 flex-shrink-0" />
-                            <span>Public speaking confidence</span>
-                          </li>
-                          <li className="flex items-center gap-3">
-                            <CheckCircle className="h-5 w-5 text-orange-400 flex-shrink-0" />
-                            <span>Personal responsibility</span>
-                          </li>
-                          <li className="flex items-center gap-3">
-                            <CheckCircle className="h-5 w-5 text-orange-400 flex-shrink-0" />
-                            <span>Empathy and kindness</span>
-                          </li>
-                          <li className="flex items-center gap-3">
-                            <CheckCircle className="h-5 w-5 text-orange-400 flex-shrink-0" />
-                            <span>Self-reflection abilities</span>
-                          </li>
-                          <li className="flex items-center gap-3">
-                            <CheckCircle className="h-5 w-5 text-orange-400 flex-shrink-0" />
-                            <span>Goal-setting and achievement</span>
-                          </li>
-                        </ul>
+                    <div className="bg-gradient-to-br from-orange-600/20 to-orange-800/20 p-6 rounded-lg border border-orange-600/30">
+                      <h4 className="font-bold text-lg text-orange-400 mb-4">Leadership Skills Developed:</h4>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-300 text-sm">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-orange-400 flex-shrink-0" />
+                          <span>Public speaking confidence</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-orange-400 flex-shrink-0" />
+                          <span>Personal responsibility</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-orange-400 flex-shrink-0" />
+                          <span>Empathy and kindness</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-orange-400 flex-shrink-0" />
+                          <span>Self-reflection abilities</span>
+                        </div>
+                        <div className="flex items-center gap-2 sm:col-span-2">
+                          <CheckCircle className="h-4 w-4 text-orange-400 flex-shrink-0" />
+                          <span>Goal-setting and achievement</span>
+                        </div>
                       </div>
                     </div>
                   </div>
