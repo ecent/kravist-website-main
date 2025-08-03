@@ -438,7 +438,7 @@ const YouthLearnMore = () => {
             </div>
             <div className="text-center">
               <p className="text-xl text-gray-300">
-                <strong className="text-orange-400">Ratio max 1:8</strong> • <strong className="text-orange-400">Mats sanitised daily</strong>
+                <strong className="text-orange-400">Ratio max 1:8</strong>
               </p>
             </div>
           </div>
