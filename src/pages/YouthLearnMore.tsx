@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import FAQStructuredData from "@/components/FAQStructuredData";
 import { Button } from "@/components/ui/button";
@@ -69,8 +70,26 @@ const YouthLearnMore = () => {
       <FAQStructuredData faqs={faqs} />
 
       <div className="min-h-screen bg-black text-white">
+        {/* Navigation */}
+        <nav className="bg-black/50 backdrop-blur-md fixed w-full z-50 border-b border-gray-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center h-16">
+              <div className="text-2xl font-bold text-orange-500">KRAVIST</div>
+              <div className="hidden md:flex space-x-8">
+                <Link to="/" className="hover:text-orange-400 transition-colors">Home</Link>
+                <a href="/#divisions" className="hover:text-orange-400 transition-colors">Programs</a>
+                <a href="/#pricing" className="hover:text-orange-400 transition-colors">Pricing</a>
+                <a href="/#schedule" className="hover:text-orange-400 transition-colors">Schedule</a>
+                <a href="/#instructors" className="hover:text-orange-400 transition-colors">Instructors</a>
+                <a href="/#faq" className="hover:text-orange-400 transition-colors">FAQ</a>
+                <Link to="/contact" className="hover:text-orange-400 transition-colors">Contact</Link>
+              </div>
+            </div>
+          </div>
+        </nav>
+
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-20 lg:py-32">
+        <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-20 lg:py-32 pt-32">{/* Extra padding top for fixed nav */}
           {/* Background Image */}
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
