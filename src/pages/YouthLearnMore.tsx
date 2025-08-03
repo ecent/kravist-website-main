@@ -250,7 +250,7 @@ const YouthLearnMore = () => {
                     </div>
                     <div className="mt-6">
                       <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold" asChild>
-                        <a href="/#pricing">Join Waitlist</a>
+                        <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer">Join Waitlist</a>
                       </Button>
                     </div>
                   </div>
