@@ -436,11 +436,6 @@ const YouthLearnMore = () => {
                 </CardContent>
               </Card>
             </div>
-            <div className="text-center">
-              <p className="text-xl text-gray-300">
-                <strong className="text-orange-400">Ratio max 1:8</strong>
-              </p>
-            </div>
           </div>
         </section>
 
