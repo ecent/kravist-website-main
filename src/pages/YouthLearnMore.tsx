@@ -62,7 +62,7 @@ const YouthLearnMore = () => {
   return (
     <>
       <SEO
-        title="Kravist Youth & Adult Self Defence"
+        title="Kravist Youth (6-17) & Adult Self Defence"
         description="Kids Krav Maga in Singapore—build confidence, discipline and self-defence skills. Learn how our Youth program works and book a trial class."
         url="https://www.kravist.sg/programs/youth/learn-more"
         keywords="kids krav maga singapore, teens martial arts, youth self defence, children confidence building"
