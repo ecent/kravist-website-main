@@ -405,6 +405,9 @@ const Index = () => {
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
               Different pricing for different programs and training frequencies. Find the plan that works best for you.
             </p>
+            <p className="text-lg text-orange-300 max-w-2xl mx-auto mt-3 font-medium">
+              Click on any price below to sign up and secure your spot today!
+            </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
