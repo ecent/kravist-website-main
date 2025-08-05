@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import FAQStructuredData from "@/components/FAQStructuredData";
+import BreadcrumbStructuredData from "@/components/BreadcrumbStructuredData";
+import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -54,6 +56,12 @@ const YouthLearnMore = () => {
     { step: "5", activity: "Wind down" }
   ];
 
+  // Breadcrumb data
+  const breadcrumbItems = [
+    { name: "Programs", url: "/#divisions" },
+    { name: "Youth Division", url: "/programs/youth/learn-more", isActive: true }
+  ];
+
   // Scroll to top when component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -68,6 +76,7 @@ const YouthLearnMore = () => {
         keywords="kids krav maga singapore, teens martial arts, youth self defence, children confidence building"
       />
       <FAQStructuredData faqs={faqs} />
+      <BreadcrumbStructuredData items={breadcrumbItems.map(item => ({ name: item.name, url: `https://kravist.sg${item.url}` }))} />
 
       <div className="min-h-screen bg-black text-white">
         {/* Navigation */}
@@ -87,6 +96,13 @@ const YouthLearnMore = () => {
             </div>
           </div>
         </nav>
+
+        {/* Breadcrumb */}
+        <div className="bg-gray-900 py-4">
+          <div className="container mx-auto px-4">
+            <Breadcrumb items={breadcrumbItems} />
+          </div>
+        </div>
 
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-20 lg:py-32 pt-32">{/* Extra padding top for fixed nav */}
@@ -145,13 +161,15 @@ const YouthLearnMore = () => {
               <div className="space-y-6">
                 <img 
                   src="/lovable-uploads/6ab596ea-6de2-4054-8650-2a47eb50138c.png" 
-                  alt="Youth Krav Maga students training together"
+                  alt="Youth Krav Maga students training together in Singapore - building confidence and self-defense skills"
                   className="w-full h-auto rounded-lg shadow-2xl"
+                  loading="lazy"
                 />
                 <img 
                   src="/lovable-uploads/a5809801-6a02-4444-973c-fa039ce1995e.png" 
-                  alt="Youth students practicing Krav Maga techniques with instructor"
+                  alt="Youth students practicing Krav Maga techniques with certified instructor at Kravist Singapore"
                   className="w-full h-auto rounded-lg shadow-2xl"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -168,8 +186,9 @@ const YouthLearnMore = () => {
               <div className="relative order-2 lg:order-1">
                 <img 
                   src="/lovable-uploads/ed953cd3-69a5-4d2d-9972-9031a3a3c1e7.png" 
-                  alt="Youth students engaged in training session"
+                  alt="Youth students engaged in structured Krav Maga training session focusing on discipline and technique"
                   className="w-full h-auto rounded-lg shadow-2xl"
+                  loading="lazy"
                 />
               </div>
               <div className="order-1 lg:order-2">
@@ -365,12 +384,13 @@ const YouthLearnMore = () => {
               {/* Edwin */}
               <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
                 <div className="aspect-square overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/71ffb50c-9f16-4066-8039-e8be3ca98a30.png" 
-                    alt="Edwin Peng"
-                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
-                    style={{ objectPosition: 'center 20%' }}
-                  />
+                    <img 
+                      src="/lovable-uploads/71ffb50c-9f16-4066-8039-e8be3ca98a30.png" 
+                      alt="Edwin Peng - Certified Krav Maga instructor and Youth Program Director at Kravist Singapore"
+                      className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                      style={{ objectPosition: 'center 20%' }}
+                      loading="lazy"
+                    />
                 </div>
                 <CardContent className="p-6">
                   <h3 className="font-bold text-xl mb-2 text-orange-400">Edwin Peng</h3>

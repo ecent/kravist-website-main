@@ -23,21 +23,36 @@ const ResponsiveImage = React.forwardRef<HTMLImageElement, ResponsiveImageProps>
     ...props 
   }, ref) => {
     return (
-      <img
-        ref={ref}
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        sizes={sizes}
-        loading={priority ? "eager" : "lazy"}
-        decoding="async"
-        className={cn(
-          "object-cover transition-opacity duration-300",
-          className
-        )}
-        {...props}
-      />
+      <picture>
+        <source 
+          srcSet={src.replace(/\.(jpg|jpeg|png)$/i, '.webp')} 
+          type="image/webp"
+          sizes={sizes}
+        />
+        <img
+          ref={ref}
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          sizes={sizes}
+          loading={priority ? "eager" : "lazy"}
+          decoding="async"
+          fetchPriority={priority ? "high" : "auto"}
+          className={cn(
+            "object-cover transition-opacity duration-300",
+            className
+          )}
+          onError={(e) => {
+            // Fallback to original format if WebP fails
+            const target = e.target as HTMLImageElement;
+            if (target.src.includes('.webp')) {
+              target.src = src;
+            }
+          }}
+          {...props}
+        />
+      </picture>
     );
   }
 );
