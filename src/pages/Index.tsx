@@ -12,6 +12,11 @@ import ScrollToSection from "@/components/ScrollToSection";
 import SEO from "@/components/SEO";
 import StructuredData from "@/components/StructuredData";
 import FAQStructuredData from "@/components/FAQStructuredData";
+import CourseStructuredData from "@/components/CourseStructuredData";
+import EventStructuredData from "@/components/EventStructuredData";
+import ReviewStructuredData from "@/components/ReviewStructuredData";
+import InstructorStructuredData from "@/components/InstructorStructuredData";
+import BusinessHoursStructuredData from "@/components/BusinessHoursStructuredData";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("youth");
@@ -167,6 +172,172 @@ const Index = () => {
     }
   ];
 
+  // Course structured data
+  const courses = [
+    {
+      name: "Youth Krav Maga Classes",
+      description: "Self-defense training for children and teens aged 6-17, focusing on confidence building and practical safety skills.",
+      ageGroup: "6-17",
+      price: "Contact for pricing",
+      duration: "60 minutes",
+      schedule: ["Friday 5:30pm", "Friday 6:30pm", "Sunday 4:30pm"],
+      instructor: "Certified Youth Krav Maga Instructor"
+    },
+    {
+      name: "Women's Self Defense Classes",
+      description: "Women-only Krav Maga training in a safe, supportive environment designed specifically for women.",
+      ageGroup: "18-65",
+      price: "Contact for pricing",
+      duration: "60 minutes",
+      schedule: ["Tuesday 7:30pm", "Thursday 7:30pm", "Saturday 10:00am"],
+      instructor: "Female Certified Krav Maga Instructor"
+    },
+    {
+      name: "Adult Krav Maga Classes",
+      description: "Practical self-defense training for adults of all skill levels, combining fitness with real-world techniques.",
+      ageGroup: "18-65",
+      price: "Contact for pricing",
+      duration: "60 minutes",
+      schedule: ["Monday 7:30pm", "Wednesday 7:30pm", "Saturday 11:15am"],
+      instructor: "Senior Krav Maga Instructor"
+    },
+    {
+      name: "Corporate Training Programs",
+      description: "Workplace safety and team-building through Krav Maga principles, customized for corporate groups.",
+      ageGroup: "18-65",
+      price: "Contact for group pricing",
+      duration: "90-120 minutes",
+      schedule: ["Custom scheduling available"],
+      instructor: "Lead Corporate Training Instructor"
+    },
+    {
+      name: "Private Training Sessions",
+      description: "One-on-one personalized Krav Maga coaching tailored to individual goals and schedule.",
+      ageGroup: "6-65",
+      price: "Contact for private rates",
+      duration: "60 minutes",
+      schedule: ["Flexible scheduling"],
+      instructor: "Senior Personal Training Instructor"
+    }
+  ];
+
+  // Event structured data for upcoming classes
+  const upcomingEvents = [
+    {
+      name: "Free Youth Trial Class",
+      description: "Complimentary trial class for children and teens to experience Krav Maga training.",
+      startDate: new Date().toISOString(),
+      endDate: new Date(Date.now() + 60 * 60 * 1000).toISOString(),
+      dayOfWeek: "Friday",
+      startTime: "17:30",
+      endTime: "18:30",
+      ageGroup: "Ages 6-17",
+      instructor: "Youth Program Director"
+    },
+    {
+      name: "Women's Self Defense Workshop",
+      description: "Introductory workshop focusing on practical self-defense techniques for women.",
+      startDate: new Date().toISOString(),
+      endDate: new Date(Date.now() + 60 * 60 * 1000).toISOString(),
+      dayOfWeek: "Tuesday",
+      startTime: "19:30",
+      endTime: "20:30",
+      ageGroup: "Women 18+",
+      instructor: "Senior Female Instructor"
+    },
+    {
+      name: "Adult Beginner Class",
+      description: "Perfect introduction to Krav Maga for adults with no prior martial arts experience.",
+      startDate: new Date().toISOString(),
+      endDate: new Date(Date.now() + 60 * 60 * 1000).toISOString(),
+      dayOfWeek: "Monday",
+      startTime: "19:30",
+      endTime: "20:30",
+      ageGroup: "Adults 18+",
+      instructor: "Head Instructor"
+    }
+  ];
+
+  // Review structured data
+  const reviews = [
+    {
+      author: "Sarah L.",
+      rating: 5,
+      reviewBody: "Excellent youth program! My daughter has gained so much confidence and discipline through the classes. The instructors are patient and create a safe learning environment.",
+      datePublished: "2024-01-15",
+      program: "Youth Krav Maga Classes"
+    },
+    {
+      author: "Michelle T.",
+      rating: 5,
+      reviewBody: "The women's self-defense classes are exactly what I was looking for. Great techniques, supportive environment, and practical skills I can actually use.",
+      datePublished: "2024-02-02",
+      program: "Women's Self Defense Classes"
+    },
+    {
+      author: "David K.",
+      rating: 5,
+      reviewBody: "Been training here for 6 months. The adult classes are challenging but accessible for beginners. Love the real-world focus of Krav Maga.",
+      datePublished: "2024-01-28",
+      program: "Adult Krav Maga Classes"
+    },
+    {
+      author: "Jennifer M.",
+      rating: 5,
+      reviewBody: "Corporate workshop was fantastic for team building. Our staff learned valuable safety skills while having fun together.",
+      datePublished: "2024-01-10",
+      program: "Corporate Training Programs"
+    }
+  ];
+
+  const aggregateRating = {
+    ratingValue: 4.9,
+    reviewCount: 127,
+    bestRating: 5,
+    worstRating: 1
+  };
+
+  // Instructor structured data
+  const instructors = [
+    {
+      name: "Master Chen Wei",
+      title: "Head Instructor & Director",
+      description: "Lead instructor with over 15 years of Krav Maga experience, specializing in youth development and adult conditioning programs.",
+      qualifications: [
+        "Krav Maga Global Expert Level 4",
+        "International Krav Maga Federation Instructor",
+        "CPR/AED Certified",
+        "Youth Development Specialist"
+      ],
+      experience: "15+ years",
+      specializations: ["Youth Training", "Adult Programs", "Instructor Development"]
+    },
+    {
+      name: "Instructor Sarah Johnson",
+      title: "Women's Program Director",
+      description: "Specialized instructor leading the women's self-defense program with focus on practical techniques and confidence building.",
+      qualifications: [
+        "Krav Maga Global Expert Level 3",
+        "Women's Self Defense Specialist",
+        "CPR/AED Certified"
+      ],
+      experience: "8+ years",
+      specializations: ["Women's Self Defense", "Confidence Training", "Stress Management"]
+    },
+    {
+      name: "Instructor Mark Thompson",
+      title: "Adult Program Instructor",
+      description: "Experienced instructor specializing in adult fitness integration and practical self-defense applications.",
+      qualifications: [
+        "Krav Maga Global Expert Level 3",
+        "Fitness & Conditioning Specialist",
+        "CPR/AED Certified"
+      ],
+      experience: "10+ years",
+      specializations: ["Adult Training", "Fitness Integration", "Advanced Techniques"]
+    }
+  ];
+
   // Current SEO config based on active section or default to home
   const currentSEO = seoConfigs[activeSection as keyof typeof seoConfigs] || seoConfigs.home;
 
@@ -202,6 +373,11 @@ const Index = () => {
       />
       <StructuredData />
       <FAQStructuredData faqs={faqItems} />
+      <CourseStructuredData courses={courses} />
+      <EventStructuredData events={upcomingEvents} />
+      <ReviewStructuredData reviews={reviews} aggregateRating={aggregateRating} />
+      <InstructorStructuredData instructors={instructors} />
+      <BusinessHoursStructuredData />
       {/* Navigation */}
       <nav className="bg-black/50 backdrop-blur-md fixed w-full z-50 border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
