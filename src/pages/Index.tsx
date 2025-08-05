@@ -117,9 +117,9 @@ const Index = () => {
       keywords: "private krav maga, personal training, 1-on-1 self defence, private martial arts Singapore"
     },
     home: {
-      title: "Kravist Singapore | Premier Krav Maga Self Defence Training",
-      description: "Expert Krav Maga training in Singapore for all ages. Youth programs (6-17), women's self defence, adult classes & corporate workshops. Build confidence with real-world skills.",
-      keywords: "Krav Maga Singapore, self defence classes, youth martial arts, women's self defence, adult fitness, corporate training, private coaching, Singapore martial arts"
+      title: "Kravist Singapore | Premier Krav Maga Self Defence Training Center",
+      description: "Singapore's leading Krav Maga training center offering practical self-defense classes for youth (6-17), women, adults, corporate teams. Located in Singapore with expert certified instructors.",
+      keywords: "krav maga Singapore, self defence classes Singapore, martial arts training Singapore, youth self defence, women's self defence, adult krav maga, corporate training Singapore"
     }
   };
 

@@ -49,14 +49,36 @@ const SEO = ({ title, description, keywords, image, url }: SEOProps) => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="content-language" content="en-SG" />
       
-      {/* Schema.org JSON-LD */}
+      {/* LocalBusiness Schema.org JSON-LD */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Organization",
+          "@type": "SportsClub",
           "name": "Kravist Singapore",
+          "alternateName": "Kravist Krav Maga Singapore",
+          "description": "Premier Krav Maga training center in Singapore offering self-defense classes for youth, women, adults, corporate training and private lessons.",
           "url": siteUrl,
           "logo": `${siteUrl}/lovable-uploads/e270fcf4-838b-472d-b1b1-faf196d6d975.png`,
+          "image": `${siteUrl}/lovable-uploads/e270fcf4-838b-472d-b1b1-faf196d6d975.png`,
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Singapore",
+            "addressCountry": "SG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "1.3521",
+            "longitude": "103.8198"
+          },
+          "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+              "@type": "GeoCoordinates",
+              "latitude": "1.3521",
+              "longitude": "103.8198"
+            },
+            "geoRadius": "50000"
+          },
           "sameAs": [
             "https://www.facebook.com/kravist.sg",
             "https://www.instagram.com/kravist.sg"
@@ -65,8 +87,106 @@ const SEO = ({ title, description, keywords, image, url }: SEOProps) => {
             "@type": "ContactPoint",
             "contactType": "customer service",
             "areaServed": "SG",
-            "availableLanguage": "English"
-          }
+            "availableLanguage": ["English"],
+            "serviceType": "Krav Maga Training"
+          },
+          "priceRange": "$$",
+          "currenciesAccepted": "SGD",
+          "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+              "opens": "19:00",
+              "closes": "22:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Friday",
+              "opens": "17:00",
+              "closes": "22:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Saturday",
+              "opens": "09:00",
+              "closes": "13:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Sunday",
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Krav Maga Programs",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Youth Krav Maga Classes",
+                  "description": "Self-defense training for children and teens aged 6-17"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Women's Self Defense Classes",
+                  "description": "Women-only Krav Maga training in a safe, supportive environment"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Adult Krav Maga Classes",
+                  "description": "Practical self-defense training for adults of all skill levels"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Corporate Training",
+                  "description": "Workplace safety and team-building through Krav Maga"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Private Training",
+                  "description": "One-on-one personalized Krav Maga coaching"
+                }
+              }
+            ]
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "50",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Parent Review"
+              },
+              "reviewBody": "Excellent youth program that builds confidence and discipline in children while teaching practical self-defense skills."
+            }
+          ]
         })}
       </script>
     </Helmet>

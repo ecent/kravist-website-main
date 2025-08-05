@@ -3,4 +3,20 @@ Allow: /
 Disallow: /promo/
 Disallow: /tag/
 
+# Sitemap
 Sitemap: https://kravist.sg/sitemap.xml
+
+# Social media crawlers
+User-agent: facebookexternalhit/*
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Enhanced local SEO - allow image crawling
+Allow: /lovable-uploads/
