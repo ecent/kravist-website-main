@@ -213,11 +213,11 @@ const YouthLearnMore = () => {
                     <div className="space-y-3">
                       <a href="/#pricing" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
                         <span className="font-semibold">Kids</span>
-                        <span className="text-orange-400">Fridays 6:15pm</span>
+                        <span className="text-orange-400">Fridays 6:30pm</span>
                       </a>
                       <a href="/#pricing" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
                         <span className="font-semibold">Juniors</span>
-                        <span className="text-orange-400">Fridays 5:15pm</span>
+                        <span className="text-orange-400">Fridays 5:30pm</span>
                       </a>
                       <a href="/#pricing" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
                         <span className="font-semibold">Teens</span>
