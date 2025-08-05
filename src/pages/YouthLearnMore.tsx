@@ -211,15 +211,15 @@ const YouthLearnMore = () => {
                       Flexible training where curriculum may vary from week to week. Join at any time throughout the year!
                     </p>
                     <div className="space-y-3">
-                      <a href="/#pricing" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_cd5f10a5137544/login" target="_blank" rel="noopener noreferrer" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
                         <span className="font-semibold">Kids</span>
                         <span className="text-orange-400">Fridays 6:30pm</span>
                       </a>
-                      <a href="/#pricing" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_c949e71f9af2d5/login" target="_blank" rel="noopener noreferrer" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
                         <span className="font-semibold">Juniors</span>
                         <span className="text-orange-400">Fridays 5:30pm</span>
                       </a>
-                      <a href="/#pricing" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_f2f2e14d3e5ec5/login" target="_blank" rel="noopener noreferrer" className="flex justify-between items-center p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
                         <span className="font-semibold">Teens</span>
                         <span className="text-orange-400">Sundays 4:30pm</span>
                       </a>
