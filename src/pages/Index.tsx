@@ -19,7 +19,7 @@ import InstructorStructuredData from "@/components/InstructorStructuredData";
 import BusinessHoursStructuredData from "@/components/BusinessHoursStructuredData";
 
 const Index = () => {
-  const [activeSection, setActiveSection] = useState("youth");
+  const [activeSection, setActiveSection] = useState("home");
   const [selectedImageIndex, setSelectedImageIndex] = useState<number>(0);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
