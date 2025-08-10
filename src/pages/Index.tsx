@@ -20,6 +20,7 @@ import BusinessHoursStructuredData from "@/components/BusinessHoursStructuredDat
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("home");
+  const [activeDivisionId, setActiveDivisionId] = useState("youth");
   const [selectedImageIndex, setSelectedImageIndex] = useState<number>(0);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
@@ -341,7 +342,7 @@ const Index = () => {
   // Current SEO config based on active section or default to home
   const currentSEO = seoConfigs[activeSection as keyof typeof seoConfigs] || seoConfigs.home;
 
-  const activeDivision = divisions.find(d => d.id === activeSection);
+  const activeDivision = divisions.find(d => d.id === activeDivisionId);
 
   const handleImageClick = (index: number) => {
     setSelectedImageIndex(index);
@@ -441,9 +442,9 @@ const Index = () => {
             {divisions.map((division) => (
               <button
                 key={division.id}
-                onClick={() => setActiveSection(division.id)}
+                onClick={() => setActiveDivisionId(division.id)}
                 className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
-                  activeSection === division.id
+                  activeDivisionId === division.id
                     ? "bg-orange-600 text-white transform scale-105"
                     : "bg-gray-800 text-gray-300 hover:bg-gray-700"
                 }`}
