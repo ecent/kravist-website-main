@@ -198,7 +198,7 @@ const WomensLearnMore = () => {
         </section>
 
         {/* Program Breakdown */}
-        <section className="py-16 lg:py-24 bg-gray-900">
+        <section className="py-16 lg:py-24 bg-gray-800">{/* Added background shading */}
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
               8 Weeks. Real Growth. Structured Learning.
@@ -312,12 +312,12 @@ const WomensLearnMore = () => {
         </section>
 
         {/* Call to Action */}
-        <section className="py-16 bg-gradient-to-r from-orange-600 to-orange-800">
+        <section className="py-16 bg-black">{/* Changed from orange gradient */}
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Fixed Term Intakes</h2>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               {["January", "April", "July", "October"].map((month) => (
-                <Badge key={month} variant="secondary" className="text-lg px-6 py-2 bg-white text-orange-600">
+                <Badge key={month} variant="secondary" className="text-lg px-6 py-2 bg-orange-600 text-white">{/* Changed badge styling */}
                   <Calendar className="h-4 w-4 mr-2" />
                   {month}
                 </Badge>
@@ -327,10 +327,10 @@ const WomensLearnMore = () => {
               Ready to start your empowerment journey? Contact us to secure your spot in the next intake.
             </p>
             <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-              <Button size="lg" className="w-full sm:w-auto bg-white text-orange-600 hover:bg-gray-100" asChild>
+              <Button size="lg" className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white" asChild>{/* Updated button styling */}
                 <Link to="/contact">Get Started Today</Link>
               </Button>
-              <Button variant="outline" size="lg" className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-orange-600" asChild>
+              <Button variant="outline" size="lg" className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-black" asChild>
                 <Link to="/#divisions">View All Programs</Link>
               </Button>
             </div>
