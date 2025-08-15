@@ -205,7 +205,7 @@ const WomensLearnMore = () => {
         </section>
 
         {/* Real Life Focus */}
-        <section className="py-16 lg:py-24 bg-black">
+        <section className="py-16 lg:py-24 bg-gray-900">{/* Changed to match "Not Just Self-Defence. Self-Mastery." */}
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
               Built for Real Life, Not Just the Mat
@@ -235,7 +235,7 @@ const WomensLearnMore = () => {
         </section>
 
         {/* Community & Rates */}
-        <section className="py-16 lg:py-24 bg-gray-900">
+        <section className="py-16 lg:py-24 bg-gray-800">{/* Changed to match "8 Weeks" section */}
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
               Bring Your Buddy. Or Join as a Kravist Parent.
