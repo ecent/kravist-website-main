@@ -111,24 +111,16 @@ const WomensLearnMore = () => {
             <div className="absolute inset-0 bg-black/70"></div>
           </div>
           <div className="container mx-auto px-4 text-center relative z-10">
-            <Badge variant="secondary" className="mb-6 text-lg px-4 py-2 bg-orange-600 text-white">
-              By Women. For Women. Built to Fight Back.
-            </Badge>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent drop-shadow-lg">
               Empowerment Through Action
             </h1>
+            <p className="text-2xl text-orange-400 font-semibold mb-6">
+              By Women. For Women. Built to Fight Back.
+            </p>
             <p className="text-xl text-white mb-8 max-w-2xl mx-auto drop-shadow-lg">
               Step into a structured, women-only self-defence program that goes beyond the basics. 
               Learn to handle real threats with confidence, clarity, and community.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3 shadow-lg" asChild>
-                <Link to="/contact">Get Started Today</Link>
-              </Button>
-              <Button variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-black" asChild>
-                <Link to="/#divisions">View All Programs</Link>
-              </Button>
-            </div>
           </div>
         </section>
 
