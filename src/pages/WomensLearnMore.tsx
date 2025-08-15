@@ -152,13 +152,13 @@ const WomensLearnMore = () => {
                 <img 
                   src="/lovable-uploads/e0099448-ff6e-41ae-86e1-f591e5594a04.png" 
                   alt="Women practicing Krav Maga self-defence techniques in training"
-                  className="w-full h-auto rounded-lg shadow-2xl"
+                  className="w-full max-h-64 object-contain rounded-lg shadow-2xl"
                   loading="lazy"
                 />
                 <img 
                   src="/lovable-uploads/a96aa6de-1ab9-4df9-908e-da5cbb4b811d.png" 
                   alt="Female instructors teaching defensive techniques in women-only class"
-                  className="w-full h-auto rounded-lg shadow-2xl"
+                  className="w-full max-h-64 object-contain rounded-lg shadow-2xl"
                   loading="lazy"
                 />
               </div>
@@ -177,7 +177,7 @@ const WomensLearnMore = () => {
                 <img 
                   src="/lovable-uploads/2adc9748-bcb8-4fb4-9267-ec730bfe1d38.png" 
                   alt="Women's self-defence training in supportive group environment"
-                  className="w-full h-auto rounded-lg shadow-2xl"
+                  className="w-full max-h-80 object-contain rounded-lg shadow-2xl"
                   loading="lazy"
                 />
               </div>
@@ -261,13 +261,13 @@ const WomensLearnMore = () => {
                 <img 
                   src="/lovable-uploads/405bb3ce-6109-4f41-ad69-0dca75838d9d.png" 
                   alt="Practical self-defence scenarios practiced by women"
-                  className="w-full h-auto rounded-lg shadow-2xl"
+                  className="w-full max-h-64 object-contain rounded-lg shadow-2xl"
                   loading="lazy"
                 />
                 <img 
                   src="/lovable-uploads/0c1e90f5-3107-44e7-9fb4-a99121e06296.png" 
                   alt="Ground defence techniques taught in women's Krav Maga program"
-                  className="w-full h-auto rounded-lg shadow-2xl"
+                  className="w-full max-h-64 object-contain rounded-lg shadow-2xl"
                   loading="lazy"
                 />
               </div>
@@ -286,7 +286,7 @@ const WomensLearnMore = () => {
                 <img 
                   src="/lovable-uploads/14574a17-e208-4761-b276-58b06d58c77e.png" 
                   alt="Women learning escape techniques and defensive skills"
-                  className="w-full h-auto rounded-lg shadow-2xl"
+                  className="w-full max-h-80 object-contain rounded-lg shadow-2xl"
                   loading="lazy"
                 />
               </div>
