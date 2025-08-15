@@ -11,7 +11,7 @@ const WomensLearnMore = () => {
     title: "Women's Self-Defence Program | Kravist Singapore - Learn More",
     description: "By Women. For Women. Built to Fight Back. Join our 8-week structured women-only Krav Maga program focused on real threats and practical self-defence skills.",
     keywords: "women's self defence, Krav Maga women, female instructors Singapore, women only classes, self defence course",
-    canonical: "https://kravist.sg/programs/women/learn-more"
+    url: "https://kravist.sg/programs/women/learn-more"
   };
 
   const weeklyStructure = [
@@ -36,7 +36,12 @@ const WomensLearnMore = () => {
 
   return (
     <>
-      <SEO {...seoConfig} />
+      <SEO 
+        title={seoConfig.title}
+        description={seoConfig.description}
+        keywords={seoConfig.keywords}
+        url={seoConfig.url}
+      />
       <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
         {/* Header */}
         <header className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b sticky top-0 z-50">
