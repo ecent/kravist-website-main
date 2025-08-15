@@ -265,6 +265,50 @@ const WomensLearnMore = () => {
           </div>
         </section>
 
+        {/* Meet The Instructor */}
+        <section className="py-16 lg:py-24 bg-gray-900">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
+              Meet The Instructor
+            </h2>
+            <div className="max-w-md mx-auto">
+              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+                <div className="aspect-square overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/c2a8d8db-85b1-409c-a2f9-205208b6bfdd.png" 
+                    alt="Minnie Teo - Head of Women's Division at Kravist Singapore"
+                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                    style={{ objectPosition: 'center 20%' }}
+                    loading="lazy"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="font-bold text-xl mb-2 text-orange-400">Minnie Teo</h3>
+                  <p className="text-gray-400 text-sm mb-3">Head of Women's Division</p>
+                  <ul className="text-gray-300 text-sm space-y-1">
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Krav Maga Level G3</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Autism Fitness Certified Pro</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Ex-Singapore Police (10+ years)</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>CPR Certified</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
         {/* Call to Action */}
         <section className="py-16 bg-black">{/* Changed from orange gradient */}
           <div className="container mx-auto px-4 text-center">
