@@ -485,7 +485,7 @@ const Index = () => {
                         Learn More
                       </Button>
                     </Link>
-                  ) : activeDivision.id === "women" ? (
+                  ) : activeDivision.id === "womens" ? (
                     <Link to="/programs/women/learn-more">
                       <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
                         Learn More
