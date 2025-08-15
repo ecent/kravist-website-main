@@ -125,127 +125,104 @@ const WomensLearnMore = () => {
         </section>
 
         {/* What Sets Us Apart */}
-        <section className="py-16 bg-black">
+        <section className="py-16 lg:py-24 bg-gray-900">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Not Just Self-Defence. Self-Mastery.</h2>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Our flagship women's program is a deep-dive experience — not a sampler. 
-                You'll walk away with real skills, not vague concepts.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-8">
-              <div className="space-y-8">
-                {whyChooseUs.slice(0, 2).map((item, index) => (
-                  <div key={index} className="bg-gray-800 border border-gray-700 rounded-lg p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="bg-orange-600/20 p-3 rounded-lg">
-                        <item.icon className="h-6 w-6 text-orange-400" />
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
+              Not Just Self-Defence. Self-Mastery.
+            </h2>
+            <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-center">
+              <div className="grid gap-6">
+                {whyChooseUs.map((item, index) => (
+                  <Card key={index} className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700">
+                    <CardContent className="p-6">
+                      <div className="flex items-start space-x-4">
+                        <div className="bg-orange-600/20 p-3 rounded-lg">
+                          <item.icon className="h-6 w-6 text-orange-400" />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-semibold mb-2 text-white">{item.title}</h3>
+                          <p className="text-gray-300 leading-relaxed">{item.description}</p>
+                        </div>
                       </div>
-                      <div>
-                        <h3 className="text-xl font-semibold mb-2 text-white">{item.title}</h3>
-                        <p className="text-gray-300 leading-relaxed">{item.description}</p>
-                      </div>
-                    </div>
-                  </div>
+                    </CardContent>
+                  </Card>
                 ))}
               </div>
-              <div>
+              <div className="space-y-6">
                 <img 
                   src="/lovable-uploads/e0099448-ff6e-41ae-86e1-f591e5594a04.png" 
                   alt="Women practicing Krav Maga self-defence techniques in training"
-                  className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full h-64 object-cover"
+                  className="w-full h-auto rounded-lg shadow-2xl"
+                  loading="lazy"
                 />
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1">
                 <img 
                   src="/lovable-uploads/a96aa6de-1ab9-4df9-908e-da5cbb4b811d.png" 
                   alt="Female instructors teaching defensive techniques in women-only class"
-                  className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full h-64 object-cover"
+                  className="w-full h-auto rounded-lg shadow-2xl"
+                  loading="lazy"
                 />
-              </div>
-              <div className="order-1 lg:order-2 space-y-8">
-                {whyChooseUs.slice(2, 4).map((item, index) => (
-                  <div key={index + 2} className="bg-gray-800 border border-gray-700 rounded-lg p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="bg-orange-600/20 p-3 rounded-lg">
-                        <item.icon className="h-6 w-6 text-orange-400" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-semibold mb-2 text-white">{item.title}</h3>
-                        <p className="text-gray-300 leading-relaxed">{item.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
               </div>
             </div>
           </div>
         </section>
 
         {/* Program Breakdown */}
-        <section className="py-16 bg-gray-900">
+        <section className="py-16 lg:py-24 bg-black">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">8 Weeks. Real Growth. Structured Learning.</h2>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Each term includes 8x sessions of 1.5 hours with fixed groups for community and consistency.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start mb-12">
-              <div>
-                <h3 className="text-2xl font-semibold mb-6 text-white">What's Included:</h3>
-                <ul className="space-y-4 text-lg">
-                  <li className="flex items-center space-x-3">
-                    <div className="bg-orange-600 w-2 h-2 rounded-full"></div>
-                    <span className="text-gray-300">8x sessions of 1.5 hours</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <div className="bg-orange-600 w-2 h-2 rounded-full"></div>
-                    <span className="text-gray-300">Fixed groups for community and consistency</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <div className="bg-orange-600 w-2 h-2 rounded-full"></div>
-                    <span className="text-gray-300">Scenario-focused training for threats relevant to women</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <div className="bg-orange-600 w-2 h-2 rounded-full"></div>
-                    <span className="text-gray-300">Hands-on techniques and progressive drills</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <div className="bg-orange-600 w-2 h-2 rounded-full"></div>
-                    <span className="text-gray-300">End-of-term simulations for practical confidence</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
+              8 Weeks. Real Growth. Structured Learning.
+            </h2>
+            <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-center">
+              <div className="relative order-2 lg:order-1">
                 <img 
                   src="/lovable-uploads/2adc9748-bcb8-4fb4-9267-ec730bfe1d38.png" 
                   alt="Women's self-defence training in supportive group environment"
-                  className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full h-80 object-cover"
+                  className="w-full h-auto rounded-lg shadow-2xl"
+                  loading="lazy"
                 />
               </div>
+              <div className="order-1 lg:order-2">
+                <div className="mb-8">
+                  <h3 className="text-2xl font-semibold mb-6 text-white">What's Included:</h3>
+                  <ul className="space-y-4 text-lg">
+                    <li className="flex items-center space-x-3">
+                      <div className="bg-orange-600 w-2 h-2 rounded-full"></div>
+                      <span className="text-gray-300">8x sessions of 1.5 hours</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <div className="bg-orange-600 w-2 h-2 rounded-full"></div>
+                      <span className="text-gray-300">Fixed groups for community and consistency</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <div className="bg-orange-600 w-2 h-2 rounded-full"></div>
+                      <span className="text-gray-300">Scenario-focused training for threats relevant to women</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <div className="bg-orange-600 w-2 h-2 rounded-full"></div>
+                      <span className="text-gray-300">Hands-on techniques and progressive drills</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <div className="bg-orange-600 w-2 h-2 rounded-full"></div>
+                      <span className="text-gray-300">End-of-term simulations for practical confidence</span>
+                    </li>
+                  </ul>
+                </div>
 
-              <div>
-                <h3 className="text-2xl font-semibold mb-6 text-white">Term Structure:</h3>
-                <div className="space-y-4">
-                  {weeklyStructure.map((week, index) => (
-                    <Card key={index} className="bg-gray-800 border-l-4 border-l-orange-600 border-gray-700">
-                      <CardContent className="p-6">
-                        <div className="flex justify-between items-start mb-2">
-                          <Badge variant="outline" className="text-sm border-orange-600 text-orange-400">Weeks {week.weeks}</Badge>
-                        </div>
-                        <h4 className="text-lg font-semibold mb-2 text-white">{week.focus}</h4>
-                        <p className="text-gray-300">{week.description}</p>
-                      </CardContent>
-                    </Card>
-                  ))}
+                <div>
+                  <h3 className="text-2xl font-semibold mb-6 text-white">Term Structure:</h3>
+                  <div className="space-y-4">
+                    {weeklyStructure.map((week, index) => (
+                      <Card key={index} className="bg-gray-800 border-l-4 border-l-orange-600 border-gray-700">
+                        <CardContent className="p-6">
+                          <div className="flex justify-between items-start mb-2">
+                            <Badge variant="outline" className="text-sm border-orange-600 text-orange-400">Weeks {week.weeks}</Badge>
+                          </div>
+                          <h4 className="text-lg font-semibold mb-2 text-white">{week.focus}</h4>
+                          <p className="text-gray-300">{week.description}</p>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
@@ -253,35 +230,45 @@ const WomensLearnMore = () => {
         </section>
 
         {/* Real Life Focus */}
-        <section className="py-16 bg-black">
+        <section className="py-16 lg:py-24 bg-gray-900">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Built for Real Life, Not Just the Mat</h2>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-                What You'll Learn Might Just Save Your Life.
-              </p>
-              <p className="text-lg text-gray-300 max-w-4xl mx-auto">
-                We design each term around real threats women face — from harassment to physical assault. 
-                Each intake may focus on a different set of scenarios such as:
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {realLifeScenarios.map((scenario, index) => (
-                  <Card key={index} className="text-center p-6 bg-gray-800 border-gray-700 hover:bg-gray-700 transition-colors">
-                    <CardContent className="p-4">
-                      <Shield className="h-8 w-8 text-orange-400 mx-auto mb-4" />
-                      <p className="text-lg font-medium text-white">{scenario}</p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
+              Built for Real Life, Not Just the Mat
+            </h2>
+            <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-center">
               <div>
+                <p className="text-xl text-gray-300 mb-8">
+                  What You'll Learn Might Just Save Your Life.
+                </p>
+                <p className="text-lg text-gray-300 mb-8">
+                  We design each term around real threats women face — from harassment to physical assault. 
+                  Each intake may focus on a different set of scenarios such as:
+                </p>
+                <div className="grid grid-cols-1 gap-4">
+                  {realLifeScenarios.map((scenario, index) => (
+                    <Card key={index} className="p-4 bg-gray-800 border-gray-700 hover:bg-gray-700 transition-colors">
+                      <CardContent className="p-2">
+                        <div className="flex items-center space-x-3">
+                          <Shield className="h-6 w-6 text-orange-400" />
+                          <p className="text-lg font-medium text-white">{scenario}</p>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </div>
+              <div className="space-y-6">
                 <img 
                   src="/lovable-uploads/405bb3ce-6109-4f41-ad69-0dca75838d9d.png" 
                   alt="Practical self-defence scenarios practiced by women"
-                  className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full h-64 object-cover"
+                  className="w-full h-auto rounded-lg shadow-2xl"
+                  loading="lazy"
+                />
+                <img 
+                  src="/lovable-uploads/0c1e90f5-3107-44e7-9fb4-a99121e06296.png" 
+                  alt="Ground defence techniques taught in women's Krav Maga program"
+                  className="w-full h-auto rounded-lg shadow-2xl"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -289,44 +276,41 @@ const WomensLearnMore = () => {
         </section>
 
         {/* Community & Rates */}
-        <section className="py-16 bg-gray-900">
+        <section className="py-16 lg:py-24 bg-black">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Bring Your Buddy. Or Join as a Kravist Parent.</h2>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                We believe in growing a strong, connected community. That's why we offer:
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <Card className="text-center p-8 bg-gray-800 border-gray-700 hover:bg-gray-700 transition-colors">
-                  <CardContent>
-                    <Heart className="h-12 w-12 text-orange-400 mx-auto mb-4" />
-                    <h3 className="text-2xl font-semibold mb-4 text-white">Buddy Rate</h3>
-                    <p className="text-gray-300 text-lg">Train together, grow together</p>
-                  </CardContent>
-                </Card>
-
-                <Card className="text-center p-8 bg-gray-800 border-gray-700 hover:bg-gray-700 transition-colors">
-                  <CardContent>
-                    <Users className="h-12 w-12 text-orange-400 mx-auto mb-4" />
-                    <h3 className="text-2xl font-semibold mb-4 text-white">Parent Rate</h3>
-                    <p className="text-gray-300 text-lg">Special rates for existing Kravist parents</p>
-                  </CardContent>
-                </Card>
-              </div>
-              <div className="space-y-4">
-                <img 
-                  src="/lovable-uploads/0c1e90f5-3107-44e7-9fb4-a99121e06296.png" 
-                  alt="Ground defence techniques taught in women's Krav Maga program"
-                  className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full h-48 object-cover"
-                />
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
+              Bring Your Buddy. Or Join as a Kravist Parent.
+            </h2>
+            <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-center">
+              <div className="relative order-2 lg:order-1">
                 <img 
                   src="/lovable-uploads/14574a17-e208-4761-b276-58b06d58c77e.png" 
                   alt="Women learning escape techniques and defensive skills"
-                  className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full h-48 object-cover"
+                  className="w-full h-auto rounded-lg shadow-2xl"
+                  loading="lazy"
                 />
+              </div>
+              <div className="order-1 lg:order-2">
+                <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                  We believe in growing a strong, connected community. That's why we offer:
+                </p>
+                <div className="grid grid-cols-1 gap-8">
+                  <Card className="text-center p-8 bg-gray-800 border-gray-700 hover:bg-gray-700 transition-colors">
+                    <CardContent>
+                      <Heart className="h-12 w-12 text-orange-400 mx-auto mb-4" />
+                      <h3 className="text-2xl font-semibold mb-4 text-white">Buddy Rate</h3>
+                      <p className="text-gray-300 text-lg">Train together, grow together</p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="text-center p-8 bg-gray-800 border-gray-700 hover:bg-gray-700 transition-colors">
+                    <CardContent>
+                      <Users className="h-12 w-12 text-orange-400 mx-auto mb-4" />
+                      <h3 className="text-2xl font-semibold mb-4 text-white">Parent Rate</h3>
+                      <p className="text-gray-300 text-lg">Special rates for existing Kravist parents</p>
+                    </CardContent>
+                  </Card>
+                </div>
               </div>
             </div>
           </div>
