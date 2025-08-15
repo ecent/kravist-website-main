@@ -271,7 +271,7 @@ const WomensLearnMore = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
               Meet The Instructor
             </h2>
-            <div className="grid md:grid-cols-2 gap-8 justify-center max-w-4xl mx-auto">
+            <div className="max-w-md mx-auto">
               <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
                 <div className="aspect-square overflow-hidden">
                   <img 
