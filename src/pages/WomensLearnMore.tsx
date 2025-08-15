@@ -271,21 +271,21 @@ const WomensLearnMore = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Fixed Term Intakes</h2>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               {["January", "April", "July", "October"].map((month) => (
-                <Badge key={month} variant="secondary" className="text-lg px-6 py-2 bg-orange-600 text-white">{/* Changed badge styling */}
+                <div key={month} className="flex items-center text-lg px-6 py-2 text-white">
                   <Calendar className="h-4 w-4 mr-2" />
                   {month}
-                </Badge>
+                </div>
               ))}
             </div>
             <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
               Ready to start your empowerment journey? Contact us to secure your spot in the next intake.
             </p>
             <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-              <Button size="lg" className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white" asChild>{/* Updated button styling */}
-                <Link to="/contact">Get Started Today</Link>
+              <Button size="lg" className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white" asChild>
+                <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer">Waitlist</a>
               </Button>
-              <Button variant="outline" size="lg" className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-black" asChild>
-                <Link to="/#divisions">View All Programs</Link>
+              <Button size="lg" className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white" asChild>
+                <Link to="/contact">Contact Us</Link>
               </Button>
             </div>
           </div>
