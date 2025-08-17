@@ -23,9 +23,12 @@ interface ContactFormData {
   message: string;
 }
 
-// Simple rate limiting using Map (in production, use Redis or similar)
-const rateLimitMap = new Map<string, { count: number; lastReset: number }>();
-const RATE_LIMIT = 3; // 3 submissions per hour
+// Multi-layer rate limiting
+const ipRateLimitMap = new Map<string, { count: number; lastReset: number }>();
+const emailRateLimitMap = new Map<string, { count: number; lastReset: number }>();
+
+const IP_RATE_LIMIT = 15; // 15 submissions per IP per hour (allows shared connections)
+const EMAIL_RATE_LIMIT = 3; // 3 submissions per email per hour (prevents individual abuse)
 const RATE_LIMIT_WINDOW = 60 * 60 * 1000; // 1 hour in milliseconds
 
 // Basic spam detection patterns
@@ -43,23 +46,23 @@ function getClientIP(req: Request): string {
          'unknown';
 }
 
-function isRateLimited(ip: string): boolean {
+function checkRateLimit(identifier: string, limitMap: Map<string, { count: number; lastReset: number }>, limit: number): boolean {
   const now = Date.now();
-  const userLimit = rateLimitMap.get(ip);
+  const userLimit = limitMap.get(identifier);
   
   if (!userLimit) {
-    rateLimitMap.set(ip, { count: 1, lastReset: now });
+    limitMap.set(identifier, { count: 1, lastReset: now });
     return false;
   }
   
   // Reset counter if window expired
   if (now - userLimit.lastReset > RATE_LIMIT_WINDOW) {
-    rateLimitMap.set(ip, { count: 1, lastReset: now });
+    limitMap.set(identifier, { count: 1, lastReset: now });
     return false;
   }
   
   // Check if limit exceeded
-  if (userLimit.count >= RATE_LIMIT) {
+  if (userLimit.count >= limit) {
     return true;
   }
   
@@ -107,22 +110,9 @@ const handler = async (req: Request): Promise<Response> => {
 
   try {
     const clientIP = getClientIP(req);
-    
-    // Rate limiting check
-    if (isRateLimited(clientIP)) {
-      console.log(`Rate limited IP: ${clientIP}`);
-      return new Response(
-        JSON.stringify({ error: "Too many submissions. Please try again later." }), 
-        {
-          status: 429,
-          headers: { "Content-Type": "application/json", ...corsHeaders },
-        }
-      );
-    }
-
     const data: ContactFormData = await req.json();
     
-    // Validate and check for spam
+    // Validate and check for spam first
     const validationError = validateContactData(data);
     if (validationError) {
       console.log(`Validation failed for IP ${clientIP}: ${validationError}`);
@@ -136,6 +126,29 @@ const handler = async (req: Request): Promise<Response> => {
     }
 
     const { name, email, division, message } = data;
+    
+    // Multi-layer rate limiting
+    if (checkRateLimit(clientIP, ipRateLimitMap, IP_RATE_LIMIT)) {
+      console.log(`IP rate limited: ${clientIP}`);
+      return new Response(
+        JSON.stringify({ error: "Too many submissions from this location. Please try again later." }), 
+        {
+          status: 429,
+          headers: { "Content-Type": "application/json", ...corsHeaders },
+        }
+      );
+    }
+    
+    if (checkRateLimit(email.toLowerCase(), emailRateLimitMap, EMAIL_RATE_LIMIT)) {
+      console.log(`Email rate limited: ${email}`);
+      return new Response(
+        JSON.stringify({ error: "Too many submissions from this email address. Please try again later." }), 
+        {
+          status: 429,
+          headers: { "Content-Type": "application/json", ...corsHeaders },
+        }
+      );
+    }
 
     console.log("Received contact form submission:", { name, email, division, ip: clientIP });
 
