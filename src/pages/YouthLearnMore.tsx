@@ -7,7 +7,7 @@ import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Shield, Clock, Users, Award, CheckCircle, Calendar } from "lucide-react";
+import { Shield, Clock, Users, Award, CheckCircle } from "lucide-react";
 
 const YouthLearnMore = () => {
   const faqs = [
@@ -261,7 +261,7 @@ const YouthLearnMore = () => {
                   </div>
                   <div className="space-y-4 text-gray-300">
                     <p className="text-lg leading-relaxed">
-                      Multi-month structured program with weekly classes (3 terms yearly) including progressive curriculum and final grading ceremony.
+                      Multi-month structured program with weekly classes (3 terms yearly - April, August & December intakes) including progressive curriculum and final grading ceremony.
                     </p>
                     <div className="space-y-3">
                       <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
@@ -512,24 +512,6 @@ const YouthLearnMore = () => {
                 </Button>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Term Intakes Section */}
-        <section className="py-16 bg-black">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Term Intakes</h2>
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
-              {["April", "August", "December"].map((month) => (
-                <div key={month} className="flex items-center text-lg px-6 py-2 text-white">
-                  <Calendar className="h-4 w-4 mr-2" />
-                  {month}
-                </div>
-              ))}
-            </div>
-            <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
-              Our youth programs begin three times yearly. Join us for structured term-based learning with progressive skill development.
-            </p>
           </div>
         </section>
 
