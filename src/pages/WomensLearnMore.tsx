@@ -323,6 +323,48 @@ const WomensLearnMore = () => {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="py-16 lg:py-24 bg-black">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
+              Frequently Asked Questions
+            </h2>
+            <div className="max-w-4xl mx-auto">
+              <div className="space-y-6">
+                <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
+                  <h4 className="font-semibold text-orange-400 mb-3 text-lg">Is there a minimum age for the program?</h4>
+                  <p className="text-gray-300">All participants must be 18 years old or above.</p>
+                </div>
+                <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
+                  <h4 className="font-semibold text-orange-400 mb-3 text-lg">Do you accept senior participants?</h4>
+                  <p className="text-gray-300">Yes, as long as the participant is physically healthy without any serious pre-existing conditions that impacts their movement.</p>
+                </div>
+                <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
+                  <h4 className="font-semibold text-orange-400 mb-3 text-lg">Do I need to bring equipment?</h4>
+                  <p className="text-gray-300">All relevant training equipment is provided by Kravist.</p>
+                </div>
+                <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
+                  <h4 className="font-semibold text-orange-400 mb-3 text-lg">What is the attire for the training?</h4>
+                  <p className="text-gray-300">Appropriate workout attire and closed toe shoes. We recommend bringing along a bottle of water!</p>
+                </div>
+                <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
+                  <h4 className="font-semibold text-orange-400 mb-3 text-lg">What happens if I miss a class?</h4>
+                  <p className="text-gray-300">Participants can schedule a remedial after class for 15-20min or attend a regular evening class.</p>
+                </div>
+                <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
+                  <h4 className="font-semibold text-orange-400 mb-3 text-lg">Can I attend a trial session during the women's program?</h4>
+                  <p className="text-gray-300">Trials are held during our general Monday - Thursday adult classes.</p>
+                </div>
+              </div>
+              <div className="text-center mt-8">
+                <Button variant="outline" className="border-orange-600 text-orange-400 hover:bg-orange-600 hover:text-white" asChild>
+                  <a href="/#faq">View All Frequently Asked Questions</a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Call to Action */}
         <section className="py-16 bg-black">{/* Changed from orange gradient */}
           <div className="container mx-auto px-4 text-center">
