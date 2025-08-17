@@ -36,21 +36,14 @@ const Contact = () => {
 
   const onSubmit = async (data: FormData) => {
     try {
-      // Save to database
-      const { error: dbError } = await (supabase as any)
-        .from('Website Contact Form')
-        .insert([data]);
-
-      if (dbError) throw dbError;
-
-      // Send email notifications
-      const { error: emailError } = await supabase.functions.invoke('send-contact-email', {
+      // Send data to edge function which handles both database insert and email sending
+      const { error: functionError } = await supabase.functions.invoke('send-contact-email', {
         body: data
       });
 
-      if (emailError) {
-        console.error('Email sending failed:', emailError);
-        // Don't throw error here - form submission was successful even if email failed
+      if (functionError) {
+        console.error('Function error:', functionError);
+        throw functionError;
       }
 
       toast({

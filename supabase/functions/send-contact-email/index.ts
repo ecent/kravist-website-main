@@ -1,7 +1,14 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 import { Resend } from "npm:resend@2.0.0";
 
 const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
+
+// Create Supabase client with service role key for database operations
+const supabase = createClient(
+  Deno.env.get("SUPABASE_URL") ?? "",
+  Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? ""
+);
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -26,6 +33,18 @@ const handler = async (req: Request): Promise<Response> => {
     const { name, email, division, message }: ContactFormData = await req.json();
 
     console.log("Received contact form submission:", { name, email, division });
+
+    // Save to database using service role
+    const { error: dbError } = await supabase
+      .from('Website Contact Form')
+      .insert([{ name, email, division, message }]);
+
+    if (dbError) {
+      console.error("Database error:", dbError);
+      throw new Error(`Database insert failed: ${dbError.message}`);
+    }
+
+    console.log("Contact form data saved to database successfully");
 
     // Send notification email to the gym
     const notificationResponse = await resend.emails.send({
