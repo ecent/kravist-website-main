@@ -23,6 +23,82 @@ interface ContactFormData {
   message: string;
 }
 
+// Simple rate limiting using Map (in production, use Redis or similar)
+const rateLimitMap = new Map<string, { count: number; lastReset: number }>();
+const RATE_LIMIT = 3; // 3 submissions per hour
+const RATE_LIMIT_WINDOW = 60 * 60 * 1000; // 1 hour in milliseconds
+
+// Basic spam detection patterns
+const SPAM_PATTERNS = [
+  /https?:\/\//gi, // URLs
+  /\b(viagra|cialis|casino|lottery|winner|congratulations)\b/gi,
+  /(.)\1{10,}/, // Repeated characters
+  /<[^>]*>/g, // HTML tags
+];
+
+function getClientIP(req: Request): string {
+  return req.headers.get('cf-connecting-ip') || 
+         req.headers.get('x-forwarded-for') || 
+         req.headers.get('x-real-ip') || 
+         'unknown';
+}
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const userLimit = rateLimitMap.get(ip);
+  
+  if (!userLimit) {
+    rateLimitMap.set(ip, { count: 1, lastReset: now });
+    return false;
+  }
+  
+  // Reset counter if window expired
+  if (now - userLimit.lastReset > RATE_LIMIT_WINDOW) {
+    rateLimitMap.set(ip, { count: 1, lastReset: now });
+    return false;
+  }
+  
+  // Check if limit exceeded
+  if (userLimit.count >= RATE_LIMIT) {
+    return true;
+  }
+  
+  // Increment counter
+  userLimit.count++;
+  return false;
+}
+
+function containsSpam(text: string): boolean {
+  return SPAM_PATTERNS.some(pattern => pattern.test(text));
+}
+
+function validateContactData(data: ContactFormData): string | null {
+  // Basic validation
+  if (!data.name || data.name.length < 2 || data.name.length > 100) {
+    return "Name must be between 2 and 100 characters";
+  }
+  
+  if (!data.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
+    return "Please provide a valid email address";
+  }
+  
+  if (!data.division || !['Youth', 'Adults', 'Women\'s', 'Corporate', 'Private'].includes(data.division)) {
+    return "Please select a valid division";
+  }
+  
+  if (!data.message || data.message.length < 10 || data.message.length > 2000) {
+    return "Message must be between 10 and 2000 characters";
+  }
+  
+  // Spam detection
+  const fullText = `${data.name} ${data.message}`;
+  if (containsSpam(fullText)) {
+    return "Message contains invalid content";
+  }
+  
+  return null;
+}
+
 const handler = async (req: Request): Promise<Response> => {
   // Handle CORS preflight requests
   if (req.method === "OPTIONS") {
@@ -30,9 +106,38 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
-    const { name, email, division, message }: ContactFormData = await req.json();
+    const clientIP = getClientIP(req);
+    
+    // Rate limiting check
+    if (isRateLimited(clientIP)) {
+      console.log(`Rate limited IP: ${clientIP}`);
+      return new Response(
+        JSON.stringify({ error: "Too many submissions. Please try again later." }), 
+        {
+          status: 429,
+          headers: { "Content-Type": "application/json", ...corsHeaders },
+        }
+      );
+    }
 
-    console.log("Received contact form submission:", { name, email, division });
+    const data: ContactFormData = await req.json();
+    
+    // Validate and check for spam
+    const validationError = validateContactData(data);
+    if (validationError) {
+      console.log(`Validation failed for IP ${clientIP}: ${validationError}`);
+      return new Response(
+        JSON.stringify({ error: validationError }), 
+        {
+          status: 400,
+          headers: { "Content-Type": "application/json", ...corsHeaders },
+        }
+      );
+    }
+
+    const { name, email, division, message } = data;
+
+    console.log("Received contact form submission:", { name, email, division, ip: clientIP });
 
     // Save to database using service role
     const { error: dbError } = await supabase
