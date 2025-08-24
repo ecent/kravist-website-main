@@ -6,8 +6,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import SEO from "@/components/SEO";
-import FAQStructuredData from "@/components/FAQStructuredData";
-import BreadcrumbStructuredData from "@/components/BreadcrumbStructuredData";
 
 const WomensLearnMore = () => {
   const seoConfig = {
@@ -71,8 +69,6 @@ const WomensLearnMore = () => {
         keywords={seoConfig.keywords}
         url={seoConfig.url}
       />
-      <FAQStructuredData faqs={faqs} />
-      <BreadcrumbStructuredData items={breadcrumbItems.map(item => ({ name: item.name, url: `https://kravist.sg${item.url}` }))} />
 
       <div className="min-h-screen bg-black text-white">
         {/* Navigation */}

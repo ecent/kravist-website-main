@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
-import FAQStructuredData from "@/components/FAQStructuredData";
-import BreadcrumbStructuredData from "@/components/BreadcrumbStructuredData";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -75,8 +73,6 @@ const YouthLearnMore = () => {
         url="https://www.kravist.sg/programs/youth/learn-more"
         keywords="kids krav maga singapore, teens martial arts, youth self defence, children confidence building"
       />
-      <FAQStructuredData faqs={faqs} />
-      <BreadcrumbStructuredData items={breadcrumbItems.map(item => ({ name: item.name, url: `https://kravist.sg${item.url}` }))} />
 
       <div className="min-h-screen bg-black text-white">
         {/* Navigation */}
