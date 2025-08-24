@@ -10,13 +10,7 @@ import Instructors from "@/components/Instructors";
 import Schedule from "@/components/Schedule";
 import ScrollToSection from "@/components/ScrollToSection";
 import SEO from "@/components/SEO";
-import StructuredData from "@/components/StructuredData";
-import FAQStructuredData from "@/components/FAQStructuredData";
-import CourseStructuredData from "@/components/CourseStructuredData";
-import EventStructuredData from "@/components/EventStructuredData";
-import ReviewStructuredData from "@/components/ReviewStructuredData";
-import InstructorStructuredData from "@/components/InstructorStructuredData";
-import BusinessHoursStructuredData from "@/components/BusinessHoursStructuredData";
+import UnifiedStructuredData from "@/components/UnifiedStructuredData";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -372,13 +366,14 @@ const Index = () => {
         description={currentSEO.description}
         keywords={currentSEO.keywords}
       />
-      <StructuredData />
-      <FAQStructuredData faqs={faqItems} />
-      <CourseStructuredData courses={courses} />
-      <EventStructuredData events={upcomingEvents} />
-      <ReviewStructuredData reviews={reviews} aggregateRating={aggregateRating} />
-      <InstructorStructuredData instructors={instructors} />
-      <BusinessHoursStructuredData />
+      <UnifiedStructuredData 
+        faqs={faqItems}
+        courses={courses}
+        events={upcomingEvents}
+        reviews={reviews}
+        aggregateRating={aggregateRating}
+        instructors={instructors}
+      />
       {/* Navigation */}
       <nav className="bg-black/50 backdrop-blur-md fixed w-full z-50 border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
