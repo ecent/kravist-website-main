@@ -1,21 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { useState } from "react";
 
 const Instructors = () => {
-  const [showEdwinDetails, setShowEdwinDetails] = useState(false);
-
-  const edwinDetailedBio = `A former SAF Commando and SOTF (Special Operations Task Force) operator, Edwin brings two decades of real-world experience to the mat. Selected for SOTF in 2004, he specialised in close-quarters combat, VIP protection and high-risk operations—experience that shapes his approach to Krav Maga.
-
-In 2005 he completed the first Krav Maga Military Course, earning Best Trainee in Fighter 2 and Fighter 3, and qualified as a Krav Maga Military Instructor. He was then tasked to build, sustain and integrate Krav Maga skills across his formation. Edwin later completed the Advanced Krav Maga Military Instructor Course (2012) and the KMG General Instructor Course, and in 2013 became Director of KMG Singapore, bringing the system to the civilian community while continuing to train military and law-enforcement units.
-
-Edwin's teaching spans all ages. He completed the Kids Instructor Course and launched Youth classes in 2013, followed by the Women's Instructor Course (2013) and VIP Protection Instructor Course (2017). In Youth he pairs purpose-driven games with clear structure and values—building confidence, discipline and practical self-defence in a safe, CPR-certified environment.
-
-"A special-operations background, adapted for kids—fun games, clear structure and real-world self-defence."
-
-Today Edwin serves on the KMG International Instructor Team and holds Expert Level 3. His mission is simple: equip every student—kids, teens and adults—to stay safe and stand strong in the real world.`;
-
   const instructors = [
     {
       id: 1,
@@ -94,25 +80,6 @@ Today Edwin serves on the KMG International Instructor Team and holds Expert Lev
                     </li>
                   ))}
                 </ul>
-                {instructor.id === 1 && (
-                  <div className="mt-4">
-                    <Button
-                      onClick={() => setShowEdwinDetails(!showEdwinDetails)}
-                      variant="outline"
-                      className="w-full text-orange-400 border-orange-400 hover:bg-orange-400 hover:text-black"
-                    >
-                      {showEdwinDetails ? 'Show Less' : 'Read More'}
-                    </Button>
-                    {showEdwinDetails && (
-                      <div className="mt-4 p-4 bg-gray-700/50 rounded-lg">
-                        <h3 className="text-lg font-semibold text-orange-400 mb-3">Edwin — Head Coach, KMG Expert Level 3</h3>
-                        <div className="text-gray-300 text-sm leading-relaxed whitespace-pre-line">
-                          {edwinDetailedBio}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                )}
               </CardContent>
             </Card>
           ))}
