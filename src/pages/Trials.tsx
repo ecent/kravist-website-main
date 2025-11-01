@@ -77,9 +77,6 @@ const Trials = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent drop-shadow-lg">
             Trial Classes
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-4xl mx-auto">
-            Experience Kravist training firsthand. Choose your program and book your trial today.
-          </p>
         </div>
       </section>
 
