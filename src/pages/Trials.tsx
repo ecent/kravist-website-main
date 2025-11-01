@@ -39,7 +39,7 @@ const Trials = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-black text-white">
       <SEO
         title="Trial Classes | Kravist Self Defence Studio Singapore"
         description="Try our Krav Maga classes with trial sessions for kids, juniors, teens, and adults. Free trials for youth programs and affordable adult trials."
@@ -47,13 +47,13 @@ const Trials = () => {
       />
 
       {/* Header */}
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky top-0 z-50 w-full border-b border-gray-800 bg-black/90 backdrop-blur">
         <div className="container flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-primary">KRAVIST</span>
+            <span className="text-2xl font-bold text-orange-500">KRAVIST</span>
           </Link>
           <Link to="/">
-            <Button variant="ghost" size="sm">
+            <Button variant="ghost" size="sm" className="text-white hover:text-orange-400">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Home
             </Button>
@@ -66,10 +66,10 @@ const Trials = () => {
         <div className="mx-auto max-w-4xl space-y-8">
           {/* Page Header */}
           <div className="text-center space-y-4">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl bg-gradient-to-r from-orange-500 to-orange-300 bg-clip-text text-transparent">
               Trial Classes
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-gray-300">
               Experience Krav Maga training firsthand. Choose your program and book your trial today.
             </p>
           </div>
@@ -78,13 +78,13 @@ const Trials = () => {
           <div className="space-y-8">
             {trialPrograms.map((category, idx) => (
               <div key={idx} className="space-y-4">
-                <h2 className="text-2xl font-semibold">{category.category}</h2>
+                <h2 className="text-2xl font-semibold text-orange-400">{category.category}</h2>
                 <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                   {category.programs.map((program, programIdx) => (
-                    <Card key={programIdx} className="relative overflow-hidden">
+                    <Card key={programIdx} className="relative overflow-hidden bg-gray-900 border-gray-800 hover:border-orange-500/50 transition-all">
                       <CardHeader>
-                        <CardTitle className="text-xl">{program.name}</CardTitle>
-                        <CardDescription className="text-3xl font-bold text-primary">
+                        <CardTitle className="text-xl text-white">{program.name}</CardTitle>
+                        <CardDescription className="text-3xl font-bold text-orange-500">
                           {program.price}
                         </CardDescription>
                       </CardHeader>
@@ -95,7 +95,7 @@ const Trials = () => {
                           rel="noopener noreferrer"
                           className="block"
                         >
-                          <Button className="w-full" size="lg">
+                          <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white" size="lg">
                             Book {program.price === "FREE" ? "Free" : ""} Trial
                           </Button>
                         </a>
@@ -108,11 +108,11 @@ const Trials = () => {
           </div>
 
           {/* Additional Info */}
-          <Card className="bg-muted">
+          <Card className="bg-gray-900/50 border-gray-800">
             <CardHeader>
-              <CardTitle>What to Expect</CardTitle>
+              <CardTitle className="text-orange-400">What to Expect</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-2">
+            <CardContent className="space-y-2 text-gray-300">
               <p>• Experience our training methodology firsthand</p>
               <p>• Meet our certified instructors</p>
               <p>• Learn fundamental Krav Maga techniques</p>
@@ -124,8 +124,8 @@ const Trials = () => {
       </main>
 
       {/* Footer */}
-      <footer className="border-t bg-muted/50 py-8">
-        <div className="container text-center text-sm text-muted-foreground">
+      <footer className="border-t border-gray-800 bg-gray-900/50 py-8">
+        <div className="container text-center text-sm text-gray-400">
           <p>&copy; {new Date().getFullYear()} Kravist. All rights reserved.</p>
         </div>
       </footer>
