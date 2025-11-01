@@ -681,51 +681,51 @@ const Index = () => {
                 <div>
                   <h4 className="font-semibold text-orange-200 mb-3">Term Program</h4>
                   <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Kids (6-10)</a>
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$450</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-orange-100">Kids (6-10)</span>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$450</a>
                     </div>
-                    <div className="flex justify-between">
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Juniors (10-14)</a>
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$495</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-orange-100">Juniors (10-14)</span>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$495</a>
                     </div>
-                    <div className="flex justify-between">
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Teens (14-17)</a>
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$510</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-orange-100">Teens (14-17)</span>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$510</a>
                     </div>
                   </div>
                 </div>
                 <div>
                   <h4 className="font-semibold text-orange-200 mb-3">Trials</h4>
                   <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_cd5f10a5137544/login" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Kids (6-10)</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_cd5f10a5137544/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 hover:text-orange-300 transition-colors">FREE</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-orange-100">Kids (6-10)</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_cd5f10a5137544/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 px-3 py-1 rounded border border-green-400 bg-green-500/10 hover:bg-green-500/30 transition-colors">FREE</a>
                     </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_c949e71f9af2d5/login" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Juniors (10-14)</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_c949e71f9af2d5/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 hover:text-orange-300 transition-colors">FREE</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-orange-100">Juniors (10-14)</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_c949e71f9af2d5/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 px-3 py-1 rounded border border-green-400 bg-green-500/10 hover:bg-green-500/30 transition-colors">FREE</a>
                     </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_f2f2e14d3e5ec5/login" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Teens (14-17)</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_f2f2e14d3e5ec5/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 hover:text-orange-300 transition-colors">FREE</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-orange-100">Teens (14-17)</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_f2f2e14d3e5ec5/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 px-3 py-1 rounded border border-green-400 bg-green-500/10 hover:bg-green-500/30 transition-colors">FREE</a>
                     </div>
                   </div>
                 </div>
                 <div>
                   <h4 className="font-semibold text-orange-200 mb-3">Free & Easy</h4>
                   <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_eaf63c02f150d7" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Kids 5 Sessions</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_eaf63c02f150d7" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$110</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-orange-100">Kids 5 Sessions</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_eaf63c02f150d7" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$110</a>
                     </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_67758275e70356" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Juniors 5 Sessions</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_67758275e70356" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$120</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-orange-100">Juniors 5 Sessions</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_67758275e70356" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$120</a>
                     </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_04596fd52ef586" target="_blank" rel="noopener noreferrer" className="text-orange-100 hover:text-orange-300 transition-colors">Teens 5 Sessions</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_04596fd52ef586" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-300 transition-colors">$120</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-orange-100">Teens 5 Sessions</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_04596fd52ef586" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$120</a>
                     </div>
                   </div>
                 </div>
@@ -745,42 +745,42 @@ const Index = () => {
                 <div>
                   <h4 className="font-semibold text-orange-400 mb-3">Session Packages</h4>
                   <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_f8520cf13fd6f3/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">Trial</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_f8520cf13fd6f3/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$20</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-gray-300">Trial</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_f8520cf13fd6f3/login" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$20</a>
                     </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_0e7cd795981d1e/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">Drop In</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_0e7cd795981d1e" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$40</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-gray-300">Drop In</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_0e7cd795981d1e/login" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$40</a>
                     </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">5 Sessions</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$160</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-gray-300">5 Sessions</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_0356777de099d3" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$160</a>
                     </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_a6e2c16911adf0/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">10 Sessions</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_a6e2c16911adf0/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$285</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-gray-300">10 Sessions</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_a6e2c16911adf0/login" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$285</a>
                     </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_9506d14411bb3b/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">25 Sessions</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_9506d14411bb3b/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$660</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-gray-300">25 Sessions</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_9506d14411bb3b/login" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$660</a>
                     </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_7104c09d5ea5f2/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">50 Sessions</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_7104c09d5ea5f2/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$950</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-gray-300">50 Sessions</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_7104c09d5ea5f2/login" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$950</a>
                     </div>
                   </div>
                 </div>
                 <div>
                   <h4 className="font-semibold text-orange-400 mb-3">Unlimited Access</h4>
                   <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_01f914d06a3d3f/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">1 Month Unlimited</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_01f914d06a3d3f/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$275</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-gray-300">1 Month Unlimited</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_01f914d06a3d3f/login" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$275</a>
                     </div>
-                    <div className="flex justify-between">
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_a685b2cefce871/login" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">3 Months Unlimited</a>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_a685b2cefce871/login" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$760</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-gray-300">3 Months Unlimited</span>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_a685b2cefce871/login" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$760</a>
                     </div>
                   </div>
                 </div>
@@ -800,9 +800,9 @@ const Index = () => {
                 <div>
                   <h4 className="font-semibold text-orange-400 mb-3">Term Program</h4>
                   <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">Term Program</a>
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-orange-400 transition-colors">$250</a>
+                    <div className="flex justify-between items-center gap-2">
+                      <span className="text-gray-300">Term Program</span>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$250</a>
                     </div>
                   </div>
                 </div>
