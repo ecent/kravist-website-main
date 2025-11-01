@@ -68,7 +68,7 @@ const Trials = () => {
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url('/lovable-uploads/06652838-a8c4-4ee8-bf31-806bb8675f84.png')` }}
+          style={{ backgroundImage: `url('/lovable-uploads/e1f2812e-eebc-4041-803f-87ca9deb6746.png')` }}
         >
           {/* Overlay for text readability */}
           <div className="absolute inset-0 bg-black/70"></div>
