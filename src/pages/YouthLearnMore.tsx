@@ -519,7 +519,7 @@ const YouthLearnMore = () => {
             </h2>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-xl px-12 py-6" asChild>
-                <a href="/#pricing">Book a Youth Trial Class</a>
+                <Link to="/trials">Book a Youth Trial Class</Link>
               </Button>
               <Button size="lg" variant="outline" className="border-orange-600 text-orange-400 hover:bg-orange-600 hover:text-white text-xl px-12 py-6" asChild>
                 <a href="/contact">Contact Us</a>
