@@ -118,7 +118,7 @@ const YouthLearnMore = () => {
               Game-based classes that teach real-world self-defence while boosting confidence, discipline and focus.
             </p>
             <Button size="lg" className="mt-8 bg-orange-600 hover:bg-orange-700 text-lg px-8 py-4" asChild>
-              <a href="/#pricing">Book a Trial Class</a>
+              <Link to="/trials">Book a Trial Class</Link>
             </Button>
           </div>
         </section>
