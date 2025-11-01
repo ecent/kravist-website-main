@@ -50,23 +50,23 @@ const Trials = () => {
       <header className="sticky top-0 z-50 w-full border-b border-gray-800 bg-black/90 backdrop-blur">
         <div className="container flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-orange-500">KRAVIST</span>
+            <span className="text-2xl font-bold text-brand">KRAVIST</span>
           </Link>
           <div className="hidden md:flex space-x-8">
-            <Link to="/" className="hover:text-orange-400 transition-colors">Home</Link>
-            <a href="/#divisions" className="hover:text-orange-400 transition-colors">Programs</a>
-            <span className="text-orange-400">Trials</span>
-            <a href="/#pricing" className="hover:text-orange-400 transition-colors">Pricing</a>
-            <a href="/#schedule" className="hover:text-orange-400 transition-colors">Schedule</a>
-            <a href="/#instructors" className="hover:text-orange-400 transition-colors">Instructors</a>
-            <a href="/#faq" className="hover:text-orange-400 transition-colors">FAQ</a>
-            <Link to="/contact" className="hover:text-orange-400 transition-colors">Contact</Link>
+            <Link to="/" className="hover:text-brand transition-colors">Home</Link>
+            <a href="/#divisions" className="hover:text-brand transition-colors">Programs</a>
+            <span className="text-brand">Trials</span>
+            <a href="/#pricing" className="hover:text-brand transition-colors">Pricing</a>
+            <a href="/#schedule" className="hover:text-brand transition-colors">Schedule</a>
+            <a href="/#instructors" className="hover:text-brand transition-colors">Instructors</a>
+            <a href="/#faq" className="hover:text-brand transition-colors">FAQ</a>
+            <Link to="/contact" className="hover:text-brand transition-colors">Contact</Link>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-20 lg:py-32 pt-32">
+      <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-20 lg:py-32 pt-32 min-h-[500px] lg:min-h-[600px]">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -76,7 +76,7 @@ const Trials = () => {
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent drop-shadow-lg">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-brand bg-clip-text text-transparent drop-shadow-lg">
             Trial Classes
           </h1>
         </div>
@@ -90,13 +90,13 @@ const Trials = () => {
           <div className="space-y-8">
             {trialPrograms.map((category, idx) => (
               <div key={idx} className="space-y-4">
-                <h2 className="text-2xl font-semibold text-orange-400">{category.category}</h2>
+                <h2 className="text-2xl font-semibold text-brand">{category.category}</h2>
                 <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                   {category.programs.map((program, programIdx) => (
-                    <Card key={programIdx} className="relative overflow-hidden bg-gray-900 border-gray-800 hover:border-orange-500/50 transition-all">
+                    <Card key={programIdx} className="relative overflow-hidden bg-gray-900 border-gray-800 hover:border-brand/50 transition-all">
                       <CardHeader>
                         <CardTitle className="text-xl text-white">{program.name}</CardTitle>
-                        <CardDescription className="text-3xl font-bold text-orange-500">
+                        <CardDescription className="text-3xl font-bold text-brand">
                           {program.price}
                         </CardDescription>
                       </CardHeader>
