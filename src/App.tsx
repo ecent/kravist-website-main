@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import Contact from "./pages/Contact";
 import YouthLearnMore from "./pages/YouthLearnMore";
 import WomensLearnMore from "./pages/WomensLearnMore";
+import Trials from "./pages/Trials";
 import NotFound from "./pages/NotFound";
 import ScrollToSection from "./components/ScrollToSection";
 
@@ -24,6 +25,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/trials" element={<Trials />} />
           <Route path="/programs/youth/learn-more" element={<YouthLearnMore />} />
           <Route path="/programs/women/learn-more" element={<WomensLearnMore />} />
           <Route path="/schedule" element={<Navigate to="/#schedule" replace />} />
