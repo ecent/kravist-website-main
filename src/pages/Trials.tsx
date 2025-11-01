@@ -107,7 +107,7 @@ const Trials = () => {
                           rel="noopener noreferrer"
                           className="block"
                         >
-                          <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white" size="lg">
+                          <Button className="w-full bg-brand hover:bg-brand/90 text-brand-foreground" size="lg">
                             Book {program.price === "FREE" ? "Free" : ""} Trial
                           </Button>
                         </a>
