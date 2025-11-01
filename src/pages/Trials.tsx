@@ -52,13 +52,15 @@ const Trials = () => {
           <Link to="/" className="flex items-center space-x-2">
             <span className="text-2xl font-bold text-orange-500">KRAVIST</span>
           </Link>
-          <div className="flex items-center gap-4">
-            <Link to="/">
-              <Button variant="ghost" size="sm" className="text-white hover:text-orange-400">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Home
-              </Button>
-            </Link>
+          <div className="hidden md:flex space-x-8">
+            <Link to="/" className="hover:text-orange-400 transition-colors">Home</Link>
+            <a href="/#divisions" className="hover:text-orange-400 transition-colors">Programs</a>
+            <span className="text-orange-400">Trials</span>
+            <a href="/#pricing" className="hover:text-orange-400 transition-colors">Pricing</a>
+            <a href="/#schedule" className="hover:text-orange-400 transition-colors">Schedule</a>
+            <a href="/#instructors" className="hover:text-orange-400 transition-colors">Instructors</a>
+            <a href="/#faq" className="hover:text-orange-400 transition-colors">FAQ</a>
+            <Link to="/contact" className="hover:text-orange-400 transition-colors">Contact</Link>
           </div>
         </div>
       </header>

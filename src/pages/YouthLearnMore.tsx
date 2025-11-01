@@ -83,6 +83,7 @@ const YouthLearnMore = () => {
               <div className="hidden md:flex space-x-8">
                 <Link to="/" className="hover:text-orange-400 transition-colors">Home</Link>
                 <a href="/#divisions" className="hover:text-orange-400 transition-colors">Programs</a>
+                <Link to="/trials" className="hover:text-orange-400 transition-colors">Trials</Link>
                 <a href="/#pricing" className="hover:text-orange-400 transition-colors">Pricing</a>
                 <a href="/#schedule" className="hover:text-orange-400 transition-colors">Schedule</a>
                 <a href="/#instructors" className="hover:text-orange-400 transition-colors">Instructors</a>
