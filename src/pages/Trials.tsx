@@ -70,7 +70,7 @@ const Trials = () => {
               Trial Classes
             </h1>
             <p className="text-xl text-gray-300">
-              Experience Krav Maga training firsthand. Choose your program and book your trial today.
+              Experience Kravist training firsthand. Choose your program and book your trial today.
             </p>
           </div>
 
@@ -107,19 +107,6 @@ const Trials = () => {
             ))}
           </div>
 
-          {/* Additional Info */}
-          <Card className="bg-gray-900/50 border-gray-800">
-            <CardHeader>
-              <CardTitle className="text-orange-400">What to Expect</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-2 text-gray-300">
-              <p>• Experience our training methodology firsthand</p>
-              <p>• Meet our certified instructors</p>
-              <p>• Learn fundamental Krav Maga techniques</p>
-              <p>• No prior experience necessary</p>
-              <p>• All equipment provided</p>
-            </CardContent>
-          </Card>
         </div>
       </main>
 
