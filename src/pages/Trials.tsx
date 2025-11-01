@@ -52,27 +52,40 @@ const Trials = () => {
           <Link to="/" className="flex items-center space-x-2">
             <span className="text-2xl font-bold text-orange-500">KRAVIST</span>
           </Link>
-          <Link to="/">
-            <Button variant="ghost" size="sm" className="text-white hover:text-orange-400">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Home
-            </Button>
-          </Link>
+          <div className="flex items-center gap-4">
+            <Link to="/">
+              <Button variant="ghost" size="sm" className="text-white hover:text-orange-400">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Home
+              </Button>
+            </Link>
+          </div>
         </div>
       </header>
 
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-20 lg:py-32 pt-20">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('/lovable-uploads/06652838-a8c4-4ee8-bf31-806bb8675f84.png')` }}
+        >
+          {/* Overlay for text readability */}
+          <div className="absolute inset-0 bg-black/70"></div>
+        </div>
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent drop-shadow-lg">
+            Trial Classes
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-4xl mx-auto">
+            Experience Kravist training firsthand. Choose your program and book your trial today.
+          </p>
+        </div>
+      </section>
+
       {/* Main Content */}
-      <main className="container py-12">
-        <div className="mx-auto max-w-4xl space-y-8">
-          {/* Page Header */}
-          <div className="text-center space-y-4">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl bg-gradient-to-r from-orange-500 to-orange-300 bg-clip-text text-transparent">
-              Trial Classes
-            </h1>
-            <p className="text-xl text-gray-300">
-              Experience Kravist training firsthand. Choose your program and book your trial today.
-            </p>
-          </div>
+      <main className="container py-16 lg:py-24">
+        <div className="mx-auto max-w-4xl space-y-12">
 
           {/* Trial Programs */}
           <div className="space-y-8">
