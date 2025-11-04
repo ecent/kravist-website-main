@@ -66,7 +66,7 @@ const Trials = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-20 lg:py-32 pt-32 min-h-[500px] lg:min-h-[600px]">
+      <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-16 lg:py-24 pt-24 min-h-[400px] lg:min-h-[450px]">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
