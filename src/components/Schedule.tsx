@@ -8,35 +8,30 @@ const Schedule = () => {
     {
       day: "Monday",
       classes: [
-        { time: "5:30 PM", name: "Beginner's Class", duration: "60 min" },
-        { time: "6:30 PM", name: "Fighting Skills", duration: "60 min" },
-        { time: "7:30 PM", name: "Grab Defence", duration: "60 min" },
-        { time: "8:30 PM", name: "Levels", duration: "60 min" }
+        { time: "6:30 PM", name: "Fundamental", duration: "75 min" },
+        { time: "7:45 PM", name: "Open Subject", duration: "75 min" }
       ]
     },
     {
       day: "Tuesday",
       classes: [
-        { time: "5:30 PM", name: "Beginner's Class", duration: "60 min" },
-        { time: "6:30 PM", name: "Weapons Defence", duration: "60 min" },
-        { time: "7:30 PM", name: "Fighting Skills", duration: "60 min" },
-        { time: "8:30 PM", name: "Levels", duration: "60 min" }
+        { time: "5:00 PM", name: "Kids Class", duration: "60 min" },
+        { time: "6:30 PM", name: "Fundamental", duration: "75 min" },
+        { time: "7:45 PM", name: "Open Subject", duration: "75 min" }
       ]
     },
     {
       day: "Wednesday",
       classes: [
-        { time: "6:30 PM", name: "Grab Defence", duration: "60 min" },
-        { time: "7:30 PM", name: "Weapons Defence", duration: "60 min" },
-        { time: "8:30 PM", name: "Levels", duration: "60 min" }
+        { time: "6:30 PM", name: "Fundamental", duration: "75 min" },
+        { time: "7:45 PM", name: "Open Subject", duration: "75 min" }
       ]
     },
     {
       day: "Thursday",
       classes: [
-        { time: "6:30 PM", name: "Fighting Skills", duration: "60 min" },
-        { time: "7:30 PM", name: "Weapons Defence", duration: "60 min" },
-        { time: "8:30 PM", name: "Levels", duration: "60 min" }
+        { time: "6:30 PM", name: "Fundamental", duration: "75 min" },
+        { time: "7:45 PM", name: "Open Subject", duration: "75 min" }
       ]
     },
     {
