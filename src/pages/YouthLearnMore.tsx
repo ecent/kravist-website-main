@@ -241,7 +241,7 @@ const YouthLearnMore = () => {
                       </a>
                     </div>
                     <div className="mt-6 p-4 bg-orange-600/20 border border-orange-600/30 rounded-lg">
-                      <p className="text-orange-200 font-semibold">Free trial classes conducted during these sessions!</p>
+                      <p className="text-orange-200 font-semibold">Trial classes conducted during these sessions!</p>
                     </div>
                   </div>
                 </CardContent>
