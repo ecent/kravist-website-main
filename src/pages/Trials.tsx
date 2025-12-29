@@ -11,17 +11,17 @@ const Trials = () => {
       programs: [
         {
           name: "Kids (6-10)",
-          price: "FREE",
+          price: "$10",
           link: "https://kravist.pushpress.com/landing/plans/plan_cd5f10a5137544/login"
         },
         {
           name: "Juniors (10-14)",
-          price: "FREE",
+          price: "$10",
           link: "https://kravist.pushpress.com/landing/plans/plan_c949e71f9af2d5/login"
         },
         {
           name: "Teens (14-17)",
-          price: "FREE",
+          price: "$10",
           link: "https://kravist.pushpress.com/landing/plans/plan_f2f2e14d3e5ec5/login"
         }
       ]
@@ -108,7 +108,7 @@ const Trials = () => {
                           className="block"
                         >
                           <Button className="w-full bg-brand hover:bg-brand/90 text-brand-foreground" size="lg">
-                            Book {program.price === "FREE" ? "Free" : ""} Trial
+                            Book Trial
                           </Button>
                         </a>
                       </CardContent>
