@@ -153,7 +153,7 @@ const Index = () => {
     },
     {
       question: "Do you offer trial classes?",
-      answer: "Yes. We offer trial classes for youth, adults, and women's programs. Check our pricing page for free trials (youth) and affordable trial sessions for adults."
+      answer: "Yes. Check our Pricing page and Trials page for details."
     },
     {
       question: "What age groups can train at Kravist?",
@@ -1250,7 +1250,7 @@ const Index = () => {
                     <div className="border-b border-gray-700 pb-4">
                       <h4 className="font-semibold text-orange-400 mb-2">Q7: Do you offer trial classes?</h4>
                       <p className="text-gray-300">
-                        Yes. Check our pricing page for free trials (youth) and affordable trial sessions for adults.
+                        Yes. Check our Pricing page and Trials page for details.
                       </p>
                     </div>
                     <div className="border-b border-gray-700 pb-4">
