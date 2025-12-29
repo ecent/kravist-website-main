@@ -700,15 +700,15 @@ const Index = () => {
                   <div className="space-y-2">
                     <div className="flex justify-between items-center gap-2">
                       <span className="text-orange-100">Kids (6-10)</span>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_cd5f10a5137544/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 px-3 py-1 rounded border border-green-400 bg-green-500/10 hover:bg-green-500/30 transition-colors">FREE</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_cd5f10a5137544/login" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$10</a>
                     </div>
                     <div className="flex justify-between items-center gap-2">
                       <span className="text-orange-100">Juniors (10-14)</span>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_c949e71f9af2d5/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 px-3 py-1 rounded border border-green-400 bg-green-500/10 hover:bg-green-500/30 transition-colors">FREE</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_c949e71f9af2d5/login" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$10</a>
                     </div>
                     <div className="flex justify-between items-center gap-2">
                       <span className="text-orange-100">Teens (14-17)</span>
-                      <a href="https://kravist.pushpress.com/landing/plans/plan_f2f2e14d3e5ec5/login" target="_blank" rel="noopener noreferrer" className="font-semibold text-green-400 px-3 py-1 rounded border border-green-400 bg-green-500/10 hover:bg-green-500/30 transition-colors">FREE</a>
+                      <a href="https://kravist.pushpress.com/landing/plans/plan_f2f2e14d3e5ec5/login" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$10</a>
                     </div>
                   </div>
                 </div>
