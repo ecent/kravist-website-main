@@ -24,7 +24,6 @@ const Instructors = () => {
         "Krav Maga Level G3",
         "Animal Flow Level 1 Instructor",
         "SFG 1 Kettlebell Instructor",
-        "Autism Fitness Certified Pro Level 1",
         "Served 10+ years in Singapore Police Force",
         "Defence Tactics Instructor with Special Operations Command",
         "CPR Certified"
