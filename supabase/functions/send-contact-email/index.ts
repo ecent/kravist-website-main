@@ -172,7 +172,8 @@ const handler = async (req: Request): Promise<Response> => {
 
     if (dbError) {
       console.error("Database error:", dbError);
-      throw new Error(`Database insert failed: ${dbError.message}`);
+      // Don't expose database error details to clients
+      throw new Error("Failed to process your submission. Please try again.");
     }
 
     console.log("Contact form data saved to database successfully");
@@ -282,8 +283,12 @@ const handler = async (req: Request): Promise<Response> => {
     );
   } catch (error: any) {
     console.error("Error in send-contact-email function:", error);
+    // Return generic error message to prevent information leakage
+    const safeErrorMessage = error.message?.includes("Failed to process") || error.message?.includes("Too many") || error.message?.includes("Please")
+      ? error.message
+      : "An error occurred processing your request. Please try again later.";
     return new Response(
-      JSON.stringify({ error: error.message }),
+      JSON.stringify({ error: safeErrorMessage }),
       {
         status: 500,
         headers: { "Content-Type": "application/json", ...corsHeaders },
