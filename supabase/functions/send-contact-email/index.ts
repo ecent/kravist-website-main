@@ -75,6 +75,19 @@ function containsSpam(text: string): boolean {
   return SPAM_PATTERNS.some(pattern => pattern.test(text));
 }
 
+// HTML escape function to prevent XSS attacks
+function escapeHtml(text: string): string {
+  const htmlEscapes: Record<string, string> = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+    '/': '&#x2F;',
+  };
+  return text.replace(/[&<>"'/]/g, (char) => htmlEscapes[char] || char);
+}
+
 function validateContactData(data: ContactFormData): string | null {
   // Basic validation
   if (!data.name || data.name.length < 2 || data.name.length > 100) {
@@ -164,6 +177,12 @@ const handler = async (req: Request): Promise<Response> => {
 
     console.log("Contact form data saved to database successfully");
 
+    // Escape user inputs to prevent XSS
+    const safeName = escapeHtml(name);
+    const safeEmail = escapeHtml(email);
+    const safeDivision = escapeHtml(division);
+    const safeMessage = escapeHtml(message).replace(/\n/g, '<br>');
+
     // Send notification email to the gym
     const notificationResponse = await resend.emails.send({
       from: "noreply@kravist.sg",
@@ -173,10 +192,10 @@ const handler = async (req: Request): Promise<Response> => {
       html: `
         <p>New contact form submission:</p>
         <br>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Division:</strong> ${division}</p>
-        <p><strong>Message:</strong> ${message.replace(/\n/g, '<br>')}</p>
+        <p><strong>Name:</strong> ${safeName}</p>
+        <p><strong>Email:</strong> ${safeEmail}</p>
+        <p><strong>Division:</strong> ${safeDivision}</p>
+        <p><strong>Message:</strong> ${safeMessage}</p>
       `,
     });
 
@@ -192,12 +211,12 @@ const handler = async (req: Request): Promise<Response> => {
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: white; line-height: 1.5;">
           <h1 style="color: #ff6600; font-size: 20px; font-weight: bold; margin: 0 0 20px 0;">We've got your message!</h1>
           
-          <p style="font-size: 16px; margin: 0 0 15px 0;">Hi ${name},</p>
-          <p style="font-size: 16px; margin: 0 0 20px 0;">Thanks for reaching out! We've received your message about our <strong>${division}</strong> program, and one of our instructors will get back to you soon.</p>
+          <p style="font-size: 16px; margin: 0 0 15px 0;">Hi ${safeName},</p>
+          <p style="font-size: 16px; margin: 0 0 20px 0;">Thanks for reaching out! We've received your message about our <strong>${safeDivision}</strong> program, and one of our instructors will get back to you soon.</p>
           
           <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3 style="font-weight: bold; margin: 0 0 10px 0; font-size: 16px;"><strong>Your Message:</strong></h3>
-            <p style="font-size: 16px; margin: 0;">${message.replace(/\n/g, '<br>')}</p>
+            <p style="font-size: 16px; margin: 0;">${safeMessage}</p>
           </div>
           
           <div style="text-align: center; margin: 25px 0;">
