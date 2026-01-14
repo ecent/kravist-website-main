@@ -263,15 +263,15 @@ const YouthLearnMore = () => {
                     <div className="space-y-3">
                       <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
                         <span className="font-semibold">Kids</span>
-                        <span className="text-orange-400 font-bold">$450</span>
+                        <span className="text-orange-400 font-bold">$470</span>
                       </div>
                       <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
                         <span className="font-semibold">Juniors</span>
-                        <span className="text-orange-400 font-bold">$495</span>
+                        <span className="text-orange-400 font-bold">$520</span>
                       </div>
                       <div className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
                         <span className="font-semibold">Teens</span>
-                        <span className="text-orange-400 font-bold">$510</span>
+                        <span className="text-orange-400 font-bold">$535</span>
                       </div>
                     </div>
                     <div className="grid grid-cols-2 gap-3 mt-6">

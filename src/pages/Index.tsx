@@ -683,15 +683,15 @@ const Index = () => {
                   <div className="space-y-2">
                     <div className="flex justify-between items-center gap-2">
                       <span className="text-orange-100">Kids (6-10)</span>
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$450</a>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$470</a>
                     </div>
                     <div className="flex justify-between items-center gap-2">
                       <span className="text-orange-100">Juniors (10-14)</span>
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$495</a>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$520</a>
                     </div>
                     <div className="flex justify-between items-center gap-2">
                       <span className="text-orange-100">Teens (14-17)</span>
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$510</a>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$535</a>
                     </div>
                   </div>
                 </div>
