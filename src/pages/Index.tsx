@@ -802,7 +802,7 @@ const Index = () => {
                   <div className="space-y-2">
                     <div className="flex justify-between items-center gap-2">
                       <span className="text-gray-300">Term Program</span>
-                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$250</a>
+                      <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer" className="font-semibold px-3 py-1 rounded border border-orange-400 bg-orange-500/10 hover:bg-orange-500/30 transition-colors">$275</a>
                     </div>
                   </div>
                 </div>
