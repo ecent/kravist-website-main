@@ -42,7 +42,7 @@ const Trials = () => {
     <div className="min-h-screen bg-black text-white">
       <SEO
         title="Trial Classes | Kravist Self Defence Studio Singapore"
-        description="Try our Krav Maga classes with trial sessions for kids, juniors, teens, and adults. Free trials for youth programs and affordable adult trials."
+        description="Try our Krav Maga classes with trial sessions for kids, juniors, teens ($10), and adults ($20). Affordable trials for all programs."
         keywords="krav maga trial, self defence trial, martial arts trial Singapore, kids martial arts trial, adult krav maga trial"
       />
 

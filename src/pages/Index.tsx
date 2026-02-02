@@ -221,8 +221,8 @@ const Index = () => {
   // Event structured data for upcoming classes
   const upcomingEvents = [
     {
-      name: "Free Youth Trial Class",
-      description: "Complimentary trial class for children and teens to experience Krav Maga training.",
+      name: "Youth Trial Class",
+      description: "Trial class for children and teens to experience Krav Maga training for just $10.",
       startDate: new Date().toISOString(),
       endDate: new Date(Date.now() + 60 * 60 * 1000).toISOString(),
       dayOfWeek: "Friday",
