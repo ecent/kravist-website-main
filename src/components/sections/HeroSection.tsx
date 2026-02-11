@@ -1,17 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { ResponsiveImage } from "@/components/ui/responsive-image";
 
 const HeroSection = () => {
   return (
     <section id="home" className="relative pt-20 pb-16 px-4 sm:px-6 lg:px-8 min-h-[80vh] flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <ResponsiveImage
+        <img
           src="/lovable-uploads/e1f2812e-eebc-4041-803f-87ca9deb6746.png"
           alt="Kravist Krav Maga training session"
-          className="w-full h-full"
-          sizes="100vw"
-          priority={true}
+          className="w-full h-full object-cover"
+          loading="eager"
+          fetchPriority="high"
         />
         {/* Overlay for text readability */}
         <div className="absolute inset-0 bg-black/70"></div>

@@ -23,7 +23,7 @@ const ResponsiveImage = React.forwardRef<HTMLImageElement, ResponsiveImageProps>
     ...props 
   }, ref) => {
     return (
-      <picture>
+      <picture className="contents">
         <source 
           srcSet={src.replace(/\.(jpg|jpeg|png)$/i, '.webp')} 
           type="image/webp"
