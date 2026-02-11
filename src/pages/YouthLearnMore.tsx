@@ -106,12 +106,11 @@ const YouthLearnMore = () => {
         <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-20 lg:py-32 pt-32">{/* Extra padding top for fixed nav */}
           {/* Background Image */}
           <div className="absolute inset-0">
-            <ResponsiveImage
+            <img
               src="/lovable-uploads/e1f2812e-eebc-4041-803f-87ca9deb6746.png"
               alt="Kravist youth self-defence training"
-              className="w-full h-full"
-              sizes="100vw"
-              priority={true}
+              className="w-full h-full object-cover"
+              loading="eager"
             />
             <div className="absolute inset-0 bg-black/70"></div>
           </div>
