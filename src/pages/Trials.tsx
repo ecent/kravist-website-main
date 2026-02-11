@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { ResponsiveImage } from "@/components/ui/responsive-image";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import SEO from "@/components/SEO";
@@ -68,11 +69,14 @@ const Trials = () => {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-16 lg:py-24 pt-24 min-h-[400px] lg:min-h-[450px]">
         {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url('/lovable-uploads/e1f2812e-eebc-4041-803f-87ca9deb6746.png')` }}
-        >
-          {/* Overlay for text readability */}
+        <div className="absolute inset-0">
+          <ResponsiveImage
+            src="/lovable-uploads/e1f2812e-eebc-4041-803f-87ca9deb6746.png"
+            alt="Kravist trial classes"
+            className="w-full h-full"
+            sizes="100vw"
+            priority={true}
+          />
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
