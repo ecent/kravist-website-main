@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
+import { ResponsiveImage } from "@/components/ui/responsive-image";
 import SEO from "@/components/SEO";
 
 const WomensLearnMore = () => {
@@ -100,11 +101,14 @@ const WomensLearnMore = () => {
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-20 lg:py-32 pt-32">
           {/* Background Image */}
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url('/lovable-uploads/e1f2812e-eebc-4041-803f-87ca9deb6746.png')` }}
-          >
-            {/* Overlay for text readability */}
+          <div className="absolute inset-0">
+            <ResponsiveImage
+              src="/lovable-uploads/e1f2812e-eebc-4041-803f-87ca9deb6746.png"
+              alt="Kravist women's self-defence training"
+              className="w-full h-full"
+              sizes="100vw"
+              priority={true}
+            />
             <div className="absolute inset-0 bg-black/70"></div>
           </div>
           <div className="container mx-auto px-4 text-center relative z-10">
@@ -271,12 +275,12 @@ const WomensLearnMore = () => {
             <div className="max-w-lg mx-auto">
               <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white overflow-hidden">
                 <div className="aspect-square overflow-hidden">
-                  <img 
+                  <ResponsiveImage 
                     src="/lovable-uploads/c2a8d8db-85b1-409c-a2f9-205208b6bfdd.png" 
                     alt="Minnie Teo - Head of Women's Division at Kravist Singapore"
-                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full hover:scale-105 transition-transform duration-300"
                     style={{ objectPosition: 'center 20%' }}
-                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, 448px"
                   />
                 </div>
                 <div className="text-center p-6">

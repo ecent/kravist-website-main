@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { ResponsiveImage } from "@/components/ui/responsive-image";
 import { Users, Shield, Target, Building, User, ChevronLeft, ChevronRight } from "lucide-react";
 
 const divisions = [
@@ -20,7 +21,8 @@ const divisions = [
       "/lovable-uploads/df91761c-1c15-4e44-a903-4458693e62aa.png",
       "/lovable-uploads/e23d215b-10ed-4b27-b287-96e86d88ffc2.png",
       "/lovable-uploads/1bf5a9dd-cafd-4926-9ced-4184b0c574ac.png"
-    ]
+    ],
+    cta: { label: "Learn More", to: "/programs/youth/learn-more" }
   },
   {
     id: "womens",
@@ -33,7 +35,8 @@ const divisions = [
       "/lovable-uploads/60750581-3991-42cf-8588-bf262fe64ea9.png",
       "/lovable-uploads/985f264b-e56a-4cd2-bfd0-a78167ab7004.png",
       "/lovable-uploads/2a23a671-1b9c-4b18-a790-10f5beecbef5.png"
-    ]
+    ],
+    cta: { label: "Learn More", to: "/programs/women/learn-more" }
   },
   {
     id: "adults",
@@ -50,7 +53,8 @@ const divisions = [
       "/lovable-uploads/54d43c3a-5d14-4396-abbc-6596fd2c6a5b.png",
       "/lovable-uploads/2460f76f-4ebf-4f48-8155-b5562908961e.png",
       "/lovable-uploads/81ce8b4c-e435-459f-835c-558f35177b43.png"
-    ]
+    ],
+    cta: { label: "Contact Us", to: "/contact" }
   },
   {
     id: "corporate",
@@ -61,7 +65,8 @@ const divisions = [
     features: ["On-site or off-site corporate training", "Team-building exercises", "Workplace safety techniques", "Stress-resilience and confidence building"],
     images: [
       "/lovable-uploads/65b46f6e-9532-42fe-a30a-8642e6892304.png"
-    ]
+    ],
+    cta: { label: "Contact Us", to: "/contact" }
   },
   {
     id: "private",
@@ -72,7 +77,8 @@ const divisions = [
     features: ["Fully customized self defence curriculum", "Flexible scheduling options", "Rapid skill development", "Personal instructor guidance"],
     images: [
       "/lovable-uploads/215d4bad-4cfa-4938-bfe1-5023913ef9a0.png"
-    ]
+    ],
+    cta: { label: "Contact Us", to: "/contact" }
   }
 ];
 
@@ -156,32 +162,12 @@ const DivisionsSection = () => {
                   </div>
                 ))}
               </div>
-              <div className="flex flex-col sm:flex-row gap-4">
-                {activeDivision.id === "youth" ? (
-                  <Link to="/programs/youth/learn-more">
-                    <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
-                      Learn More
-                    </Button>
-                  </Link>
-                ) : activeDivision.id === "womens" ? (
-                  <Link to="/programs/women/learn-more">
-                    <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
-                      Learn More
-                    </Button>
-                  </Link>
-                ) : (
-                  <Link to="/contact">
-                    <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
-                      Contact Us
-                    </Button>
-                  </Link>
-                )}
-                <a href="#pricing">
-                  <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
-                    Start Training
-                  </Button>
-                </a>
-              </div>
+              {/* Single primary CTA */}
+              <Link to={activeDivision.cta.to}>
+                <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
+                  {activeDivision.cta.label}
+                </Button>
+              </Link>
             </div>
             <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
               {activeDivision.images ? (
@@ -194,11 +180,11 @@ const DivisionsSection = () => {
                             className="h-64 rounded-lg overflow-hidden cursor-pointer hover:opacity-80 transition-opacity"
                             onClick={() => handleImageClick(index)}
                           >
-                            <img 
+                            <ResponsiveImage 
                               src={image} 
                               alt={`${activeDivision.title} training ${index + 1}`}
-                              className="w-full h-full object-cover"
-                              loading="lazy"
+                              className="w-full h-full"
+                              sizes="(max-width: 768px) 80vw, 320px"
                             />
                           </div>
                         </CarouselItem>
