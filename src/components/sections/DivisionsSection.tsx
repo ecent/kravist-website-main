@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { ResponsiveImage } from "@/components/ui/responsive-image";
+
 import { Users, Shield, Target, Building, User, ChevronLeft, ChevronRight } from "lucide-react";
 
 const divisions = [
@@ -180,11 +180,11 @@ const DivisionsSection = () => {
                             className="h-64 rounded-lg overflow-hidden cursor-pointer hover:opacity-80 transition-opacity"
                             onClick={() => handleImageClick(index)}
                           >
-                            <ResponsiveImage 
+                            <img 
                               src={image} 
                               alt={`${activeDivision.title} training ${index + 1}`}
-                              className="w-full h-full"
-                              sizes="(max-width: 768px) 80vw, 320px"
+                              className="w-full h-full object-cover"
+                              loading="lazy"
                             />
                           </div>
                         </CarouselItem>
