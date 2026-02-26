@@ -30,19 +30,6 @@ const Instructors = () => {
       ],
       image: "/lovable-uploads/c2a8d8db-85b1-409c-a2f9-205208b6bfdd.png"
     },
-    {
-      id: 3,
-      name: "Ethel Wee",
-      title: "Instructor",
-      bio: [
-        "Krav Maga Level G4",
-        "Certified General and Youth Instructor",
-        "10+ years training Krav Maga",
-        "7+ years teaching Krav Maga",
-        "CPR Certified"
-      ],
-      image: "/lovable-uploads/95b3db7b-d1a6-4391-8a7a-f8ca108172bc.png"
-    }
   ];
 
   return (
