@@ -22,13 +22,18 @@ const ResponsiveImage = React.forwardRef<HTMLImageElement, ResponsiveImageProps>
     className,
     ...props 
   }, ref) => {
+    // Only attempt webp source for non-upload images that have standard extensions
+    const hasWebpVariant = !src.includes('/lovable-uploads/') && /\.(jpg|jpeg|png)$/i.test(src);
+    
     return (
       <picture className="contents">
-        <source 
-          srcSet={src.replace(/\.(jpg|jpeg|png)$/i, '.webp')} 
-          type="image/webp"
-          sizes={sizes}
-        />
+        {hasWebpVariant && (
+          <source 
+            srcSet={src.replace(/\.(jpg|jpeg|png)$/i, '.webp')} 
+            type="image/webp"
+            sizes={sizes}
+          />
+        )}
         <img
           ref={ref}
           src={src}
@@ -43,13 +48,6 @@ const ResponsiveImage = React.forwardRef<HTMLImageElement, ResponsiveImageProps>
             "object-cover transition-opacity duration-300",
             className
           )}
-          onError={(e) => {
-            // Fallback to original format if WebP fails
-            const target = e.target as HTMLImageElement;
-            if (target.src.includes('.webp')) {
-              target.src = src;
-            }
-          }}
           {...props}
         />
       </picture>
