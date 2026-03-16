@@ -380,7 +380,7 @@ const YouthLearnMore = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white">
               Meet Our Youth Instructors
             </h2>
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
               {/* Edwin */}
               <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
                 <div className="aspect-square overflow-hidden">
@@ -442,41 +442,6 @@ const YouthLearnMore = () => {
                     <li className="flex items-start">
                       <span className="text-orange-400 mr-2">•</span>
                       <span>Ex-Singapore Police (10+ years)</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-orange-400 mr-2">•</span>
-                      <span>CPR Certified</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              {/* Ethel */}
-              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
-                <div className="aspect-square overflow-hidden">
-                  <ResponsiveImage 
-                    src="/lovable-uploads/95b3db7b-d1a6-4391-8a7a-f8ca108172bc.png" 
-                    alt="Ethel Wee"
-                    className="w-full h-full hover:scale-105 transition-transform duration-300"
-                    style={{ objectPosition: 'center 20%' }}
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="font-bold text-xl mb-2 text-orange-400">Ethel Wee</h3>
-                  <p className="text-gray-400 text-sm mb-3">Youth Instructor</p>
-                  <ul className="text-gray-300 text-sm space-y-1">
-                    <li className="flex items-start">
-                      <span className="text-orange-400 mr-2">•</span>
-                      <span>Krav Maga Level G4</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-orange-400 mr-2">•</span>
-                      <span>Certified Youth Instructor</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-orange-400 mr-2">•</span>
-                      <span>7+ years teaching experience</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-orange-400 mr-2">•</span>
