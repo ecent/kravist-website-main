@@ -164,29 +164,7 @@ const SEO = ({ title, description, keywords, image, url }: SEOProps) => {
                 }
               }
             ]
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "50",
-            "bestRating": "5",
-            "worstRating": "1"
-          },
-          "review": [
-            {
-              "@type": "Review",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
-              },
-              "author": {
-                "@type": "Person",
-                "name": "Parent Review"
-              },
-              "reviewBody": "Excellent youth program that builds confidence and discipline in children while teaching practical self-defense skills."
-            }
-          ]
+          }
         })}
       </script>
     </Helmet>
