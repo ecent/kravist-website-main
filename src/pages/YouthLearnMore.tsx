@@ -421,11 +421,19 @@ const YouthLearnMore = () => {
                     </li>
                     <li className="flex items-start">
                       <span className="text-orange-400 mr-2">•</span>
-                      <span>Autism Fitness Certified Pro</span>
+                      <span>Animal Flow Level 1 Instructor</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-orange-400 mr-2">•</span>
-                      <span>Ex-Singapore Police (10+ years)</span>
+                      <span>SFG 1 Kettlebell Instructor</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Served 10+ years in Singapore Police Force</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-400 mr-2">•</span>
+                      <span>Defence Tactics Instructor with Special Operations Command</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-orange-400 mr-2">•</span>
