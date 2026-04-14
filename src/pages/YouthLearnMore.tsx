@@ -107,7 +107,7 @@ const YouthLearnMore = () => {
           {/* Background Image */}
           <div className="absolute inset-0">
             <img
-              src="/lovable-uploads/e1f2812e-eebc-4041-803f-87ca9deb6746.png"
+              src="/lovable-uploads/e1f2812e-eebc-4041-803f-87ca9deb6746.webp"
               alt="Kravist youth self-defence training"
               className="w-full h-full object-cover"
               loading="eager"
@@ -160,13 +160,13 @@ const YouthLearnMore = () => {
               </div>
               <div className="space-y-6">
                 <ResponsiveImage 
-                  src="/lovable-uploads/6ab596ea-6de2-4054-8650-2a47eb50138c.png" 
+                  src="/lovable-uploads/6ab596ea-6de2-4054-8650-2a47eb50138c.webp" 
                   alt="Youth Krav Maga students training together in Singapore - building confidence and self-defense skills"
                   className="w-full h-auto rounded-lg shadow-2xl"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 <ResponsiveImage 
-                  src="/lovable-uploads/a5809801-6a02-4444-973c-fa039ce1995e.png" 
+                  src="/lovable-uploads/a5809801-6a02-4444-973c-fa039ce1995e.webp" 
                   alt="Youth students practicing Krav Maga techniques with certified instructor at Kravist Singapore"
                   className="w-full h-auto rounded-lg shadow-2xl"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -185,7 +185,7 @@ const YouthLearnMore = () => {
             <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-center">
               <div className="relative order-2 lg:order-1">
                 <ResponsiveImage 
-                  src="/lovable-uploads/ed953cd3-69a5-4d2d-9972-9031a3a3c1e7.png" 
+                  src="/lovable-uploads/ed953cd3-69a5-4d2d-9972-9031a3a3c1e7.webp" 
                   alt="Youth students engaged in structured Krav Maga training session focusing on discipline and technique"
                   className="w-full h-auto rounded-lg shadow-2xl"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -385,7 +385,7 @@ const YouthLearnMore = () => {
               <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
                 <div className="aspect-square overflow-hidden">
                     <ResponsiveImage 
-                      src="/lovable-uploads/71ffb50c-9f16-4066-8039-e8be3ca98a30.png" 
+                      src="/lovable-uploads/71ffb50c-9f16-4066-8039-e8be3ca98a30.webp" 
                       alt="Edwin Peng - Certified Krav Maga instructor and Youth Program Director at Kravist Singapore"
                       className="w-full h-full hover:scale-105 transition-transform duration-300"
                       style={{ objectPosition: 'center 20%' }}
@@ -420,7 +420,7 @@ const YouthLearnMore = () => {
               <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
                 <div className="aspect-square overflow-hidden">
                   <ResponsiveImage 
-                    src="/lovable-uploads/c2a8d8db-85b1-409c-a2f9-205208b6bfdd.png" 
+                    src="/lovable-uploads/c2a8d8db-85b1-409c-a2f9-205208b6bfdd.webp" 
                     alt="Minnie Teo"
                     className="w-full h-full hover:scale-105 transition-transform duration-300"
                     style={{ objectPosition: 'center 20%' }}

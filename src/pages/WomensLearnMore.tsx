@@ -103,7 +103,7 @@ const WomensLearnMore = () => {
           {/* Background Image */}
           <div className="absolute inset-0">
             <img
-              src="/lovable-uploads/e1f2812e-eebc-4041-803f-87ca9deb6746.png"
+              src="/lovable-uploads/e1f2812e-eebc-4041-803f-87ca9deb6746.webp"
               alt="Kravist women's self-defence training"
               className="w-full h-full object-cover"
               loading="eager"
@@ -275,7 +275,7 @@ const WomensLearnMore = () => {
               <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white overflow-hidden">
                 <div className="aspect-square overflow-hidden">
                   <ResponsiveImage 
-                    src="/lovable-uploads/c2a8d8db-85b1-409c-a2f9-205208b6bfdd.png" 
+                    src="/lovable-uploads/c2a8d8db-85b1-409c-a2f9-205208b6bfdd.webp" 
                     alt="Minnie Teo - Head of Women's Division at Kravist Singapore"
                     className="w-full h-full hover:scale-105 transition-transform duration-300"
                     style={{ objectPosition: 'center 20%' }}

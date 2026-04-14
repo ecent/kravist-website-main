@@ -15,12 +15,12 @@ const divisions = [
     icon: Shield,
     features: ["Parent-approved curriculum", "Character development focus", "Anti-bullying training", "Confidence & discipline building", "CPR-certified instructors", "Safe learning environment"],
     images: [
-      "/lovable-uploads/31bfa747-f390-49e6-9f28-92ccc22bfe5e.png",
-      "/lovable-uploads/27ddcbcf-fd29-47c9-a64b-50be168c4e54.png",
-      "/lovable-uploads/9336e19d-8609-4a2a-8b7c-ce67f6c719b6.png",
-      "/lovable-uploads/df91761c-1c15-4e44-a903-4458693e62aa.png",
-      "/lovable-uploads/e23d215b-10ed-4b27-b287-96e86d88ffc2.png",
-      "/lovable-uploads/1bf5a9dd-cafd-4926-9ced-4184b0c574ac.png"
+      "/lovable-uploads/31bfa747-f390-49e6-9f28-92ccc22bfe5e.webp",
+      "/lovable-uploads/27ddcbcf-fd29-47c9-a64b-50be168c4e54.webp",
+      "/lovable-uploads/9336e19d-8609-4a2a-8b7c-ce67f6c719b6.webp",
+      "/lovable-uploads/df91761c-1c15-4e44-a903-4458693e62aa.webp",
+      "/lovable-uploads/e23d215b-10ed-4b27-b287-96e86d88ffc2.webp",
+      "/lovable-uploads/1bf5a9dd-cafd-4926-9ced-4184b0c574ac.webp"
     ],
     cta: { label: "Learn More", to: "/programs/youth/learn-more" }
   },
@@ -32,9 +32,9 @@ const divisions = [
     icon: Target,
     features: ["Women-only self defence classes", "Real-life threat scenarios", "Stress-tested training", "Progressive, structured curriculum"],
     images: [
-      "/lovable-uploads/60750581-3991-42cf-8588-bf262fe64ea9.png",
-      "/lovable-uploads/985f264b-e56a-4cd2-bfd0-a78167ab7004.png",
-      "/lovable-uploads/2a23a671-1b9c-4b18-a790-10f5beecbef5.png"
+      "/lovable-uploads/60750581-3991-42cf-8588-bf262fe64ea9.webp",
+      "/lovable-uploads/985f264b-e56a-4cd2-bfd0-a78167ab7004.webp",
+      "/lovable-uploads/2a23a671-1b9c-4b18-a790-10f5beecbef5.webp"
     ],
     cta: { label: "Learn More", to: "/programs/women/learn-more" }
   },
@@ -46,13 +46,13 @@ const divisions = [
     icon: Users,
     features: ["Beginner-friendly to advanced techniques", "Full-body conditioning drills", "Realistic stress scenario training", "Safe and challenging environment"],
     images: [
-      "/lovable-uploads/06652838-a8c4-4ee8-bf31-806bb8675f84.png",
-      "/lovable-uploads/80ca1777-7ed2-445a-94a2-646837f256b4.png",
-      "/lovable-uploads/6eb8f2f8-3d84-4028-9ef3-f8c2b7ae068a.png",
-      "/lovable-uploads/b3bb76b8-a3a5-4c1c-b8a0-ea3c1324cddb.png",
-      "/lovable-uploads/54d43c3a-5d14-4396-abbc-6596fd2c6a5b.png",
-      "/lovable-uploads/2460f76f-4ebf-4f48-8155-b5562908961e.png",
-      "/lovable-uploads/81ce8b4c-e435-459f-835c-558f35177b43.png"
+      "/lovable-uploads/06652838-a8c4-4ee8-bf31-806bb8675f84.webp",
+      "/lovable-uploads/80ca1777-7ed2-445a-94a2-646837f256b4.webp",
+      "/lovable-uploads/6eb8f2f8-3d84-4028-9ef3-f8c2b7ae068a.webp",
+      "/lovable-uploads/b3bb76b8-a3a5-4c1c-b8a0-ea3c1324cddb.webp",
+      "/lovable-uploads/54d43c3a-5d14-4396-abbc-6596fd2c6a5b.webp",
+      "/lovable-uploads/2460f76f-4ebf-4f48-8155-b5562908961e.webp",
+      "/lovable-uploads/81ce8b4c-e435-459f-835c-558f35177b43.webp"
     ],
     cta: { label: "Contact Us", to: "/contact" }
   },
@@ -64,7 +64,7 @@ const divisions = [
     icon: Building,
     features: ["On-site or off-site corporate training", "Team-building exercises", "Workplace safety techniques", "Stress-resilience and confidence building"],
     images: [
-      "/lovable-uploads/65b46f6e-9532-42fe-a30a-8642e6892304.png"
+      "/lovable-uploads/65b46f6e-9532-42fe-a30a-8642e6892304.webp"
     ],
     cta: { label: "Contact Us", to: "/contact" }
   },
@@ -76,7 +76,7 @@ const divisions = [
     icon: User,
     features: ["Fully customized self defence curriculum", "Flexible scheduling options", "Rapid skill development", "Personal instructor guidance"],
     images: [
-      "/lovable-uploads/215d4bad-4cfa-4938-bfe1-5023913ef9a0.png"
+      "/lovable-uploads/215d4bad-4cfa-4938-bfe1-5023913ef9a0.webp"
     ],
     cta: { label: "Contact Us", to: "/contact" }
   }
