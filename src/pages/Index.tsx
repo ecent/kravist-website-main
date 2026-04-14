@@ -22,9 +22,9 @@ const SectionFallback = () => (
 const Index = () => {
   // SEO configurations
   const seoConfig = {
-    title: "Kravist Premier Adult & Youth Self Defence Studio",
-    description: "Singapore's leading Krav Maga training center offering practical self-defense classes for youth (6-17), women, adults, corporate teams. Located in Singapore with expert certified instructors.",
-    keywords: "krav maga Singapore, self defence classes Singapore, martial arts training Singapore, youth self defence, women's self defence, adult krav maga, corporate training Singapore"
+    title: "Kravist Singapore | Krav Maga Self-Defence for Kids, Teens & Adults",
+    description: "Singapore's leading Krav Maga training centre. Youth self-defence programs for ages 6-17, adult classes, women's self-defence, and corporate training. Located at Tai Seng with 20+ years of instructor experience.",
+    keywords: "krav maga singapore, self defence classes singapore, kids krav maga, youth martial arts singapore, krav maga for kids, women self defence singapore, adult self defence, corporate self defence training singapore, tai seng"
   };
 
   // FAQ structured data
