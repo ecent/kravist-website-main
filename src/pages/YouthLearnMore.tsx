@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import NavigationBar from "@/components/sections/NavigationBar";
 import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
@@ -76,24 +77,7 @@ const YouthLearnMore = () => {
       />
 
       <div className="min-h-screen bg-black text-white">
-        {/* Navigation */}
-        <nav className="bg-black/50 backdrop-blur-md fixed w-full z-50 border-b border-gray-800">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              <div className="text-2xl font-bold text-orange-500">KRAVIST</div>
-              <div className="hidden md:flex space-x-8">
-                <Link to="/" className="hover:text-orange-400 transition-colors">Home</Link>
-                <a href="/#divisions" className="hover:text-orange-400 transition-colors">Programs</a>
-                <Link to="/trials" className="hover:text-orange-400 transition-colors">Trials</Link>
-                <a href="/#pricing" className="hover:text-orange-400 transition-colors">Pricing</a>
-                <a href="/#schedule" className="hover:text-orange-400 transition-colors">Schedule</a>
-                <a href="/#instructors" className="hover:text-orange-400 transition-colors">Instructors</a>
-                <a href="/#faq" className="hover:text-orange-400 transition-colors">FAQ</a>
-                <Link to="/contact" className="hover:text-orange-400 transition-colors">Contact</Link>
-              </div>
-            </div>
-          </div>
-        </nav>
+        <NavigationBar />
 
         {/* Breadcrumb */}
         <div className="bg-gray-900 py-4">

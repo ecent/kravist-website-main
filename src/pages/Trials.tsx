@@ -1,7 +1,6 @@
+import NavigationBar from "@/components/sections/NavigationBar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
 import SEO from "@/components/SEO";
 
 const Trials = () => {
@@ -46,24 +45,7 @@ const Trials = () => {
         keywords="krav maga trial, self defence trial, martial arts trial Singapore, kids martial arts trial, adult krav maga trial"
       />
 
-      {/* Header */}
-      <header className="sticky top-0 z-50 w-full border-b border-gray-800 bg-black/90 backdrop-blur">
-        <div className="container flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-brand">KRAVIST</span>
-          </Link>
-          <div className="hidden md:flex space-x-8">
-            <Link to="/" className="hover:text-brand transition-colors">Home</Link>
-            <a href="/#divisions" className="hover:text-brand transition-colors">Programs</a>
-            <span className="text-brand">Trials</span>
-            <a href="/#pricing" className="hover:text-brand transition-colors">Pricing</a>
-            <a href="/#schedule" className="hover:text-brand transition-colors">Schedule</a>
-            <a href="/#instructors" className="hover:text-brand transition-colors">Instructors</a>
-            <a href="/#faq" className="hover:text-brand transition-colors">FAQ</a>
-            <Link to="/contact" className="hover:text-brand transition-colors">Contact</Link>
-          </div>
-        </div>
-      </header>
+      <NavigationBar />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-800 py-16 lg:py-24 pt-24 min-h-[400px] lg:min-h-[450px]">

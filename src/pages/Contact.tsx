@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import NavigationBar from "@/components/sections/NavigationBar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -70,24 +71,7 @@ const Contact = () => {
         keywords="contact Kravist, Krav Maga Singapore contact, self defence classes inquiry, martial arts training Singapore"
         url="https://kravist.sg/contact"
       />
-      {/* Navigation */}
-      <nav className="bg-black/50 backdrop-blur-md border-b border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <Link to="/" className="text-2xl font-bold text-orange-500">KRAVIST</Link>
-            <div className="hidden md:flex space-x-8">
-              <Link to="/" className="hover:text-orange-400 transition-colors">Home</Link>
-              <a href="/#divisions" className="hover:text-orange-400 transition-colors">Programs</a>
-              <Link to="/trials" className="hover:text-orange-400 transition-colors">Trials</Link>
-              <a href="/#pricing" className="hover:text-orange-400 transition-colors">Pricing</a>
-              <a href="/#schedule" className="hover:text-orange-400 transition-colors">Schedule</a>
-              <a href="/#instructors" className="hover:text-orange-400 transition-colors">Instructors</a>
-              <a href="/#faq" className="hover:text-orange-400 transition-colors">FAQ</a>
-              <span className="text-orange-400">Contact</span>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <NavigationBar />
 
       {/* Header */}
       <section className="pt-20 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-orange-900">
