@@ -1,8 +1,7 @@
 import NavigationBar from "@/components/sections/NavigationBar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import SEO from "@/components/SEO";
 import SEO from "@/components/SEO";
 
 const Trials = () => {

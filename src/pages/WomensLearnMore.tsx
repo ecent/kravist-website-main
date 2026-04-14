@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import NavigationBar from "@/components/sections/NavigationBar";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Users, Target, Clock, Shield, Calendar, Heart } from "lucide-react";
+import { Users, Target, Clock, Shield, Calendar, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
