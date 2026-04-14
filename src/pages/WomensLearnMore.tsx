@@ -290,10 +290,6 @@ const WomensLearnMore = () => {
                     </li>
                     <li className="flex items-start">
                       <span className="text-orange-400 mr-2">•</span>
-                      <span>Served 10+ years in Singapore Police Force</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-orange-400 mr-2">•</span>
                       <span>Defence Tactics Instructor with Special Operations Command</span>
                     </li>
                     <li className="flex items-start">
