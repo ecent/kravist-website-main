@@ -51,6 +51,7 @@ const Instructors = () => {
                   alt={instructor.name}
                   className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
                   style={{ objectPosition: 'center 20%' }}
+                  loading="lazy"
                 />
               </div>
               <CardHeader className="text-center">

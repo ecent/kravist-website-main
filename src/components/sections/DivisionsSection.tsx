@@ -201,6 +201,7 @@ const DivisionsSection = () => {
                           src={activeDivision.images[selectedImageIndex]} 
                           alt={`${activeDivision.title} training ${selectedImageIndex + 1}`}
                           className="w-full h-auto max-h-[80vh] object-contain mx-auto"
+                          loading="lazy"
                         />
                         {activeDivision.images.length > 1 && (
                           <>
