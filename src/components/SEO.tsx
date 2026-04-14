@@ -164,8 +164,7 @@ const SEO = ({ title, description, keywords, image, url }: SEOProps) => {
                 }
               }
             ]
-          },
-          "priceRange": "$$"
+          }
         })}
       </script>
     </Helmet>
