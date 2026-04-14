@@ -38,7 +38,7 @@ const Instructors = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Meet Our Instructors</h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Learn from experienced professionals who are passionate about teaching practical self-defense and building confidence.
+            Learn from Singapore's most experienced Krav Maga instructors — with military, special forces, and law enforcement backgrounds spanning over 30 years of combined teaching.
           </p>
         </div>
 

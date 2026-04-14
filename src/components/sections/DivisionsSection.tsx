@@ -11,7 +11,7 @@ const divisions = [
     id: "youth",
     title: "Youth Division",
     subtitle: "Ages 6-17",
-    description: "Empowering Youth with Self‑Defence Skills: Our Kravist Youth Division offers practical Krav Maga classes that teach children and teens (6–17 years old) how to protect themselves in real-life situations. It's not just about punches and kicks – kids learn to deter, prevent, and solve problems both in school and outside, from handling bullies at school to dealing with stranger dangers, all in a safe and fun environment. By training with us, students become more aware of their surroundings and confident in their ability to defend themselves and their loved ones.",
+    description: "Our Youth Division teaches kids and teens (6–17) practical self-defence through Krav Maga — Singapore's most structured youth program of its kind. Beyond punches and kicks, students learn to handle real situations: standing up to bullies, staying aware of their surroundings, and solving problems with confidence. It's martial arts for kids who need more than just a sport — it's a foundation for life.",
     icon: Shield,
     features: ["Parent-approved curriculum", "Character development focus", "Anti-bullying training", "Confidence & discipline building", "CPR-certified instructors", "Safe learning environment"],
     images: [
@@ -28,7 +28,7 @@ const divisions = [
     id: "womens",
     title: "Women's Division",
     subtitle: "Empowerment Through Real-World Self Defence",
-    description: "Join Singapore's leading women's self defence classes, combining Krav Maga techniques, fitness, and confidence-building in a safe, supportive environment designed exclusively for women.",
+    description: "Singapore's dedicated women-only self-defence program. Our Women's Division combines Krav Maga techniques with real-world scenario training — covering grabs, chokes, ground defence, and armed threats — in a supportive, women-led environment. Structured 8-week terms build genuine skill and confidence, not just exposure.",
     icon: Target,
     features: ["Women-only self defence classes", "Real-life threat scenarios", "Stress-tested training", "Progressive, structured curriculum"],
     images: [
@@ -42,7 +42,7 @@ const divisions = [
     id: "adults",
     title: "Adult Division",
     subtitle: "Practical Self Defence for Every Adult",
-    description: "Dynamic Krav Maga training for adults of all skill levels, blending real-world self defence with high-intensity workouts to improve strength, conditioning, and confidence.",
+    description: "Practical self-defence training for adults of all experience levels. Our adult Krav Maga classes blend real-world techniques with full-body conditioning — building fitness, situational awareness, and the confidence to handle yourself under pressure. No experience needed to start.",
     icon: Users,
     features: ["Beginner-friendly to advanced techniques", "Full-body conditioning drills", "Realistic stress scenario training", "Safe and challenging environment"],
     images: [
@@ -60,7 +60,7 @@ const divisions = [
     id: "corporate",
     title: "Corporate Training",
     subtitle: "Workplace Safety & Team Cohesion",
-    description: "Tailored corporate self defence and team-building programs that enhance employee confidence, stress management, and workplace safety through Krav Maga principles.",
+    description: "Krav Maga-based corporate workshops that combine practical self-defence skills with team building and stress management. Tailored for Singapore workplaces — delivered on-site or at our studio.",
     icon: Building,
     features: ["On-site or off-site corporate training", "Team-building exercises", "Workplace safety techniques", "Stress-resilience and confidence building"],
     images: [
@@ -72,7 +72,7 @@ const divisions = [
     id: "private",
     title: "Private Training",
     subtitle: "One-on-One Krav Maga Coaching",
-    description: "Accelerate your progress with private Krav Maga sessions tailored to your specific goals, schedule, and fitness level for a personalized and focused learning experience.",
+    description: "One-on-one Krav Maga coaching tailored to your goals, pace, and schedule. Whether you're starting from scratch or sharpening advanced skills, private sessions offer focused instruction with our senior instructors.",
     icon: User,
     features: ["Fully customized self defence curriculum", "Flexible scheduling options", "Rapid skill development", "Personal instructor guidance"],
     images: [

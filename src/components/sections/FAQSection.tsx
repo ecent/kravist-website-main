@@ -40,7 +40,7 @@ const FAQSection = () => {
               <AccordionItem value="what-is" className="bg-gray-800/50 border-gray-700 rounded-lg px-4">
                 <AccordionTrigger className="text-white hover:no-underline">What is Krav Maga?</AccordionTrigger>
                 <AccordionContent className="text-gray-300">
-                  Krav Maga is a practical self-defence system — not a martial art — designed for real-world situations. There are no competitions or rules. It focuses on awareness, avoidance, and fast, instinctive responses to threats like grabs, strikes, and weapon scenarios. It's effective for adults, teens, and kids because it builds both physical skills and mental confidence.
+                  Krav Maga is a practical self-defence system — not a martial art — designed for real-world situations. There are no competitions or rules. It focuses on awareness, avoidance, and fast, instinctive responses to threats like grabs, strikes, and weapon scenarios. At Kravist, it's effective for adults, teens, and kids because it builds both physical skills and mental confidence.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="difference" className="bg-gray-800/50 border-gray-700 rounded-lg px-4">
@@ -52,7 +52,7 @@ const FAQSection = () => {
               <AccordionItem value="fitness" className="bg-gray-800/50 border-gray-700 rounded-lg px-4">
                 <AccordionTrigger className="text-white hover:no-underline">Do I need to be fit or have experience?</AccordionTrigger>
                 <AccordionContent className="text-gray-300">
-                  No. Classes are beginner-friendly and suitable for all fitness levels. Many students start with zero martial arts background. We build fitness, technique, and confidence progressively.
+                  No. Classes at Kravist are beginner-friendly and suitable for all fitness levels. Many students start with zero martial arts background. We build fitness, technique, and confidence progressively.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="safety" className="bg-gray-800/50 border-gray-700 rounded-lg px-4">
@@ -77,13 +77,13 @@ const FAQSection = () => {
               <AccordionItem value="ages" className="bg-gray-800/50 border-gray-700 rounded-lg px-4">
                 <AccordionTrigger className="text-white hover:no-underline">What age groups do you accept?</AccordionTrigger>
                 <AccordionContent className="text-gray-300">
-                  Kids (6–10), Juniors (10–14), Teens (14–17), and Adults (18+). Each group has age-appropriate curriculum and training intensity.
+                  Kids (6–10), Juniors (10–14), Teens (14–17), and Adults (18+). Each group follows an age-appropriate youth self-defence or adult curriculum with tailored training intensity.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="location" className="bg-gray-800/50 border-gray-700 rounded-lg px-4">
                 <AccordionTrigger className="text-white hover:no-underline">Where is Kravist located?</AccordionTrigger>
                 <AccordionContent className="text-gray-300">
-                  11 Irving Place, Tai Seng Point, #02-04, Singapore 369551 — near Tai Seng MRT. Easily accessible from MacPherson, Paya Lebar, Serangoon, and surrounding areas.
+                  11 Irving Place, Tai Seng Point, #02-04, Singapore 369551 — near Tai Seng MRT in east Singapore. Easily accessible from MacPherson, Paya Lebar, Serangoon, Aljunied, Bartley, and Potong Pasir.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="corporate" className="bg-gray-800/50 border-gray-700 rounded-lg px-4">
@@ -101,13 +101,13 @@ const FAQSection = () => {
               <AccordionItem value="structure" className="bg-gray-800/50 border-gray-700 rounded-lg px-4">
                 <AccordionTrigger className="text-white hover:no-underline">How is the Youth program structured?</AccordionTrigger>
                 <AccordionContent className="text-gray-300">
-                  We run 3 terms per year (April, August, and December intakes), each lasting about 4 months. Students are grouped by age — Kids (6–10), Juniors (10–14), and Teens (14–17). Each term follows a progressive curriculum with a grading ceremony at the end.
+                  We run 3 terms per year (April, August, and December intakes), each lasting about 4 months. Students are grouped by age — Kids (6–10), Juniors (10–14), and Teens (14–17). Each term follows a progressive kids Krav Maga curriculum with a grading ceremony at the end.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="learn" className="bg-gray-800/50 border-gray-700 rounded-lg px-4">
                 <AccordionTrigger className="text-white hover:no-underline">What will my child learn?</AccordionTrigger>
                 <AccordionContent className="text-gray-300">
-                  Beyond self-defence techniques, our program builds confidence, discipline, leadership, and resilience. Students learn anti-bullying strategies, stranger danger awareness, and practical safety skills — all in a structured, fun environment.
+                  Beyond self-defence techniques, our youth programme builds confidence, discipline, leadership, and resilience. Students learn anti-bullying strategies, stranger danger awareness, and practical safety skills — all in a structured, fun environment.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="term-vs-fne" className="bg-gray-800/50 border-gray-700 rounded-lg px-4">
