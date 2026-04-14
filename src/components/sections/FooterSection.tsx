@@ -29,6 +29,12 @@ const FooterSection = () => {
           </a>
         </div>
 
+        <div className="text-sm text-gray-400 mb-6 space-y-1">
+          <p>11 Irving Place, Tai Seng Point, #02-04, Singapore 369551</p>
+          <p>Nearest MRT: Tai Seng</p>
+          <p>Email: <a href="mailto:info@kravist.sg" className="hover:text-white transition-colors underline">info@kravist.sg</a></p>
+        </div>
+
         <div className="flex justify-center space-x-6">
           <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
             Contact Us
