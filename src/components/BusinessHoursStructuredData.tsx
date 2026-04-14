@@ -14,7 +14,7 @@ const BusinessHoursStructuredData = () => {
     "logo": `${siteUrl}/lovable-uploads/e270fcf4-838b-472d-b1b1-faf196d6d975.png`,
     "image": [
       `${siteUrl}/lovable-uploads/e270fcf4-838b-472d-b1b1-faf196d6d975.png`,
-      `${siteUrl}/lovable-uploads/e1f2812e-eebc-4041-803f-87ca9deb6746.png`
+      `${siteUrl}/lovable-uploads/e1f2812e-eebc-4041-803f-87ca9deb6746.webp`
     ],
     "telephone": "+65-XXXX-XXXX",
     "email": "info@kravist.sg",

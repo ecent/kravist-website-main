@@ -14,7 +14,7 @@ const Instructors = () => {
         "Experience from Singapore military, special forces and commandos",
         "CPR Certified"
       ],
-      image: "/lovable-uploads/71ffb50c-9f16-4066-8039-e8be3ca98a30.png"
+      image: "/lovable-uploads/71ffb50c-9f16-4066-8039-e8be3ca98a30.webp"
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ const Instructors = () => {
         "Defence Tactics Instructor with Special Operations Command",
         "CPR Certified"
       ],
-      image: "/lovable-uploads/c2a8d8db-85b1-409c-a2f9-205208b6bfdd.png"
+      image: "/lovable-uploads/c2a8d8db-85b1-409c-a2f9-205208b6bfdd.webp"
     },
   ];
 
@@ -51,6 +51,7 @@ const Instructors = () => {
                   alt={instructor.name}
                   className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
                   style={{ objectPosition: 'center 20%' }}
+                  loading="lazy"
                 />
               </div>
               <CardHeader className="text-center">

@@ -6,7 +6,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/lovable-uploads/e1f2812e-eebc-4041-803f-87ca9deb6746.png"
+          src="/lovable-uploads/e1f2812e-eebc-4041-803f-87ca9deb6746.webp"
           alt="Kravist Krav Maga training session"
           className="w-full h-full object-cover"
           loading="eager"
