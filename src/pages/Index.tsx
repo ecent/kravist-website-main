@@ -155,81 +155,34 @@ const Index = () => {
     }
   ];
 
-  const reviews = [
-    {
-      author: "Sarah L.",
-      rating: 5,
-      reviewBody: "Excellent youth program! My daughter has gained so much confidence and discipline through the classes. The instructors are patient and create a safe learning environment.",
-      datePublished: "2024-01-15",
-      program: "Youth Krav Maga Classes"
-    },
-    {
-      author: "Michelle T.",
-      rating: 5,
-      reviewBody: "The women's self-defense classes are exactly what I was looking for. Great techniques, supportive environment, and practical skills I can actually use.",
-      datePublished: "2024-02-02",
-      program: "Women's Self Defense Classes"
-    },
-    {
-      author: "David K.",
-      rating: 5,
-      reviewBody: "Been training here for 6 months. The adult classes are challenging but accessible for beginners. Love the real-world focus of Krav Maga.",
-      datePublished: "2024-01-28",
-      program: "Adult Krav Maga Classes"
-    },
-    {
-      author: "Jennifer M.",
-      rating: 5,
-      reviewBody: "Corporate workshop was fantastic for team building. Our staff learned valuable safety skills while having fun together.",
-      datePublished: "2024-01-10",
-      program: "Corporate Training Programs"
-    }
-  ];
-
-  const aggregateRating = {
-    ratingValue: 4.9,
-    reviewCount: 127,
-    bestRating: 5,
-    worstRating: 1
-  };
-
   const instructors = [
     {
-      name: "Master Chen Wei",
-      title: "Head Instructor & Director",
-      description: "Lead instructor with over 15 years of Krav Maga experience, specializing in youth development and adult conditioning programs.",
-      qualifications: [
-        "Krav Maga Global Expert Level 4",
-        "International Krav Maga Federation Instructor",
-        "CPR/AED Certified",
-        "Youth Development Specialist"
-      ],
-      experience: "15+ years",
-      specializations: ["Youth Training", "Adult Programs", "Instructor Development"]
-    },
-    {
-      name: "Instructor Sarah Johnson",
-      title: "Women's Program Director",
-      description: "Specialized instructor leading the women's self-defense program with focus on practical techniques and confidence building.",
+      name: "Edwin Peng",
+      title: "Head Instructor & Founder",
+      description: "Lead instructor with over 20 years of Krav Maga training and teaching experience, specializing in youth development, adult programs, and military-level Krav Maga.",
       qualifications: [
         "Krav Maga Global Expert Level 3",
-        "Women's Self Defense Specialist",
-        "CPR/AED Certified"
+        "Certified to teach Military, VIP & 3rd Party Protection, Women and Youth",
+        "Experience from Singapore military, special forces and commandos",
+        "CPR Certified"
       ],
-      experience: "8+ years",
-      specializations: ["Women's Self Defense", "Confidence Training", "Stress Management"]
+      experience: "20+ years",
+      specializations: ["Youth Training", "Adult Programs", "Military Krav Maga", "VIP Protection"]
     },
     {
-      name: "Instructor Mark Thompson",
-      title: "Adult Program Instructor",
-      description: "Experienced instructor specializing in adult fitness integration and practical self-defense applications.",
+      name: "Minnie Teo",
+      title: "Head of Women's Division",
+      description: "Experienced instructor leading the women's self-defence program, combining law enforcement background with Krav Maga expertise.",
       qualifications: [
-        "Krav Maga Global Expert Level 3",
-        "Fitness & Conditioning Specialist",
-        "CPR/AED Certified"
+        "Krav Maga Global Level G3",
+        "Animal Flow Level 1 Instructor",
+        "SFG 1 Kettlebell Instructor",
+        "Served 10+ years in Singapore Police Force",
+        "Defence Tactics Instructor with Special Operations Command",
+        "CPR Certified"
       ],
       experience: "10+ years",
-      specializations: ["Adult Training", "Fitness Integration", "Advanced Techniques"]
+      specializations: ["Women's Self Defence", "Youth Training", "Fitness & Conditioning"]
     }
   ];
 
