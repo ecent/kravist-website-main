@@ -42,7 +42,7 @@ const SEO = ({ title, description, keywords, image, url }: SEOProps) => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image || defaultImage} />
-      <meta name="twitter:site" content="@kravist_sg" />
+      
       
       {/* Additional SEO Meta Tags */}
       <meta name="author" content="Kravist Singapore" />
