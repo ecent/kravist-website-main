@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -19,10 +20,10 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto text-center">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent drop-shadow-lg">
-          SINGAPORE'S PREMIER YOUTH AND ADULTS SELF DEFENCE STUDIO
+          Real Self-Defence. Taught by Real Experts.
         </h1>
         <p className="text-xl text-white mb-8 max-w-2xl mx-auto drop-shadow-lg">
-          From Youth to Adult classes, we help families grow stronger together. Our CPR-certified instructors teach authentic self-defence while building confidence, discipline, and resilience in every student.
+          Singapore's most experienced Krav Maga instructors — with military special forces, law enforcement, and 20+ years of teaching behind them — training kids, teens, and adults to be confident, disciplined, and ready.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a href="#divisions">
@@ -30,6 +31,11 @@ const HeroSection = () => {
               Explore Programs
             </Button>
           </a>
+          <Link to="/trials">
+            <Button variant="outline" className="border-orange-500 text-orange-400 hover:bg-orange-500/10 text-lg px-8 py-3 shadow-lg">
+              Book a Trial
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
