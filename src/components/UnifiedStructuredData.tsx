@@ -56,8 +56,8 @@ interface UnifiedStructuredDataProps {
   faqs: FAQItem[];
   courses: Course[];
   events: Event[];
-  reviews: Review[];
-  aggregateRating: AggregateRating;
+  reviews?: Review[];
+  aggregateRating?: AggregateRating;
   instructors: Instructor[];
 }
 
@@ -104,27 +104,31 @@ const UnifiedStructuredData = ({
       "https://www.instagram.com/kravist.sg/"
     ],
     "description": "Kravist is Singapore's leading self-defence and Krav Maga training centre, offering youth programs, women's self-defence, adult classes, and corporate workshops. We focus on real-world techniques, confidence building, and personal safety.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": aggregateRating.ratingValue,
-      "reviewCount": aggregateRating.reviewCount,
-      "bestRating": aggregateRating.bestRating,
-      "worstRating": aggregateRating.worstRating
-    },
-    "review": reviews.map(review => ({
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": review.rating,
-        "bestRating": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": review.author
-      },
-      "reviewBody": review.reviewBody,
-      "datePublished": review.datePublished
-    }))
+    ...(aggregateRating ? {
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": aggregateRating.ratingValue,
+        "reviewCount": aggregateRating.reviewCount,
+        "bestRating": aggregateRating.bestRating,
+        "worstRating": aggregateRating.worstRating
+      }
+    } : {}),
+    ...(reviews && reviews.length > 0 ? {
+      "review": reviews.map(review => ({
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": review.rating,
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": review.author
+        },
+        "reviewBody": review.reviewBody,
+        "datePublished": review.datePublished
+      }))
+    } : {})
   };
 
   // FAQ schema

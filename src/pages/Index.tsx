@@ -79,7 +79,7 @@ const Index = () => {
       price: "Contact for pricing",
       duration: "60 minutes",
       schedule: ["Friday 5:30pm", "Friday 6:30pm", "Sunday 4:30pm"],
-      instructor: "Certified Youth Krav Maga Instructor"
+      instructor: "Edwin Peng — Expert 3, KMG Certified Youth Instructor"
     },
     {
       name: "Women's Self Defense Classes",
@@ -88,7 +88,7 @@ const Index = () => {
       price: "Contact for pricing",
       duration: "60 minutes",
       schedule: ["Tuesday 7:30pm", "Thursday 7:30pm", "Saturday 10:00am"],
-      instructor: "Female Certified Krav Maga Instructor"
+      instructor: "Minnie Teo — G3, Head of Women's Division"
     },
     {
       name: "Adult Krav Maga Classes",
@@ -97,7 +97,7 @@ const Index = () => {
       price: "Contact for pricing",
       duration: "60 minutes",
       schedule: ["Monday 7:30pm", "Wednesday 7:30pm", "Saturday 11:15am"],
-      instructor: "Senior Krav Maga Instructor"
+      instructor: "Edwin Peng — Expert 3, KMG Certified Instructor"
     },
     {
       name: "Corporate Training Programs",
@@ -106,7 +106,7 @@ const Index = () => {
       price: "Contact for group pricing",
       duration: "90-120 minutes",
       schedule: ["Custom scheduling available"],
-      instructor: "Lead Corporate Training Instructor"
+      instructor: "Edwin Peng or Minnie Teo — Senior KMG Instructors"
     },
     {
       name: "Private Training Sessions",
@@ -115,7 +115,7 @@ const Index = () => {
       price: "Contact for private rates",
       duration: "60 minutes",
       schedule: ["Flexible scheduling"],
-      instructor: "Senior Personal Training Instructor"
+      instructor: "Edwin Peng — Expert 3, KMG Certified Instructor"
     }
   ];
 
@@ -244,8 +244,6 @@ const Index = () => {
         faqs={faqItems}
         courses={courses}
         events={upcomingEvents}
-        reviews={reviews}
-        aggregateRating={aggregateRating}
         instructors={instructors}
       />
       
