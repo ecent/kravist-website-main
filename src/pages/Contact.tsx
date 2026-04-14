@@ -66,8 +66,9 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       <SEO 
-        title="Contact Kravist Singapore | Krav Maga Training Inquiry"
-        description="Contact Kravist for Krav Maga training in Singapore. Inquire about youth programs, women's self defence, adult classes, corporate workshops & private coaching."
+        title="Contact Kravist | Krav Maga Self-Defence Studio Singapore"
+        description="Get in touch with Kravist Singapore for youth, adult, women's, or corporate Krav Maga training enquiries. Located at 11 Irving Place, Tai Seng Point, near Tai Seng MRT."
+        keywords="kravist contact, krav maga singapore enquiry, self defence classes tai seng, kravist location"
         keywords="contact Kravist, Krav Maga Singapore contact, self defence classes inquiry, martial arts training Singapore"
         url="https://kravist.sg/contact"
       />

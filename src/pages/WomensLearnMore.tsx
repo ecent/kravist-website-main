@@ -11,10 +11,10 @@ import SEO from "@/components/SEO";
 
 const WomensLearnMore = () => {
   const seoConfig = {
-    title: "Women's Self-Defence Program | Kravist Singapore - Learn More",
-    description: "By Women. For Women. Built to Fight Back. Join our 8-week structured women-only Krav Maga program focused on real threats and practical self-defence skills.",
-    keywords: "women's self defence, Krav Maga women, female instructors Singapore, women only classes, self defence course",
-    url: "https://kravist.sg/programs/women/learn-more"
+    title: "Women's Self-Defence Classes Singapore | Krav Maga for Women | Kravist",
+    description: "Women-only Krav Maga self-defence program in Singapore. 8-week structured terms led by a female instructor with 10+ years in Singapore Police Force Special Ops. Real-world threat scenarios in a safe, supportive environment.",
+    keywords: "women self defence singapore, krav maga for women, women only self defence class, female self defence course singapore, women safety training",
+    url: "https://www.kravist.sg/programs/women/learn-more"
   };
 
   const weeklyStructure = [
