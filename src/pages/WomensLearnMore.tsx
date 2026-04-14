@@ -286,7 +286,7 @@ const WomensLearnMore = () => {
                     </li>
                     <li className="flex items-start">
                       <span className="text-orange-400 mr-2">•</span>
-                      <span>Autism Fitness Certified Pro Level 1</span>
+                      <span>Served 10+ years in Singapore Police Force</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-orange-400 mr-2">•</span>
