@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import NavigationBar from "@/components/sections/NavigationBar";
 import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
