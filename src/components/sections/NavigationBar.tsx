@@ -11,7 +11,6 @@ const NavigationBar = () => {
 
   // On the homepage, use hash anchors for in-page scrolling.
   // On sub-pages, route to the homepage with the hash so the section loads.
-  const sectionHref = (hash: string) => (isHome ? `#${hash}` : `/#${hash}`);
 
   const sectionLinks = [
     { label: "Home", hash: "home" },
