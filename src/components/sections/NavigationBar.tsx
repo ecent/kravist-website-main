@@ -1,28 +1,66 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 
 const NavigationBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
+  // On the homepage, use hash anchors for in-page scrolling.
+  // On sub-pages, route to the homepage with the hash so the section loads.
+  const sectionHref = (hash: string) => (isHome ? `#${hash}` : `/#${hash}`);
+
+  const sectionLinks = [
+    { label: "Home", hash: "home" },
+    { label: "Programs", hash: "divisions" },
+  ];
+
+  const moreSectionLinks = [
+    { label: "Pricing", hash: "pricing" },
+    { label: "Schedule", hash: "schedule" },
+    { label: "Instructors", hash: "instructors" },
+    { label: "FAQ", hash: "faq" },
+  ];
+
+  const renderSectionLink = (
+    label: string,
+    hash: string,
+    className: string,
+    onClick?: () => void
+  ) => {
+    if (isHome) {
+      return (
+        <a key={label} href={`#${hash}`} className={className} onClick={onClick}>
+          {label}
+        </a>
+      );
+    }
+    return (
+      <Link key={label} to={`/#${hash}`} className={className} onClick={onClick}>
+        {label}
+      </Link>
+    );
+  };
+
+  const desktopClass = "hover:text-orange-400 transition-colors";
+  const mobileClass = "text-lg text-white hover:text-orange-400 transition-colors";
+  const closeMobile = () => setIsMobileMenuOpen(false);
 
   return (
     <nav className="bg-black/50 backdrop-blur-md fixed w-full z-50 border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="text-2xl font-bold text-orange-500">KRAVIST</div>
+          <Link to="/" className="text-2xl font-bold text-orange-500">KRAVIST</Link>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            <a href="#home" className="hover:text-orange-400 transition-colors">Home</a>
-            <a href="#divisions" className="hover:text-orange-400 transition-colors">Programs</a>
-            <Link to="/trials" className="hover:text-orange-400 transition-colors">Trials</Link>
-            <a href="#pricing" className="hover:text-orange-400 transition-colors">Pricing</a>
-            <a href="#schedule" className="hover:text-orange-400 transition-colors">Schedule</a>
-            <a href="#instructors" className="hover:text-orange-400 transition-colors">Instructors</a>
-            <a href="#faq" className="hover:text-orange-400 transition-colors">FAQ</a>
-            <Link to="/contact" className="hover:text-orange-400 transition-colors">Contact</Link>
+            {sectionLinks.map(({ label, hash }) => renderSectionLink(label, hash, desktopClass))}
+            <Link to="/trials" className={desktopClass}>Trials</Link>
+            {moreSectionLinks.map(({ label, hash }) => renderSectionLink(label, hash, desktopClass))}
+            <Link to="/contact" className={desktopClass}>Contact</Link>
           </div>
 
           {/* Mobile Navigation */}
@@ -34,14 +72,10 @@ const NavigationBar = () => {
             </SheetTrigger>
             <SheetContent side="right" className="bg-gray-900 border-gray-800 w-[250px]">
               <div className="flex flex-col space-y-6 mt-8">
-                <a href="#home" className="text-lg text-white hover:text-orange-400 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Home</a>
-                <a href="#divisions" className="text-lg text-white hover:text-orange-400 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Programs</a>
-                <Link to="/trials" className="text-lg text-white hover:text-orange-400 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Trials</Link>
-                <a href="#pricing" className="text-lg text-white hover:text-orange-400 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Pricing</a>
-                <a href="#schedule" className="text-lg text-white hover:text-orange-400 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Schedule</a>
-                <a href="#instructors" className="text-lg text-white hover:text-orange-400 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Instructors</a>
-                <a href="#faq" className="text-lg text-white hover:text-orange-400 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>FAQ</a>
-                <Link to="/contact" className="text-lg text-white hover:text-orange-400 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
+                {sectionLinks.map(({ label, hash }) => renderSectionLink(label, hash, mobileClass, closeMobile))}
+                <Link to="/trials" className={mobileClass} onClick={closeMobile}>Trials</Link>
+                {moreSectionLinks.map(({ label, hash }) => renderSectionLink(label, hash, mobileClass, closeMobile))}
+                <Link to="/contact" className={mobileClass} onClick={closeMobile}>Contact</Link>
               </div>
             </SheetContent>
           </Sheet>
