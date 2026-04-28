@@ -42,6 +42,9 @@ const FooterSection = () => {
           <a href="#divisions" className="text-gray-400 hover:text-white transition-colors">
             Programs
           </a>
+          <Link to="/privacy" className="text-gray-400 hover:text-white transition-colors">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>
