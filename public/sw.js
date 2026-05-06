@@ -1,6 +1,6 @@
-const CACHE_NAME = 'kravist-v1.2.3';
-const STATIC_CACHE = 'kravist-static-v6';
-const DYNAMIC_CACHE = 'kravist-dynamic-v6';
+const CACHE_NAME = 'kravist-v1.2.4';
+const STATIC_CACHE = 'kravist-static-v7';
+const DYNAMIC_CACHE = 'kravist-dynamic-v7';
 
 // Critical resources to cache immediately
 const STATIC_ASSETS = [
