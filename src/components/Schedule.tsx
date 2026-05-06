@@ -16,15 +16,15 @@ const Schedule = () => {
       day: "Tuesday",
       classes: [
         { time: "5:00 PM", name: "Kids Term", duration: "60 min" },
-        { time: "6:30 PM", name: "Fundamental", duration: "75 min" },
-        { time: "7:45 PM", name: "Open Subject", duration: "75 min" }
+        { time: "6:30 PM", name: "Open Subject", duration: "75 min" },
+        { time: "7:45 PM", name: "Fundamental", duration: "75 min" }
       ]
     },
     {
       day: "Wednesday",
       classes: [
-        { time: "6:30 PM", name: "Fundamental", duration: "75 min" },
-        { time: "7:45 PM", name: "Open Subject", duration: "75 min" }
+        { time: "6:30 PM", name: "Open Subject", duration: "75 min" },
+        { time: "7:45 PM", name: "Fundamental", duration: "75 min" }
       ]
     },
     {
