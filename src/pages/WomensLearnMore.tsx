@@ -172,7 +172,7 @@ const WomensLearnMore = () => {
                 <h3 className="text-2xl font-semibold mb-6 text-white">Term Structure:</h3>
                 <div className="space-y-4">
                   {weeklyStructure.map((week, index) => (
-                    <Card key={index} className="bg-gray-800 border-l-4 border-l-orange-600 border-rule">
+                    <Card key={index} className="bg-gray-800 border-l-4 border-l-k-orange-hover border-rule">
                       <CardContent className="p-6">
                         <div className="flex justify-between items-start mb-2">
                           <Badge variant="outline" className="text-sm border-k-orange-hover text-k-orange">Weeks {week.weeks}</Badge>
