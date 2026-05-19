@@ -4,88 +4,158 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* ────────────────────────────────────────────
+       Kravist Core — raw palette (§1.1)
+       ──────────────────────────────────────────── */
+    --k-orange:        #F26522;
+    --k-orange-hover:  #D9521A;
+    --k-orange-deep:   #C24816;
+    --k-orange-soft:   #FFB084;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --k-ink:           #0E0E10;
+    --k-charcoal:      #3D3D3D;
+    --k-graphite:      #5C616B;
+    --k-paper:         #FFFFFF;
+    --k-paper-warm:    #F6F2EC;
+    --k-rule-light:    #E5E7EB;
+    --k-black:         #000000;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --k-navy:          #0B1424;
+    --k-navy-elev:     #131C2E;
+    --k-navy-elev-2:   #1B243A;
+    --k-navy-deep:     #060B16;
+    --k-rule:          #1E2638;
+    --k-rule-2:        #2A3550;
+    --k-mute:          #A0A4AD;
+    --k-label-on-dark: #D6D9E0;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --k-green:         #7CC548;
+    --k-cyan:          #52C9D8;
+    --k-kids-blue:     #1F6FEB;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* ────────────────────────────────────────────
+       Semantic alias layer — dark by default (§1.2)
+       ──────────────────────────────────────────── */
+    --color-bg:              var(--k-navy);
+    --color-bg-elev:         var(--k-navy-elev-2);
+    --color-bg-deep:         var(--k-navy-deep);
+    --color-bg-input:        var(--k-navy);
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --color-fg:              #FFFFFF;
+    --color-fg-mute:         var(--k-mute);
+    --color-fg-label:        var(--k-label-on-dark);
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --color-accent:          var(--k-orange);
+    --color-accent-hover:    var(--k-orange-hover);
+    --color-accent-fg:       #FFFFFF;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --color-rule:            var(--k-rule-2);
+    --color-focus:           var(--k-orange);
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* ────────────────────────────────────────────
+       Typography (§2.2 – §2.4)
+       ──────────────────────────────────────────── */
+    --font-wordmark: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    --font-display:  'Anton', 'Barlow Condensed', 'Oswald', Impact, sans-serif;
+    --font-body:     'Manrope', 'Helvetica Neue', Arial, sans-serif;
 
-    --radius: 0.5rem;
+    --w-wordmark:  300;
+    --w-body:      400;
+    --w-body-md:   500;
+    --w-body-bd:   700;
+    --w-display:   400;
 
-    --brand: 25 95% 53%;
+    --track-wordmark: 0.32em;
+    --track-eyebrow:  0.16em;
+    --track-display:  0.04em;
+    --track-h1:      -0.015em;
+    --track-h2:      -0.01em;
+    --track-body:     0;
+
+    --lh-display: 0.92;
+    --lh-heading: 1.08;
+    --lh-body:    1.55;
+    --lh-tight:   1.2;
+
+    --fs-display-xl: clamp(64px, 9vw, 168px);
+    --fs-display-lg: clamp(56px, 6vw, 104px);
+    --fs-display-md: clamp(40px, 4.4vw, 72px);
+    --fs-display-sm: 52px;
+    --fs-h1: clamp(40px, 4.4vw, 72px);
+    --fs-h2: clamp(32px, 3.2vw, 56px);
+    --fs-h3: 28px;
+    --fs-h4: 22px;
+    --fs-h5: 18px;
+    --fs-h6: 16px;
+    --fs-body-lg: 19px;
+    --fs-body:    16px;
+    --fs-body-sm: 14px;
+    --fs-caption: 12px;
+    --fs-btn:     15px;
+    --fs-wordmark-sm: 14px;
+    --fs-wordmark-md: 22px;
+    --fs-wordmark-lg: 56px;
+
+    /* Spacing (§3) */
+    --s-0: 0;
+    --s-1: 4px;
+    --s-2: 8px;
+    --s-3: 12px;
+    --s-4: 16px;
+    --s-5: 24px;
+    --s-6: 32px;
+    --s-7: 48px;
+    --s-8: 64px;
+    --s-9: 96px;
+    --s-10: 128px;
+
+    /* Radius (§4) */
+    --r-0: 0;
+    --r-1: 6px;
+    --r-2: 8px;
+    --r-3: 14px;
+    --r-4: 20px;
+    --r-pill: 9999px;
+
+    /* Shadows (§5.6) */
+    --shadow-flagship: 0 20px 60px -20px rgba(242, 101, 34, 0.35);
+    --shadow-soft:     0 6px 18px -10px rgba(0, 0, 0, 0.45);
+
+    /* Motion (§5.7) */
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --t-hover: 150ms;
+    --t-enter: 250ms;
+    --t-cross: 400ms;
+
+    /* ────────────────────────────────────────────
+       shadcn-ui variables — dark-led (§10)
+       ──────────────────────────────────────────── */
+    --background:        220 50% 9%;
+    --foreground:        0 0% 100%;
+    --card:              224 38% 17%;
+    --card-foreground:   0 0% 100%;
+    --popover:           224 38% 17%;
+    --popover-foreground: 0 0% 100%;
+    --primary:           19 89% 54%;
+    --primary-foreground: 0 0% 100%;
+    --secondary:         224 38% 17%;
+    --secondary-foreground: 0 0% 100%;
+    --muted:             224 38% 17%;
+    --muted-foreground:  220 8% 65%;
+    --accent:            19 89% 54%;
+    --accent-foreground: 0 0% 100%;
+    --destructive:       0 73% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border:            224 34% 24%;
+    --input:             224 34% 24%;
+    --ring:              19 89% 54%;
+    --radius:            14px;
+
+    /* Brand legacy alias (kept for existing components) */
+    --brand: 19 89% 54%;
     --brand-foreground: 0 0% 100%;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    
-    --brand: 25 95% 53%;
-    --brand-foreground: 0 0% 100%;
-    
+    /* Sidebar — preserved for mobile nav */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -94,6 +164,69 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Light mode — opt-in via .light wrapper, for print/certificate surfaces */
+  .light {
+    --color-bg:              var(--k-paper);
+    --color-bg-elev:         var(--k-paper);
+    --color-bg-deep:         var(--k-paper-warm);
+    --color-bg-input:        var(--k-paper);
+
+    --color-fg:              var(--k-ink);
+    --color-fg-mute:         var(--k-graphite);
+    --color-fg-label:        var(--k-graphite);
+
+    --color-accent:          var(--k-orange);
+    --color-accent-hover:    var(--k-orange-hover);
+    --color-accent-fg:       #FFFFFF;
+
+    --color-rule:            var(--k-rule-light);
+    --color-focus:           var(--k-orange);
+
+    --background:        0 0% 100%;
+    --foreground:        220 8% 7%;
+    --card:              0 0% 100%;
+    --card-foreground:   220 8% 7%;
+    --popover:           0 0% 100%;
+    --popover-foreground: 220 8% 7%;
+    --primary:           19 89% 54%;
+    --primary-foreground: 0 0% 100%;
+    --secondary:         220 14% 96%;
+    --secondary-foreground: 220 8% 7%;
+    --muted:             220 14% 96%;
+    --muted-foreground:  220 7% 39%;
+    --accent:            19 89% 54%;
+    --accent-foreground: 0 0% 100%;
+    --destructive:       0 73% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border:            220 13% 91%;
+    --input:             220 13% 91%;
+    --ring:              19 89% 54%;
+    --radius:            14px;
+  }
+
+  /* .dark kept as alias of root so any legacy `.dark` usage keeps working */
+  .dark {
+    --background:        220 50% 9%;
+    --foreground:        0 0% 100%;
+    --card:              224 38% 17%;
+    --card-foreground:   0 0% 100%;
+    --popover:           224 38% 17%;
+    --popover-foreground: 0 0% 100%;
+    --primary:           19 89% 54%;
+    --primary-foreground: 0 0% 100%;
+    --secondary:         224 38% 17%;
+    --secondary-foreground: 0 0% 100%;
+    --muted:             224 38% 17%;
+    --muted-foreground:  220 8% 65%;
+    --accent:            19 89% 54%;
+    --accent-foreground: 0 0% 100%;
+    --destructive:       0 73% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border:            224 34% 24%;
+    --input:             224 34% 24%;
+    --ring:              19 89% 54%;
   }
 }
 
@@ -104,5 +237,38 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+}
+
+/* ────────────────────────────────────────────
+   Named text styles (§2.5)
+   ──────────────────────────────────────────── */
+@layer components {
+  .text-wordmark {
+    font-family: var(--font-wordmark);
+    font-weight: 300;
+    font-size: var(--fs-wordmark-md);
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    line-height: 1;
+    text-indent: 0.32em;
+  }
+
+  .text-display {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: var(--fs-display-md);
+    letter-spacing: 0.04em;
+    line-height: 0.92;
+    text-transform: uppercase;
+  }
+
+  .text-eyebrow {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: var(--fs-caption);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
   }
 }
