@@ -69,7 +69,7 @@ const Schedule = () => {
   const getClassTypeColor = (className: string) => {
     if (className.includes("Kids") || className.includes("Juniors") || className.includes("Teens")) return "bg-blue-600";
     if (className.includes("Women")) return "bg-pink-600";
-    return "bg-orange-600";
+    return "bg-k-orange-hover";
   };
 
   return (
@@ -77,7 +77,7 @@ const Schedule = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="flex justify-center mb-4">
-            <div className="p-3 bg-orange-600 rounded-lg">
+            <div className="p-3 bg-k-orange-hover rounded-lg">
               <CalendarIcon className="h-8 w-8" />
             </div>
           </div>
@@ -86,19 +86,19 @@ const Schedule = () => {
 
         {/* Class Legend */}
         <div className="mb-12 text-center">
-          <h3 className="text-xl font-semibold mb-6 text-gray-300">Class Types</h3>
+          <h3 className="text-xl font-semibold mb-6 text-fg-label">Class Types</h3>
           <div className="flex flex-wrap justify-center gap-4">
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 bg-blue-600 rounded"></div>
-              <span className="text-gray-300">Youth</span>
+              <span className="text-fg-label">Youth</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 bg-pink-600 rounded"></div>
-              <span className="text-gray-300">Women's Division</span>
+              <span className="text-fg-label">Women's Division</span>
             </div>
             <div className="flex items-center space-x-2">
-              <div className="w-4 h-4 bg-orange-600 rounded"></div>
-              <span className="text-gray-300">Adult Classes</span>
+              <div className="w-4 h-4 bg-k-orange-hover rounded"></div>
+              <span className="text-fg-label">Adult Classes</span>
             </div>
           </div>
         </div>
@@ -107,16 +107,16 @@ const Schedule = () => {
         <div className="max-w-5xl mx-auto">
           <div className="grid gap-4">
             {weeklySchedule.map((daySchedule) => (
-              <Card key={daySchedule.day} className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white">
+              <Card key={daySchedule.day} className="bg-gradient-to-br from-gray-800 to-gray-900 border-rule text-white">
                 <CardHeader className="pb-3">
-                  <CardTitle className="text-xl text-orange-400">{daySchedule.day}</CardTitle>
+                  <CardTitle className="text-xl text-k-orange">{daySchedule.day}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   {daySchedule.classes.length > 0 ? (
                     daySchedule.classes.map((classItem, index) => (
                       <div key={index} className="flex items-center justify-between p-3 bg-gray-700/50 rounded-lg">
                         <div className="flex items-center space-x-4">
-                          <div className="flex items-center space-x-2 text-gray-300">
+                          <div className="flex items-center space-x-2 text-fg-label">
                             <Clock className="h-4 w-4" />
                             <span className="font-semibold">{classItem.time}</span>
                           </div>
@@ -124,13 +124,13 @@ const Schedule = () => {
                             {classItem.name}
                           </Badge>
                         </div>
-                        <div className="text-right text-sm text-gray-400">
+                        <div className="text-right text-sm text-fg-mute">
                           <div>{classItem.duration}</div>
                         </div>
                       </div>
                     ))
                   ) : (
-                    <p className="text-gray-400 italic">No classes scheduled</p>
+                    <p className="text-fg-mute italic">No classes scheduled</p>
                   )}
                 </CardContent>
               </Card>

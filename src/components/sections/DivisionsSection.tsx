@@ -115,7 +115,7 @@ const DivisionsSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Programs</h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-xl text-fg-mute max-w-2xl mx-auto">
             Led by our Youth Division, we offer world-class self defence training for the whole family. 
             Every program receives expert instruction and personalised attention.
           </p>
@@ -129,8 +129,8 @@ const DivisionsSection = () => {
               onClick={() => setActiveDivisionId(division.id)}
               className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
                 activeDivisionId === division.id
-                  ? "bg-orange-600 text-white transform scale-105"
-                  : "bg-gray-800 text-gray-300 hover:bg-gray-700"
+                  ? "bg-k-orange-hover text-white transform scale-105"
+                  : "bg-gray-800 text-fg-label hover:bg-gray-700"
               }`}
             >
               {division.title}
@@ -143,33 +143,33 @@ const DivisionsSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="p-3 bg-orange-600 rounded-lg">
+                <div className="p-3 bg-k-orange-hover rounded-lg">
                   <activeDivision.icon className="h-8 w-8" />
                 </div>
                 <div>
                   <h3 className="text-3xl font-bold">{activeDivision.title}</h3>
-                  <p className="text-orange-400 text-lg">{activeDivision.subtitle}</p>
+                  <p className="text-k-orange text-lg">{activeDivision.subtitle}</p>
                 </div>
               </div>
-              <p className="text-gray-300 text-lg leading-relaxed">
+              <p className="text-fg-label text-lg leading-relaxed">
                 {activeDivision.description}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
                 {activeDivision.features.map((feature, index) => (
                   <div key={index} className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                    <span className="text-gray-300">{feature}</span>
+                    <div className="w-2 h-2 bg-k-orange rounded-full"></div>
+                    <span className="text-fg-label">{feature}</span>
                   </div>
                 ))}
               </div>
               {/* Single primary CTA */}
               <Link to={activeDivision.cta.to}>
-                <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
+                <Button className="bg-k-orange-hover hover:bg-orange-700 text-lg px-8 py-3">
                   {activeDivision.cta.label}
                 </Button>
               </Link>
             </div>
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-rule">
               {activeDivision.images ? (
                 <>
                   <Carousel className="w-full max-w-xs mx-auto">
@@ -232,7 +232,7 @@ const DivisionsSection = () => {
                 </>
               ) : (
                 <div className="h-64 bg-gray-700 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-400 text-lg">Training Image Placeholder</span>
+                  <span className="text-fg-mute text-lg">Training Image Placeholder</span>
                 </div>
               )}
             </div>

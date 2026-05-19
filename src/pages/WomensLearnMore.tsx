@@ -95,10 +95,10 @@ const WomensLearnMore = () => {
             <div className="absolute inset-0 bg-black/70"></div>
           </div>
           <div className="container mx-auto px-4 text-center relative z-10">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent drop-shadow-lg">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-k-orange bg-clip-text text-transparent drop-shadow-lg">
               Empowerment Through Action
             </h1>
-            <p className="text-2xl text-orange-400 font-semibold mb-6">
+            <p className="text-2xl text-k-orange font-semibold mb-6">
               By Women. For Women. Built to Fight Back.
             </p>
             <p className="text-xl text-white mb-8 max-w-2xl mx-auto drop-shadow-lg">
@@ -116,15 +116,15 @@ const WomensLearnMore = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {whyChooseUs.map((item, index) => (
-                <Card key={index} className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700">
+                <Card key={index} className="bg-gradient-to-br from-gray-800 to-gray-900 border-rule">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="bg-orange-600/20 p-3 rounded-lg">
-                        <item.icon className="h-6 w-6 text-orange-400" />
+                      <div className="bg-k-orange-hover/20 p-3 rounded-lg">
+                        <item.icon className="h-6 w-6 text-k-orange" />
                       </div>
                       <div>
                         <h3 className="text-xl font-semibold mb-2 text-white">{item.title}</h3>
-                        <p className="text-gray-300 leading-relaxed">{item.description}</p>
+                        <p className="text-fg-label leading-relaxed">{item.description}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -146,24 +146,24 @@ const WomensLearnMore = () => {
                 <h3 className="text-2xl font-semibold mb-6 text-white">What's Included:</h3>
                 <ul className="space-y-4 text-lg">
                   <li className="flex items-center space-x-3">
-                    <div className="bg-orange-600 w-2 h-2 rounded-full"></div>
-                    <span className="text-gray-300">8x sessions of 1.5 hours</span>
+                    <div className="bg-k-orange-hover w-2 h-2 rounded-full"></div>
+                    <span className="text-fg-label">8x sessions of 1.5 hours</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <div className="bg-orange-600 w-2 h-2 rounded-full"></div>
-                    <span className="text-gray-300">Fixed groups for community and consistency</span>
+                    <div className="bg-k-orange-hover w-2 h-2 rounded-full"></div>
+                    <span className="text-fg-label">Fixed groups for community and consistency</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <div className="bg-orange-600 w-2 h-2 rounded-full"></div>
-                    <span className="text-gray-300">Scenario-focused training for threats relevant to women</span>
+                    <div className="bg-k-orange-hover w-2 h-2 rounded-full"></div>
+                    <span className="text-fg-label">Scenario-focused training for threats relevant to women</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <div className="bg-orange-600 w-2 h-2 rounded-full"></div>
-                    <span className="text-gray-300">Hands-on techniques and progressive drills</span>
+                    <div className="bg-k-orange-hover w-2 h-2 rounded-full"></div>
+                    <span className="text-fg-label">Hands-on techniques and progressive drills</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <div className="bg-orange-600 w-2 h-2 rounded-full"></div>
-                    <span className="text-gray-300">End-of-term simulations for practical confidence</span>
+                    <div className="bg-k-orange-hover w-2 h-2 rounded-full"></div>
+                    <span className="text-fg-label">End-of-term simulations for practical confidence</span>
                   </li>
                 </ul>
               </div>
@@ -172,13 +172,13 @@ const WomensLearnMore = () => {
                 <h3 className="text-2xl font-semibold mb-6 text-white">Term Structure:</h3>
                 <div className="space-y-4">
                   {weeklyStructure.map((week, index) => (
-                    <Card key={index} className="bg-gray-800 border-l-4 border-l-orange-600 border-gray-700">
+                    <Card key={index} className="bg-gray-800 border-l-4 border-l-orange-600 border-rule">
                       <CardContent className="p-6">
                         <div className="flex justify-between items-start mb-2">
-                          <Badge variant="outline" className="text-sm border-orange-600 text-orange-400">Weeks {week.weeks}</Badge>
+                          <Badge variant="outline" className="text-sm border-k-orange-hover text-k-orange">Weeks {week.weeks}</Badge>
                         </div>
                         <h4 className="text-lg font-semibold mb-2 text-white">{week.focus}</h4>
-                        <p className="text-gray-300">{week.description}</p>
+                        <p className="text-fg-label">{week.description}</p>
                       </CardContent>
                     </Card>
                   ))}
@@ -195,19 +195,19 @@ const WomensLearnMore = () => {
               Built for Real Life, Not Just the Mat
             </h2>
             <div className="max-w-4xl mx-auto text-center">
-              <p className="text-xl text-gray-300 mb-8">
+              <p className="text-xl text-fg-label mb-8">
                 What You'll Learn Might Just Save Your Life.
               </p>
-              <p className="text-lg text-gray-300 mb-12">
+              <p className="text-lg text-fg-label mb-12">
                 We design each term around real threats women face — from harassment to physical assault. 
                 Each intake may focus on a different set of scenarios such as:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {realLifeScenarios.map((scenario, index) => (
-                  <Card key={index} className="p-6 bg-gray-800 border-gray-700 hover:bg-gray-700 transition-colors">
+                  <Card key={index} className="p-6 bg-gray-800 border-rule hover:bg-gray-700 transition-colors">
                     <CardContent className="p-2">
                       <div className="flex items-center space-x-3">
-                        <Shield className="h-6 w-6 text-orange-400" />
+                        <Shield className="h-6 w-6 text-k-orange" />
                         <p className="text-lg font-medium text-white">{scenario}</p>
                       </div>
                     </CardContent>
@@ -225,23 +225,23 @@ const WomensLearnMore = () => {
               Bring Your Buddy. Or Join as a Kravist Parent.
             </h2>
             <div className="max-w-4xl mx-auto">
-              <p className="text-xl text-gray-300 text-center mb-12">
+              <p className="text-xl text-fg-label text-center mb-12">
                 We believe in growing a strong, connected community. That's why we offer:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <Card className="text-center p-8 bg-gray-800 border-gray-700 hover:bg-gray-700 transition-colors">
+                <Card className="text-center p-8 bg-gray-800 border-rule hover:bg-gray-700 transition-colors">
                   <CardContent>
-                    <Heart className="h-12 w-12 text-orange-400 mx-auto mb-4" />
+                    <Heart className="h-12 w-12 text-k-orange mx-auto mb-4" />
                     <h3 className="text-2xl font-semibold mb-4 text-white">Buddy Rate</h3>
-                    <p className="text-gray-300 text-lg">Train together, grow together</p>
+                    <p className="text-fg-label text-lg">Train together, grow together</p>
                   </CardContent>
                 </Card>
 
-                <Card className="text-center p-8 bg-gray-800 border-gray-700 hover:bg-gray-700 transition-colors">
+                <Card className="text-center p-8 bg-gray-800 border-rule hover:bg-gray-700 transition-colors">
                   <CardContent>
-                    <Users className="h-12 w-12 text-orange-400 mx-auto mb-4" />
+                    <Users className="h-12 w-12 text-k-orange mx-auto mb-4" />
                     <h3 className="text-2xl font-semibold mb-4 text-white">Parent Rate</h3>
-                    <p className="text-gray-300 text-lg">Special rates for existing Kravist parents</p>
+                    <p className="text-fg-label text-lg">Special rates for existing Kravist parents</p>
                   </CardContent>
                 </Card>
               </div>
@@ -256,7 +256,7 @@ const WomensLearnMore = () => {
               Meet The Instructor
             </h2>
             <div className="max-w-lg mx-auto">
-              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white overflow-hidden">
+              <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-rule text-white overflow-hidden">
                 <div className="aspect-square overflow-hidden">
                   <ResponsiveImage 
                     src="/lovable-uploads/c2a8d8db-85b1-409c-a2f9-205208b6bfdd.webp" 
@@ -268,32 +268,32 @@ const WomensLearnMore = () => {
                 </div>
                 <div className="text-center p-6">
                   <h3 className="text-xl font-bold mb-2 text-white">Minnie Teo</h3>
-                  <p className="text-orange-400 font-semibold mb-4">Head of Women's Division</p>
+                  <p className="text-k-orange font-semibold mb-4">Head of Women's Division</p>
                 </div>
                 <CardContent className="px-6 pb-6">
-                  <ul className="text-gray-300 leading-relaxed text-sm space-y-1">
+                  <ul className="text-fg-label leading-relaxed text-sm space-y-1">
                     <li className="flex items-start">
-                      <span className="text-orange-400 mr-2">•</span>
+                      <span className="text-k-orange mr-2">•</span>
                       <span>Krav Maga Level G3</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-orange-400 mr-2">•</span>
+                      <span className="text-k-orange mr-2">•</span>
                       <span>Animal Flow Level 1 Instructor</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-orange-400 mr-2">•</span>
+                      <span className="text-k-orange mr-2">•</span>
                       <span>SFG 1 Kettlebell Instructor</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-orange-400 mr-2">•</span>
+                      <span className="text-k-orange mr-2">•</span>
                       <span>Served 10+ years in Singapore Police Force</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-orange-400 mr-2">•</span>
+                      <span className="text-k-orange mr-2">•</span>
                       <span>Defence Tactics Instructor with Special Operations Command</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-orange-400 mr-2">•</span>
+                      <span className="text-k-orange mr-2">•</span>
                       <span>CPR Certified</span>
                     </li>
                   </ul>
@@ -311,33 +311,33 @@ const WomensLearnMore = () => {
             </h2>
             <div className="max-w-4xl mx-auto">
               <div className="space-y-6">
-                <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
-                  <h4 className="font-semibold text-orange-400 mb-3 text-lg">Is there a minimum age for the program?</h4>
-                  <p className="text-gray-300">All participants must be 18 years old or above.</p>
+                <div className="bg-gray-900 border border-rule rounded-lg p-6">
+                  <h4 className="font-semibold text-k-orange mb-3 text-lg">Is there a minimum age for the program?</h4>
+                  <p className="text-fg-label">All participants must be 18 years old or above.</p>
                 </div>
-                <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
-                  <h4 className="font-semibold text-orange-400 mb-3 text-lg">Do you accept senior participants?</h4>
-                  <p className="text-gray-300">Yes, as long as the participant is physically healthy without any serious pre-existing conditions that impacts their movement.</p>
+                <div className="bg-gray-900 border border-rule rounded-lg p-6">
+                  <h4 className="font-semibold text-k-orange mb-3 text-lg">Do you accept senior participants?</h4>
+                  <p className="text-fg-label">Yes, as long as the participant is physically healthy without any serious pre-existing conditions that impacts their movement.</p>
                 </div>
-                <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
-                  <h4 className="font-semibold text-orange-400 mb-3 text-lg">Do I need to bring equipment?</h4>
-                  <p className="text-gray-300">All relevant training equipment is provided by Kravist.</p>
+                <div className="bg-gray-900 border border-rule rounded-lg p-6">
+                  <h4 className="font-semibold text-k-orange mb-3 text-lg">Do I need to bring equipment?</h4>
+                  <p className="text-fg-label">All relevant training equipment is provided by Kravist.</p>
                 </div>
-                <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
-                  <h4 className="font-semibold text-orange-400 mb-3 text-lg">What is the attire for the training?</h4>
-                  <p className="text-gray-300">Appropriate workout attire and closed toe shoes. We recommend bringing along a bottle of water!</p>
+                <div className="bg-gray-900 border border-rule rounded-lg p-6">
+                  <h4 className="font-semibold text-k-orange mb-3 text-lg">What is the attire for the training?</h4>
+                  <p className="text-fg-label">Appropriate workout attire and closed toe shoes. We recommend bringing along a bottle of water!</p>
                 </div>
-                <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
-                  <h4 className="font-semibold text-orange-400 mb-3 text-lg">What happens if I miss a class?</h4>
-                  <p className="text-gray-300">Participants can schedule a remedial after class for 15-20min or attend a regular evening class.</p>
+                <div className="bg-gray-900 border border-rule rounded-lg p-6">
+                  <h4 className="font-semibold text-k-orange mb-3 text-lg">What happens if I miss a class?</h4>
+                  <p className="text-fg-label">Participants can schedule a remedial after class for 15-20min or attend a regular evening class.</p>
                 </div>
-                <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
-                  <h4 className="font-semibold text-orange-400 mb-3 text-lg">Can I attend a trial session during the women's program?</h4>
-                  <p className="text-gray-300">Trials are held during our general Monday - Thursday adult classes.</p>
+                <div className="bg-gray-900 border border-rule rounded-lg p-6">
+                  <h4 className="font-semibold text-k-orange mb-3 text-lg">Can I attend a trial session during the women's program?</h4>
+                  <p className="text-fg-label">Trials are held during our general Monday - Thursday adult classes.</p>
                 </div>
               </div>
               <div className="text-center mt-8">
-                <Button variant="outline" className="border-orange-600 text-orange-400 hover:bg-orange-600 hover:text-white" asChild>
+                <Button variant="outline" className="border-k-orange-hover text-k-orange hover:bg-k-orange-hover hover:text-white" asChild>
                   <a href="/#faq">View All Frequently Asked Questions</a>
                 </Button>
               </div>
@@ -361,10 +361,10 @@ const WomensLearnMore = () => {
               Ready to start your empowerment journey? Contact us to secure your spot in the next intake.
             </p>
             <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-              <Button size="lg" className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white" asChild>
+              <Button size="lg" className="w-full sm:w-auto bg-k-orange-hover hover:bg-orange-700 text-white" asChild>
                 <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer">Waitlist</a>
               </Button>
-              <Button size="lg" className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white" asChild>
+              <Button size="lg" className="w-full sm:w-auto bg-k-orange-hover hover:bg-orange-700 text-white" asChild>
                 <Link to="/contact">Contact Us</Link>
               </Button>
             </div>

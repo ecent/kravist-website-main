@@ -15,7 +15,7 @@ const FooterSection = React.lazy(() => import("@/components/sections/FooterSecti
 
 const SectionFallback = () => (
   <div className="py-20 flex items-center justify-center">
-    <div className="w-8 h-8 border-2 border-orange-500 border-t-transparent rounded-full animate-spin" />
+    <div className="w-8 h-8 border-2 border-k-orange border-t-transparent rounded-full animate-spin" />
   </div>
 );
 
