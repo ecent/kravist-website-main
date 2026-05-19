@@ -74,7 +74,7 @@ const Contact = () => {
       <NavigationBar />
 
       {/* Header */}
-      <section className="pt-20 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-orange-900">
+      <section className="pt-20 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-k-orange-deep">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-k-orange bg-clip-text text-transparent">
             Get In Touch
@@ -157,7 +157,7 @@ const Contact = () => {
                               <FormControl>
                                 <Input
                                   placeholder="Your full name"
-                                  className="bg-gray-700 border-gray-600 text-white placeholder:text-fg-mute"
+                                  className="bg-gray-700 border-rule text-white placeholder:text-fg-mute"
                                   {...field}
                                 />
                               </FormControl>
@@ -176,7 +176,7 @@ const Contact = () => {
                                 <Input
                                   type="email"
                                   placeholder="your.email@example.com"
-                                  className="bg-gray-700 border-gray-600 text-white placeholder:text-fg-mute"
+                                  className="bg-gray-700 border-rule text-white placeholder:text-fg-mute"
                                   {...field}
                                 />
                               </FormControl>
@@ -194,11 +194,11 @@ const Contact = () => {
                             <FormLabel className="text-white">Division</FormLabel>
                             <Select onValueChange={field.onChange} defaultValue={field.value}>
                               <FormControl>
-                                <SelectTrigger className="bg-gray-700 border-gray-600 text-white">
+                                <SelectTrigger className="bg-gray-700 border-rule text-white">
                                   <SelectValue placeholder="Select a division" />
                                 </SelectTrigger>
                               </FormControl>
-                              <SelectContent className="bg-gray-700 border-gray-600">
+                              <SelectContent className="bg-gray-700 border-rule">
                                 <SelectItem value="Youth" className="text-white hover:bg-gray-600">Youth</SelectItem>
                                 <SelectItem value="Adults" className="text-white hover:bg-gray-600">Adults</SelectItem>
                                 <SelectItem value="Women's" className="text-white hover:bg-gray-600">Women's</SelectItem>
@@ -220,7 +220,7 @@ const Contact = () => {
                             <FormControl>
                               <Textarea
                                 placeholder="Tell us about your interest in Krav Maga or any questions you have..."
-                                className="bg-gray-700 border-gray-600 text-white placeholder:text-fg-mute min-h-[120px]"
+                                className="bg-gray-700 border-rule text-white placeholder:text-fg-mute min-h-[120px]"
                                 {...field}
                               />
                             </FormControl>
@@ -231,7 +231,7 @@ const Contact = () => {
 
                       <Button
                         type="submit"
-                        className="w-full bg-k-orange-hover hover:bg-orange-700 text-white font-semibold py-3"
+                        className="w-full bg-k-orange-hover hover:bg-k-orange-hover text-white font-semibold py-3"
                         disabled={form.formState.isSubmitting}
                       >
                         {form.formState.isSubmitting ? (

@@ -361,10 +361,10 @@ const WomensLearnMore = () => {
               Ready to start your empowerment journey? Contact us to secure your spot in the next intake.
             </p>
             <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-              <Button size="lg" className="w-full sm:w-auto bg-k-orange-hover hover:bg-orange-700 text-white" asChild>
+              <Button size="lg" className="w-full sm:w-auto bg-k-orange-hover hover:bg-k-orange-hover text-white" asChild>
                 <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer">Waitlist</a>
               </Button>
-              <Button size="lg" className="w-full sm:w-auto bg-k-orange-hover hover:bg-orange-700 text-white" asChild>
+              <Button size="lg" className="w-full sm:w-auto bg-k-orange-hover hover:bg-k-orange-hover text-white" asChild>
                 <Link to="/contact">Contact Us</Link>
               </Button>
             </div>

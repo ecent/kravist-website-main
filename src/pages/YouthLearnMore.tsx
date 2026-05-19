@@ -105,7 +105,7 @@ const YouthLearnMore = () => {
             <p className="text-xl md:text-2xl mb-8 text-fg-label max-w-4xl mx-auto">
               Game-based classes that teach real-world self-defence while boosting confidence, discipline and focus.
             </p>
-            <Button size="lg" className="mt-8 bg-k-orange-hover hover:bg-orange-700 text-lg px-8 py-4" asChild>
+            <Button size="lg" className="mt-8 bg-k-orange-hover hover:bg-k-orange-hover text-lg px-8 py-4" asChild>
               <Link to="/trials">Book a Trial Class</Link>
             </Button>
           </div>
@@ -280,7 +280,7 @@ const YouthLearnMore = () => {
                       </div>
                     </div>
                     <div className="mt-6">
-                      <Button className="w-full bg-k-orange-hover hover:bg-orange-700 text-white font-bold" asChild>
+                      <Button className="w-full bg-k-orange-hover hover:bg-k-orange-hover text-white font-bold" asChild>
                         <a href="https://forms.gle/LBNkox3CULPk6fFGA" target="_blank" rel="noopener noreferrer">Join Waitlist</a>
                       </Button>
                     </div>
@@ -326,7 +326,7 @@ const YouthLearnMore = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="bg-gradient-to-br from-k-orange-hover/20 to-orange-800/20 p-6 rounded-lg border border-k-orange-hover/30">
+                    <div className="bg-gradient-to-br from-k-orange-hover/20 to-k-orange-deep/20 p-6 rounded-lg border border-k-orange-hover/30">
                       <h4 className="font-bold text-lg text-k-orange mb-4">Leadership Skills Developed:</h4>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-fg-label text-sm">
                         <div className="flex items-center gap-2">
@@ -475,13 +475,13 @@ const YouthLearnMore = () => {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 lg:py-32 bg-gradient-to-br from-orange-900 via-orange-800 to-gray-900">
+        <section className="py-20 lg:py-32 bg-gradient-to-br from-k-orange-deep via-orange-800 to-gray-900">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-k-orange bg-clip-text text-transparent drop-shadow-lg">
               Equip them for life—book a trial class.
             </h2>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="bg-k-orange-hover hover:bg-orange-700 text-xl px-12 py-6" asChild>
+              <Button size="lg" className="bg-k-orange-hover hover:bg-k-orange-hover text-xl px-12 py-6" asChild>
                 <Link to="/trials">Book a Youth Trial Class</Link>
               </Button>
               <Button size="lg" variant="outline" className="border-k-orange-hover text-k-orange hover:bg-k-orange-hover hover:text-white text-xl px-12 py-6" asChild>

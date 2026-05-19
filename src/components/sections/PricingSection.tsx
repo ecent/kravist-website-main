@@ -24,7 +24,7 @@ const PricingSection = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {/* Youth Division Pricing - Highlighted */}
-          <Card className="bg-gradient-to-br from-orange-800 to-orange-900 border-k-orange-hover text-white relative">
+          <Card className="bg-gradient-to-br from-k-orange-deep to-k-orange-deep border-k-orange-hover text-white relative">
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
               <span className="bg-k-orange text-white px-4 py-1 rounded-full text-sm font-semibold">
                 FLAGSHIP PROGRAM
@@ -191,7 +191,7 @@ const PricingSection = () => {
                   </div>
                 </div>
                 <Link to="/contact">
-                  <Button className="w-full mt-4 bg-k-orange-hover hover:bg-orange-700">
+                  <Button className="w-full mt-4 bg-k-orange-hover hover:bg-k-orange-hover">
                     Contact for Quote
                   </Button>
                 </Link>
@@ -217,7 +217,7 @@ const PricingSection = () => {
                   </div>
                 </div>
                 <Link to="/contact">
-                  <Button className="w-full mt-4 bg-k-orange-hover hover:bg-orange-700">
+                  <Button className="w-full mt-4 bg-k-orange-hover hover:bg-k-orange-hover">
                     Contact for Quote
                   </Button>
                 </Link>
