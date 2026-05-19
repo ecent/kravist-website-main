@@ -164,7 +164,7 @@ const DivisionsSection = () => {
               </div>
               {/* Single primary CTA */}
               <Link to={activeDivision.cta.to}>
-                <Button className="bg-k-orange-hover hover:bg-orange-700 text-lg px-8 py-3">
+                <Button className="bg-k-orange-hover hover:bg-k-orange-hover text-lg px-8 py-3">
                   {activeDivision.cta.label}
                 </Button>
               </Link>
@@ -190,8 +190,8 @@ const DivisionsSection = () => {
                         </CarouselItem>
                       ))}
                     </CarouselContent>
-                    <CarouselPrevious className="bg-gray-800/80 border-gray-600 hover:bg-gray-700 text-white" />
-                    <CarouselNext className="bg-gray-800/80 border-gray-600 hover:bg-gray-700 text-white" />
+                    <CarouselPrevious className="bg-gray-800/80 border-rule hover:bg-gray-700 text-white" />
+                    <CarouselNext className="bg-gray-800/80 border-rule hover:bg-gray-700 text-white" />
                   </Carousel>
                   
                   <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>

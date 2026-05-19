@@ -27,7 +27,7 @@ const HeroSection = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a href="#divisions">
-            <Button className="bg-k-orange-hover hover:bg-orange-700 text-lg px-8 py-3 shadow-lg">
+            <Button className="bg-k-orange-hover hover:bg-k-orange-hover text-lg px-8 py-3 shadow-lg">
               Explore Programs
             </Button>
           </a>

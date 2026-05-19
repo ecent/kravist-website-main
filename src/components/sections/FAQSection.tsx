@@ -139,7 +139,7 @@ const FAQSection = () => {
                       href="https://forms.gle/LBNkox3CULPk6fFGA"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center bg-k-orange-hover hover:bg-orange-700 text-white font-semibold py-2 px-5 rounded transition-colors text-sm"
+                      className="inline-flex items-center justify-center bg-k-orange-hover hover:bg-k-orange-hover text-white font-semibold py-2 px-5 rounded transition-colors text-sm"
                     >
                       Join Waitlist
                     </a>
