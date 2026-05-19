@@ -157,7 +157,7 @@ const Contact = () => {
                               <FormControl>
                                 <Input
                                   placeholder="Your full name"
-                                  className="bg-gray-700 border-gray-600 text-white placeholder:text-fg-mute"
+                                  className="bg-gray-700 border-rule text-white placeholder:text-fg-mute"
                                   {...field}
                                 />
                               </FormControl>
@@ -176,7 +176,7 @@ const Contact = () => {
                                 <Input
                                   type="email"
                                   placeholder="your.email@example.com"
-                                  className="bg-gray-700 border-gray-600 text-white placeholder:text-fg-mute"
+                                  className="bg-gray-700 border-rule text-white placeholder:text-fg-mute"
                                   {...field}
                                 />
                               </FormControl>
@@ -194,11 +194,11 @@ const Contact = () => {
                             <FormLabel className="text-white">Division</FormLabel>
                             <Select onValueChange={field.onChange} defaultValue={field.value}>
                               <FormControl>
-                                <SelectTrigger className="bg-gray-700 border-gray-600 text-white">
+                                <SelectTrigger className="bg-gray-700 border-rule text-white">
                                   <SelectValue placeholder="Select a division" />
                                 </SelectTrigger>
                               </FormControl>
-                              <SelectContent className="bg-gray-700 border-gray-600">
+                              <SelectContent className="bg-gray-700 border-rule">
                                 <SelectItem value="Youth" className="text-white hover:bg-gray-600">Youth</SelectItem>
                                 <SelectItem value="Adults" className="text-white hover:bg-gray-600">Adults</SelectItem>
                                 <SelectItem value="Women's" className="text-white hover:bg-gray-600">Women's</SelectItem>
@@ -220,7 +220,7 @@ const Contact = () => {
                             <FormControl>
                               <Textarea
                                 placeholder="Tell us about your interest in Krav Maga or any questions you have..."
-                                className="bg-gray-700 border-gray-600 text-white placeholder:text-fg-mute min-h-[120px]"
+                                className="bg-gray-700 border-rule text-white placeholder:text-fg-mute min-h-[120px]"
                                 {...field}
                               />
                             </FormControl>
