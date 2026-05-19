@@ -37,14 +37,14 @@ const Instructors = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Meet Our Instructors</h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-xl text-fg-mute max-w-2xl mx-auto">
             Learn from Singapore's most experienced Krav Maga instructors — with military, special forces, and law enforcement backgrounds spanning over 30 years of combined teaching.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 justify-center">
           {instructors.map((instructor) => (
-            <Card key={instructor.id} className="bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 text-white overflow-hidden">
+            <Card key={instructor.id} className="bg-gradient-to-br from-gray-800 to-gray-900 border-rule text-white overflow-hidden">
               <div className="aspect-square overflow-hidden">
                 <img 
                   src={instructor.image} 
@@ -56,13 +56,13 @@ const Instructors = () => {
               </div>
               <CardHeader className="text-center">
                 <CardTitle className="text-xl">{instructor.name}</CardTitle>
-                <p className="text-orange-400 font-semibold">{instructor.title}</p>
+                <p className="text-k-orange font-semibold">{instructor.title}</p>
               </CardHeader>
               <CardContent>
-                <ul className="text-gray-300 leading-relaxed text-sm space-y-1">
+                <ul className="text-fg-label leading-relaxed text-sm space-y-1">
                   {instructor.bio.map((point, index) => (
                     <li key={index} className="flex items-start">
-                      <span className="text-orange-400 mr-2">•</span>
+                      <span className="text-k-orange mr-2">•</span>
                       <span>{point}</span>
                     </li>
                   ))}

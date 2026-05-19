@@ -44,15 +44,15 @@ const NavigationBar = () => {
     );
   };
 
-  const desktopClass = "hover:text-orange-400 transition-colors";
-  const mobileClass = "text-lg text-white hover:text-orange-400 transition-colors";
+  const desktopClass = "hover:text-k-orange transition-colors";
+  const mobileClass = "text-lg text-white hover:text-k-orange transition-colors";
   const closeMobile = () => setIsMobileMenuOpen(false);
 
   return (
-    <nav className="bg-black/50 backdrop-blur-md fixed w-full z-50 border-b border-gray-800">
+    <nav className="bg-black/50 backdrop-blur-md fixed w-full z-50 border-b border-rule">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-2xl font-bold text-orange-500">KRAVIST</Link>
+          <Link to="/" className="text-2xl font-bold text-k-orange">KRAVIST</Link>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
@@ -69,7 +69,7 @@ const NavigationBar = () => {
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="bg-gray-900 border-gray-800 w-[250px]">
+            <SheetContent side="right" className="bg-gray-900 border-rule w-[250px]">
               <div className="flex flex-col space-y-6 mt-8">
                 {sectionLinks.map(({ label, hash }) => renderSectionLink(label, hash, mobileClass, closeMobile))}
                 <Link to="/trials" className={mobileClass} onClick={closeMobile}>Trials</Link>

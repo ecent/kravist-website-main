@@ -19,7 +19,7 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto text-center">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent drop-shadow-lg">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-k-orange bg-clip-text text-transparent drop-shadow-lg">
           Self-defence skills your family will carry for life.
         </h1>
         <p className="text-xl text-white mb-8 max-w-2xl mx-auto drop-shadow-lg">
@@ -27,12 +27,12 @@ const HeroSection = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a href="#divisions">
-            <Button className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3 shadow-lg">
+            <Button className="bg-k-orange-hover hover:bg-orange-700 text-lg px-8 py-3 shadow-lg">
               Explore Programs
             </Button>
           </a>
           <Link to="/trials">
-            <Button variant="outline" className="border-orange-500 text-orange-400 hover:bg-orange-500/10 text-lg px-8 py-3 shadow-lg">
+            <Button variant="outline" className="border-k-orange text-k-orange hover:bg-k-orange/10 text-lg px-8 py-3 shadow-lg">
               Book a Trial
             </Button>
           </Link>

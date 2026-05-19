@@ -18,13 +18,13 @@ const Privacy = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-white to-brand bg-clip-text text-transparent">
             Privacy Policy
           </h1>
-          <p className="text-gray-400 text-sm md:text-base">Last updated: 28 April 2026</p>
+          <p className="text-fg-mute text-sm md:text-base">Last updated: 28 April 2026</p>
         </div>
       </section>
 
       {/* Main Content */}
       <main className="container py-16 lg:py-20">
-        <div className="mx-auto max-w-3xl space-y-10 text-gray-300 leading-relaxed">
+        <div className="mx-auto max-w-3xl space-y-10 text-fg-label leading-relaxed">
           <p>
             This Privacy Policy explains how Kravist Pte. Ltd. ("Kravist", "we", "us") collects, uses, and protects your personal data when you visit kravist.sg, sign up for our classes or programs, or otherwise interact with us. We comply with Singapore's Personal Data Protection Act (PDPA).
           </p>
@@ -112,7 +112,7 @@ const Privacy = () => {
             <p>For any questions about this Privacy Policy or our handling of personal data, contact us at <EmailLink />.</p>
           </Section>
 
-          <p className="pt-8 border-t border-gray-800 text-sm text-gray-500">Kravist Pte. Ltd., April 2026</p>
+          <p className="pt-8 border-t border-rule text-sm text-fg-mute">Kravist Pte. Ltd., April 2026</p>
         </div>
       </main>
 
@@ -122,7 +122,7 @@ const Privacy = () => {
 };
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
-  <section className="space-y-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_ul]:text-gray-300 [&_p]:text-gray-300">
+  <section className="space-y-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_ul]:text-fg-label [&_p]:text-fg-label">
     <h2 className="text-2xl md:text-3xl font-semibold text-brand">{title}</h2>
     {children}
   </section>

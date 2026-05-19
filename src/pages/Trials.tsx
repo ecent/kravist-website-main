@@ -77,7 +77,7 @@ const Trials = () => {
                 <h2 className="text-2xl font-semibold text-brand">{category.category}</h2>
                 <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                   {category.programs.map((program, programIdx) => (
-                    <Card key={programIdx} className="relative overflow-hidden bg-gray-900 border-gray-800 hover:border-brand/50 transition-all">
+                    <Card key={programIdx} className="relative overflow-hidden bg-gray-900 border-rule hover:border-brand/50 transition-all">
                       <CardHeader>
                         <CardTitle className="text-xl text-white">{program.name}</CardTitle>
                         <CardDescription className="text-3xl font-bold text-brand">
@@ -107,8 +107,8 @@ const Trials = () => {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-gray-800 bg-gray-900/50 py-8">
-        <div className="container text-center text-sm text-gray-400">
+      <footer className="border-t border-rule bg-gray-900/50 py-8">
+        <div className="container text-center text-sm text-fg-mute">
           <p>&copy; {new Date().getFullYear()} Kravist. All rights reserved.</p>
         </div>
       </footer>

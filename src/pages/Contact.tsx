@@ -76,10 +76,10 @@ const Contact = () => {
       {/* Header */}
       <section className="pt-20 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-orange-900">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-orange-400 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-k-orange bg-clip-text text-transparent">
             Get In Touch
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-fg-label max-w-2xl mx-auto">
             Ready to start your self defence journey? Contact us to learn more about our programs or schedule a visit.
           </p>
         </div>
@@ -92,36 +92,36 @@ const Contact = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6 text-center">Visit Our Gym</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Card className="bg-gray-800 border-gray-700">
+                <Card className="bg-gray-800 border-rule">
                   <CardHeader>
                     <CardTitle className="flex items-center space-x-3 text-white">
-                      <MapPin className="h-6 w-6 text-orange-500" />
+                      <MapPin className="h-6 w-6 text-k-orange" />
                       <span>Location</span>
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="text-gray-300">
+                  <CardContent className="text-fg-label">
                     <p className="text-lg">11 Irving Place</p>
                     <p className="text-lg">#02-04, Tai Seng Point</p>
                     <p className="text-lg">Singapore 369551</p>
-                    <p className="mt-3 text-sm text-gray-400">
+                    <p className="mt-3 text-sm text-fg-mute">
                       Closest MRT: Tai Seng
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="bg-gray-800 border-gray-700">
+                <Card className="bg-gray-800 border-rule">
                   <CardHeader>
                     <CardTitle className="flex items-center space-x-3 text-white">
-                      <Phone className="h-6 w-6 text-orange-500" />
+                      <Phone className="h-6 w-6 text-k-orange" />
                       <span>Follow Us</span>
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="text-gray-300 space-y-3">
+                  <CardContent className="text-fg-label space-y-3">
                     <a 
                       href="https://www.facebook.com/kravistsg/" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-orange-400 hover:text-orange-300 transition-colors"
+                      className="flex items-center space-x-2 text-k-orange hover:text-orange-300 transition-colors"
                     >
                       <Facebook className="h-5 w-5" />
                       <span>Facebook</span>
@@ -130,7 +130,7 @@ const Contact = () => {
                       href="https://www.instagram.com/kravist.sg/" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-orange-400 hover:text-orange-300 transition-colors"
+                      className="flex items-center space-x-2 text-k-orange hover:text-orange-300 transition-colors"
                     >
                       <Instagram className="h-5 w-5" />
                       <span>Instagram</span>
@@ -143,7 +143,7 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="mt-16">
               <h2 className="text-3xl font-bold mb-6 text-center">Send Us A Message</h2>
-              <Card className="bg-gray-800 border-gray-700">
+              <Card className="bg-gray-800 border-rule">
                 <CardContent className="p-6">
                   <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -157,7 +157,7 @@ const Contact = () => {
                               <FormControl>
                                 <Input
                                   placeholder="Your full name"
-                                  className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
+                                  className="bg-gray-700 border-gray-600 text-white placeholder:text-fg-mute"
                                   {...field}
                                 />
                               </FormControl>
@@ -176,7 +176,7 @@ const Contact = () => {
                                 <Input
                                   type="email"
                                   placeholder="your.email@example.com"
-                                  className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
+                                  className="bg-gray-700 border-gray-600 text-white placeholder:text-fg-mute"
                                   {...field}
                                 />
                               </FormControl>
@@ -220,7 +220,7 @@ const Contact = () => {
                             <FormControl>
                               <Textarea
                                 placeholder="Tell us about your interest in Krav Maga or any questions you have..."
-                                className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400 min-h-[120px]"
+                                className="bg-gray-700 border-gray-600 text-white placeholder:text-fg-mute min-h-[120px]"
                                 {...field}
                               />
                             </FormControl>
@@ -231,7 +231,7 @@ const Contact = () => {
 
                       <Button
                         type="submit"
-                        className="w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3"
+                        className="w-full bg-k-orange-hover hover:bg-orange-700 text-white font-semibold py-3"
                         disabled={form.formState.isSubmitting}
                       >
                         {form.formState.isSubmitting ? (
@@ -255,15 +255,15 @@ const Contact = () => {
       {/* Footer */}
       <footer className="bg-black py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="text-2xl font-bold text-orange-500 mb-4">KRAVIST</div>
-          <p className="text-gray-400 mb-6">Building stronger, safer communities one student at a time.</p>
+          <div className="text-2xl font-bold text-k-orange mb-4">KRAVIST</div>
+          <p className="text-fg-mute mb-6">Building stronger, safer communities one student at a time.</p>
           
           <div className="flex justify-center space-x-4 mb-6">
             <a 
               href="https://www.facebook.com/kravistsg/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-3 bg-gray-800 rounded-full hover:bg-orange-600 transition-colors"
+              className="p-3 bg-gray-800 rounded-full hover:bg-k-orange-hover transition-colors"
               aria-label="Follow us on Facebook"
             >
               <Facebook className="h-5 w-5 text-white" />
@@ -272,7 +272,7 @@ const Contact = () => {
               href="https://www.instagram.com/kravist.sg/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-3 bg-gray-800 rounded-full hover:bg-orange-600 transition-colors"
+              className="p-3 bg-gray-800 rounded-full hover:bg-k-orange-hover transition-colors"
               aria-label="Follow us on Instagram"
             >
               <Instagram className="h-5 w-5 text-white" />
@@ -280,10 +280,10 @@ const Contact = () => {
           </div>
 
           <div className="flex justify-center space-x-6">
-            <Link to="/" className="text-gray-400 hover:text-white transition-colors">
+            <Link to="/" className="text-fg-mute hover:text-white transition-colors">
               Home
             </Link>
-            <a href="/#divisions" className="text-gray-400 hover:text-white transition-colors">
+            <a href="/#divisions" className="text-fg-mute hover:text-white transition-colors">
               Programs
             </a>
           </div>
